@@ -1,0 +1,9 @@
+# ResponseGetStatusPaymentOwnerNames
+
+Listado de nombres de propietarios de la cuenta.
+
+
+## Fields
+
+| Field       | Type        | Required    | Description |
+| ----------- | ----------- | ----------- | ----------- |

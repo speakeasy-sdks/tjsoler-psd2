@@ -1,0 +1,12 @@
+# ResponseAccountDetail
+
+HTTP/1.1 200 Ok
+
+
+## Fields
+
+| Field                                                                                      | Type                                                                                       | Required                                                                                   | Description                                                                                | Example                                                                                    |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `Account`                                                                                  | [ResponseAccountDetailAccount](../../models/shared/responseaccountdetailaccount.md)        | :heavy_check_mark:                                                                         | Información detallada de la cuenta                                                         |                                                                                            |
+| `PsuMessage`                                                                               | **string*                                                                                  | :heavy_minus_sign:                                                                         | Texto enviado al TPP a través del HUB para ser mostrado al PSU.                            | Informacion para PSU                                                                       |
+| `TppMessage`                                                                               | [*ResponseAccountDetailTppMessage](../../models/shared/responseaccountdetailtppmessage.md) | :heavy_minus_sign:                                                                         | Mensaje para el TPP enviado a través del HUB.                                              |                                                                                            |

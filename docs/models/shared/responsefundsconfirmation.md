@@ -1,0 +1,11 @@
+# ResponseFundsConfirmation
+
+HTTP/1.1 200 Ok
+
+
+## Fields
+
+| Field                                                                                                          | Type                                                                                                           | Required                                                                                                       | Description                                                                                                    | Example                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `FundsAvailable`                                                                                               | *bool*                                                                                                         | :heavy_check_mark:                                                                                             | Toma el valor "true" si hay suficientes fondos disponibles en el momento de la petición. "false" en otro caso. | true                                                                                                           |
+| `TppMessage`                                                                                                   | [*ResponseFundsConfirmationTppMessage](../../models/shared/responsefundsconfirmationtppmessage.md)             | :heavy_minus_sign:                                                                                             | Mensaje para el TPP                                                                                            |                                                                                                                |

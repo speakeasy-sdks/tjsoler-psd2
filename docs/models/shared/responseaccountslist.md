@@ -1,0 +1,12 @@
+# ResponseAccountsList
+
+HTTP/1.1 200 Ok
+
+
+## Fields
+
+| Field                                                                                    | Type                                                                                     | Required                                                                                 | Description                                                                              | Example                                                                                  |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `Accounts`                                                                               | [ResponseAccountsListAccounts](../../models/shared/responseaccountslistaccounts.md)      | :heavy_check_mark:                                                                       | Listado de cuentas disponibles.                                                          |                                                                                          |
+| `PsuMessage`                                                                             | **string*                                                                                | :heavy_minus_sign:                                                                       | Texto enviado al TPP a través del HUB para ser mostrado al PSU.                          | Informacion para PSU                                                                     |
+| `TppMessage`                                                                             | [*ResponseAccountsListTppMessage](../../models/shared/responseaccountslisttppmessage.md) | :heavy_minus_sign:                                                                       | Mensaje para el TPP enviado a través del HUB.                                            |                                                                                          |
