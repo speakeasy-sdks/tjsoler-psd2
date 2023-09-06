@@ -127,8 +127,8 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.1",
-			SDKVersion:        "0.1.0",
-			GenVersion:        "2.91.2",
+			SDKVersion:        "0.1.1",
+			GenVersion:        "2.96.9",
 		},
 	}
 	for _, opt := range opts {
