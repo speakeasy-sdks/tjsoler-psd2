@@ -10,7 +10,6 @@ type ResponseGetStatusPaymentOwnerNames struct {
 type ResponseGetStatusPaymentTppMessages struct {
 }
 
-// ResponseGetStatusPayment - HTTP/1.1 200 Ok
 type ResponseGetStatusPayment struct {
 	// Este dato es contenido si es soportado por el ASPSP, si una confirmación de fondos ha sido realizada y si el “transactionStatus” es ATCT, ACWC, ACCP
 	FundsAvailable *bool

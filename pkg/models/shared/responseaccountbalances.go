@@ -14,7 +14,6 @@ type ResponseAccountBalancesBalances struct {
 type ResponseAccountBalancesTppMessage struct {
 }
 
-// ResponseAccountBalances - HTTP/1.1 200 Ok
 type ResponseAccountBalances struct {
 	// Identificador de la cuenta que se está consultando.
 	Account *ResponseAccountBalancesAccount

@@ -10,7 +10,6 @@ type ResponseAccountsListAccounts struct {
 type ResponseAccountsListTppMessage struct {
 }
 
-// ResponseAccountsList - HTTP/1.1 200 Ok
 type ResponseAccountsList struct {
 	// Listado de cuentas disponibles.
 	Accounts ResponseAccountsListAccounts

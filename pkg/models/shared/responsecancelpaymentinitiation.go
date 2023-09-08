@@ -18,7 +18,6 @@ type ResponseCancelPaymentInitiationScaMethods struct {
 type ResponseCancelPaymentInitiationTppMessages struct {
 }
 
-// ResponseCancelPaymentInitiation - HTTP/1.1 202 Ok
 type ResponseCancelPaymentInitiation struct {
 	// Lista de hipervínculos para ser reconocidos por el TPP. Dependen de la decisión que tome el ASPSP dinámicamente al evaluar la operación.
 	Links *ResponseCancelPaymentInitiationLinks

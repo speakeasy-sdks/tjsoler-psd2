@@ -1,7 +1,5 @@
 # ResponseStatusConsent
 
-HTTP/1.1 200 Ok
-
 
 ## Fields
 

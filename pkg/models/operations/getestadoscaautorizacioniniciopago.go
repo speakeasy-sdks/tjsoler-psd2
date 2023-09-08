@@ -130,7 +130,6 @@ func (e *GetEstadoSCAAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) err
 	}
 }
 
-// GetEstadoSCAAutorizacionInicioPagoPaymentProduct
 type GetEstadoSCAAutorizacionInicioPagoPaymentProduct string
 
 const (
@@ -176,7 +175,6 @@ func (e *GetEstadoSCAAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data []
 	}
 }
 
-// GetEstadoSCAAutorizacionInicioPagoPaymentService
 type GetEstadoSCAAutorizacionInicioPagoPaymentService string
 
 const (

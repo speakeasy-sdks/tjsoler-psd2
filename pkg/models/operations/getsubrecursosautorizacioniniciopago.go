@@ -130,7 +130,6 @@ func (e *GetSubRecursosAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) e
 	}
 }
 
-// GetSubRecursosAutorizacionInicioPagoPaymentProduct
 type GetSubRecursosAutorizacionInicioPagoPaymentProduct string
 
 const (
@@ -176,7 +175,6 @@ func (e *GetSubRecursosAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data 
 	}
 }
 
-// GetSubRecursosAutorizacionInicioPagoPaymentService
 type GetSubRecursosAutorizacionInicioPagoPaymentService string
 
 const (

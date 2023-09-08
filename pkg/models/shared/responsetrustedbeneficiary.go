@@ -10,7 +10,6 @@ type ResponseTrustedBeneficiaryTppMessage struct {
 type ResponseTrustedBeneficiaryTrustedBeneficiaries struct {
 }
 
-// ResponseTrustedBeneficiary - HTTP/1.1 200 OK
 type ResponseTrustedBeneficiary struct {
 	// Texto enviado al TPP a través del HUB para ser mostrado al PSU.
 	PsuMessage *string

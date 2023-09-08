@@ -22,7 +22,6 @@ type ResponseDeleteMultibankPaymentScaMethods struct {
 type ResponseDeleteMultibankPaymentTppMessages struct {
 }
 
-// ResponseDeleteMultibankPayment - Deleted
 type ResponseDeleteMultibankPayment struct {
 	// Lista de hipervinculos
 	Links *ResponseDeleteMultibankPaymentLinks `json:"_links,omitempty"`

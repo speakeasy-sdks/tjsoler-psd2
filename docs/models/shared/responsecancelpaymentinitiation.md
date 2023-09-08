@@ -1,7 +1,5 @@
 # ResponseCancelPaymentInitiation
 
-HTTP/1.1 202 Ok
-
 
 ## Fields
 

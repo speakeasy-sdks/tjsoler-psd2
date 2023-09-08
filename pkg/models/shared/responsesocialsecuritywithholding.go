@@ -10,7 +10,6 @@ type ResponseSocialSecurityWithholdingTppMessages struct {
 type ResponseSocialSecurityWithholdingWithholding struct {
 }
 
-// ResponseSocialSecurityWithholding - Respuesta a la operación
 type ResponseSocialSecurityWithholding struct {
 	// Nombre de la entidad
 	EntityName string `json:"entityName"`

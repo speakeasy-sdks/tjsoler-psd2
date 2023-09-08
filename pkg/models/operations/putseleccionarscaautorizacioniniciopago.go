@@ -130,7 +130,6 @@ func (e *PutSeleccionarSCAAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte
 	}
 }
 
-// PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct
 type PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct string
 
 const (
@@ -176,7 +175,6 @@ func (e *PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(da
 	}
 }
 
-// PutSeleccionarSCAAutorizacionInicioPagoPaymentService
 type PutSeleccionarSCAAutorizacionInicioPagoPaymentService string
 
 const (

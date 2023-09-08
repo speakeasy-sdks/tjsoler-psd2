@@ -130,7 +130,6 @@ func (e *GetEstadoSCAAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []byte
 	}
 }
 
-// GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct
 type GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct string
 
 const (
@@ -176,7 +175,6 @@ func (e *GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(da
 	}
 }
 
-// GetEstadoSCAAutorizacionCancelacionPagoPaymentService
 type GetEstadoSCAAutorizacionCancelacionPagoPaymentService string
 
 const (

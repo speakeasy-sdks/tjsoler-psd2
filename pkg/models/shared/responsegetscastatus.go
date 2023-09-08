@@ -6,7 +6,6 @@ package shared
 type ResponseGetSCAStatusTppMessages struct {
 }
 
-// ResponseGetSCAStatus - HTTP/1.1 200 Ok
 type ResponseGetSCAStatus struct {
 	// Texto enviado al TPP a través del HUB para ser mostrado al PSU.
 	PsuMessage *string `json:"psuMessage,omitempty"`

@@ -6,7 +6,6 @@ package shared
 type ResponseGetSubResourcesAuthorizationTppMessages struct {
 }
 
-// ResponseGetSubResourcesAuthorization - HTTP/1.1 200 Ok
 type ResponseGetSubResourcesAuthorization struct {
 	// Array de authorisationIds.
 	AuthorisationIds []string `json:"authorisationIds,omitempty"`

@@ -22,7 +22,6 @@ type ResponseMultibankAuthorizeConsentEstablishmentScaMethods struct {
 type ResponseMultibankAuthorizeConsentEstablishmentTppMessages struct {
 }
 
-// ResponseMultibankAuthorizeConsentEstablishment - Created
 type ResponseMultibankAuthorizeConsentEstablishment struct {
 	// Lista de hipervínculos para ser reconocidos por el TPP
 	Links ResponseMultibankAuthorizeConsentEstablishmentLinks `json:"_links"`

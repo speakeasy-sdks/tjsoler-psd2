@@ -6,7 +6,6 @@ package shared
 type ResponseStatusConsentTppMessage struct {
 }
 
-// ResponseStatusConsent - HTTP/1.1 200 Ok
 type ResponseStatusConsent struct {
 	// Estado de la transacción (solicitud de consentimiento identificado por consent-id)
 	ConsentStatus string
