@@ -130,7 +130,6 @@ func (e *PostAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []byte) error 
 	}
 }
 
-// PostAutorizacionCancelacionPagoPaymentProduct
 type PostAutorizacionCancelacionPagoPaymentProduct string
 
 const (
@@ -176,7 +175,6 @@ func (e *PostAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(data []byt
 	}
 }
 
-// PostAutorizacionCancelacionPagoPaymentService
 type PostAutorizacionCancelacionPagoPaymentService string
 
 const (

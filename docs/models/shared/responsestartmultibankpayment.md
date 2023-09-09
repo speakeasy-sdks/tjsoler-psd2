@@ -1,7 +1,5 @@
 # ResponseStartMultibankPayment
 
-Created
-
 
 ## Fields
 

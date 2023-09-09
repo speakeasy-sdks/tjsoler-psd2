@@ -1,7 +1,5 @@
 # ResponseAuthorizationInitiationPayment
 
-HTTP/1.1 201 Created
-
 
 ## Fields
 

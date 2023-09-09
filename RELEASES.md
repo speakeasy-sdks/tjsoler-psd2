@@ -19,3 +19,13 @@ Based on:
 - [go v0.1.1] .
 ### Releases
 - [Go v0.1.1] https://github.com/speakeasy-sdks/tjsoler-psd2/releases/tag/v0.1.1 - .
+
+## 2023-09-09 00:59:20
+### Changes
+Based on:
+- OpenAPI Doc 1.1 
+- Speakeasy CLI 1.82.3 (2.107.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.2.0] .
+### Releases
+- [Go v0.2.0] https://github.com/speakeasy-sdks/tjsoler-psd2/releases/tag/v0.2.0 - .

@@ -130,7 +130,6 @@ func (e *GetSubRecursosAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []by
 	}
 }
 
-// GetSubRecursosAutorizacionCancelacionPagoPaymentProduct
 type GetSubRecursosAutorizacionCancelacionPagoPaymentProduct string
 
 const (
@@ -176,7 +175,6 @@ func (e *GetSubRecursosAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(
 	}
 }
 
-// GetSubRecursosAutorizacionCancelacionPagoPaymentService
 type GetSubRecursosAutorizacionCancelacionPagoPaymentService string
 
 const (

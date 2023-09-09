@@ -6,7 +6,6 @@ package shared
 type ResponseFundsConfirmationTppMessage struct {
 }
 
-// ResponseFundsConfirmation - HTTP/1.1 200 Ok
 type ResponseFundsConfirmation struct {
 	// Toma el valor "true" si hay suficientes fondos disponibles en el momento de la petición. "false" en otro caso.
 	FundsAvailable bool

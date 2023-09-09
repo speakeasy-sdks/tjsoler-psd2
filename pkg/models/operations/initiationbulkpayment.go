@@ -9,7 +9,6 @@ import (
 	"net/http"
 )
 
-// InitiationBulkPaymentPaymentProduct
 type InitiationBulkPaymentPaymentProduct string
 
 const (

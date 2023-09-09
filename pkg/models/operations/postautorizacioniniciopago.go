@@ -130,7 +130,6 @@ func (e *PostAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) error {
 	}
 }
 
-// PostAutorizacionInicioPagoPaymentProduct
 type PostAutorizacionInicioPagoPaymentProduct string
 
 const (
@@ -176,7 +175,6 @@ func (e *PostAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data []byte) er
 	}
 }
 
-// PostAutorizacionInicioPagoPaymentService
 type PostAutorizacionInicioPagoPaymentService string
 
 const (

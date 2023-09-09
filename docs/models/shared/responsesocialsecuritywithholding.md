@@ -1,7 +1,5 @@
 # ResponseSocialSecurityWithholding
 
-Respuesta a la operación
-
 
 ## Fields
 

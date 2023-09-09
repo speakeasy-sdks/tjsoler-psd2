@@ -34,7 +34,6 @@ type ResponsePaymentInitiationTppMessages struct {
 type ResponsePaymentInitiationTransactionFees struct {
 }
 
-// ResponsePaymentInitiation - HTTP/1.1 201 Created
 type ResponsePaymentInitiation struct {
 	// Lista de hipervínculos para ser reconocidos por el TPP. Tipos soportados en esta respuesta:
 	Links *ResponsePaymentInitiationLinks `json:"_links,omitempty"`

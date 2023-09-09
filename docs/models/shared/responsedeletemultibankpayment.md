@@ -1,7 +1,5 @@
 # ResponseDeleteMultibankPayment
 
-Deleted
-
 
 ## Fields
 

@@ -22,7 +22,6 @@ type ResponseStartMultibankPaymentTppMessages struct {
 type ResponseStartMultibankPaymentTransactionFees struct {
 }
 
-// ResponseStartMultibankPayment - Created
 type ResponseStartMultibankPayment struct {
 	// Lista de hipervínculos para ser reconocidos por el TPP
 	Links *ResponseStartMultibankPaymentLinks `json:"_links,omitempty"`

@@ -14,7 +14,6 @@ type ResponseGetInfoConsentAccess struct {
 type ResponseGetInfoConsentTppMessage struct {
 }
 
-// ResponseGetInfoConsent - HTTP/1.1 201 Created
 type ResponseGetInfoConsent struct {
 	// Tipos de enlaces recomendados para esta respuesta: account y cardAccount. Dependiendo de la naturaleza del consentimiento.
 	Links *ResponseGetInfoConsentLinks

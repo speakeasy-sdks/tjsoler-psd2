@@ -9,7 +9,6 @@ import (
 	"net/http"
 )
 
-// InitiateRecurringPaymentPaymentProduct
 type InitiateRecurringPaymentPaymentProduct string
 
 const (

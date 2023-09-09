@@ -10,7 +10,6 @@ type ResponseAccountDetailAccount struct {
 type ResponseAccountDetailTppMessage struct {
 }
 
-// ResponseAccountDetail - HTTP/1.1 200 Ok
 type ResponseAccountDetail struct {
 	// Información detallada de la cuenta
 	Account ResponseAccountDetailAccount

@@ -130,7 +130,6 @@ func (e *PutSeleccionarSCAAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data [
 	}
 }
 
-// PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct
 type PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct string
 
 const (
@@ -176,7 +175,6 @@ func (e *PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct) UnmarshalJS
 	}
 }
 
-// PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService
 type PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService string
 
 const (

@@ -1,7 +1,5 @@
 # ResponseMultibankAuthorizeConsentEstablishment
 
-Created
-
 
 ## Fields
 
