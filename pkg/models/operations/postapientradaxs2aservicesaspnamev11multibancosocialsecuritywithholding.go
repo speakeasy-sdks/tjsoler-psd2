@@ -4,6 +4,7 @@ package operations
 
 import (
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/utils"
 	"net/http"
 )
 
@@ -27,7 +28,7 @@ type PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequ
 	// Localización correspondiente a la petición HTTP entre el PSU y el TPP. Ej: PSU-Geo-Location: GEO:90.023856;25.345963
 	PSUGeoLocation *string `header:"style=simple,explode=false,name=PSU-Geo-Location"`
 	// Método HTTP usado en la interfaz entre PSU y TPP. Valores permitidos: POST. Ej: PSU-Http-Method: POST
-	PSUHTTPMethod *string `header:"style=simple,explode=false,name=PSU-Http-Method"`
+	PSUHTTPMethod *string `default:"POST" header:"style=simple,explode=false,name=PSU-Http-Method"`
 	// Identificador que el PSU utiliza para identificarse en su ASPSP.
 	PsuID *string `header:"style=simple,explode=false,name=PSU-ID"`
 	// Necesario en escenarios donde el PSU tiene varios PSU-IDs como posibilidades de acceso.
@@ -47,6 +48,17 @@ type PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequ
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.
 	AspName string `pathParam:"style=simple,explode=false,name=asp-name"`
+}
+
+func (p PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequest) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(p, "", false)
+}
+
+func (p *PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequest) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &p, "", false, false); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (o *PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequest) GetDigest() string {

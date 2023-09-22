@@ -16,32 +16,32 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.LecturaDeBalances.GetAccountBalances(ctx, operations.GetAccountBalancesRequest{
-        ConsentID: "dolorum",
-        Digest: "iusto",
-        PSUAccept: psd2cajarural.String("voluptate"),
-        PSUAcceptCharset: psd2cajarural.String("dolorum"),
-        PSUAcceptEncoding: psd2cajarural.String("deleniti"),
-        PSUAcceptLanguage: psd2cajarural.String("omnis"),
-        PSUDeviceID: psd2cajarural.String("necessitatibus"),
-        PSUGeoLocation: psd2cajarural.String("distinctio"),
-        PSUHTTPMethod: psd2cajarural.String("asperiores"),
-        PSUIPAddress: psd2cajarural.String("nihil"),
-        PSUIPPort: psd2cajarural.String("ipsum"),
-        PSUUserAgent: psd2cajarural.String("voluptate"),
-        Signature: "id",
-        TPPSignatureCertificate: "saepe",
-        XRequestID: "eius",
-        AccountID: "aspernatur",
-        Aspsp: "perferendis",
+        ConsentID: "suscipit",
+        Digest: "deserunt",
+        PSUAccept: tjsolerpsd2.String("provident"),
+        PSUAcceptCharset: tjsolerpsd2.String("minima"),
+        PSUAcceptEncoding: tjsolerpsd2.String("repellendus"),
+        PSUAcceptLanguage: tjsolerpsd2.String("totam"),
+        PSUDeviceID: tjsolerpsd2.String("similique"),
+        PSUGeoLocation: tjsolerpsd2.String("alias"),
+        PSUHTTPMethod: tjsolerpsd2.String("at"),
+        PSUIPAddress: tjsolerpsd2.String("quaerat"),
+        PSUIPPort: tjsolerpsd2.String("tempora"),
+        PSUUserAgent: tjsolerpsd2.String("vel"),
+        Signature: "quod",
+        TPPSignatureCertificate: "officiis",
+        XRequestID: "qui",
+        AccountID: "dolorum",
+        Aspsp: "a",
     })
     if err != nil {
         log.Fatal(err)

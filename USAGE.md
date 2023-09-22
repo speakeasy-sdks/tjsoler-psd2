@@ -7,31 +7,31 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionCancelacionPago(ctx, operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest{
-        ConsentID: psd2cajarural.String("corrupti"),
+        ConsentID: tjsolerpsd2.String("corrupti"),
         Digest: "provident",
-        PSUAccept: psd2cajarural.String("distinctio"),
-        PSUAcceptCharset: psd2cajarural.String("quibusdam"),
-        PSUAcceptEncoding: psd2cajarural.String("unde"),
-        PSUAcceptLanguage: psd2cajarural.String("nulla"),
-        PSUDeviceID: psd2cajarural.String("corrupti"),
-        PSUGeoLocation: psd2cajarural.String("illum"),
-        PSUHTTPMethod: psd2cajarural.String("vel"),
+        PSUAccept: tjsolerpsd2.String("distinctio"),
+        PSUAcceptCharset: tjsolerpsd2.String("quibusdam"),
+        PSUAcceptEncoding: tjsolerpsd2.String("unde"),
+        PSUAcceptLanguage: tjsolerpsd2.String("nulla"),
+        PSUDeviceID: tjsolerpsd2.String("corrupti"),
+        PSUGeoLocation: tjsolerpsd2.String("illum"),
+        PSUHTTPMethod: tjsolerpsd2.String("vel"),
         PSUIPAddress: "error",
-        PSUIPPort: psd2cajarural.String("deserunt"),
-        PSUUserAgent: psd2cajarural.String("suscipit"),
+        PSUIPPort: tjsolerpsd2.String("deserunt"),
+        PSUUserAgent: tjsolerpsd2.String("suscipit"),
         Signature: "iure",
-        TPPNokRedirectURI: psd2cajarural.String("magnam"),
-        TPPRedirectPreferred: psd2cajarural.Bool(false),
-        TPPRedirectURI: psd2cajarural.String("debitis"),
+        TPPNokRedirectURI: tjsolerpsd2.String("magnam"),
+        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
+        TPPRedirectURI: tjsolerpsd2.String("debitis"),
         TPPSignatureCertificate: "ipsa",
         XRequestID: "delectus",
         Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBancosantander,

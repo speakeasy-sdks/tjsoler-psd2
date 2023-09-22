@@ -17,43 +17,41 @@ go get github.com/speakeasy-sdks/tjsoler-psd2
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```go
 package main
 
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionCancelacionPago(ctx, operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest{
-        ConsentID: psd2cajarural.String("corrupti"),
-        Digest: "provident",
-        PSUAccept: psd2cajarural.String("distinctio"),
-        PSUAcceptCharset: psd2cajarural.String("quibusdam"),
-        PSUAcceptEncoding: psd2cajarural.String("unde"),
-        PSUAcceptLanguage: psd2cajarural.String("nulla"),
-        PSUDeviceID: psd2cajarural.String("corrupti"),
-        PSUGeoLocation: psd2cajarural.String("illum"),
-        PSUHTTPMethod: psd2cajarural.String("vel"),
-        PSUIPAddress: "error",
-        PSUIPPort: psd2cajarural.String("deserunt"),
-        PSUUserAgent: psd2cajarural.String("suscipit"),
-        Signature: "iure",
-        TPPNokRedirectURI: psd2cajarural.String("magnam"),
-        TPPRedirectPreferred: psd2cajarural.Bool(false),
-        TPPRedirectURI: psd2cajarural.String("debitis"),
-        TPPSignatureCertificate: "ipsa",
-        XRequestID: "delectus",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBancosantander,
-        AuthorisationID: "suscipit",
+        ConsentID: tjsolerpsd2.String("voluptatum"),
+        Digest: "iusto",
+        PSUAccept: tjsolerpsd2.String("excepturi"),
+        PSUAcceptCharset: tjsolerpsd2.String("nisi"),
+        PSUAcceptEncoding: tjsolerpsd2.String("recusandae"),
+        PSUAcceptLanguage: tjsolerpsd2.String("temporibus"),
+        PSUDeviceID: tjsolerpsd2.String("ab"),
+        PSUGeoLocation: tjsolerpsd2.String("quis"),
+        PSUHTTPMethod: tjsolerpsd2.String("veritatis"),
+        PSUIPAddress: "deserunt",
+        PSUIPPort: tjsolerpsd2.String("perferendis"),
+        PSUUserAgent: tjsolerpsd2.String("ipsam"),
+        Signature: "repellendus",
+        TPPNokRedirectURI: tjsolerpsd2.String("sapiente"),
+        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
+        TPPRedirectURI: tjsolerpsd2.String("quo"),
+        TPPSignatureCertificate: "odit",
+        XRequestID: "at",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspIbercaja,
+        AuthorisationID: "maiores",
         PaymentID: "molestiae",
         PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk,
         PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePeriodicPayments,
@@ -179,6 +177,38 @@ func main() {
 * [PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholding](docs/sdks/serviciosmultibanco/README.md#postapientradaxs2aservicesaspnamev11multibancosocialsecuritywithholding) - Mensaje enviado por el TPP al ASPSP a través del Hub para conocer el valor del importe a pagar en la seguridad social
 * [PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID](docs/sdks/serviciosmultibanco/README.md#putapientradaxs2aservicesaspnamev11multibancopaymentsmultibancopaymenttypepaymentidauthorisationsauthorisationid)
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `Next` method that can be called to pull down the next group of results. If the
+return value of `Next` is `nil`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+
+
+<!-- Start Go Types -->
+
+<!-- End Go Types -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 

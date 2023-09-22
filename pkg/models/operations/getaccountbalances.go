@@ -3,12 +3,13 @@
 package operations
 
 import (
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/utils"
 	"net/http"
 )
 
 type GetAccountBalancesRequest struct {
 	// Identificador del consentimiento sobre el que iría la consulta de cuentas Ej: Consent-ID: 7890-asdf-4321
-	ConsentID string `header:"style=simple,explode=false,name=Consent-ID"`
+	ConsentID string `default:"7890-asdf-4321" header:"style=simple,explode=false,name=Consent-ID"`
 	// Es contenido si viaja el campo Signature. Ej: Digest: SHA-256=NzdmZjA4YjY5M2M2NDYyMmVjOWFmMGNmYTZiNTU3MjVmNDI4NTRlMzJkYzE3ZmNmMDE3ZGFmMjhhNTc5OTU3OQ==
 	Digest string `header:"style=simple,explode=false,name=Digest"`
 	// Accept header de la petición HTTP entre PSU y el TPP. Ej: PSU-Accept: application/json
@@ -24,7 +25,7 @@ type GetAccountBalancesRequest struct {
 	// Localización correspondiente a la petición HTTP entre el PSU y el TPP. Ej: PSU-Geo-Location: GEO:90.023856;25.345963
 	PSUGeoLocation *string `header:"style=simple,explode=false,name=PSU-Geo-Location"`
 	// Método HTTP usado en la interfaz entre PSU y TPP. Valores permitidos: GET, POST, PUT, PATCH, DELETE. Ej: PSU-Http-Method: GET
-	PSUHTTPMethod *string `header:"style=simple,explode=false,name=PSU-Http-Method"`
+	PSUHTTPMethod *string `default:"GET" header:"style=simple,explode=false,name=PSU-Http-Method"`
 	// Dirección IP de la petición HTPP entre el PSU y el TPP. Si no está disponible, el TPP debe usar la dirección IP usada por el TPP cuando envía esta petición. Ej: Ej: PSU-IP-Address: 192.168.16.5
 	PSUIPAddress *string `header:"style=simple,explode=false,name=PSU-IP-Address"`
 	// Puerto IP de la petición HTTP entre el PSU y el TPP si está disponible. Ejemplo: PSU-IP-Port: 443
@@ -34,13 +35,24 @@ type GetAccountBalancesRequest struct {
 	// Firma de la petición por el TPP.
 	Signature string `header:"style=simple,explode=false,name=Signature"`
 	// Certificado del TPP usado para firmar la petición, en base64, sin cabecera, pie ni saltos de linea. Ej: TPP-Signature-Certificate: MIIHgzCCBmugAwIBAgIIZzZvBQlt0UcwDQYJ………….KoZIhvcNAQELBQAwSTELMAkGA1UEBhMCVVMxEzARBgNVBA
-	TPPSignatureCertificate string `header:"style=simple,explode=false,name=TPP-Signature-Certificate"`
+	TPPSignatureCertificate string `default:"TestTPPCertificate" header:"style=simple,explode=false,name=TPP-Signature-Certificate"`
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Id de la cuenta
 	AccountID string `pathParam:"style=simple,explode=false,name=account-id"`
 	// Nombre del ASPSP al que desea realizar la petición.
 	Aspsp string `pathParam:"style=simple,explode=false,name=aspsp"`
+}
+
+func (g GetAccountBalancesRequest) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(g, "", false)
+}
+
+func (g *GetAccountBalancesRequest) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &g, "", false, false); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (o *GetAccountBalancesRequest) GetConsentID() string {

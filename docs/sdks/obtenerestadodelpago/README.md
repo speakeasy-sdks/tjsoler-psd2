@@ -16,31 +16,31 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDelPago.StatusPayment(ctx, operations.StatusPaymentRequest{
-        Digest: "quo",
-        PSUAccept: psd2cajarural.String("consectetur"),
-        PSUAcceptCharset: psd2cajarural.String("recusandae"),
-        PSUAcceptEncoding: psd2cajarural.String("aspernatur"),
-        PSUAcceptLanguage: psd2cajarural.String("minima"),
-        PSUDeviceID: psd2cajarural.String("eaque"),
-        PSUGeoLocation: psd2cajarural.String("a"),
-        PSUHTTPMethod: psd2cajarural.String("libero"),
-        PSUIPAddress: "aut",
-        PSUIPPort: psd2cajarural.String("aut"),
-        PSUUserAgent: psd2cajarural.String("deleniti"),
-        Signature: "impedit",
-        TPPSignatureCertificate: "aliquam",
-        XRequestID: "fugit",
-        Aspsp: "accusamus",
-        PaymentID: "inventore",
+        Digest: "eum",
+        PSUAccept: tjsolerpsd2.String("autem"),
+        PSUAcceptCharset: tjsolerpsd2.String("nobis"),
+        PSUAcceptEncoding: tjsolerpsd2.String("quas"),
+        PSUAcceptLanguage: tjsolerpsd2.String("assumenda"),
+        PSUDeviceID: tjsolerpsd2.String("nulla"),
+        PSUGeoLocation: tjsolerpsd2.String("voluptas"),
+        PSUHTTPMethod: tjsolerpsd2.String("libero"),
+        PSUIPAddress: "quasi",
+        PSUIPPort: tjsolerpsd2.String("tempora"),
+        PSUUserAgent: tjsolerpsd2.String("numquam"),
+        Signature: "explicabo",
+        TPPSignatureCertificate: "provident",
+        XRequestID: "ipsa",
+        Aspsp: "molestiae",
+        PaymentID: "magnam",
         PaymentProduct: operations.StatusPaymentPaymentProductInstantSepaCreditTransfers,
         PaymentService: operations.StatusPaymentPaymentServicePayments,
     })

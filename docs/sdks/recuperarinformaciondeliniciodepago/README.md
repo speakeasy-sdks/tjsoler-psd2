@@ -16,33 +16,33 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDelInicioDePago.GetInfoPayment(ctx, operations.GetInfoPaymentRequest{
-        Digest: "error",
-        PSUAccept: psd2cajarural.String("sint"),
-        PSUAcceptCharset: psd2cajarural.String("pariatur"),
-        PSUAcceptEncoding: psd2cajarural.String("possimus"),
-        PSUAcceptLanguage: psd2cajarural.String("quia"),
-        PSUDeviceID: psd2cajarural.String("eveniet"),
-        PSUGeoLocation: psd2cajarural.String("asperiores"),
-        PSUHTTPMethod: psd2cajarural.String("facere"),
-        PSUIPAddress: "veritatis",
-        PSUIPPort: psd2cajarural.String("consequuntur"),
-        PSUUserAgent: psd2cajarural.String("quasi"),
-        Signature: "similique",
-        TPPSignatureCertificate: "culpa",
-        XRequestID: "aliquid",
-        Aspsp: "tenetur",
-        PaymentID: "quae",
-        PaymentProduct: operations.GetInfoPaymentPaymentProductCrossBorderCreditTransfers,
-        PaymentService: operations.GetInfoPaymentPaymentServiceBulkPayments,
+        Digest: "soluta",
+        PSUAccept: tjsolerpsd2.String("accusantium"),
+        PSUAcceptCharset: tjsolerpsd2.String("aliquam"),
+        PSUAcceptEncoding: tjsolerpsd2.String("sapiente"),
+        PSUAcceptLanguage: tjsolerpsd2.String("dicta"),
+        PSUDeviceID: tjsolerpsd2.String("ullam"),
+        PSUGeoLocation: tjsolerpsd2.String("reprehenderit"),
+        PSUHTTPMethod: tjsolerpsd2.String("ullam"),
+        PSUIPAddress: "nisi",
+        PSUIPPort: tjsolerpsd2.String("aut"),
+        PSUUserAgent: tjsolerpsd2.String("voluptatum"),
+        Signature: "qui",
+        TPPSignatureCertificate: "quibusdam",
+        XRequestID: "ex",
+        Aspsp: "deleniti",
+        PaymentID: "itaque",
+        PaymentProduct: operations.GetInfoPaymentPaymentProductTarget2Payments,
+        PaymentService: operations.GetInfoPaymentPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)

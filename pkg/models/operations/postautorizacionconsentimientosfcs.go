@@ -4,6 +4,7 @@ package operations
 
 import (
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/utils"
 	"net/http"
 )
 
@@ -29,7 +30,7 @@ type PostAutorizacionConsentimientosFCSRequest struct {
 	// Localización correspondiente a la petición HTTP entre el PSU y el TPP. Ej: PSU-Geo-Location: GEO:90.023856;25.345963
 	PSUGeoLocation *string `header:"style=simple,explode=false,name=PSU-Geo-Location"`
 	// Método HTTP usado en la interfaz entre PSU y TPP. Valores permitidos: POST. Ej: PSU-Http-Method: POST
-	PSUHTTPMethod *string `header:"style=simple,explode=false,name=PSU-Http-Method"`
+	PSUHTTPMethod *string `default:"POST" header:"style=simple,explode=false,name=PSU-Http-Method"`
 	// Identificador que el PSU utiliza para identificarse en su ASPSP. Puede ser informado incluso si se está usando un token de OAuth y, en tal caso, el ASPSP podría comprobar que el PSU-ID y el token se corresponden.
 	PsuID *string `header:"style=simple,explode=false,name=PSU-ID"`
 	// Tipo del PSU-ID. Necesario en escenarios donde el PSU tiene varios PSU-IDs como posibilidades de acceso.
@@ -54,6 +55,17 @@ type PostAutorizacionConsentimientosFCSRequest struct {
 	XRequestID             string `header:"style=simple,explode=false,name=X-Request-ID"`
 	Aspsp                  string `pathParam:"style=simple,explode=false,name=aspsp"`
 	ConsentIDPathParameter string `pathParam:"style=simple,explode=false,name=consent-id"`
+}
+
+func (p PostAutorizacionConsentimientosFCSRequest) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(p, "", false)
+}
+
+func (p *PostAutorizacionConsentimientosFCSRequest) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &p, "", false, false); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (o *PostAutorizacionConsentimientosFCSRequest) GetConsentID() *string {

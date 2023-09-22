@@ -16,32 +16,32 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ObtenerListadoDeBeneficiariosDeConfianza.GetTrustedBeneficiaries(ctx, operations.GetTrustedBeneficiariesRequest{
-        ConsentID: "dolorum",
-        Digest: "laborum",
-        PSUAccept: psd2cajarural.String("placeat"),
-        PSUAcceptCharset: psd2cajarural.String("velit"),
-        PSUAcceptEncoding: psd2cajarural.String("eum"),
-        PSUAcceptLanguage: psd2cajarural.String("autem"),
-        PSUDeviceID: psd2cajarural.String("nobis"),
-        PSUGeoLocation: psd2cajarural.String("quas"),
-        PSUHTTPMethod: psd2cajarural.String("assumenda"),
-        PSUIPAddress: psd2cajarural.String("nulla"),
-        PSUIPPort: psd2cajarural.String("voluptas"),
-        PSUUserAgent: psd2cajarural.String("libero"),
-        Signature: "quasi",
-        TPPSignatureCertificate: "tempora",
-        XRequestID: "numquam",
-        AccountID: psd2cajarural.String("explicabo"),
-        Aspsp: "provident",
+        ConsentID: "esse",
+        Digest: "esse",
+        PSUAccept: tjsolerpsd2.String("rem"),
+        PSUAcceptCharset: tjsolerpsd2.String("fuga"),
+        PSUAcceptEncoding: tjsolerpsd2.String("reprehenderit"),
+        PSUAcceptLanguage: tjsolerpsd2.String("quidem"),
+        PSUDeviceID: tjsolerpsd2.String("fugiat"),
+        PSUGeoLocation: tjsolerpsd2.String("ut"),
+        PSUHTTPMethod: tjsolerpsd2.String("eum"),
+        PSUIPAddress: tjsolerpsd2.String("suscipit"),
+        PSUIPPort: tjsolerpsd2.String("assumenda"),
+        PSUUserAgent: tjsolerpsd2.String("eos"),
+        Signature: "praesentium",
+        TPPSignatureCertificate: "quisquam",
+        XRequestID: "veritatis",
+        AccountID: tjsolerpsd2.String("ipsa"),
+        Aspsp: "id",
     })
     if err != nil {
         log.Fatal(err)

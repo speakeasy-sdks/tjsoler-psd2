@@ -16,23 +16,23 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ConsultaDeFondos.FundsConfirmation(ctx, operations.FundsConfirmationRequest{
-        ConsentID: "veritatis",
-        Digest: "itaque",
-        RequestBody: []byte("incidunt"),
-        Signature: "enim",
-        TPPSignatureCertificate: "consequatur",
-        XRequestID: "est",
-        Aspsp: "quibusdam",
+        ConsentID: "fugit",
+        Digest: "dolorum",
+        RequestBody: []byte("excepturi"),
+        Signature: "tempora",
+        TPPSignatureCertificate: "facilis",
+        XRequestID: "tempore",
+        Aspsp: "labore",
     })
     if err != nil {
         log.Fatal(err)

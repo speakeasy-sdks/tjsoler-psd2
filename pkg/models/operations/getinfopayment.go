@@ -5,6 +5,7 @@ package operations
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/utils"
 	"net/http"
 )
 
@@ -89,7 +90,7 @@ type GetInfoPaymentRequest struct {
 	// Localización correspondiente a la petición HTTP entre el PSU y el TPP. Ej: PSU-Geo-Location: GEO:90.023856;25.345963
 	PSUGeoLocation *string `header:"style=simple,explode=false,name=PSU-Geo-Location"`
 	// Método HTTP usado en la interfaz entre PSU y TPP. Valores permitidos: GET. Ej: PSU-Http-Method: GET
-	PSUHTTPMethod *string `header:"style=simple,explode=false,name=PSU-Http-Method"`
+	PSUHTTPMethod *string `default:"GET" header:"style=simple,explode=false,name=PSU-Http-Method"`
 	// Dirección IP de la petición HTPP entre el PSU y el TPP. Si no está disponible, el TPP debe usar la dirección IP usada por el TPP cuando envía esta petición. Ej: Ej: PSU-IP-Address: 192.168.16.5
 	PSUIPAddress string `header:"style=simple,explode=false,name=PSU-IP-Address"`
 	// Puerto IP de la petición HTTP entre el PSU y el TPP si está disponible. Ejemplo: PSU-IP-Port: 443
@@ -110,6 +111,17 @@ type GetInfoPaymentRequest struct {
 	PaymentProduct GetInfoPaymentPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
 	// Producto de pago a usar.
 	PaymentService GetInfoPaymentPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+}
+
+func (g GetInfoPaymentRequest) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(g, "", false)
+}
+
+func (g *GetInfoPaymentRequest) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &g, "", false, false); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (o *GetInfoPaymentRequest) GetDigest() string {

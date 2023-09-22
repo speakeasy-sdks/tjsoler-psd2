@@ -19,38 +19,38 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionCancelacionPago(ctx, operations.GetEstadoSCAAutorizacionCancelacionPagoRequest{
-        ConsentID: psd2cajarural.String("laborum"),
-        Digest: "totam",
-        PSUAccept: psd2cajarural.String("incidunt"),
-        PSUAcceptCharset: psd2cajarural.String("aspernatur"),
-        PSUAcceptEncoding: psd2cajarural.String("dolores"),
-        PSUAcceptLanguage: psd2cajarural.String("distinctio"),
-        PSUDeviceID: psd2cajarural.String("facilis"),
-        PSUGeoLocation: psd2cajarural.String("aliquid"),
-        PSUHTTPMethod: psd2cajarural.String("quam"),
-        PSUIPAddress: "molestias",
-        PSUIPPort: psd2cajarural.String("temporibus"),
-        PSUUserAgent: psd2cajarural.String("qui"),
-        Signature: "neque",
-        TPPNokRedirectURI: psd2cajarural.String("fugit"),
-        TPPRedirectPreferred: psd2cajarural.String("magni"),
-        TPPRedirectURI: psd2cajarural.String("odio"),
-        TPPSignatureCertificate: "sunt",
-        XRequestID: "ullam",
-        Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoAspspRenta4,
-        AuthorisationID: "hic",
-        PaymentID: "voluptatem",
-        PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk,
-        PaymentService: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentServicePeriodicPayments,
+        ConsentID: tjsolerpsd2.String("soluta"),
+        Digest: "nobis",
+        PSUAccept: tjsolerpsd2.String("et"),
+        PSUAcceptCharset: tjsolerpsd2.String("saepe"),
+        PSUAcceptEncoding: tjsolerpsd2.String("ipsum"),
+        PSUAcceptLanguage: tjsolerpsd2.String("veritatis"),
+        PSUDeviceID: tjsolerpsd2.String("nobis"),
+        PSUGeoLocation: tjsolerpsd2.String("quos"),
+        PSUHTTPMethod: tjsolerpsd2.String("tempore"),
+        PSUIPAddress: "cupiditate",
+        PSUIPPort: tjsolerpsd2.String("aperiam"),
+        PSUUserAgent: tjsolerpsd2.String("delectus"),
+        Signature: "dolorem",
+        TPPNokRedirectURI: tjsolerpsd2.String("dolore"),
+        TPPRedirectPreferred: tjsolerpsd2.String("labore"),
+        TPPRedirectURI: tjsolerpsd2.String("adipisci"),
+        TPPSignatureCertificate: "dolorum",
+        XRequestID: "architecto",
+        Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoAspspBbvapt,
+        AuthorisationID: "aut",
+        PaymentID: "quas",
+        PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk,
+        PaymentService: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -87,36 +87,36 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionConsentimientosAIS(ctx, operations.GetEstadoSCAAutorizacionConsentimientosAISRequest{
-        ConsentID: psd2cajarural.String("nobis"),
-        Digest: "et",
-        PSUAccept: psd2cajarural.String("saepe"),
-        PSUAcceptCharset: psd2cajarural.String("ipsum"),
-        PSUAcceptEncoding: psd2cajarural.String("veritatis"),
-        PSUAcceptLanguage: psd2cajarural.String("nobis"),
-        PSUDeviceID: psd2cajarural.String("quos"),
-        PSUGeoLocation: psd2cajarural.String("tempore"),
-        PSUHTTPMethod: psd2cajarural.String("cupiditate"),
-        PSUIPAddress: "aperiam",
-        PSUIPPort: psd2cajarural.String("delectus"),
-        PSUUserAgent: psd2cajarural.String("dolorem"),
-        Signature: "dolore",
-        TPPNokRedirectURI: psd2cajarural.String("labore"),
-        TPPRedirectPreferred: psd2cajarural.String("adipisci"),
-        TPPRedirectURI: psd2cajarural.String("dolorum"),
-        TPPSignatureCertificate: "architecto",
-        XRequestID: "quae",
-        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISAspspRedsys,
-        AuthorisationID: "quas",
-        ConsentIDPathParameter: "itaque",
+        ConsentID: tjsolerpsd2.String("est"),
+        Digest: "repellendus",
+        PSUAccept: tjsolerpsd2.String("porro"),
+        PSUAcceptCharset: tjsolerpsd2.String("doloribus"),
+        PSUAcceptEncoding: tjsolerpsd2.String("ut"),
+        PSUAcceptLanguage: tjsolerpsd2.String("facilis"),
+        PSUDeviceID: tjsolerpsd2.String("cupiditate"),
+        PSUGeoLocation: tjsolerpsd2.String("qui"),
+        PSUHTTPMethod: tjsolerpsd2.String("quae"),
+        PSUIPAddress: "laudantium",
+        PSUIPPort: tjsolerpsd2.String("odio"),
+        PSUUserAgent: tjsolerpsd2.String("occaecati"),
+        Signature: "voluptatibus",
+        TPPNokRedirectURI: tjsolerpsd2.String("quisquam"),
+        TPPRedirectPreferred: tjsolerpsd2.String("vero"),
+        TPPRedirectURI: tjsolerpsd2.String("omnis"),
+        TPPSignatureCertificate: "quis",
+        XRequestID: "ipsum",
+        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISAspspAndbank,
+        AuthorisationID: "voluptate",
+        ConsentIDPathParameter: "consectetur",
     })
     if err != nil {
         log.Fatal(err)
@@ -153,36 +153,36 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionConsentimientosFCS(ctx, operations.GetEstadoSCAAutorizacionConsentimientosFCSRequest{
-        ConsentID: psd2cajarural.String("consequatur"),
-        Digest: "est",
-        PSUAccept: psd2cajarural.String("repellendus"),
-        PSUAcceptCharset: psd2cajarural.String("porro"),
-        PSUAcceptEncoding: psd2cajarural.String("doloribus"),
-        PSUAcceptLanguage: psd2cajarural.String("ut"),
-        PSUDeviceID: psd2cajarural.String("facilis"),
-        PSUGeoLocation: psd2cajarural.String("cupiditate"),
-        PSUHTTPMethod: psd2cajarural.String("qui"),
-        PSUIPAddress: "quae",
-        PSUIPPort: psd2cajarural.String("laudantium"),
-        PSUUserAgent: psd2cajarural.String("odio"),
-        Signature: "occaecati",
-        TPPNokRedirectURI: psd2cajarural.String("voluptatibus"),
-        TPPRedirectPreferred: psd2cajarural.String("quisquam"),
-        TPPRedirectURI: psd2cajarural.String("vero"),
-        TPPSignatureCertificate: "omnis",
-        XRequestID: "quis",
-        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSAspspBancSabadell,
-        AuthorisationID: "delectus",
-        ConsentIDPathParameter: "voluptate",
+        ConsentID: tjsolerpsd2.String("vero"),
+        Digest: "tenetur",
+        PSUAccept: tjsolerpsd2.String("dignissimos"),
+        PSUAcceptCharset: tjsolerpsd2.String("hic"),
+        PSUAcceptEncoding: tjsolerpsd2.String("distinctio"),
+        PSUAcceptLanguage: tjsolerpsd2.String("quod"),
+        PSUDeviceID: tjsolerpsd2.String("odio"),
+        PSUGeoLocation: tjsolerpsd2.String("similique"),
+        PSUHTTPMethod: tjsolerpsd2.String("facilis"),
+        PSUIPAddress: "vero",
+        PSUIPPort: tjsolerpsd2.String("ducimus"),
+        PSUUserAgent: tjsolerpsd2.String("dolore"),
+        Signature: "quibusdam",
+        TPPNokRedirectURI: tjsolerpsd2.String("illum"),
+        TPPRedirectPreferred: tjsolerpsd2.String("sequi"),
+        TPPRedirectURI: tjsolerpsd2.String("natus"),
+        TPPSignatureCertificate: "impedit",
+        XRequestID: "aut",
+        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSAspspWizink,
+        AuthorisationID: "exercitationem",
+        ConsentIDPathParameter: "nulla",
     })
     if err != nil {
         log.Fatal(err)
@@ -219,37 +219,37 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionInicioPago(ctx, operations.GetEstadoSCAAutorizacionInicioPagoRequest{
-        ConsentID: psd2cajarural.String("consectetur"),
-        Digest: "vero",
-        PSUAccept: psd2cajarural.String("tenetur"),
-        PSUAcceptCharset: psd2cajarural.String("dignissimos"),
-        PSUAcceptEncoding: psd2cajarural.String("hic"),
-        PSUAcceptLanguage: psd2cajarural.String("distinctio"),
-        PSUDeviceID: psd2cajarural.String("quod"),
-        PSUGeoLocation: psd2cajarural.String("odio"),
-        PSUHTTPMethod: psd2cajarural.String("similique"),
-        PSUIPAddress: "facilis",
-        PSUIPPort: psd2cajarural.String("vero"),
-        PSUUserAgent: psd2cajarural.String("ducimus"),
-        Signature: "dolore",
-        TPPNokRedirectURI: psd2cajarural.String("quibusdam"),
-        TPPRedirectPreferred: psd2cajarural.String("illum"),
-        TPPRedirectURI: psd2cajarural.String("sequi"),
-        TPPSignatureCertificate: "natus",
-        XRequestID: "impedit",
-        Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoAspspRedsys,
-        AuthorisationID: "voluptatibus",
-        PaymentID: "exercitationem",
-        PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk,
+        ConsentID: tjsolerpsd2.String("fugit"),
+        Digest: "porro",
+        PSUAccept: tjsolerpsd2.String("maiores"),
+        PSUAcceptCharset: tjsolerpsd2.String("doloribus"),
+        PSUAcceptEncoding: tjsolerpsd2.String("iusto"),
+        PSUAcceptLanguage: tjsolerpsd2.String("eligendi"),
+        PSUDeviceID: tjsolerpsd2.String("ducimus"),
+        PSUGeoLocation: tjsolerpsd2.String("alias"),
+        PSUHTTPMethod: tjsolerpsd2.String("officia"),
+        PSUIPAddress: "tempora",
+        PSUIPPort: tjsolerpsd2.String("ipsam"),
+        PSUUserAgent: tjsolerpsd2.String("ea"),
+        Signature: "aspernatur",
+        TPPNokRedirectURI: tjsolerpsd2.String("vel"),
+        TPPRedirectPreferred: tjsolerpsd2.String("possimus"),
+        TPPRedirectURI: tjsolerpsd2.String("magnam"),
+        TPPSignatureCertificate: "ratione",
+        XRequestID: "ex",
+        Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoAspspEvobanco,
+        AuthorisationID: "dicta",
+        PaymentID: "dolor",
+        PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk,
         PaymentService: operations.GetEstadoSCAAutorizacionInicioPagoPaymentServicePayments,
     })
     if err != nil {

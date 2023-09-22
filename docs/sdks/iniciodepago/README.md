@@ -18,52 +18,52 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiateRecurringPayment(ctx, operations.InitiateRecurringPaymentRequest{
-        ConsentID: psd2cajarural.String("illum"),
-        Digest: "maiores",
-        PSUAccept: psd2cajarural.String("rerum"),
-        PSUAcceptCharset: psd2cajarural.String("dicta"),
-        PSUAcceptEncoding: psd2cajarural.String("magnam"),
-        PSUAcceptLanguage: psd2cajarural.String("cumque"),
-        PSUCorporateID: psd2cajarural.String("facere"),
-        PSUCorporateIDType: psd2cajarural.String("ea"),
-        PSUDeviceID: psd2cajarural.String("aliquid"),
-        PSUGeoLocation: psd2cajarural.String("laborum"),
-        PSUHTTPMethod: psd2cajarural.String("accusamus"),
-        PsuID: psd2cajarural.String("non"),
-        PSUIDType: psd2cajarural.String("occaecati"),
-        PSUIPAddress: "enim",
-        PSUIPPort: psd2cajarural.String("accusamus"),
-        PSUUserAgent: psd2cajarural.String("delectus"),
+        ConsentID: tjsolerpsd2.String("sapiente"),
+        Digest: "amet",
+        PSUAccept: tjsolerpsd2.String("deserunt"),
+        PSUAcceptCharset: tjsolerpsd2.String("nisi"),
+        PSUAcceptEncoding: tjsolerpsd2.String("vel"),
+        PSUAcceptLanguage: tjsolerpsd2.String("natus"),
+        PSUCorporateID: tjsolerpsd2.String("omnis"),
+        PSUCorporateIDType: tjsolerpsd2.String("molestiae"),
+        PSUDeviceID: tjsolerpsd2.String("perferendis"),
+        PSUGeoLocation: tjsolerpsd2.String("nihil"),
+        PSUHTTPMethod: tjsolerpsd2.String("magnam"),
+        PsuID: tjsolerpsd2.String("distinctio"),
+        PSUIDType: tjsolerpsd2.String("id"),
+        PSUIPAddress: "labore",
+        PSUIPPort: tjsolerpsd2.String("labore"),
+        PSUUserAgent: tjsolerpsd2.String("suscipit"),
         RequestPeriodicPayment: shared.RequestPeriodicPayment{
-            DayOfExecution: psd2cajarural.String("quidem"),
-            EndDate: psd2cajarural.String("provident"),
-            ExecutionRule: psd2cajarural.String("nam"),
-            Frequency: psd2cajarural.String("id"),
-            StartDate: "blanditiis",
+            DayOfExecution: tjsolerpsd2.String("natus"),
+            EndDate: tjsolerpsd2.String("nobis"),
+            ExecutionRule: tjsolerpsd2.String("eum"),
+            Frequency: tjsolerpsd2.String("vero"),
+            StartDate: "aspernatur",
         },
-        Signature: "deleniti",
-        TPPBrandLoggingInformation: psd2cajarural.String("sapiente"),
-        TPPExplicitAuthorisationPreferred: psd2cajarural.Bool(false),
-        TPPNokRedirectURI: psd2cajarural.String("amet"),
-        TPPNotificationContentPreferred: psd2cajarural.String("deserunt"),
-        TPPNotificationURI: psd2cajarural.String("nisi"),
-        TPPRedirectPreferred: psd2cajarural.Bool(false),
-        TPPRedirectURI: psd2cajarural.String("vel"),
-        TPPRejectionNoFundsPreferred: psd2cajarural.String("natus"),
-        TPPSignatureCertificate: "omnis",
-        XRequestID: "molestiae",
-        Aspsp: "perferendis",
-        PaymentProduct: operations.InitiateRecurringPaymentPaymentProductInstantSepaCreditTransfers,
+        Signature: "architecto",
+        TPPBrandLoggingInformation: tjsolerpsd2.String("magnam"),
+        TPPExplicitAuthorisationPreferred: tjsolerpsd2.Bool(false),
+        TPPNokRedirectURI: tjsolerpsd2.String("et"),
+        TPPNotificationContentPreferred: tjsolerpsd2.String("excepturi"),
+        TPPNotificationURI: tjsolerpsd2.String("ullam"),
+        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
+        TPPRedirectURI: tjsolerpsd2.String("provident"),
+        TPPRejectionNoFundsPreferred: tjsolerpsd2.String("quos"),
+        TPPSignatureCertificate: "sint",
+        XRequestID: "accusantium",
+        Aspsp: "mollitia",
+        PaymentProduct: operations.InitiateRecurringPaymentPaymentProductCrossBorderCreditTransfers,
     })
     if err != nil {
         log.Fatal(err)
@@ -100,55 +100,55 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiationBulkPayment(ctx, operations.InitiationBulkPaymentRequest{
-        ConsentID: psd2cajarural.String("magnam"),
-        Digest: "distinctio",
-        PSUAccept: psd2cajarural.String("id"),
-        PSUAcceptCharset: psd2cajarural.String("labore"),
-        PSUAcceptEncoding: psd2cajarural.String("labore"),
-        PSUAcceptLanguage: psd2cajarural.String("suscipit"),
-        PSUCorporateID: psd2cajarural.String("natus"),
-        PSUCorporateIDType: psd2cajarural.String("nobis"),
-        PSUDeviceID: psd2cajarural.String("eum"),
-        PSUGeoLocation: psd2cajarural.String("vero"),
-        PSUHTTPMethod: psd2cajarural.String("aspernatur"),
-        PsuID: psd2cajarural.String("architecto"),
-        PSUIDType: psd2cajarural.String("magnam"),
-        PSUIPAddress: "et",
-        PSUIPPort: psd2cajarural.String("excepturi"),
-        PSUUserAgent: psd2cajarural.String("ullam"),
+        ConsentID: tjsolerpsd2.String("mollitia"),
+        Digest: "ad",
+        PSUAccept: tjsolerpsd2.String("eum"),
+        PSUAcceptCharset: tjsolerpsd2.String("dolor"),
+        PSUAcceptEncoding: tjsolerpsd2.String("necessitatibus"),
+        PSUAcceptLanguage: tjsolerpsd2.String("odit"),
+        PSUCorporateID: tjsolerpsd2.String("nemo"),
+        PSUCorporateIDType: tjsolerpsd2.String("quasi"),
+        PSUDeviceID: tjsolerpsd2.String("iure"),
+        PSUGeoLocation: tjsolerpsd2.String("doloribus"),
+        PSUHTTPMethod: tjsolerpsd2.String("debitis"),
+        PsuID: tjsolerpsd2.String("eius"),
+        PSUIDType: tjsolerpsd2.String("maxime"),
+        PSUIPAddress: "deleniti",
+        PSUIPPort: tjsolerpsd2.String("facilis"),
+        PSUUserAgent: tjsolerpsd2.String("in"),
         RequestBulkPayment: shared.RequestBulkPayment{
-            BatchBookingPreferred: psd2cajarural.Bool(true),
+            BatchBookingPreferred: tjsolerpsd2.Bool(true),
             DebtorAccount: shared.RequestBulkPaymentDebtorAccount{},
-            PaymentInformationID: psd2cajarural.String("provident"),
+            PaymentInformationID: tjsolerpsd2.String("architecto"),
             Payments: []shared.RequestBulkPaymentPayments{
                 shared.RequestBulkPaymentPayments{},
             },
-            RequestedExecutionDate: psd2cajarural.String("quos"),
-            RequestedExecutionTime: psd2cajarural.String("sint"),
+            RequestedExecutionDate: tjsolerpsd2.String("architecto"),
+            RequestedExecutionTime: tjsolerpsd2.String("repudiandae"),
         },
-        Signature: "accusantium",
-        TPPBrandLoggingInformation: psd2cajarural.String("mollitia"),
-        TPPExplicitAuthorisationPreferred: psd2cajarural.Bool(false),
-        TPPNokRedirectURI: psd2cajarural.String("reiciendis"),
-        TPPNotificationContentPreferred: psd2cajarural.String("mollitia"),
-        TPPNotificationURI: psd2cajarural.String("ad"),
-        TPPRedirectPreferred: psd2cajarural.Bool(false),
-        TPPRedirectURI: psd2cajarural.String("eum"),
-        TPPRejectionNoFundsPreferred: psd2cajarural.String("dolor"),
-        TPPSignatureCertificate: "necessitatibus",
-        XRequestID: "odit",
-        Aspsp: "nemo",
-        PaymentProduct: operations.InitiationBulkPaymentPaymentProductSepaCreditTransfers,
+        Signature: "ullam",
+        TPPBrandLoggingInformation: tjsolerpsd2.String("expedita"),
+        TPPExplicitAuthorisationPreferred: tjsolerpsd2.Bool(false),
+        TPPNokRedirectURI: tjsolerpsd2.String("nihil"),
+        TPPNotificationContentPreferred: tjsolerpsd2.String("repellat"),
+        TPPNotificationURI: tjsolerpsd2.String("quibusdam"),
+        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
+        TPPRedirectURI: tjsolerpsd2.String("sed"),
+        TPPRejectionNoFundsPreferred: tjsolerpsd2.String("saepe"),
+        TPPSignatureCertificate: "pariatur",
+        XRequestID: "accusantium",
+        Aspsp: "consequuntur",
+        PaymentProduct: operations.InitiationBulkPaymentPaymentProductTarget2Payments,
     })
     if err != nil {
         log.Fatal(err)
@@ -185,73 +185,73 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiationPayment(ctx, operations.InitiationPaymentRequest{
-        ConsentID: psd2cajarural.String("iure"),
-        Digest: "doloribus",
-        PSUAccept: psd2cajarural.String("debitis"),
-        PSUAcceptCharset: psd2cajarural.String("eius"),
-        PSUAcceptEncoding: psd2cajarural.String("maxime"),
-        PSUAcceptLanguage: psd2cajarural.String("deleniti"),
-        PSUCorporateID: psd2cajarural.String("facilis"),
-        PSUCorporateIDType: psd2cajarural.String("in"),
-        PSUDeviceID: psd2cajarural.String("architecto"),
-        PSUGeoLocation: psd2cajarural.String("architecto"),
-        PSUHTTPMethod: psd2cajarural.String("repudiandae"),
-        PsuID: psd2cajarural.String("ullam"),
-        PSUIDType: psd2cajarural.String("expedita"),
-        PSUIPAddress: "nihil",
-        PSUIPPort: psd2cajarural.String("repellat"),
-        PSUUserAgent: psd2cajarural.String("quibusdam"),
-        Signature: "sed",
+        ConsentID: tjsolerpsd2.String("natus"),
+        Digest: "magni",
+        PSUAccept: tjsolerpsd2.String("sunt"),
+        PSUAcceptCharset: tjsolerpsd2.String("quo"),
+        PSUAcceptEncoding: tjsolerpsd2.String("illum"),
+        PSUAcceptLanguage: tjsolerpsd2.String("pariatur"),
+        PSUCorporateID: tjsolerpsd2.String("maxime"),
+        PSUCorporateIDType: tjsolerpsd2.String("ea"),
+        PSUDeviceID: tjsolerpsd2.String("excepturi"),
+        PSUGeoLocation: tjsolerpsd2.String("odit"),
+        PSUHTTPMethod: tjsolerpsd2.String("ea"),
+        PsuID: tjsolerpsd2.String("accusantium"),
+        PSUIDType: tjsolerpsd2.String("ab"),
+        PSUIPAddress: "maiores",
+        PSUIPPort: tjsolerpsd2.String("quidem"),
+        PSUUserAgent: tjsolerpsd2.String("ipsam"),
+        Signature: "voluptate",
         SinglePayment: shared.SinglePayment{
-            ChargeBearer: psd2cajarural.String("SLEV"),
+            ChargeBearer: tjsolerpsd2.String("SLEV"),
             CreditorAccount: &shared.SinglePaymentCreditorAccount{},
             CreditorAddress: &shared.SinglePaymentCreditorAddress{},
-            CreditorAgent: psd2cajarural.String("XXXLESMMXXX"),
-            CreditorID: psd2cajarural.String("saepe"),
-            CreditorName: psd2cajarural.String("Nombre"),
-            CreditorNameAndAddress: psd2cajarural.String("pariatur"),
-            CurrencyOfTranfer: psd2cajarural.String("accusantium"),
+            CreditorAgent: tjsolerpsd2.String("XXXLESMMXXX"),
+            CreditorID: tjsolerpsd2.String("autem"),
+            CreditorName: tjsolerpsd2.String("Nombre"),
+            CreditorNameAndAddress: tjsolerpsd2.String("nam"),
+            CurrencyOfTranfer: tjsolerpsd2.String("eaque"),
             DebtorAccount: &shared.SinglePaymentDebtorAccount{},
-            DebtorID: psd2cajarural.String("consequuntur"),
-            DebtorName: psd2cajarural.String("praesentium"),
-            EndToEndIdentification: psd2cajarural.String("natus"),
+            DebtorID: tjsolerpsd2.String("pariatur"),
+            DebtorName: tjsolerpsd2.String("nemo"),
+            EndToEndIdentification: tjsolerpsd2.String("voluptatibus"),
             ExchangeRateInformation: &shared.SinglePaymentExchangeRateInformation{},
             InstructedAmount: &shared.SinglePaymentInstructedAmount{},
-            InstructionIdentification: psd2cajarural.String("magni"),
-            PurposeCode: psd2cajarural.String("sunt"),
+            InstructionIdentification: tjsolerpsd2.String("perferendis"),
+            PurposeCode: tjsolerpsd2.String("fugiat"),
             RemittanceInformationStructured: &shared.SinglePaymentRemittanceInformationStructured{},
             RemittanceInformationStructuredArray: &shared.SinglePaymentRemittanceInformationStructuredArray{},
-            RemittanceInformationUnstructured: psd2cajarural.String("Informacion adicional"),
+            RemittanceInformationUnstructured: tjsolerpsd2.String("Informacion adicional"),
             RemittanceInformationUnstructuredArray: []string{
-                "quo",
+                "amet",
             },
-            RequestedExecutionDate: psd2cajarural.String("illum"),
-            RequestedExecutionTime: psd2cajarural.String("pariatur"),
-            ServiceLevel: psd2cajarural.String("maxime"),
-            UltimateDebtor: psd2cajarural.String("ea"),
+            RequestedExecutionDate: tjsolerpsd2.String("aut"),
+            RequestedExecutionTime: tjsolerpsd2.String("cumque"),
+            ServiceLevel: tjsolerpsd2.String("corporis"),
+            UltimateDebtor: tjsolerpsd2.String("hic"),
         },
-        TPPBrandLoggingInformation: psd2cajarural.String("excepturi"),
-        TPPExplicitAuthorisationPreferred: psd2cajarural.Bool(false),
-        TPPNokRedirectURI: psd2cajarural.String("odit"),
-        TPPNotificationContentPreferred: psd2cajarural.String("ea"),
-        TPPNotificationURI: psd2cajarural.String("accusantium"),
-        TPPRedirectPreferred: psd2cajarural.Bool(false),
-        TPPRedirectURI: psd2cajarural.String("ab"),
-        TPPRejectionNoFundsPreferred: psd2cajarural.String("maiores"),
-        TPPSignatureCertificate: "quidem",
-        XRequestID: "ipsam",
-        Aspsp: "voluptate",
-        PaymentProduct: operations.InitiationPaymentPaymentProductInstantSepaCreditTransfers,
+        TPPBrandLoggingInformation: tjsolerpsd2.String("libero"),
+        TPPExplicitAuthorisationPreferred: tjsolerpsd2.Bool(false),
+        TPPNokRedirectURI: tjsolerpsd2.String("nobis"),
+        TPPNotificationContentPreferred: tjsolerpsd2.String("dolores"),
+        TPPNotificationURI: tjsolerpsd2.String("quis"),
+        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
+        TPPRedirectURI: tjsolerpsd2.String("totam"),
+        TPPRejectionNoFundsPreferred: tjsolerpsd2.String("dignissimos"),
+        TPPSignatureCertificate: "eaque",
+        XRequestID: "quis",
+        Aspsp: "nesciunt",
+        PaymentProduct: operations.InitiationPaymentPaymentProductSepaCreditTransfers,
     })
     if err != nil {
         log.Fatal(err)

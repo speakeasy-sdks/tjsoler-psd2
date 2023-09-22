@@ -17,34 +17,34 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDeConsentimiento.GetConsentStatus(ctx, operations.GetConsentStatusRequest{
-        Digest: "porro",
-        PSUAccept: psd2cajarural.String("maiores"),
-        PSUAcceptCharset: psd2cajarural.String("doloribus"),
-        PSUAcceptEncoding: psd2cajarural.String("iusto"),
-        PSUAcceptLanguage: psd2cajarural.String("eligendi"),
-        PSUDeviceID: psd2cajarural.String("ducimus"),
-        PSUGeoLocation: psd2cajarural.String("alias"),
-        PSUHTTPMethod: psd2cajarural.String("officia"),
-        PSUIPAddress: psd2cajarural.String("tempora"),
-        PSUIPPort: psd2cajarural.String("ipsam"),
-        PSUUserAgent: psd2cajarural.String("ea"),
-        Signature: "aspernatur",
-        TPPNokRedirectURI: psd2cajarural.String("vel"),
-        TPPRedirectPreferred: psd2cajarural.String("possimus"),
-        TPPRedirectURI: psd2cajarural.String("magnam"),
-        TPPSignatureCertificate: "ratione",
-        XRequestID: "ex",
-        Aspsp: "laudantium",
-        ConsentID: "dicta",
+        Digest: "ex",
+        PSUAccept: tjsolerpsd2.String("nulla"),
+        PSUAcceptCharset: tjsolerpsd2.String("excepturi"),
+        PSUAcceptEncoding: tjsolerpsd2.String("voluptatibus"),
+        PSUAcceptLanguage: tjsolerpsd2.String("nostrum"),
+        PSUDeviceID: tjsolerpsd2.String("sapiente"),
+        PSUGeoLocation: tjsolerpsd2.String("quisquam"),
+        PSUHTTPMethod: tjsolerpsd2.String("saepe"),
+        PSUIPAddress: tjsolerpsd2.String("ea"),
+        PSUIPPort: tjsolerpsd2.String("impedit"),
+        PSUUserAgent: tjsolerpsd2.String("corporis"),
+        Signature: "veniam",
+        TPPNokRedirectURI: tjsolerpsd2.String("aliquid"),
+        TPPRedirectPreferred: tjsolerpsd2.String("inventore"),
+        TPPRedirectURI: tjsolerpsd2.String("magnam"),
+        TPPSignatureCertificate: "ea",
+        XRequestID: "quo",
+        Aspsp: "consectetur",
+        ConsentID: "recusandae",
     })
     if err != nil {
         log.Fatal(err)
@@ -81,34 +81,34 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDeConsentimiento.GetConsentsConfirmationOfFunds(ctx, operations.GetConsentsConfirmationOfFundsRequest{
-        Digest: "dolor",
-        PSUAccept: psd2cajarural.String("maiores"),
-        PSUAcceptCharset: psd2cajarural.String("quasi"),
-        PSUAcceptEncoding: psd2cajarural.String("ex"),
-        PSUAcceptLanguage: psd2cajarural.String("nulla"),
-        PSUDeviceID: psd2cajarural.String("excepturi"),
-        PSUGeoLocation: psd2cajarural.String("voluptatibus"),
-        PSUHTTPMethod: psd2cajarural.String("nostrum"),
-        PSUIPAddress: psd2cajarural.String("sapiente"),
-        PSUIPPort: psd2cajarural.String("quisquam"),
-        PSUUserAgent: psd2cajarural.String("saepe"),
-        Signature: "ea",
-        TPPNokRedirectURI: psd2cajarural.String("impedit"),
-        TPPRedirectPreferred: psd2cajarural.String("corporis"),
-        TPPRedirectURI: psd2cajarural.String("veniam"),
-        TPPSignatureCertificate: "aliquid",
-        XRequestID: "inventore",
-        Aspsp: "magnam",
-        ConsentID: "ea",
+        Digest: "aspernatur",
+        PSUAccept: tjsolerpsd2.String("minima"),
+        PSUAcceptCharset: tjsolerpsd2.String("eaque"),
+        PSUAcceptEncoding: tjsolerpsd2.String("a"),
+        PSUAcceptLanguage: tjsolerpsd2.String("libero"),
+        PSUDeviceID: tjsolerpsd2.String("aut"),
+        PSUGeoLocation: tjsolerpsd2.String("aut"),
+        PSUHTTPMethod: tjsolerpsd2.String("deleniti"),
+        PSUIPAddress: tjsolerpsd2.String("impedit"),
+        PSUIPPort: tjsolerpsd2.String("aliquam"),
+        PSUUserAgent: tjsolerpsd2.String("fugit"),
+        Signature: "accusamus",
+        TPPNokRedirectURI: tjsolerpsd2.String("inventore"),
+        TPPRedirectPreferred: tjsolerpsd2.String("non"),
+        TPPRedirectURI: tjsolerpsd2.String("et"),
+        TPPSignatureCertificate: "dolorum",
+        XRequestID: "laborum",
+        Aspsp: "placeat",
+        ConsentID: "velit",
     })
     if err != nil {
         log.Fatal(err)

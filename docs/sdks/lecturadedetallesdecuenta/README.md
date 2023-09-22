@@ -16,33 +16,33 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.LecturaDeDetallesDeCuenta.GetAccountIdv11(ctx, operations.GetAccountIdv11Request{
-        ConsentID: "amet",
-        Digest: "optio",
-        PSUAccept: psd2cajarural.String("accusamus"),
-        PSUAcceptCharset: psd2cajarural.String("ad"),
-        PSUAcceptEncoding: psd2cajarural.String("saepe"),
-        PSUAcceptLanguage: psd2cajarural.String("suscipit"),
-        PSUDeviceID: psd2cajarural.String("deserunt"),
-        PSUGeoLocation: psd2cajarural.String("provident"),
-        PSUHTTPMethod: psd2cajarural.String("minima"),
-        PSUIPAddress: psd2cajarural.String("repellendus"),
-        PSUIPPort: psd2cajarural.String("totam"),
-        PSUUserAgent: psd2cajarural.String("similique"),
-        Signature: "alias",
-        TPPSignatureCertificate: "at",
-        XRequestID: "quaerat",
-        AccountID: "tempora",
-        Aspsp: "vel",
-        WithBalance: psd2cajarural.Bool(false),
+        ConsentID: "esse",
+        Digest: "harum",
+        PSUAccept: tjsolerpsd2.String("iusto"),
+        PSUAcceptCharset: tjsolerpsd2.String("ipsum"),
+        PSUAcceptEncoding: tjsolerpsd2.String("quisquam"),
+        PSUAcceptLanguage: tjsolerpsd2.String("tenetur"),
+        PSUDeviceID: tjsolerpsd2.String("amet"),
+        PSUGeoLocation: tjsolerpsd2.String("tempore"),
+        PSUHTTPMethod: tjsolerpsd2.String("accusamus"),
+        PSUIPAddress: tjsolerpsd2.String("numquam"),
+        PSUIPPort: tjsolerpsd2.String("enim"),
+        PSUUserAgent: tjsolerpsd2.String("dolorem"),
+        Signature: "sapiente",
+        TPPSignatureCertificate: "totam",
+        XRequestID: "nihil",
+        AccountID: "sit",
+        Aspsp: "expedita",
+        WithBalance: tjsolerpsd2.Bool(false),
     })
     if err != nil {
         log.Fatal(err)

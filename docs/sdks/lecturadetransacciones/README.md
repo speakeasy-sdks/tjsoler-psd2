@@ -16,38 +16,38 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.LecturaDeTransacciones.AccountsTrasactions(ctx, operations.AccountsTrasactionsRequest{
-        ConsentID: "dolorem",
-        Digest: "sapiente",
-        PSUAccept: psd2cajarural.String("totam"),
-        PSUAcceptCharset: psd2cajarural.String("nihil"),
-        PSUAcceptEncoding: psd2cajarural.String("sit"),
-        PSUAcceptLanguage: psd2cajarural.String("expedita"),
-        PSUDeviceID: psd2cajarural.String("neque"),
-        PSUGeoLocation: psd2cajarural.String("sed"),
-        PSUHTTPMethod: psd2cajarural.String("vel"),
-        PSUIPAddress: psd2cajarural.String("libero"),
-        PSUIPPort: psd2cajarural.String("voluptas"),
-        PSUUserAgent: psd2cajarural.String("deserunt"),
-        Signature: "quam",
-        TPPSignatureCertificate: "ipsum",
-        XRequestID: "incidunt",
-        AccountID: "qui",
-        Aspsp: "cupiditate",
-        BookingStatus: "maxime",
-        DateFrom: psd2cajarural.String("pariatur"),
-        DateTo: psd2cajarural.String("soluta"),
-        DeltaList: psd2cajarural.Bool(false),
-        EntryReferenceFrom: psd2cajarural.String("dicta"),
-        WithBalance: psd2cajarural.Bool(false),
+        ConsentID: "totam",
+        Digest: "incidunt",
+        PSUAccept: tjsolerpsd2.String("aspernatur"),
+        PSUAcceptCharset: tjsolerpsd2.String("dolores"),
+        PSUAcceptEncoding: tjsolerpsd2.String("distinctio"),
+        PSUAcceptLanguage: tjsolerpsd2.String("facilis"),
+        PSUDeviceID: tjsolerpsd2.String("aliquid"),
+        PSUGeoLocation: tjsolerpsd2.String("quam"),
+        PSUHTTPMethod: tjsolerpsd2.String("molestias"),
+        PSUIPAddress: tjsolerpsd2.String("temporibus"),
+        PSUIPPort: tjsolerpsd2.String("qui"),
+        PSUUserAgent: tjsolerpsd2.String("neque"),
+        Signature: "fugit",
+        TPPSignatureCertificate: "magni",
+        XRequestID: "odio",
+        AccountID: "sunt",
+        Aspsp: "ullam",
+        BookingStatus: "nam",
+        DateFrom: tjsolerpsd2.String("hic"),
+        DateTo: tjsolerpsd2.String("voluptatem"),
+        DeltaList: tjsolerpsd2.Bool(false),
+        EntryReferenceFrom: tjsolerpsd2.String("cumque"),
+        WithBalance: tjsolerpsd2.Bool(false),
     })
     if err != nil {
         log.Fatal(err)

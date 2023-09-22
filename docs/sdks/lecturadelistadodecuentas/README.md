@@ -16,32 +16,32 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.LecturaDeListadoDeCuentas.GetAccountListv11(ctx, operations.GetAccountListv11Request{
-        ConsentID: "quod",
-        Digest: "officiis",
-        PSUAccept: psd2cajarural.String("qui"),
-        PSUAcceptCharset: psd2cajarural.String("dolorum"),
-        PSUAcceptEncoding: psd2cajarural.String("a"),
-        PSUAcceptLanguage: psd2cajarural.String("esse"),
-        PSUDeviceID: psd2cajarural.String("harum"),
-        PSUGeoLocation: psd2cajarural.String("iusto"),
-        PSUHTTPMethod: psd2cajarural.String("ipsum"),
-        PSUIPAddress: psd2cajarural.String("quisquam"),
-        PSUIPPort: psd2cajarural.String("tenetur"),
-        PSUUserAgent: psd2cajarural.String("amet"),
-        Signature: "tempore",
-        TPPSignatureCertificate: "accusamus",
-        XRequestID: "numquam",
-        Aspsp: "enim",
-        WithBalance: psd2cajarural.Bool(false),
+        ConsentID: "neque",
+        Digest: "sed",
+        PSUAccept: tjsolerpsd2.String("vel"),
+        PSUAcceptCharset: tjsolerpsd2.String("libero"),
+        PSUAcceptEncoding: tjsolerpsd2.String("voluptas"),
+        PSUAcceptLanguage: tjsolerpsd2.String("deserunt"),
+        PSUDeviceID: tjsolerpsd2.String("quam"),
+        PSUGeoLocation: tjsolerpsd2.String("ipsum"),
+        PSUHTTPMethod: tjsolerpsd2.String("incidunt"),
+        PSUIPAddress: tjsolerpsd2.String("qui"),
+        PSUIPPort: tjsolerpsd2.String("cupiditate"),
+        PSUUserAgent: tjsolerpsd2.String("maxime"),
+        Signature: "pariatur",
+        TPPSignatureCertificate: "soluta",
+        XRequestID: "dicta",
+        Aspsp: "laborum",
+        WithBalance: tjsolerpsd2.Bool(false),
     })
     if err != nil {
         log.Fatal(err)

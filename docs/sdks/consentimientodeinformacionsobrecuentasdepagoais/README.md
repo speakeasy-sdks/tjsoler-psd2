@@ -16,40 +16,40 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ConsentimientoDeInformacionSobreCuentasDePagoAIS.PostConsents(ctx, operations.PostConsentsRequest{
-        Digest: "dicta",
-        PSUAccept: psd2cajarural.String("corporis"),
-        PSUAcceptCharset: psd2cajarural.String("dolore"),
-        PSUAcceptEncoding: psd2cajarural.String("iusto"),
-        PSUAcceptLanguage: psd2cajarural.String("dicta"),
-        PSUCorporateID: psd2cajarural.String("harum"),
-        PSUCorporateIDType: psd2cajarural.String("enim"),
-        PSUDeviceID: psd2cajarural.String("accusamus"),
-        PSUGeoLocation: psd2cajarural.String("commodi"),
-        PSUHTTPMethod: psd2cajarural.String("repudiandae"),
-        PsuID: psd2cajarural.String("quae"),
-        PSUIDType: psd2cajarural.String("ipsum"),
-        PSUIPAddress: "quidem",
-        PSUIPPort: psd2cajarural.String("molestias"),
-        PSUUserAgent: psd2cajarural.String("excepturi"),
-        RequestBody: []byte("pariatur"),
-        Signature: "modi",
-        TPPBrandLoggingInformation: psd2cajarural.String("praesentium"),
-        TPPNokRedirectURI: psd2cajarural.String("rem"),
-        TPPRedirectPreferred: psd2cajarural.Bool(false),
-        TPPRedirectURI: psd2cajarural.String("voluptates"),
-        TPPSignatureCertificate: "quasi",
-        XRequestID: "repudiandae",
-        Aspsp: "sint",
+        Digest: "sint",
+        PSUAccept: tjsolerpsd2.String("veritatis"),
+        PSUAcceptCharset: tjsolerpsd2.String("itaque"),
+        PSUAcceptEncoding: tjsolerpsd2.String("incidunt"),
+        PSUAcceptLanguage: tjsolerpsd2.String("enim"),
+        PSUCorporateID: tjsolerpsd2.String("consequatur"),
+        PSUCorporateIDType: tjsolerpsd2.String("est"),
+        PSUDeviceID: tjsolerpsd2.String("quibusdam"),
+        PSUGeoLocation: tjsolerpsd2.String("explicabo"),
+        PSUHTTPMethod: tjsolerpsd2.String("deserunt"),
+        PsuID: tjsolerpsd2.String("distinctio"),
+        PSUIDType: tjsolerpsd2.String("quibusdam"),
+        PSUIPAddress: "labore",
+        PSUIPPort: tjsolerpsd2.String("modi"),
+        PSUUserAgent: tjsolerpsd2.String("qui"),
+        RequestBody: []byte("aliquid"),
+        Signature: "cupiditate",
+        TPPBrandLoggingInformation: tjsolerpsd2.String("quos"),
+        TPPNokRedirectURI: tjsolerpsd2.String("perferendis"),
+        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
+        TPPRedirectURI: tjsolerpsd2.String("magni"),
+        TPPSignatureCertificate: "assumenda",
+        XRequestID: "ipsam",
+        Aspsp: "alias",
     })
     if err != nil {
         log.Fatal(err)

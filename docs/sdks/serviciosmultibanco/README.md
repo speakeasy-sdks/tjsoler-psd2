@@ -25,32 +25,32 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-        Digest: "in",
-        PSUAccept: psd2cajarural.String("eius"),
-        PSUAcceptCharset: psd2cajarural.String("libero"),
-        PSUAcceptEncoding: psd2cajarural.String("illum"),
-        PSUAcceptLanguage: psd2cajarural.String("soluta"),
-        PSUDeviceID: psd2cajarural.String("accusantium"),
-        PSUGeoLocation: psd2cajarural.String("aliquam"),
-        PSUHTTPMethod: psd2cajarural.String("sapiente"),
-        PSUIPAddress: "dicta",
-        PSUIPPort: psd2cajarural.String("ullam"),
-        PSUUserAgent: psd2cajarural.String("reprehenderit"),
-        Signature: "ullam",
-        TPPSignatureCertificate: "nisi",
-        XRequestID: "aut",
-        AspName: "voluptatum",
-        MultibancoPaymentType: "qui",
-        PaymentID: "quibusdam",
+        Digest: "omnis",
+        PSUAccept: tjsolerpsd2.String("tenetur"),
+        PSUAcceptCharset: tjsolerpsd2.String("quasi"),
+        PSUAcceptEncoding: tjsolerpsd2.String("at"),
+        PSUAcceptLanguage: tjsolerpsd2.String("et"),
+        PSUDeviceID: tjsolerpsd2.String("voluptate"),
+        PSUGeoLocation: tjsolerpsd2.String("ipsa"),
+        PSUHTTPMethod: tjsolerpsd2.String("minima"),
+        PSUIPAddress: "veritatis",
+        PSUIPPort: tjsolerpsd2.String("consectetur"),
+        PSUUserAgent: tjsolerpsd2.String("adipisci"),
+        Signature: "iste",
+        TPPSignatureCertificate: "temporibus",
+        XRequestID: "accusantium",
+        AspName: "rem",
+        MultibancoPaymentType: "aut",
+        PaymentID: "laudantium",
     })
     if err != nil {
         log.Fatal(err)
@@ -87,24 +87,24 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetMultibancoCatalogue(ctx, operations.GetMultibancoCatalogueRequest{
-        Digest: "ex",
-        Signature: "deleniti",
-        TPPSignatureCertificate: "itaque",
-        XRequestID: "dolorum",
-        AspName: "architecto",
-        InstructedAmount: psd2cajarural.String("omnis"),
-        MultibancoPaymentType: "tenetur",
-        PaymentReference: psd2cajarural.String("quasi"),
-        RequestedExecutionDate: psd2cajarural.String("at"),
+        Digest: "eum",
+        Signature: "mollitia",
+        TPPSignatureCertificate: "ab",
+        XRequestID: "corrupti",
+        AspName: "non",
+        InstructedAmount: tjsolerpsd2.String("voluptatem"),
+        MultibancoPaymentType: "dolor",
+        PaymentReference: tjsolerpsd2.String("occaecati"),
+        RequestedExecutionDate: tjsolerpsd2.String("numquam"),
     })
     if err != nil {
         log.Fatal(err)
@@ -141,32 +141,32 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-        Digest: "et",
-        PSUAccept: psd2cajarural.String("voluptate"),
-        PSUAcceptCharset: psd2cajarural.String("ipsa"),
-        PSUAcceptEncoding: psd2cajarural.String("minima"),
-        PSUAcceptLanguage: psd2cajarural.String("veritatis"),
-        PSUDeviceID: psd2cajarural.String("consectetur"),
-        PSUGeoLocation: psd2cajarural.String("adipisci"),
-        PSUHTTPMethod: psd2cajarural.String("iste"),
-        PSUIPAddress: "temporibus",
-        PSUIPPort: psd2cajarural.String("accusantium"),
-        PSUUserAgent: psd2cajarural.String("rem"),
-        Signature: "aut",
-        TPPSignatureCertificate: "laudantium",
-        XRequestID: "eum",
-        AspName: "mollitia",
-        MultibancoPaymentType: "ab",
-        PaymentID: "corrupti",
+        Digest: "impedit",
+        PSUAccept: tjsolerpsd2.String("explicabo"),
+        PSUAcceptCharset: tjsolerpsd2.String("voluptas"),
+        PSUAcceptEncoding: tjsolerpsd2.String("aut"),
+        PSUAcceptLanguage: tjsolerpsd2.String("dignissimos"),
+        PSUDeviceID: tjsolerpsd2.String("dicta"),
+        PSUGeoLocation: tjsolerpsd2.String("maiores"),
+        PSUHTTPMethod: tjsolerpsd2.String("natus"),
+        PSUIPAddress: "velit",
+        PSUIPPort: tjsolerpsd2.String("voluptatibus"),
+        PSUUserAgent: tjsolerpsd2.String("voluptas"),
+        Signature: "asperiores",
+        TPPSignatureCertificate: "aperiam",
+        XRequestID: "ea",
+        AspName: "quaerat",
+        MultibancoPaymentType: "consequuntur",
+        PaymentID: "repellendus",
     })
     if err != nil {
         log.Fatal(err)
@@ -201,34 +201,34 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest{
-        Digest: "non",
-        PSUAccept: psd2cajarural.String("voluptatem"),
-        PSUAcceptCharset: psd2cajarural.String("dolor"),
-        PSUAcceptEncoding: psd2cajarural.String("occaecati"),
-        PSUAcceptLanguage: psd2cajarural.String("numquam"),
-        PSUCorporateID: psd2cajarural.String("impedit"),
-        PSUCorporateIDType: psd2cajarural.String("explicabo"),
-        PSUDeviceID: psd2cajarural.String("voluptas"),
-        PSUGeoLocation: psd2cajarural.String("aut"),
-        PSUHTTPMethod: psd2cajarural.String("dignissimos"),
-        PSUIPAddress: "dicta",
-        PSUIPPort: psd2cajarural.String("maiores"),
-        PSUUserAgent: psd2cajarural.String("natus"),
-        Signature: "velit",
-        TPPSignatureCertificate: "voluptatibus",
-        XRequestID: "voluptas",
-        AspName: "asperiores",
-        MultibancoPaymentType: "aperiam",
-        PaymentID: "ea",
+        Digest: "officia",
+        PSUAccept: tjsolerpsd2.String("maxime"),
+        PSUAcceptCharset: tjsolerpsd2.String("dignissimos"),
+        PSUAcceptEncoding: tjsolerpsd2.String("officia"),
+        PSUAcceptLanguage: tjsolerpsd2.String("asperiores"),
+        PSUCorporateID: tjsolerpsd2.String("nemo"),
+        PSUCorporateIDType: tjsolerpsd2.String("quae"),
+        PSUDeviceID: tjsolerpsd2.String("quaerat"),
+        PSUGeoLocation: tjsolerpsd2.String("porro"),
+        PSUHTTPMethod: tjsolerpsd2.String("quod"),
+        PSUIPAddress: "labore",
+        PSUIPPort: tjsolerpsd2.String("ab"),
+        PSUUserAgent: tjsolerpsd2.String("adipisci"),
+        Signature: "fuga",
+        TPPSignatureCertificate: "id",
+        XRequestID: "suscipit",
+        AspName: "velit",
+        MultibancoPaymentType: "culpa",
+        PaymentID: "est",
     })
     if err != nil {
         log.Fatal(err)
@@ -263,35 +263,35 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest{
-        Digest: "quaerat",
-        PSUAccept: psd2cajarural.String("consequuntur"),
-        PSUAcceptCharset: psd2cajarural.String("repellendus"),
-        PSUAcceptEncoding: psd2cajarural.String("officia"),
-        PSUAcceptLanguage: psd2cajarural.String("maxime"),
-        PSUCorporateID: psd2cajarural.String("dignissimos"),
-        PSUCorporateIDType: psd2cajarural.String("officia"),
-        PSUDeviceID: psd2cajarural.String("asperiores"),
-        PSUGeoLocation: psd2cajarural.String("nemo"),
-        PSUHTTPMethod: psd2cajarural.String("quae"),
-        PSUIPAddress: "quaerat",
-        PSUIPPort: psd2cajarural.String("porro"),
-        PSUUserAgent: psd2cajarural.String("quod"),
-        Signature: "labore",
-        TPPSignatureCertificate: "ab",
-        XRequestID: "adipisci",
-        AspName: "fuga",
-        AuthorisationID: "id",
-        MultibancoPaymentType: "suscipit",
-        PaymentID: "velit",
+        Digest: "recusandae",
+        PSUAccept: tjsolerpsd2.String("totam"),
+        PSUAcceptCharset: tjsolerpsd2.String("fugiat"),
+        PSUAcceptEncoding: tjsolerpsd2.String("vel"),
+        PSUAcceptLanguage: tjsolerpsd2.String("ducimus"),
+        PSUCorporateID: tjsolerpsd2.String("quos"),
+        PSUCorporateIDType: tjsolerpsd2.String("vel"),
+        PSUDeviceID: tjsolerpsd2.String("labore"),
+        PSUGeoLocation: tjsolerpsd2.String("possimus"),
+        PSUHTTPMethod: tjsolerpsd2.String("facilis"),
+        PSUIPAddress: "cum",
+        PSUIPPort: tjsolerpsd2.String("commodi"),
+        PSUUserAgent: tjsolerpsd2.String("in"),
+        Signature: "corporis",
+        TPPSignatureCertificate: "reiciendis",
+        XRequestID: "assumenda",
+        AspName: "nemo",
+        AuthorisationID: "recusandae",
+        MultibancoPaymentType: "aliquid",
+        PaymentID: "aperiam",
     })
     if err != nil {
         log.Fatal(err)
@@ -328,32 +328,32 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatus(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatusRequest{
-        Digest: "culpa",
-        PSUAccept: psd2cajarural.String("est"),
-        PSUAcceptCharset: psd2cajarural.String("recusandae"),
-        PSUAcceptEncoding: psd2cajarural.String("totam"),
-        PSUAcceptLanguage: psd2cajarural.String("fugiat"),
-        PSUDeviceID: psd2cajarural.String("vel"),
-        PSUGeoLocation: psd2cajarural.String("ducimus"),
-        PSUHTTPMethod: psd2cajarural.String("quos"),
-        PSUIPAddress: "vel",
-        PSUIPPort: psd2cajarural.String("labore"),
-        PSUUserAgent: psd2cajarural.String("possimus"),
-        Signature: "facilis",
-        TPPSignatureCertificate: "cum",
-        XRequestID: "commodi",
-        AspName: "in",
-        MultibancoPaymentType: "corporis",
-        PaymentID: "reiciendis",
+        Digest: "cum",
+        PSUAccept: tjsolerpsd2.String("consectetur"),
+        PSUAcceptCharset: tjsolerpsd2.String("in"),
+        PSUAcceptEncoding: tjsolerpsd2.String("exercitationem"),
+        PSUAcceptLanguage: tjsolerpsd2.String("earum"),
+        PSUDeviceID: tjsolerpsd2.String("facere"),
+        PSUGeoLocation: tjsolerpsd2.String("numquam"),
+        PSUHTTPMethod: tjsolerpsd2.String("doloribus"),
+        PSUIPAddress: "suscipit",
+        PSUIPPort: tjsolerpsd2.String("reiciendis"),
+        PSUUserAgent: tjsolerpsd2.String("quidem"),
+        Signature: "saepe",
+        TPPSignatureCertificate: "necessitatibus",
+        XRequestID: "dolore",
+        AspName: "sunt",
+        MultibancoPaymentType: "asperiores",
+        PaymentID: "adipisci",
     })
     if err != nil {
         log.Fatal(err)
@@ -388,34 +388,34 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest{
-        Digest: "assumenda",
-        PSUAccept: psd2cajarural.String("nemo"),
-        PSUAcceptCharset: psd2cajarural.String("recusandae"),
-        PSUAcceptEncoding: psd2cajarural.String("aliquid"),
-        PSUAcceptLanguage: psd2cajarural.String("aperiam"),
-        PSUCorporateID: psd2cajarural.String("cum"),
-        PSUCorporateIDType: psd2cajarural.String("consectetur"),
-        PSUDeviceID: psd2cajarural.String("in"),
-        PSUGeoLocation: psd2cajarural.String("exercitationem"),
-        PSUHTTPMethod: psd2cajarural.String("earum"),
-        PSUIPAddress: "facere",
-        PSUIPPort: psd2cajarural.String("numquam"),
-        PSUUserAgent: psd2cajarural.String("doloribus"),
-        Signature: "suscipit",
-        TPPSignatureCertificate: "reiciendis",
-        XRequestID: "quidem",
-        AspName: "saepe",
-        MultibancoPaymentType: "necessitatibus",
-        PaymentID: "dolore",
+        Digest: "non",
+        PSUAccept: tjsolerpsd2.String("amet"),
+        PSUAcceptCharset: tjsolerpsd2.String("beatae"),
+        PSUAcceptEncoding: tjsolerpsd2.String("dignissimos"),
+        PSUAcceptLanguage: tjsolerpsd2.String("a"),
+        PSUCorporateID: tjsolerpsd2.String("debitis"),
+        PSUCorporateIDType: tjsolerpsd2.String("consectetur"),
+        PSUDeviceID: tjsolerpsd2.String("corporis"),
+        PSUGeoLocation: tjsolerpsd2.String("harum"),
+        PSUHTTPMethod: tjsolerpsd2.String("laboriosam"),
+        PSUIPAddress: "ipsa",
+        PSUIPPort: tjsolerpsd2.String("voluptates"),
+        PSUUserAgent: tjsolerpsd2.String("libero"),
+        Signature: "vitae",
+        TPPSignatureCertificate: "accusamus",
+        XRequestID: "similique",
+        AspName: "tempora",
+        MultibancoPaymentType: "aspernatur",
+        PaymentID: "voluptas",
     })
     if err != nil {
         log.Fatal(err)
@@ -452,54 +452,54 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentType(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypeRequest{
-        Digest: "sunt",
-        PSUAccept: psd2cajarural.String("asperiores"),
-        PSUAcceptCharset: psd2cajarural.String("adipisci"),
-        PSUAcceptEncoding: psd2cajarural.String("non"),
-        PSUAcceptLanguage: psd2cajarural.String("amet"),
-        PSUCorporateID: psd2cajarural.String("beatae"),
-        PSUCorporateIDType: psd2cajarural.String("dignissimos"),
-        PSUDeviceID: psd2cajarural.String("a"),
-        PSUGeoLocation: psd2cajarural.String("debitis"),
-        PSUHTTPMethod: psd2cajarural.String("consectetur"),
-        PsuID: psd2cajarural.String("corporis"),
-        PSUIDType: psd2cajarural.String("harum"),
-        PSUIPAddress: "laboriosam",
-        PSUIPPort: psd2cajarural.String("ipsa"),
-        PSUUserAgent: psd2cajarural.String("voluptates"),
+        Digest: "voluptas",
+        PSUAccept: tjsolerpsd2.String("voluptas"),
+        PSUAcceptCharset: tjsolerpsd2.String("minima"),
+        PSUAcceptEncoding: tjsolerpsd2.String("nobis"),
+        PSUAcceptLanguage: tjsolerpsd2.String("dolorum"),
+        PSUCorporateID: tjsolerpsd2.String("adipisci"),
+        PSUCorporateIDType: tjsolerpsd2.String("minus"),
+        PSUDeviceID: tjsolerpsd2.String("dolores"),
+        PSUGeoLocation: tjsolerpsd2.String("blanditiis"),
+        PSUHTTPMethod: tjsolerpsd2.String("in"),
+        PsuID: tjsolerpsd2.String("dolore"),
+        PSUIDType: tjsolerpsd2.String("aliquam"),
+        PSUIPAddress: "officiis",
+        PSUIPPort: tjsolerpsd2.String("temporibus"),
+        PSUUserAgent: tjsolerpsd2.String("ullam"),
         RequestStartMultibankPayment: shared.RequestStartMultibankPayment{
             DebtorAccount: &shared.RequestStartMultibankPaymentDebtorAccount{},
-            EntityCode: psd2cajarural.Int64(10003),
+            EntityCode: tjsolerpsd2.Int64(10003),
             InstructedAmount: &shared.RequestStartMultibankPaymentInstructedAmount{},
-            OperationReference: psd2cajarural.String("1501ab4e-6904-11ea-bc55-0242ac130003"),
-            ParameterCode: psd2cajarural.Int64(3),
+            OperationReference: tjsolerpsd2.String("1501ab4e-6904-11ea-bc55-0242ac130003"),
+            ParameterCode: tjsolerpsd2.Int64(3),
             PaymentPeriod: &shared.RequestStartMultibankPaymentPaymentPeriod{},
-            PaymentReference: psd2cajarural.String("123456789"),
-            PaymentType: psd2cajarural.Int64(1),
-            PaymentTypeCode: psd2cajarural.String("05"),
-            RequestedExecutionDate: psd2cajarural.String("2018-05-17"),
-            TaxpayerIdentificationNumber: psd2cajarural.Int64(6244688226942976),
-            TsuCenterCode: psd2cajarural.Int64(2698),
+            PaymentReference: tjsolerpsd2.String("123456789"),
+            PaymentType: tjsolerpsd2.Int64(1),
+            PaymentTypeCode: tjsolerpsd2.String("05"),
+            RequestedExecutionDate: tjsolerpsd2.String("2018-05-17"),
+            TaxpayerIdentificationNumber: tjsolerpsd2.Int64(6244688226942976),
+            TsuCenterCode: tjsolerpsd2.Int64(2698),
         },
-        Signature: "libero",
-        TPPExplicitAuthorisationPreferred: psd2cajarural.Bool(false),
-        TPPNokRedirectURI: psd2cajarural.String("vitae"),
-        TPPRedirectPreferred: psd2cajarural.String("accusamus"),
-        TPPRedirectURI: psd2cajarural.String("similique"),
-        TPPSignatureCertificate: "tempora",
-        XRequestID: "aspernatur",
-        AspName: "voluptas",
-        MultibancoPaymentType: "voluptas",
+        Signature: "adipisci",
+        TPPExplicitAuthorisationPreferred: tjsolerpsd2.Bool(false),
+        TPPNokRedirectURI: tjsolerpsd2.String("cum"),
+        TPPRedirectPreferred: tjsolerpsd2.String("blanditiis"),
+        TPPRedirectURI: tjsolerpsd2.String("quas"),
+        TPPSignatureCertificate: "hic",
+        XRequestID: "nesciunt",
+        AspName: "culpa",
+        MultibancoPaymentType: "corrupti",
     })
     if err != nil {
         log.Fatal(err)
@@ -536,34 +536,34 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholding(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequest{
-        Digest: "voluptas",
-        PSUAccept: psd2cajarural.String("minima"),
-        PSUAcceptCharset: psd2cajarural.String("nobis"),
-        PSUAcceptEncoding: psd2cajarural.String("dolorum"),
-        PSUAcceptLanguage: psd2cajarural.String("adipisci"),
-        PSUCorporateID: psd2cajarural.String("minus"),
-        PSUCorporateIDType: psd2cajarural.String("dolores"),
-        PSUDeviceID: psd2cajarural.String("blanditiis"),
-        PSUGeoLocation: psd2cajarural.String("in"),
-        PSUHTTPMethod: psd2cajarural.String("dolore"),
-        PsuID: psd2cajarural.String("aliquam"),
-        PSUIDType: psd2cajarural.String("officiis"),
-        PSUIPAddress: "temporibus",
-        PSUIPPort: psd2cajarural.String("ullam"),
-        PSUUserAgent: psd2cajarural.String("adipisci"),
+        Digest: "pariatur",
+        PSUAccept: tjsolerpsd2.String("totam"),
+        PSUAcceptCharset: tjsolerpsd2.String("hic"),
+        PSUAcceptEncoding: tjsolerpsd2.String("exercitationem"),
+        PSUAcceptLanguage: tjsolerpsd2.String("nobis"),
+        PSUCorporateID: tjsolerpsd2.String("sit"),
+        PSUCorporateIDType: tjsolerpsd2.String("rerum"),
+        PSUDeviceID: tjsolerpsd2.String("sed"),
+        PSUGeoLocation: tjsolerpsd2.String("reiciendis"),
+        PSUHTTPMethod: tjsolerpsd2.String("explicabo"),
+        PsuID: tjsolerpsd2.String("asperiores"),
+        PSUIDType: tjsolerpsd2.String("facilis"),
+        PSUIPAddress: "voluptate",
+        PSUIPPort: tjsolerpsd2.String("expedita"),
+        PSUUserAgent: tjsolerpsd2.String("ab"),
         RequestSocialSecurityWithholding: shared.RequestSocialSecurityWithholding{
             DebtorAccount: shared.RequestSocialSecurityWithholdingDebtorAccount{},
-            Niss: psd2cajarural.Int64(65136589331),
+            Niss: tjsolerpsd2.Int64(65136589331),
             Number: 10000000003,
             PaymentDate: "2020-03-04",
             PaymentNature: 4613978645,
@@ -571,10 +571,10 @@ func main() {
             RemunerationAmount: shared.RequestSocialSecurityWithholdingRemunerationAmount{},
             RemunerationCode: 1,
         },
-        Signature: "cum",
-        TPPSignatureCertificate: "blanditiis",
-        XRequestID: "quas",
-        AspName: "hic",
+        Signature: "iste",
+        TPPSignatureCertificate: "dolore",
+        XRequestID: "laborum",
+        AspName: "sed",
     })
     if err != nil {
         log.Fatal(err)
@@ -609,39 +609,39 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx, operations.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest{
-        Digest: "nesciunt",
-        PSUAccept: psd2cajarural.String("culpa"),
-        PSUAcceptCharset: psd2cajarural.String("corrupti"),
-        PSUAcceptEncoding: psd2cajarural.String("pariatur"),
-        PSUAcceptLanguage: psd2cajarural.String("totam"),
-        PSUCorporateID: psd2cajarural.String("hic"),
-        PSUCorporateIDType: psd2cajarural.String("exercitationem"),
-        PSUDeviceID: psd2cajarural.String("nobis"),
-        PSUGeoLocation: psd2cajarural.String("sit"),
-        PSUHTTPMethod: psd2cajarural.String("rerum"),
-        PSUIPAddress: "sed",
-        PSUIPPort: psd2cajarural.String("reiciendis"),
-        PSUUserAgent: psd2cajarural.String("explicabo"),
+        Digest: "in",
+        PSUAccept: tjsolerpsd2.String("commodi"),
+        PSUAcceptCharset: tjsolerpsd2.String("quidem"),
+        PSUAcceptEncoding: tjsolerpsd2.String("explicabo"),
+        PSUAcceptLanguage: tjsolerpsd2.String("voluptas"),
+        PSUCorporateID: tjsolerpsd2.String("unde"),
+        PSUCorporateIDType: tjsolerpsd2.String("architecto"),
+        PSUDeviceID: tjsolerpsd2.String("suscipit"),
+        PSUGeoLocation: tjsolerpsd2.String("sapiente"),
+        PSUHTTPMethod: tjsolerpsd2.String("debitis"),
+        PSUIPAddress: "illo",
+        PSUIPPort: tjsolerpsd2.String("reiciendis"),
+        PSUUserAgent: tjsolerpsd2.String("perferendis"),
         RequestActualizarDatosPsu: shared.RequestActualizarDatosPsu{
-            AuthenticationMethodID: psd2cajarural.String("123"),
+            AuthenticationMethodID: tjsolerpsd2.String("123"),
         },
-        Signature: "asperiores",
-        TPPSignatureCertificate: "facilis",
-        XRequestID: "voluptate",
-        AspName: "expedita",
-        AuthorisationID: "ab",
-        MultibancoPaymentType: "iste",
-        PaymentID: "dolore",
+        Signature: "corrupti",
+        TPPSignatureCertificate: "maiores",
+        XRequestID: "incidunt",
+        AspName: "sed",
+        AuthorisationID: "provident",
+        MultibancoPaymentType: "eius",
+        PaymentID: "necessitatibus",
     })
     if err != nil {
         log.Fatal(err)

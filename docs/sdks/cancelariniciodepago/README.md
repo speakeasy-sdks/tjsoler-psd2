@@ -16,37 +16,37 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/tjsoler-psd2"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 )
 
 func main() {
-    s := psd2cajarural.New()
+    s := tjsolerpsd2.New()
 
     ctx := context.Background()
     res, err := s.CancelarInicioDePago.DeletePayment(ctx, operations.DeletePaymentRequest{
-        Digest: "repellat",
-        PSUAccept: psd2cajarural.String("mollitia"),
-        PSUAcceptCharset: psd2cajarural.String("occaecati"),
-        PSUAcceptEncoding: psd2cajarural.String("numquam"),
-        PSUAcceptLanguage: psd2cajarural.String("commodi"),
-        PSUDeviceID: psd2cajarural.String("quam"),
-        PSUGeoLocation: psd2cajarural.String("molestiae"),
-        PSUHTTPMethod: psd2cajarural.String("velit"),
-        PSUIPAddress: psd2cajarural.String("error"),
-        PSUIPPort: psd2cajarural.String("quia"),
-        PSUUserAgent: psd2cajarural.String("quis"),
-        Signature: "vitae",
-        TPPExplicitAuthorisationPreferred: psd2cajarural.Bool(false),
-        TPPNokRedirectURI: psd2cajarural.String("laborum"),
-        TPPRedirectPreferred: psd2cajarural.Bool(false),
-        TPPRedirectURI: psd2cajarural.String("animi"),
-        TPPSignatureCertificate: "enim",
-        XRequestID: "odit",
-        Aspsp: "quo",
-        PaymentID: "sequi",
-        PaymentProduct: operations.DeletePaymentPaymentProductCrossBorderCreditTransfers,
-        PaymentService: operations.DeletePaymentPaymentServiceBulkPayments,
+        Digest: "aut",
+        PSUAccept: tjsolerpsd2.String("quasi"),
+        PSUAcceptCharset: tjsolerpsd2.String("error"),
+        PSUAcceptEncoding: tjsolerpsd2.String("temporibus"),
+        PSUAcceptLanguage: tjsolerpsd2.String("laborum"),
+        PSUDeviceID: tjsolerpsd2.String("quasi"),
+        PSUGeoLocation: tjsolerpsd2.String("reiciendis"),
+        PSUHTTPMethod: tjsolerpsd2.String("voluptatibus"),
+        PSUIPAddress: tjsolerpsd2.String("vero"),
+        PSUIPPort: tjsolerpsd2.String("nihil"),
+        PSUUserAgent: tjsolerpsd2.String("praesentium"),
+        Signature: "voluptatibus",
+        TPPExplicitAuthorisationPreferred: tjsolerpsd2.Bool(false),
+        TPPNokRedirectURI: tjsolerpsd2.String("ipsa"),
+        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
+        TPPRedirectURI: tjsolerpsd2.String("omnis"),
+        TPPSignatureCertificate: "voluptate",
+        XRequestID: "cum",
+        Aspsp: "perferendis",
+        PaymentID: "doloremque",
+        PaymentProduct: operations.DeletePaymentPaymentProductInstantSepaCreditTransfers,
+        PaymentService: operations.DeletePaymentPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)

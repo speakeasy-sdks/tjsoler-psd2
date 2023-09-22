@@ -3,6 +3,7 @@
 package operations
 
 import (
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/utils"
 	"net/http"
 )
 
@@ -22,7 +23,7 @@ type GetConsentsConfirmationOfFundsRequest struct {
 	// Localización correspondiente a la petición HTTP entre el PSU y el TPP. Ej: PSU-Geo-Location: GEO:90.023856;25.345963
 	PSUGeoLocation *string `header:"style=simple,explode=false,name=PSU-Geo-Location"`
 	// Método HTTP usado en la interfaz entre PSU y TPP. Valores permitidos: POST. Ej: PSU-Http-Method: POST
-	PSUHTTPMethod *string `header:"style=simple,explode=false,name=PSU-Http-Method"`
+	PSUHTTPMethod *string `default:"GET" header:"style=simple,explode=false,name=PSU-Http-Method"`
 	// Dirección IP de la petición HTPP entre el PSU y el TPP. Si no está disponible, el TPP debe usar la dirección IP usada por el TPP cuando envía esta petición. Ej: Ej: PSU-IP-Address: 192.168.16.5
 	PSUIPAddress *string `header:"style=simple,explode=false,name=PSU-IP-Address"`
 	// Puerto IP de la petición HTTP entre el PSU y el TPP si está disponible. Ejemplo: PSU-IP-Port: 443
@@ -32,11 +33,11 @@ type GetConsentsConfirmationOfFundsRequest struct {
 	// Firma de la petición por el TPP.
 	Signature string `header:"style=simple,explode=false,name=Signature"`
 	// Si esta URI es contenida, el TPP está solicitando redirigir el flujo de la transacción a esta dirección en vez de al TPP-Redirect-URI en caso de un resultado negativo del método de SCA por redirección. "TPP-Nok-Redirect-URI":"https://www.tpp.com/cb/nok"
-	TPPNokRedirectURI *string `header:"style=simple,explode=false,name=TPP-Nok-Redirect-URI"`
+	TPPNokRedirectURI *string `default:"www.example.com" header:"style=simple,explode=false,name=TPP-Nok-Redirect-URI"`
 	// Si es "true", el TPP ha comunicado al HUB que prefiere SCA por redirección. Si es "false", el TPP ha comunicado al HUB que prefiere no ser redireccionado para SCA y el procedimiento será por flujo desacoplado. Si el parámetro no es usado, el ASPSP elegirá el flujo SCA a aplicar dependiendo del método SCA elegido por el TPP/PSU.
 	TPPRedirectPreferred *string `header:"style=simple,explode=false,name=TPP-Redirect-Preferred"`
 	// URI del TPP donde el flujo de la transacción debe ser redirigido después de alguna de las fases del SCA. Es recomendado usar siempre este campo de cabecera.En el futuro, este campo podría cambiar a obligatorio. Ej: TPP-Redirect-URI: https://www.tpp.com/cb
-	TPPRedirectURI *string `header:"style=simple,explode=false,name=TPP-Redirect-URI"`
+	TPPRedirectURI *string `default:"www.example.com" header:"style=simple,explode=false,name=TPP-Redirect-URI"`
 	// Certificado del TPP usado para firmar la petición, en base64, sin cabecera, pie ni saltos de linea. Ej: TPP-Signature-Certificate: MIIHgzCCBmugAwIBAgIIZzZvBQlt0UcwDQYJ………….KoZIhvcNAQELBQAwSTELMAkGA1UEBhMCVVMxEzARBgNVBA
 	TPPSignatureCertificate string `header:"style=simple,explode=false,name=TPP-Signature-Certificate"`
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
@@ -45,6 +46,17 @@ type GetConsentsConfirmationOfFundsRequest struct {
 	Aspsp string `pathParam:"style=simple,explode=false,name=aspsp"`
 	// Consent-id de la peticion
 	ConsentID string `pathParam:"style=simple,explode=false,name=consent-id"`
+}
+
+func (g GetConsentsConfirmationOfFundsRequest) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(g, "", false)
+}
+
+func (g *GetConsentsConfirmationOfFundsRequest) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &g, "", false, false); err != nil {
+		return err
+	}
+	return nil
 }
 
 func (o *GetConsentsConfirmationOfFundsRequest) GetDigest() string {
