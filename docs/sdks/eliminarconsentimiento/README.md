@@ -1,4 +1,5 @@
 # EliminarConsentimiento
+(*EliminarConsentimiento*)
 
 ### Available Operations
 
@@ -26,25 +27,25 @@ func main() {
 
     ctx := context.Background()
     res, err := s.EliminarConsentimiento.DeleteConsentID(ctx, operations.DeleteConsentIDRequest{
-        Digest: "delectus",
-        PSUAccept: tjsolerpsd2.String("eum"),
-        PSUAcceptCharset: tjsolerpsd2.String("non"),
-        PSUAcceptEncoding: tjsolerpsd2.String("eligendi"),
-        PSUAcceptLanguage: tjsolerpsd2.String("sint"),
-        PSUDeviceID: tjsolerpsd2.String("aliquid"),
-        PSUGeoLocation: tjsolerpsd2.String("provident"),
-        PSUHTTPMethod: tjsolerpsd2.String("necessitatibus"),
-        PSUIPAddress: tjsolerpsd2.String("sint"),
-        PSUIPPort: tjsolerpsd2.String("officia"),
-        PSUUserAgent: tjsolerpsd2.String("dolor"),
-        Signature: "debitis",
-        TPPNokRedirectURI: tjsolerpsd2.String("a"),
-        TPPRedirectPreferred: tjsolerpsd2.String("dolorum"),
-        TPPRedirectURI: tjsolerpsd2.String("in"),
-        TPPSignatureCertificate: "in",
-        XRequestID: "illum",
-        Aspsp: "maiores",
-        ConsentID: "rerum",
+        Digest: "Bicycle",
+        PSUAccept: tjsolerpsd2.String("sans Cambridgeshire"),
+        PSUAcceptCharset: tjsolerpsd2.String("doubtfully"),
+        PSUAcceptEncoding: tjsolerpsd2.String("Cambridgeshire"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Radon"),
+        PSUDeviceID: tjsolerpsd2.String("Bike conciliate"),
+        PSUGeoLocation: tjsolerpsd2.String("Fish Erie"),
+        PSUHTTPMethod: tjsolerpsd2.String("online"),
+        PSUIPAddress: tjsolerpsd2.String("Stream Touring architecture"),
+        PSUIPPort: tjsolerpsd2.String("Architect"),
+        PSUUserAgent: tjsolerpsd2.String("grey"),
+        Signature: "Southeast indexing Integrated",
+        TPPNokRedirectURI: tjsolerpsd2.String("however invoice"),
+        TPPRedirectPreferred: tjsolerpsd2.String("withdrawal payment"),
+        TPPRedirectURI: tjsolerpsd2.String("illum"),
+        TPPSignatureCertificate: "Alabama bankbook unwilling",
+        XRequestID: "Analyst navigate",
+        Aspsp: "array Kids female",
+        ConsentID: "Maserati Folk Cambridgeshire",
     })
     if err != nil {
         log.Fatal(err)
@@ -90,25 +91,25 @@ func main() {
 
     ctx := context.Background()
     res, err := s.EliminarConsentimiento.DeleteConsentsConfirmationOfFunds(ctx, operations.DeleteConsentsConfirmationOfFundsRequest{
-        Digest: "dicta",
-        PSUAccept: tjsolerpsd2.String("magnam"),
-        PSUAcceptCharset: tjsolerpsd2.String("cumque"),
-        PSUAcceptEncoding: tjsolerpsd2.String("facere"),
-        PSUAcceptLanguage: tjsolerpsd2.String("ea"),
-        PSUDeviceID: tjsolerpsd2.String("aliquid"),
-        PSUGeoLocation: tjsolerpsd2.String("laborum"),
-        PSUHTTPMethod: tjsolerpsd2.String("accusamus"),
-        PSUIPAddress: tjsolerpsd2.String("non"),
-        PSUIPPort: tjsolerpsd2.String("occaecati"),
-        PSUUserAgent: tjsolerpsd2.String("enim"),
-        Signature: "accusamus",
-        TPPNokRedirectURI: tjsolerpsd2.String("delectus"),
-        TPPRedirectPreferred: tjsolerpsd2.String("quidem"),
-        TPPRedirectURI: tjsolerpsd2.String("provident"),
-        TPPSignatureCertificate: "nam",
-        XRequestID: "id",
-        Aspsp: "blanditiis",
-        ConsentID: "deleniti",
+        Digest: "deposit granular Money",
+        PSUAccept: tjsolerpsd2.String("copying withdrawal farad"),
+        PSUAcceptCharset: tjsolerpsd2.String("Security Sausages Books"),
+        PSUAcceptEncoding: tjsolerpsd2.String("coffee Concrete West"),
+        PSUAcceptLanguage: tjsolerpsd2.String("calculating"),
+        PSUDeviceID: tjsolerpsd2.String("Gloves ratione"),
+        PSUGeoLocation: tjsolerpsd2.String("Lanka from pink"),
+        PSUHTTPMethod: tjsolerpsd2.String("Tuckahoe Buckinghamshire"),
+        PSUIPAddress: tjsolerpsd2.String("hmph"),
+        PSUIPPort: tjsolerpsd2.String("Bacon anti Shoes"),
+        PSUUserAgent: tjsolerpsd2.String("innovate Exclusive"),
+        Signature: "Gasoline",
+        TPPNokRedirectURI: tjsolerpsd2.String("Electronic Cyrus"),
+        TPPRedirectPreferred: tjsolerpsd2.String("Automotive models"),
+        TPPRedirectURI: tjsolerpsd2.String("Passenger scandalise Tools"),
+        TPPSignatureCertificate: "to sponge",
+        XRequestID: "psst",
+        Aspsp: "East River experiences",
+        ConsentID: "Astatine",
     })
     if err != nil {
         log.Fatal(err)

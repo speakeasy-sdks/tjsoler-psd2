@@ -1,4 +1,5 @@
 # LecturaDeListadoDeCuentas
+(*LecturaDeListadoDeCuentas*)
 
 ### Available Operations
 
@@ -25,22 +26,22 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeListadoDeCuentas.GetAccountListv11(ctx, operations.GetAccountListv11Request{
-        ConsentID: "neque",
-        Digest: "sed",
-        PSUAccept: tjsolerpsd2.String("vel"),
-        PSUAcceptCharset: tjsolerpsd2.String("libero"),
-        PSUAcceptEncoding: tjsolerpsd2.String("voluptas"),
-        PSUAcceptLanguage: tjsolerpsd2.String("deserunt"),
-        PSUDeviceID: tjsolerpsd2.String("quam"),
-        PSUGeoLocation: tjsolerpsd2.String("ipsum"),
-        PSUHTTPMethod: tjsolerpsd2.String("incidunt"),
-        PSUIPAddress: tjsolerpsd2.String("qui"),
-        PSUIPPort: tjsolerpsd2.String("cupiditate"),
-        PSUUserAgent: tjsolerpsd2.String("maxime"),
-        Signature: "pariatur",
-        TPPSignatureCertificate: "soluta",
-        XRequestID: "dicta",
-        Aspsp: "laborum",
+        ConsentID: "multimedia Fresh coulomb",
+        Digest: "red Ferrari female",
+        PSUAccept: tjsolerpsd2.String("female methodologies Assimilated"),
+        PSUAcceptCharset: tjsolerpsd2.String("empower"),
+        PSUAcceptEncoding: tjsolerpsd2.String("Future Kwacha female"),
+        PSUAcceptLanguage: tjsolerpsd2.String("to middleware to"),
+        PSUDeviceID: tjsolerpsd2.String("Electric Kansas deposit"),
+        PSUGeoLocation: tjsolerpsd2.String("yuck Cargo"),
+        PSUHTTPMethod: tjsolerpsd2.String("state Hatchback"),
+        PSUIPAddress: tjsolerpsd2.String("Rubber unrealistic"),
+        PSUIPPort: tjsolerpsd2.String("West till"),
+        PSUUserAgent: tjsolerpsd2.String("silver mid Wooden"),
+        Signature: "consequently Afghani Rubie",
+        TPPSignatureCertificate: "connecting driver architectures",
+        XRequestID: "through Southwest",
+        Aspsp: "Adventure viral SDD",
         WithBalance: tjsolerpsd2.Bool(false),
     })
     if err != nil {

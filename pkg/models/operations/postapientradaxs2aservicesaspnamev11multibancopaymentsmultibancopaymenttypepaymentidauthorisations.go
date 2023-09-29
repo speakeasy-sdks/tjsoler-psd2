@@ -194,11 +194,14 @@ func (o *PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPayment
 }
 
 type PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsResponse struct {
+	// HTTP response content type for this operation
 	ContentType string
 	// Created
 	ResponseMultibankAuthorizeConsentEstablishment *shared.ResponseMultibankAuthorizeConsentEstablishment
-	StatusCode                                     int
-	RawResponse                                    *http.Response
+	// HTTP response status code for this operation
+	StatusCode int
+	// Raw HTTP response; suitable for custom response parsing
+	RawResponse *http.Response
 }
 
 func (o *PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsResponse) GetContentType() string {
