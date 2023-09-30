@@ -1,4 +1,5 @@
 # LecturaDeTransacciones
+(*LecturaDeTransacciones*)
 
 ### Available Operations
 
@@ -25,28 +26,28 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeTransacciones.AccountsTrasactions(ctx, operations.AccountsTrasactionsRequest{
-        ConsentID: "totam",
-        Digest: "incidunt",
-        PSUAccept: tjsolerpsd2.String("aspernatur"),
-        PSUAcceptCharset: tjsolerpsd2.String("dolores"),
-        PSUAcceptEncoding: tjsolerpsd2.String("distinctio"),
-        PSUAcceptLanguage: tjsolerpsd2.String("facilis"),
-        PSUDeviceID: tjsolerpsd2.String("aliquid"),
-        PSUGeoLocation: tjsolerpsd2.String("quam"),
-        PSUHTTPMethod: tjsolerpsd2.String("molestias"),
-        PSUIPAddress: tjsolerpsd2.String("temporibus"),
-        PSUIPPort: tjsolerpsd2.String("qui"),
-        PSUUserAgent: tjsolerpsd2.String("neque"),
-        Signature: "fugit",
-        TPPSignatureCertificate: "magni",
-        XRequestID: "odio",
-        AccountID: "sunt",
-        Aspsp: "ullam",
-        BookingStatus: "nam",
-        DateFrom: tjsolerpsd2.String("hic"),
-        DateTo: tjsolerpsd2.String("voluptatem"),
+        ConsentID: "Convertible during Northwest",
+        Digest: "granular Folk microchip",
+        PSUAccept: tjsolerpsd2.String("minus"),
+        PSUAcceptCharset: tjsolerpsd2.String("Smart"),
+        PSUAcceptEncoding: tjsolerpsd2.String("tangible atop joule"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Hat City"),
+        PSUDeviceID: tjsolerpsd2.String("female Tesla"),
+        PSUGeoLocation: tjsolerpsd2.String("Newton monitor"),
+        PSUHTTPMethod: tjsolerpsd2.String("quantifying Northwest Advanced"),
+        PSUIPAddress: tjsolerpsd2.String("Hybrid Sandy Buckinghamshire"),
+        PSUIPPort: tjsolerpsd2.String("orange"),
+        PSUUserAgent: tjsolerpsd2.String("portals"),
+        Signature: "calculating XSS",
+        TPPSignatureCertificate: "candela Gasoline",
+        XRequestID: "streamline",
+        AccountID: "Portugal South",
+        Aspsp: "quaerat Iowa",
+        BookingStatus: "incremental",
+        DateFrom: tjsolerpsd2.String("Factors"),
+        DateTo: tjsolerpsd2.String("female"),
         DeltaList: tjsolerpsd2.Bool(false),
-        EntryReferenceFrom: tjsolerpsd2.String("cumque"),
+        EntryReferenceFrom: tjsolerpsd2.String("connect SUV"),
         WithBalance: tjsolerpsd2.Bool(false),
     })
     if err != nil {

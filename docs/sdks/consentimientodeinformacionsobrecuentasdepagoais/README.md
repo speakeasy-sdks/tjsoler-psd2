@@ -1,4 +1,5 @@
 # ConsentimientoDeInformacionSobreCuentasDePagoAIS
+(*ConsentimientoDeInformacionSobreCuentasDePagoAIS*)
 
 ### Available Operations
 
@@ -26,30 +27,30 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ConsentimientoDeInformacionSobreCuentasDePagoAIS.PostConsents(ctx, operations.PostConsentsRequest{
-        Digest: "sint",
-        PSUAccept: tjsolerpsd2.String("veritatis"),
-        PSUAcceptCharset: tjsolerpsd2.String("itaque"),
-        PSUAcceptEncoding: tjsolerpsd2.String("incidunt"),
-        PSUAcceptLanguage: tjsolerpsd2.String("enim"),
-        PSUCorporateID: tjsolerpsd2.String("consequatur"),
-        PSUCorporateIDType: tjsolerpsd2.String("est"),
-        PSUDeviceID: tjsolerpsd2.String("quibusdam"),
-        PSUGeoLocation: tjsolerpsd2.String("explicabo"),
-        PSUHTTPMethod: tjsolerpsd2.String("deserunt"),
-        PsuID: tjsolerpsd2.String("distinctio"),
-        PSUIDType: tjsolerpsd2.String("quibusdam"),
-        PSUIPAddress: "labore",
-        PSUIPPort: tjsolerpsd2.String("modi"),
-        PSUUserAgent: tjsolerpsd2.String("qui"),
-        RequestBody: []byte("aliquid"),
-        Signature: "cupiditate",
-        TPPBrandLoggingInformation: tjsolerpsd2.String("quos"),
-        TPPNokRedirectURI: tjsolerpsd2.String("perferendis"),
+        Digest: "Account Sleek",
+        PSUAccept: tjsolerpsd2.String("Maryland"),
+        PSUAcceptCharset: tjsolerpsd2.String("Metal male"),
+        PSUAcceptEncoding: tjsolerpsd2.String("silent"),
+        PSUAcceptLanguage: tjsolerpsd2.String("withdrawal"),
+        PSUCorporateID: tjsolerpsd2.String("Soap Direct"),
+        PSUCorporateIDType: tjsolerpsd2.String("Director bandwidth"),
+        PSUDeviceID: tjsolerpsd2.String("Shoes"),
+        PSUGeoLocation: tjsolerpsd2.String("nervous Blues Borders"),
+        PSUHTTPMethod: tjsolerpsd2.String("Berkshire RSS"),
+        PsuID: tjsolerpsd2.String("Trial male"),
+        PSUIDType: tjsolerpsd2.String("Blues"),
+        PSUIPAddress: "Kyat Van Lek",
+        PSUIPPort: tjsolerpsd2.String("biology"),
+        PSUUserAgent: tjsolerpsd2.String("Bicycle Bedfordshire Metal"),
+        RequestBody: []byte("X)68BkYEQ1"),
+        Signature: "Elmo Borders Hoffman",
+        TPPBrandLoggingInformation: tjsolerpsd2.String("lavender"),
+        TPPNokRedirectURI: tjsolerpsd2.String("Representative even"),
         TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("magni"),
-        TPPSignatureCertificate: "assumenda",
-        XRequestID: "ipsam",
-        Aspsp: "alias",
+        TPPRedirectURI: tjsolerpsd2.String("fuchsia gold"),
+        TPPSignatureCertificate: "round",
+        XRequestID: "Northwest Tactics",
+        Aspsp: "National",
     })
     if err != nil {
         log.Fatal(err)

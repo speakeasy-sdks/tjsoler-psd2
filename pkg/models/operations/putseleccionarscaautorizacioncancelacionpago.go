@@ -424,12 +424,15 @@ func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetPaymentService(
 }
 
 type PutSeleccionarSCAAutorizacionCancelacionPagoResponse struct {
+	// HTTP response content type for this operation
 	ContentType string
 	Headers     map[string][]string
 	// HTTP/1.1 200 Ok
 	ResponseAuthorizationInitiationPayment *shared.ResponseAuthorizationInitiationPayment
-	StatusCode                             int
-	RawResponse                            *http.Response
+	// HTTP response status code for this operation
+	StatusCode int
+	// Raw HTTP response; suitable for custom response parsing
+	RawResponse *http.Response
 }
 
 func (o *PutSeleccionarSCAAutorizacionCancelacionPagoResponse) GetContentType() string {

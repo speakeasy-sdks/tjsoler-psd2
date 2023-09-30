@@ -1,4 +1,5 @@
 # LecturaDeBalances
+(*LecturaDeBalances*)
 
 ### Available Operations
 
@@ -25,23 +26,23 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeBalances.GetAccountBalances(ctx, operations.GetAccountBalancesRequest{
-        ConsentID: "suscipit",
-        Digest: "deserunt",
-        PSUAccept: tjsolerpsd2.String("provident"),
-        PSUAcceptCharset: tjsolerpsd2.String("minima"),
-        PSUAcceptEncoding: tjsolerpsd2.String("repellendus"),
-        PSUAcceptLanguage: tjsolerpsd2.String("totam"),
-        PSUDeviceID: tjsolerpsd2.String("similique"),
-        PSUGeoLocation: tjsolerpsd2.String("alias"),
-        PSUHTTPMethod: tjsolerpsd2.String("at"),
-        PSUIPAddress: tjsolerpsd2.String("quaerat"),
-        PSUIPPort: tjsolerpsd2.String("tempora"),
-        PSUUserAgent: tjsolerpsd2.String("vel"),
-        Signature: "quod",
-        TPPSignatureCertificate: "officiis",
-        XRequestID: "qui",
-        AccountID: "dolorum",
-        Aspsp: "a",
+        ConsentID: "ampere copying",
+        Digest: "Venezuela Chevrolet taxicab",
+        PSUAccept: tjsolerpsd2.String("Hybrid voluptatum benchmark"),
+        PSUAcceptCharset: tjsolerpsd2.String("repudiandae monitor Russian"),
+        PSUAcceptEncoding: tjsolerpsd2.String("East consequently International"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Accounts Dubnium lux"),
+        PSUDeviceID: tjsolerpsd2.String("project Hip"),
+        PSUGeoLocation: tjsolerpsd2.String("Pat"),
+        PSUHTTPMethod: tjsolerpsd2.String("fairly Extended"),
+        PSUIPAddress: tjsolerpsd2.String("Euclid"),
+        PSUIPPort: tjsolerpsd2.String("Intelligent maroon transmit"),
+        PSUUserAgent: tjsolerpsd2.String("encryption"),
+        Signature: "meh functionalities Compatible",
+        TPPSignatureCertificate: "Principal withdrawal kilogram",
+        XRequestID: "Southwest",
+        AccountID: "structure unexpectedly white",
+        Aspsp: "commotion Mills french",
     })
     if err != nil {
         log.Fatal(err)
