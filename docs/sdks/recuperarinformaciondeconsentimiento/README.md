@@ -1,4 +1,5 @@
 # RecuperarInformacionDeConsentimiento
+(*RecuperarInformacionDeConsentimiento*)
 
 ### Available Operations
 
@@ -26,25 +27,25 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDeConsentimiento.GetConsentIDDetails(ctx, operations.GetConsentIDDetailsRequest{
-        Digest: "consequuntur",
-        PSUAccept: tjsolerpsd2.String("consequatur"),
-        PSUAcceptCharset: tjsolerpsd2.String("minus"),
-        PSUAcceptEncoding: tjsolerpsd2.String("quaerat"),
-        PSUAcceptLanguage: tjsolerpsd2.String("sapiente"),
-        PSUDeviceID: tjsolerpsd2.String("consectetur"),
-        PSUGeoLocation: tjsolerpsd2.String("esse"),
-        PSUHTTPMethod: tjsolerpsd2.String("blanditiis"),
-        PSUIPAddress: tjsolerpsd2.String("provident"),
-        PSUIPPort: tjsolerpsd2.String("a"),
-        PSUUserAgent: tjsolerpsd2.String("nulla"),
-        Signature: "quas",
-        TPPNokRedirectURI: tjsolerpsd2.String("esse"),
+        Digest: "Ocala nasalise Calcium",
+        PSUAccept: tjsolerpsd2.String("reprehenderit for"),
+        PSUAcceptCharset: tjsolerpsd2.String("huzzah"),
+        PSUAcceptEncoding: tjsolerpsd2.String("Loan"),
+        PSUAcceptLanguage: tjsolerpsd2.String("online Marketing"),
+        PSUDeviceID: tjsolerpsd2.String("barring Assistant utilize"),
+        PSUGeoLocation: tjsolerpsd2.String("woot"),
+        PSUHTTPMethod: tjsolerpsd2.String("behind"),
+        PSUIPAddress: tjsolerpsd2.String("programming Dodge"),
+        PSUIPPort: tjsolerpsd2.String("Trans with Classical"),
+        PSUUserAgent: tjsolerpsd2.String("Southwest Northeast"),
+        Signature: "dicta",
+        TPPNokRedirectURI: tjsolerpsd2.String("Bacon logistical Infrastructure"),
         TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("quasi"),
-        TPPSignatureCertificate: "a",
-        XRequestID: "error",
-        Aspsp: "sint",
-        ConsentID: "pariatur",
+        TPPRedirectURI: tjsolerpsd2.String("Kia Small"),
+        TPPSignatureCertificate: "false",
+        XRequestID: "infomediaries minus focus",
+        Aspsp: "impactful",
+        ConsentID: "Soap Wagon",
     })
     if err != nil {
         log.Fatal(err)
@@ -90,25 +91,25 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDeConsentimiento.GetConsentsConfirmationOfFundsInfo(ctx, operations.GetConsentsConfirmationOfFundsInfoRequest{
-        Digest: "possimus",
-        PSUAccept: tjsolerpsd2.String("quia"),
-        PSUAcceptCharset: tjsolerpsd2.String("eveniet"),
-        PSUAcceptEncoding: tjsolerpsd2.String("asperiores"),
-        PSUAcceptLanguage: tjsolerpsd2.String("facere"),
-        PSUDeviceID: tjsolerpsd2.String("veritatis"),
-        PSUGeoLocation: tjsolerpsd2.String("consequuntur"),
-        PSUHTTPMethod: tjsolerpsd2.String("quasi"),
-        PSUIPAddress: tjsolerpsd2.String("similique"),
-        PSUIPPort: tjsolerpsd2.String("culpa"),
-        PSUUserAgent: tjsolerpsd2.String("aliquid"),
-        Signature: "tenetur",
-        TPPNokRedirectURI: tjsolerpsd2.String("quae"),
-        TPPRedirectPreferred: tjsolerpsd2.String("earum"),
-        TPPRedirectURI: tjsolerpsd2.String("vel"),
-        TPPSignatureCertificate: "in",
-        XRequestID: "eius",
-        Aspsp: "libero",
-        ConsentID: "illum",
+        Digest: "Representative",
+        PSUAccept: tjsolerpsd2.String("payment"),
+        PSUAcceptCharset: tjsolerpsd2.String("functionalities Forward"),
+        PSUAcceptEncoding: tjsolerpsd2.String("Hybrid kelvin"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Northeast partially"),
+        PSUDeviceID: tjsolerpsd2.String("sparkling copy Planner"),
+        PSUGeoLocation: tjsolerpsd2.String("why Tools Seaborgium"),
+        PSUHTTPMethod: tjsolerpsd2.String("cyan Uranium"),
+        PSUIPAddress: tjsolerpsd2.String("models"),
+        PSUIPPort: tjsolerpsd2.String("Convertible Central"),
+        PSUUserAgent: tjsolerpsd2.String("Diesel"),
+        Signature: "Sulfur Ames",
+        TPPNokRedirectURI: tjsolerpsd2.String("Planner Pants"),
+        TPPRedirectPreferred: tjsolerpsd2.String("extend"),
+        TPPRedirectURI: tjsolerpsd2.String("wireless whoa visualize"),
+        TPPSignatureCertificate: "Planner Saint",
+        XRequestID: "Card Classical",
+        Aspsp: "calculate",
+        ConsentID: "North sed",
     })
     if err != nil {
         log.Fatal(err)
