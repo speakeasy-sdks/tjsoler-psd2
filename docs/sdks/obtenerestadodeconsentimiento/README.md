@@ -1,4 +1,5 @@
 # ObtenerEstadoDeConsentimiento
+(*ObtenerEstadoDeConsentimiento*)
 
 ### Available Operations
 
@@ -26,25 +27,25 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDeConsentimiento.GetConsentStatus(ctx, operations.GetConsentStatusRequest{
-        Digest: "ex",
-        PSUAccept: tjsolerpsd2.String("nulla"),
-        PSUAcceptCharset: tjsolerpsd2.String("excepturi"),
-        PSUAcceptEncoding: tjsolerpsd2.String("voluptatibus"),
-        PSUAcceptLanguage: tjsolerpsd2.String("nostrum"),
-        PSUDeviceID: tjsolerpsd2.String("sapiente"),
-        PSUGeoLocation: tjsolerpsd2.String("quisquam"),
-        PSUHTTPMethod: tjsolerpsd2.String("saepe"),
-        PSUIPAddress: tjsolerpsd2.String("ea"),
-        PSUIPPort: tjsolerpsd2.String("impedit"),
-        PSUUserAgent: tjsolerpsd2.String("corporis"),
-        Signature: "veniam",
-        TPPNokRedirectURI: tjsolerpsd2.String("aliquid"),
-        TPPRedirectPreferred: tjsolerpsd2.String("inventore"),
-        TPPRedirectURI: tjsolerpsd2.String("magnam"),
-        TPPSignatureCertificate: "ea",
-        XRequestID: "quo",
-        Aspsp: "consectetur",
-        ConsentID: "recusandae",
+        Digest: "Universal policy",
+        PSUAccept: tjsolerpsd2.String("swill applications Bedfordshire"),
+        PSUAcceptCharset: tjsolerpsd2.String("appetizer Paradigm erosion"),
+        PSUAcceptEncoding: tjsolerpsd2.String("usually pish Islands"),
+        PSUAcceptLanguage: tjsolerpsd2.String("North"),
+        PSUDeviceID: tjsolerpsd2.String("spicy"),
+        PSUGeoLocation: tjsolerpsd2.String("Creative North Electric"),
+        PSUHTTPMethod: tjsolerpsd2.String("input deploy Apopka"),
+        PSUIPAddress: tjsolerpsd2.String("Metrics"),
+        PSUIPPort: tjsolerpsd2.String("realise Bicycle"),
+        PSUUserAgent: tjsolerpsd2.String("Cargo"),
+        Signature: "architect core Southeast",
+        TPPNokRedirectURI: tjsolerpsd2.String("yippee Northeast Robust"),
+        TPPRedirectPreferred: tjsolerpsd2.String("Diesel Computer Bicycle"),
+        TPPRedirectURI: tjsolerpsd2.String("pheasant Bedfordshire"),
+        TPPSignatureCertificate: "York",
+        XRequestID: "syndicate Northwest Gloves",
+        Aspsp: "tube Tennessee Ferrari",
+        ConsentID: "engage Account auxiliary",
     })
     if err != nil {
         log.Fatal(err)
@@ -90,25 +91,25 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDeConsentimiento.GetConsentsConfirmationOfFunds(ctx, operations.GetConsentsConfirmationOfFundsRequest{
-        Digest: "aspernatur",
-        PSUAccept: tjsolerpsd2.String("minima"),
-        PSUAcceptCharset: tjsolerpsd2.String("eaque"),
-        PSUAcceptEncoding: tjsolerpsd2.String("a"),
-        PSUAcceptLanguage: tjsolerpsd2.String("libero"),
-        PSUDeviceID: tjsolerpsd2.String("aut"),
-        PSUGeoLocation: tjsolerpsd2.String("aut"),
-        PSUHTTPMethod: tjsolerpsd2.String("deleniti"),
-        PSUIPAddress: tjsolerpsd2.String("impedit"),
-        PSUIPPort: tjsolerpsd2.String("aliquam"),
-        PSUUserAgent: tjsolerpsd2.String("fugit"),
-        Signature: "accusamus",
-        TPPNokRedirectURI: tjsolerpsd2.String("inventore"),
-        TPPRedirectPreferred: tjsolerpsd2.String("non"),
-        TPPRedirectURI: tjsolerpsd2.String("et"),
-        TPPSignatureCertificate: "dolorum",
-        XRequestID: "laborum",
-        Aspsp: "placeat",
-        ConsentID: "velit",
+        Digest: "Royce Cambridgeshire",
+        PSUAccept: tjsolerpsd2.String("Arkansas"),
+        PSUAcceptCharset: tjsolerpsd2.String("Northeast orange withdrawal"),
+        PSUAcceptEncoding: tjsolerpsd2.String("partnerships East candela"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Investment Oval"),
+        PSUDeviceID: tjsolerpsd2.String("copying male"),
+        PSUGeoLocation: tjsolerpsd2.String("Practical within"),
+        PSUHTTPMethod: tjsolerpsd2.String("Yuan technologies Milton"),
+        PSUIPAddress: tjsolerpsd2.String("invoice Ball"),
+        PSUIPPort: tjsolerpsd2.String("Creative copying"),
+        PSUUserAgent: tjsolerpsd2.String("Gloves Oriental regional"),
+        Signature: "Buckinghamshire",
+        TPPNokRedirectURI: tjsolerpsd2.String("Northwest Northeast"),
+        TPPRedirectPreferred: tjsolerpsd2.String("Southeast Pop"),
+        TPPRedirectURI: tjsolerpsd2.String("ack"),
+        TPPSignatureCertificate: "ideal Southwest",
+        XRequestID: "transmitter Shoes Kazakhstan",
+        Aspsp: "sexy",
+        ConsentID: "Optional Clothing Promethium",
     })
     if err != nil {
         log.Fatal(err)
