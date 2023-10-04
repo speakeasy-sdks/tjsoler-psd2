@@ -1,4 +1,5 @@
 # ObtenerListadoDeBeneficiariosDeConfianza
+(*ObtenerListadoDeBeneficiariosDeConfianza*)
 
 ### Available Operations
 
@@ -25,23 +26,23 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerListadoDeBeneficiariosDeConfianza.GetTrustedBeneficiaries(ctx, operations.GetTrustedBeneficiariesRequest{
-        ConsentID: "esse",
-        Digest: "esse",
-        PSUAccept: tjsolerpsd2.String("rem"),
-        PSUAcceptCharset: tjsolerpsd2.String("fuga"),
-        PSUAcceptEncoding: tjsolerpsd2.String("reprehenderit"),
-        PSUAcceptLanguage: tjsolerpsd2.String("quidem"),
-        PSUDeviceID: tjsolerpsd2.String("fugiat"),
-        PSUGeoLocation: tjsolerpsd2.String("ut"),
-        PSUHTTPMethod: tjsolerpsd2.String("eum"),
-        PSUIPAddress: tjsolerpsd2.String("suscipit"),
-        PSUIPPort: tjsolerpsd2.String("assumenda"),
-        PSUUserAgent: tjsolerpsd2.String("eos"),
-        Signature: "praesentium",
-        TPPSignatureCertificate: "quisquam",
-        XRequestID: "veritatis",
-        AccountID: tjsolerpsd2.String("ipsa"),
-        Aspsp: "id",
+        ConsentID: "Virginia Regional",
+        Digest: "Cambridgeshire",
+        PSUAccept: tjsolerpsd2.String("anenst"),
+        PSUAcceptCharset: tjsolerpsd2.String("ability"),
+        PSUAcceptEncoding: tjsolerpsd2.String("alarm"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Blues"),
+        PSUDeviceID: tjsolerpsd2.String("ultimately"),
+        PSUGeoLocation: tjsolerpsd2.String("Michigan"),
+        PSUHTTPMethod: tjsolerpsd2.String("Configurable"),
+        PSUIPAddress: tjsolerpsd2.String("Group City"),
+        PSUIPPort: tjsolerpsd2.String("mobile Bromine"),
+        PSUUserAgent: tjsolerpsd2.String("Solomon microchip Account"),
+        Signature: "Iron Jazz",
+        TPPSignatureCertificate: "streamline",
+        XRequestID: "Minivan quirky",
+        AccountID: tjsolerpsd2.String("SMS"),
+        Aspsp: "Account",
     })
     if err != nil {
         log.Fatal(err)
