@@ -1,4 +1,5 @@
 # RecuperarInformacionDelInicioDePago
+(*RecuperarInformacionDelInicioDePago*)
 
 ### Available Operations
 
@@ -25,22 +26,22 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDelInicioDePago.GetInfoPayment(ctx, operations.GetInfoPaymentRequest{
-        Digest: "soluta",
-        PSUAccept: tjsolerpsd2.String("accusantium"),
-        PSUAcceptCharset: tjsolerpsd2.String("aliquam"),
-        PSUAcceptEncoding: tjsolerpsd2.String("sapiente"),
-        PSUAcceptLanguage: tjsolerpsd2.String("dicta"),
-        PSUDeviceID: tjsolerpsd2.String("ullam"),
-        PSUGeoLocation: tjsolerpsd2.String("reprehenderit"),
-        PSUHTTPMethod: tjsolerpsd2.String("ullam"),
-        PSUIPAddress: "nisi",
-        PSUIPPort: tjsolerpsd2.String("aut"),
-        PSUUserAgent: tjsolerpsd2.String("voluptatum"),
-        Signature: "qui",
-        TPPSignatureCertificate: "quibusdam",
-        XRequestID: "ex",
-        Aspsp: "deleniti",
-        PaymentID: "itaque",
+        Digest: "moderator Non Lead",
+        PSUAccept: tjsolerpsd2.String("payment Neon wireless"),
+        PSUAcceptCharset: tjsolerpsd2.String("intuitive Zambia orange"),
+        PSUAcceptEncoding: tjsolerpsd2.String("Bedfordshire Fresh"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Martin"),
+        PSUDeviceID: tjsolerpsd2.String("Incredible Shoes"),
+        PSUGeoLocation: tjsolerpsd2.String("incentivize"),
+        PSUHTTPMethod: tjsolerpsd2.String("local"),
+        PSUIPAddress: "complexity Frozen Grocery",
+        PSUIPPort: tjsolerpsd2.String("Buckinghamshire"),
+        PSUUserAgent: tjsolerpsd2.String("ADP Home"),
+        Signature: "invoice punctual",
+        TPPSignatureCertificate: "International",
+        XRequestID: "Hybrid Minnesota",
+        Aspsp: "Egypt leading",
+        PaymentID: "compelling Electronics Implemented",
         PaymentProduct: operations.GetInfoPaymentPaymentProductTarget2Payments,
         PaymentService: operations.GetInfoPaymentPaymentServicePayments,
     })

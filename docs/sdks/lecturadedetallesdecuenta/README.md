@@ -1,4 +1,5 @@
 # LecturaDeDetallesDeCuenta
+(*LecturaDeDetallesDeCuenta*)
 
 ### Available Operations
 
@@ -25,23 +26,23 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeDetallesDeCuenta.GetAccountIdv11(ctx, operations.GetAccountIdv11Request{
-        ConsentID: "esse",
-        Digest: "harum",
-        PSUAccept: tjsolerpsd2.String("iusto"),
-        PSUAcceptCharset: tjsolerpsd2.String("ipsum"),
-        PSUAcceptEncoding: tjsolerpsd2.String("quisquam"),
-        PSUAcceptLanguage: tjsolerpsd2.String("tenetur"),
-        PSUDeviceID: tjsolerpsd2.String("amet"),
-        PSUGeoLocation: tjsolerpsd2.String("tempore"),
-        PSUHTTPMethod: tjsolerpsd2.String("accusamus"),
-        PSUIPAddress: tjsolerpsd2.String("numquam"),
-        PSUIPPort: tjsolerpsd2.String("enim"),
-        PSUUserAgent: tjsolerpsd2.String("dolorem"),
-        Signature: "sapiente",
-        TPPSignatureCertificate: "totam",
-        XRequestID: "nihil",
-        AccountID: "sit",
-        Aspsp: "expedita",
+        ConsentID: "BMW",
+        Digest: "Metal South Incredible",
+        PSUAccept: tjsolerpsd2.String("Brand Paucek"),
+        PSUAcceptCharset: tjsolerpsd2.String("Burbank"),
+        PSUAcceptEncoding: tjsolerpsd2.String("Bicycle male Directives"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Ghana Highway Wyoming"),
+        PSUDeviceID: tjsolerpsd2.String("male"),
+        PSUGeoLocation: tjsolerpsd2.String("pink"),
+        PSUHTTPMethod: tjsolerpsd2.String("Human Rubber laborum"),
+        PSUIPAddress: tjsolerpsd2.String("Consultant"),
+        PSUIPPort: tjsolerpsd2.String("merrily bluetooth"),
+        PSUUserAgent: tjsolerpsd2.String("Dinar Global Bicycle"),
+        Signature: "Gloves",
+        TPPSignatureCertificate: "Health Upgradable",
+        XRequestID: "Gambia Waterloo",
+        AccountID: "payment product Credit",
+        Aspsp: "function",
         WithBalance: tjsolerpsd2.Bool(false),
     })
     if err != nil {

@@ -1,4 +1,5 @@
 # CancelarInicioDePago
+(*CancelarInicioDePago*)
 
 ### Available Operations
 
@@ -25,28 +26,28 @@ func main() {
 
     ctx := context.Background()
     res, err := s.CancelarInicioDePago.DeletePayment(ctx, operations.DeletePaymentRequest{
-        Digest: "aut",
-        PSUAccept: tjsolerpsd2.String("quasi"),
-        PSUAcceptCharset: tjsolerpsd2.String("error"),
-        PSUAcceptEncoding: tjsolerpsd2.String("temporibus"),
-        PSUAcceptLanguage: tjsolerpsd2.String("laborum"),
-        PSUDeviceID: tjsolerpsd2.String("quasi"),
-        PSUGeoLocation: tjsolerpsd2.String("reiciendis"),
-        PSUHTTPMethod: tjsolerpsd2.String("voluptatibus"),
-        PSUIPAddress: tjsolerpsd2.String("vero"),
-        PSUIPPort: tjsolerpsd2.String("nihil"),
-        PSUUserAgent: tjsolerpsd2.String("praesentium"),
-        Signature: "voluptatibus",
+        Digest: "Australian",
+        PSUAccept: tjsolerpsd2.String("Bronze but"),
+        PSUAcceptCharset: tjsolerpsd2.String("Brand Sports Brand"),
+        PSUAcceptEncoding: tjsolerpsd2.String("disinherit local Rutherfordium"),
+        PSUAcceptLanguage: tjsolerpsd2.String("repurpose Chevrolet Unbranded"),
+        PSUDeviceID: tjsolerpsd2.String("Hybrid Electric Account"),
+        PSUGeoLocation: tjsolerpsd2.String("South"),
+        PSUHTTPMethod: tjsolerpsd2.String("olive Won National"),
+        PSUIPAddress: tjsolerpsd2.String("bluetooth Bronze Technician"),
+        PSUIPPort: tjsolerpsd2.String("immunise Technician"),
+        PSUUserAgent: tjsolerpsd2.String("Utah payment"),
+        Signature: "kelvin",
         TPPExplicitAuthorisationPreferred: tjsolerpsd2.Bool(false),
-        TPPNokRedirectURI: tjsolerpsd2.String("ipsa"),
+        TPPNokRedirectURI: tjsolerpsd2.String("Intelligent"),
         TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("omnis"),
-        TPPSignatureCertificate: "voluptate",
-        XRequestID: "cum",
-        Aspsp: "perferendis",
-        PaymentID: "doloremque",
+        TPPRedirectURI: tjsolerpsd2.String("hacking Corporate groupware"),
+        TPPSignatureCertificate: "dicta",
+        XRequestID: "Cambridgeshire worth Neon",
+        Aspsp: "Wagon",
+        PaymentID: "invoice mmm",
         PaymentProduct: operations.DeletePaymentPaymentProductInstantSepaCreditTransfers,
-        PaymentService: operations.DeletePaymentPaymentServicePayments,
+        PaymentService: operations.DeletePaymentPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)
