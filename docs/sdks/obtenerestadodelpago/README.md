@@ -1,4 +1,5 @@
 # ObtenerEstadoDelPago
+(*ObtenerEstadoDelPago*)
 
 ### Available Operations
 
@@ -25,24 +26,24 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDelPago.StatusPayment(ctx, operations.StatusPaymentRequest{
-        Digest: "eum",
-        PSUAccept: tjsolerpsd2.String("autem"),
-        PSUAcceptCharset: tjsolerpsd2.String("nobis"),
-        PSUAcceptEncoding: tjsolerpsd2.String("quas"),
-        PSUAcceptLanguage: tjsolerpsd2.String("assumenda"),
-        PSUDeviceID: tjsolerpsd2.String("nulla"),
-        PSUGeoLocation: tjsolerpsd2.String("voluptas"),
-        PSUHTTPMethod: tjsolerpsd2.String("libero"),
-        PSUIPAddress: "quasi",
-        PSUIPPort: tjsolerpsd2.String("tempora"),
-        PSUUserAgent: tjsolerpsd2.String("numquam"),
-        Signature: "explicabo",
-        TPPSignatureCertificate: "provident",
-        XRequestID: "ipsa",
-        Aspsp: "molestiae",
-        PaymentID: "magnam",
-        PaymentProduct: operations.StatusPaymentPaymentProductInstantSepaCreditTransfers,
-        PaymentService: operations.StatusPaymentPaymentServicePayments,
+        Digest: "Electric oat Cruiser",
+        PSUAccept: tjsolerpsd2.String("capacitor"),
+        PSUAcceptCharset: tjsolerpsd2.String("Ball Intelligent"),
+        PSUAcceptEncoding: tjsolerpsd2.String("iterate"),
+        PSUAcceptLanguage: tjsolerpsd2.String("Car Movies carter"),
+        PSUDeviceID: tjsolerpsd2.String("Falkland bifurcated"),
+        PSUGeoLocation: tjsolerpsd2.String("manufacturer Steel"),
+        PSUHTTPMethod: tjsolerpsd2.String("Virtual Optional"),
+        PSUIPAddress: "Tandem Music distributed",
+        PSUIPPort: tjsolerpsd2.String("Shoes lumen"),
+        PSUUserAgent: tjsolerpsd2.String("male F2M lumen"),
+        Signature: "AGP",
+        TPPSignatureCertificate: "female Computer Rock",
+        XRequestID: "monetize",
+        Aspsp: "Bacon",
+        PaymentID: "West ugh",
+        PaymentProduct: operations.StatusPaymentPaymentProductSepaCreditTransfers,
+        PaymentService: operations.StatusPaymentPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)
