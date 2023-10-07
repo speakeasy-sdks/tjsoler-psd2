@@ -1,4 +1,5 @@
 # ConsentimientoDeConfirmacionDeFondosFCS
+(*ConsentimientoDeConfirmacionDeFondosFCS*)
 
 ### Available Operations
 
@@ -26,30 +27,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ConsentimientoDeConfirmacionDeFondosFCS.PostConsentsConfirmationOfFunds(ctx, operations.PostConsentsConfirmationOfFundsRequest{
-        Digest: "maiores",
-        PSUAccept: tjsolerpsd2.String("dicta"),
-        PSUAcceptCharset: tjsolerpsd2.String("corporis"),
-        PSUAcceptEncoding: tjsolerpsd2.String("dolore"),
-        PSUAcceptLanguage: tjsolerpsd2.String("iusto"),
-        PSUCorporateID: tjsolerpsd2.String("dicta"),
-        PSUCorporateIDType: tjsolerpsd2.String("harum"),
-        PSUDeviceID: tjsolerpsd2.String("enim"),
-        PSUGeoLocation: tjsolerpsd2.String("accusamus"),
-        PSUHTTPMethod: tjsolerpsd2.String("commodi"),
-        PsuID: tjsolerpsd2.String("repudiandae"),
-        PSUIDType: tjsolerpsd2.String("quae"),
-        PSUIPAddress: "ipsum",
-        PSUIPPort: tjsolerpsd2.String("quidem"),
-        PSUUserAgent: tjsolerpsd2.String("molestias"),
-        RequestBody: []byte("excepturi"),
-        Signature: "pariatur",
-        TPPBrandLoggingInformation: tjsolerpsd2.String("modi"),
-        TPPNokRedirectURI: tjsolerpsd2.String("praesentium"),
-        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("rem"),
-        TPPSignatureCertificate: "voluptates",
-        XRequestID: "quasi",
-        Aspsp: "repudiandae",
+        Digest: "neque",
+        PSUIPAddress: "ability Strategist Fundamental",
+        RequestBody: []byte("n4:!0Qz2eo"),
+        Signature: "engage transmitter Blues",
+        TPPSignatureCertificate: "Sri",
+        XRequestID: "payment",
+        Aspsp: "Bellingham",
     })
     if err != nil {
         log.Fatal(err)

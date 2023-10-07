@@ -1,4 +1,5 @@
 # ConsultaDeFondos
+(*ConsultaDeFondos*)
 
 ### Available Operations
 
@@ -26,13 +27,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ConsultaDeFondos.FundsConfirmation(ctx, operations.FundsConfirmationRequest{
-        ConsentID: "fugit",
-        Digest: "dolorum",
-        RequestBody: []byte("excepturi"),
-        Signature: "tempora",
-        TPPSignatureCertificate: "facilis",
-        XRequestID: "tempore",
-        Aspsp: "labore",
+        ConsentID: "SCSI Cab ASCII",
+        Digest: "candela hm",
+        RequestBody: []byte("sXp<5lP:&a"),
+        Signature: "experiences",
+        TPPSignatureCertificate: "Nissan Movies Mexico",
+        XRequestID: "calculate input",
+        Aspsp: "collaborative Administrator dramatize",
     })
     if err != nil {
         log.Fatal(err)

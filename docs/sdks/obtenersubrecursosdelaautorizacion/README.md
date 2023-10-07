@@ -1,4 +1,5 @@
 # ObtenerSubRecursosDeLaAutorizacion
+(*ObtenerSubRecursosDeLaAutorizacion*)
 
 ### Available Operations
 
@@ -28,28 +29,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionCancelacionPago(ctx, operations.GetSubRecursosAutorizacionCancelacionPagoRequest{
-        ConsentID: tjsolerpsd2.String("quidem"),
-        Digest: "neque",
-        PSUAccept: tjsolerpsd2.String("quo"),
-        PSUAcceptCharset: tjsolerpsd2.String("illum"),
-        PSUAcceptEncoding: tjsolerpsd2.String("quo"),
-        PSUAcceptLanguage: tjsolerpsd2.String("fuga"),
-        PSUDeviceID: tjsolerpsd2.String("eius"),
-        PSUGeoLocation: tjsolerpsd2.String("eos"),
-        PSUHTTPMethod: tjsolerpsd2.String("voluptas"),
-        PSUIPAddress: "ab",
-        PSUIPPort: tjsolerpsd2.String("cupiditate"),
-        PSUUserAgent: tjsolerpsd2.String("consequatur"),
-        Signature: "tempora",
-        TPPNokRedirectURI: tjsolerpsd2.String("debitis"),
-        TPPRedirectPreferred: tjsolerpsd2.String("ipsam"),
-        TPPRedirectURI: tjsolerpsd2.String("aspernatur"),
-        TPPSignatureCertificate: "sequi",
-        XRequestID: "quo",
-        Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoAspspEurocajarural,
-        PaymentID: "recusandae",
-        PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentProductSepaCreditTransfers,
-        PaymentService: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentServicePeriodicPayments,
+        Digest: "Van emulation Mouse",
+        PSUIPAddress: "Avon clove recontextualize",
+        Signature: "Soul",
+        TPPSignatureCertificate: "Bedfordshire",
+        XRequestID: "Cab black male",
+        Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoAspspCaixabank,
+        PaymentID: "at monitoring Fermium",
+        PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk,
+        PaymentService: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -95,26 +83,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionConsentimientosAIS(ctx, operations.GetSubRecursosAutorizacionConsentimientosAISRequest{
-        ConsentID: tjsolerpsd2.String("quod"),
-        Digest: "dignissimos",
-        PSUAccept: tjsolerpsd2.String("inventore"),
-        PSUAcceptCharset: tjsolerpsd2.String("nihil"),
-        PSUAcceptEncoding: tjsolerpsd2.String("totam"),
-        PSUAcceptLanguage: tjsolerpsd2.String("accusamus"),
-        PSUDeviceID: tjsolerpsd2.String("aliquam"),
-        PSUGeoLocation: tjsolerpsd2.String("odio"),
-        PSUHTTPMethod: tjsolerpsd2.String("occaecati"),
-        PSUIPAddress: "commodi",
-        PSUIPPort: tjsolerpsd2.String("sapiente"),
-        PSUUserAgent: tjsolerpsd2.String("dolores"),
-        Signature: "deserunt",
-        TPPNokRedirectURI: tjsolerpsd2.String("molestiae"),
-        TPPRedirectPreferred: tjsolerpsd2.String("accusantium"),
-        TPPRedirectURI: tjsolerpsd2.String("porro"),
-        TPPSignatureCertificate: "eum",
-        XRequestID: "quas",
-        Aspsp: "praesentium",
-        ConsentIDPathParameter: "consequuntur",
+        Digest: "Harrisonburg",
+        PSUIPAddress: "why haptic Virginia",
+        Signature: "Accounts Hat Health",
+        TPPSignatureCertificate: "wireless Loan Bahamian",
+        XRequestID: "Northeast",
+        Aspsp: "loyalty Electronic",
+        ConsentIDPathParameter: "geez",
     })
     if err != nil {
         log.Fatal(err)
@@ -160,26 +135,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionConsentimientosFCS(ctx, operations.GetSubRecursosAutorizacionConsentimientosFCSRequest{
-        ConsentID: tjsolerpsd2.String("deleniti"),
-        Digest: "fugit",
-        PSUAccept: tjsolerpsd2.String("fuga"),
-        PSUAcceptCharset: tjsolerpsd2.String("mollitia"),
-        PSUAcceptEncoding: tjsolerpsd2.String("incidunt"),
-        PSUAcceptLanguage: tjsolerpsd2.String("atque"),
-        PSUDeviceID: tjsolerpsd2.String("explicabo"),
-        PSUGeoLocation: tjsolerpsd2.String("minima"),
-        PSUHTTPMethod: tjsolerpsd2.String("nisi"),
-        PSUIPAddress: "fugit",
-        PSUIPPort: tjsolerpsd2.String("sapiente"),
-        PSUUserAgent: tjsolerpsd2.String("consequuntur"),
-        Signature: "ratione",
-        TPPNokRedirectURI: tjsolerpsd2.String("explicabo"),
-        TPPRedirectPreferred: tjsolerpsd2.String("saepe"),
-        TPPRedirectURI: tjsolerpsd2.String("occaecati"),
-        TPPSignatureCertificate: "atque",
-        XRequestID: "et",
-        Aspsp: "esse",
-        ConsentIDPathParameter: "eveniet",
+        Digest: "hybrid extend geez",
+        PSUIPAddress: "Refined huzzah",
+        Signature: "Azusa SCSI",
+        TPPSignatureCertificate: "deposit",
+        XRequestID: "HEX",
+        Aspsp: "Loan Reactive Iraqi",
+        ConsentIDPathParameter: "Central gray Soap",
     })
     if err != nil {
         log.Fatal(err)
@@ -225,27 +187,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionInicioPago(ctx, operations.GetSubRecursosAutorizacionInicioPagoRequest{
-        ConsentID: tjsolerpsd2.String("accusamus"),
-        Digest: "veritatis",
-        PSUAccept: tjsolerpsd2.String("esse"),
-        PSUAcceptCharset: tjsolerpsd2.String("quod"),
-        PSUAcceptEncoding: tjsolerpsd2.String("nam"),
-        PSUAcceptLanguage: tjsolerpsd2.String("vero"),
-        PSUDeviceID: tjsolerpsd2.String("aliquid"),
-        PSUGeoLocation: tjsolerpsd2.String("quasi"),
-        PSUHTTPMethod: tjsolerpsd2.String("saepe"),
-        PSUIPAddress: "vel",
-        PSUIPPort: tjsolerpsd2.String("harum"),
-        PSUUserAgent: tjsolerpsd2.String("molestiae"),
-        Signature: "rerum",
-        TPPNokRedirectURI: tjsolerpsd2.String("occaecati"),
-        TPPRedirectPreferred: tjsolerpsd2.String("minima"),
-        TPPRedirectURI: tjsolerpsd2.String("distinctio"),
-        TPPSignatureCertificate: "eligendi",
-        XRequestID: "sit",
-        Aspsp: operations.GetSubRecursosAutorizacionInicioPagoAspspCajasur,
-        PaymentID: "tempore",
-        PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers,
+        Digest: "unsung Metal",
+        PSUIPAddress: "Associate",
+        Signature: "withdrawal Handmade",
+        TPPSignatureCertificate: "teal strategic",
+        XRequestID: "virtual",
+        Aspsp: operations.GetSubRecursosAutorizacionInicioPagoAspspMediolanum,
+        PaymentID: "Cis parse Music",
+        PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk,
         PaymentService: operations.GetSubRecursosAutorizacionInicioPagoPaymentServicePeriodicPayments,
     })
     if err != nil {

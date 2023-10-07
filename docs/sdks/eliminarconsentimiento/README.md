@@ -1,4 +1,5 @@
 # EliminarConsentimiento
+(*EliminarConsentimiento*)
 
 ### Available Operations
 
@@ -26,25 +27,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.EliminarConsentimiento.DeleteConsentID(ctx, operations.DeleteConsentIDRequest{
-        Digest: "delectus",
-        PSUAccept: tjsolerpsd2.String("eum"),
-        PSUAcceptCharset: tjsolerpsd2.String("non"),
-        PSUAcceptEncoding: tjsolerpsd2.String("eligendi"),
-        PSUAcceptLanguage: tjsolerpsd2.String("sint"),
-        PSUDeviceID: tjsolerpsd2.String("aliquid"),
-        PSUGeoLocation: tjsolerpsd2.String("provident"),
-        PSUHTTPMethod: tjsolerpsd2.String("necessitatibus"),
-        PSUIPAddress: tjsolerpsd2.String("sint"),
-        PSUIPPort: tjsolerpsd2.String("officia"),
-        PSUUserAgent: tjsolerpsd2.String("dolor"),
-        Signature: "debitis",
-        TPPNokRedirectURI: tjsolerpsd2.String("a"),
-        TPPRedirectPreferred: tjsolerpsd2.String("dolorum"),
-        TPPRedirectURI: tjsolerpsd2.String("in"),
-        TPPSignatureCertificate: "in",
-        XRequestID: "illum",
-        Aspsp: "maiores",
-        ConsentID: "rerum",
+        Digest: "Bicycle",
+        Signature: "sans Cambridgeshire",
+        TPPSignatureCertificate: "doubtfully",
+        XRequestID: "Cambridgeshire",
+        Aspsp: "Radon",
+        ConsentID: "Bike conciliate",
     })
     if err != nil {
         log.Fatal(err)
@@ -90,25 +78,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.EliminarConsentimiento.DeleteConsentsConfirmationOfFunds(ctx, operations.DeleteConsentsConfirmationOfFundsRequest{
-        Digest: "dicta",
-        PSUAccept: tjsolerpsd2.String("magnam"),
-        PSUAcceptCharset: tjsolerpsd2.String("cumque"),
-        PSUAcceptEncoding: tjsolerpsd2.String("facere"),
-        PSUAcceptLanguage: tjsolerpsd2.String("ea"),
-        PSUDeviceID: tjsolerpsd2.String("aliquid"),
-        PSUGeoLocation: tjsolerpsd2.String("laborum"),
-        PSUHTTPMethod: tjsolerpsd2.String("accusamus"),
-        PSUIPAddress: tjsolerpsd2.String("non"),
-        PSUIPPort: tjsolerpsd2.String("occaecati"),
-        PSUUserAgent: tjsolerpsd2.String("enim"),
-        Signature: "accusamus",
-        TPPNokRedirectURI: tjsolerpsd2.String("delectus"),
-        TPPRedirectPreferred: tjsolerpsd2.String("quidem"),
-        TPPRedirectURI: tjsolerpsd2.String("provident"),
-        TPPSignatureCertificate: "nam",
-        XRequestID: "id",
-        Aspsp: "blanditiis",
-        ConsentID: "deleniti",
+        Digest: "deposit granular Money",
+        Signature: "copying withdrawal farad",
+        TPPSignatureCertificate: "Security Sausages Books",
+        XRequestID: "coffee Concrete West",
+        Aspsp: "calculating",
+        ConsentID: "Gloves ratione",
     })
     if err != nil {
         log.Fatal(err)

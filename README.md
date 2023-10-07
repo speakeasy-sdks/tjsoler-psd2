@@ -32,28 +32,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionCancelacionPago(ctx, operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest{
-        ConsentID: tjsolerpsd2.String("voluptatum"),
-        Digest: "iusto",
-        PSUAccept: tjsolerpsd2.String("excepturi"),
-        PSUAcceptCharset: tjsolerpsd2.String("nisi"),
-        PSUAcceptEncoding: tjsolerpsd2.String("recusandae"),
-        PSUAcceptLanguage: tjsolerpsd2.String("temporibus"),
-        PSUDeviceID: tjsolerpsd2.String("ab"),
-        PSUGeoLocation: tjsolerpsd2.String("quis"),
-        PSUHTTPMethod: tjsolerpsd2.String("veritatis"),
-        PSUIPAddress: "deserunt",
-        PSUIPPort: tjsolerpsd2.String("perferendis"),
-        PSUUserAgent: tjsolerpsd2.String("ipsam"),
-        Signature: "repellendus",
-        TPPNokRedirectURI: tjsolerpsd2.String("sapiente"),
-        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("quo"),
-        TPPSignatureCertificate: "odit",
-        XRequestID: "at",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspIbercaja,
-        AuthorisationID: "maiores",
-        PaymentID: "molestiae",
-        PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk,
+        Digest: "driver Metal",
+        PSUIPAddress: "Recycled Northwest",
+        Signature: "Connelly",
+        TPPSignatureCertificate: "Sleek",
+        XRequestID: "grow sunt",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBff,
+        AuthorisationID: "bus Dakota",
+        PaymentID: "outside",
+        PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductTarget2Payments,
         PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePeriodicPayments,
     })
     if err != nil {
@@ -182,8 +169,6 @@ func main() {
 
 <!-- Start Dev Containers -->
 
-
-
 <!-- End Dev Containers -->
 
 
@@ -196,8 +181,6 @@ returned response object will have a `Next` method that can be called to pull do
 return value of `Next` is `nil`, then there are no more pages to be fetched.
 
 Here's an example of one such pagination call:
-
-
 <!-- End Pagination -->
 
 

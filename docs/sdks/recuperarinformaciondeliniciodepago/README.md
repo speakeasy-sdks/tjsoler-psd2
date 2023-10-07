@@ -1,4 +1,5 @@
 # RecuperarInformacionDelInicioDePago
+(*RecuperarInformacionDelInicioDePago*)
 
 ### Available Operations
 
@@ -25,24 +26,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDelInicioDePago.GetInfoPayment(ctx, operations.GetInfoPaymentRequest{
-        Digest: "soluta",
-        PSUAccept: tjsolerpsd2.String("accusantium"),
-        PSUAcceptCharset: tjsolerpsd2.String("aliquam"),
-        PSUAcceptEncoding: tjsolerpsd2.String("sapiente"),
-        PSUAcceptLanguage: tjsolerpsd2.String("dicta"),
-        PSUDeviceID: tjsolerpsd2.String("ullam"),
-        PSUGeoLocation: tjsolerpsd2.String("reprehenderit"),
-        PSUHTTPMethod: tjsolerpsd2.String("ullam"),
-        PSUIPAddress: "nisi",
-        PSUIPPort: tjsolerpsd2.String("aut"),
-        PSUUserAgent: tjsolerpsd2.String("voluptatum"),
-        Signature: "qui",
-        TPPSignatureCertificate: "quibusdam",
-        XRequestID: "ex",
-        Aspsp: "deleniti",
-        PaymentID: "itaque",
-        PaymentProduct: operations.GetInfoPaymentPaymentProductTarget2Payments,
-        PaymentService: operations.GetInfoPaymentPaymentServicePayments,
+        Digest: "moderator Non Lead",
+        PSUIPAddress: "payment Neon wireless",
+        Signature: "intuitive Zambia orange",
+        TPPSignatureCertificate: "Bedfordshire Fresh",
+        XRequestID: "Martin",
+        Aspsp: "Incredible Shoes",
+        PaymentID: "incentivize",
+        PaymentProduct: operations.GetInfoPaymentPaymentProductSepaCreditTransfers,
+        PaymentService: operations.GetInfoPaymentPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)

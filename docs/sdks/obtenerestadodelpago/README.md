@@ -1,4 +1,5 @@
 # ObtenerEstadoDelPago
+(*ObtenerEstadoDelPago*)
 
 ### Available Operations
 
@@ -25,24 +26,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDelPago.StatusPayment(ctx, operations.StatusPaymentRequest{
-        Digest: "eum",
-        PSUAccept: tjsolerpsd2.String("autem"),
-        PSUAcceptCharset: tjsolerpsd2.String("nobis"),
-        PSUAcceptEncoding: tjsolerpsd2.String("quas"),
-        PSUAcceptLanguage: tjsolerpsd2.String("assumenda"),
-        PSUDeviceID: tjsolerpsd2.String("nulla"),
-        PSUGeoLocation: tjsolerpsd2.String("voluptas"),
-        PSUHTTPMethod: tjsolerpsd2.String("libero"),
-        PSUIPAddress: "quasi",
-        PSUIPPort: tjsolerpsd2.String("tempora"),
-        PSUUserAgent: tjsolerpsd2.String("numquam"),
-        Signature: "explicabo",
-        TPPSignatureCertificate: "provident",
-        XRequestID: "ipsa",
-        Aspsp: "molestiae",
-        PaymentID: "magnam",
+        Digest: "Electric oat Cruiser",
+        PSUIPAddress: "capacitor",
+        Signature: "Ball Intelligent",
+        TPPSignatureCertificate: "iterate",
+        XRequestID: "Car Movies carter",
+        Aspsp: "Falkland bifurcated",
+        PaymentID: "manufacturer Steel",
         PaymentProduct: operations.StatusPaymentPaymentProductInstantSepaCreditTransfers,
-        PaymentService: operations.StatusPaymentPaymentServicePayments,
+        PaymentService: operations.StatusPaymentPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)

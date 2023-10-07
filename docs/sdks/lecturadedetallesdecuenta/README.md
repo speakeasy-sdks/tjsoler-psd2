@@ -1,4 +1,5 @@
 # LecturaDeDetallesDeCuenta
+(*LecturaDeDetallesDeCuenta*)
 
 ### Available Operations
 
@@ -25,24 +26,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeDetallesDeCuenta.GetAccountIdv11(ctx, operations.GetAccountIdv11Request{
-        ConsentID: "esse",
-        Digest: "harum",
-        PSUAccept: tjsolerpsd2.String("iusto"),
-        PSUAcceptCharset: tjsolerpsd2.String("ipsum"),
-        PSUAcceptEncoding: tjsolerpsd2.String("quisquam"),
-        PSUAcceptLanguage: tjsolerpsd2.String("tenetur"),
-        PSUDeviceID: tjsolerpsd2.String("amet"),
-        PSUGeoLocation: tjsolerpsd2.String("tempore"),
-        PSUHTTPMethod: tjsolerpsd2.String("accusamus"),
-        PSUIPAddress: tjsolerpsd2.String("numquam"),
-        PSUIPPort: tjsolerpsd2.String("enim"),
-        PSUUserAgent: tjsolerpsd2.String("dolorem"),
-        Signature: "sapiente",
-        TPPSignatureCertificate: "totam",
-        XRequestID: "nihil",
-        AccountID: "sit",
-        Aspsp: "expedita",
-        WithBalance: tjsolerpsd2.Bool(false),
+        ConsentID: "BMW",
+        Digest: "Metal South Incredible",
+        Signature: "Brand Paucek",
+        TPPSignatureCertificate: "Burbank",
+        XRequestID: "Bicycle male Directives",
+        AccountID: "Ghana Highway Wyoming",
+        Aspsp: "male",
     })
     if err != nil {
         log.Fatal(err)

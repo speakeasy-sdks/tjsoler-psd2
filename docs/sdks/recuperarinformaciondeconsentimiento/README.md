@@ -1,4 +1,5 @@
 # RecuperarInformacionDeConsentimiento
+(*RecuperarInformacionDeConsentimiento*)
 
 ### Available Operations
 
@@ -26,25 +27,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDeConsentimiento.GetConsentIDDetails(ctx, operations.GetConsentIDDetailsRequest{
-        Digest: "consequuntur",
-        PSUAccept: tjsolerpsd2.String("consequatur"),
-        PSUAcceptCharset: tjsolerpsd2.String("minus"),
-        PSUAcceptEncoding: tjsolerpsd2.String("quaerat"),
-        PSUAcceptLanguage: tjsolerpsd2.String("sapiente"),
-        PSUDeviceID: tjsolerpsd2.String("consectetur"),
-        PSUGeoLocation: tjsolerpsd2.String("esse"),
-        PSUHTTPMethod: tjsolerpsd2.String("blanditiis"),
-        PSUIPAddress: tjsolerpsd2.String("provident"),
-        PSUIPPort: tjsolerpsd2.String("a"),
-        PSUUserAgent: tjsolerpsd2.String("nulla"),
-        Signature: "quas",
-        TPPNokRedirectURI: tjsolerpsd2.String("esse"),
-        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("quasi"),
-        TPPSignatureCertificate: "a",
-        XRequestID: "error",
-        Aspsp: "sint",
-        ConsentID: "pariatur",
+        Digest: "Ocala nasalise Calcium",
+        Signature: "reprehenderit for",
+        TPPSignatureCertificate: "huzzah",
+        XRequestID: "Loan",
+        Aspsp: "online Marketing",
+        ConsentID: "barring Assistant utilize",
     })
     if err != nil {
         log.Fatal(err)
@@ -90,25 +78,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDeConsentimiento.GetConsentsConfirmationOfFundsInfo(ctx, operations.GetConsentsConfirmationOfFundsInfoRequest{
-        Digest: "possimus",
-        PSUAccept: tjsolerpsd2.String("quia"),
-        PSUAcceptCharset: tjsolerpsd2.String("eveniet"),
-        PSUAcceptEncoding: tjsolerpsd2.String("asperiores"),
-        PSUAcceptLanguage: tjsolerpsd2.String("facere"),
-        PSUDeviceID: tjsolerpsd2.String("veritatis"),
-        PSUGeoLocation: tjsolerpsd2.String("consequuntur"),
-        PSUHTTPMethod: tjsolerpsd2.String("quasi"),
-        PSUIPAddress: tjsolerpsd2.String("similique"),
-        PSUIPPort: tjsolerpsd2.String("culpa"),
-        PSUUserAgent: tjsolerpsd2.String("aliquid"),
-        Signature: "tenetur",
-        TPPNokRedirectURI: tjsolerpsd2.String("quae"),
-        TPPRedirectPreferred: tjsolerpsd2.String("earum"),
-        TPPRedirectURI: tjsolerpsd2.String("vel"),
-        TPPSignatureCertificate: "in",
-        XRequestID: "eius",
-        Aspsp: "libero",
-        ConsentID: "illum",
+        Digest: "Representative",
+        Signature: "payment",
+        TPPSignatureCertificate: "functionalities Forward",
+        XRequestID: "Hybrid kelvin",
+        Aspsp: "Northeast partially",
+        ConsentID: "sparkling copy Planner",
     })
     if err != nil {
         log.Fatal(err)

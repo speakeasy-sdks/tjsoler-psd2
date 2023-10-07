@@ -47,6 +47,7 @@ type sdkConfiguration struct {
 	OpenAPIDocVersion string
 	SDKVersion        string
 	GenVersion        string
+	UserAgent         string
 	RetryConfig       *utils.RetryConfig
 }
 
@@ -134,8 +135,9 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.1",
-			SDKVersion:        "0.2.1",
-			GenVersion:        "2.125.1",
+			SDKVersion:        "0.3.0",
+			GenVersion:        "2.150.0",
+			UserAgent:         "speakeasy-sdk/go 0.3.0 2.150.0 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
 		},
 	}
 	for _, opt := range opts {

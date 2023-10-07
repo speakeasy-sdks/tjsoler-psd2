@@ -1,4 +1,5 @@
 # ObtenerListadoDeBeneficiariosDeConfianza
+(*ObtenerListadoDeBeneficiariosDeConfianza*)
 
 ### Available Operations
 
@@ -25,23 +26,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerListadoDeBeneficiariosDeConfianza.GetTrustedBeneficiaries(ctx, operations.GetTrustedBeneficiariesRequest{
-        ConsentID: "esse",
-        Digest: "esse",
-        PSUAccept: tjsolerpsd2.String("rem"),
-        PSUAcceptCharset: tjsolerpsd2.String("fuga"),
-        PSUAcceptEncoding: tjsolerpsd2.String("reprehenderit"),
-        PSUAcceptLanguage: tjsolerpsd2.String("quidem"),
-        PSUDeviceID: tjsolerpsd2.String("fugiat"),
-        PSUGeoLocation: tjsolerpsd2.String("ut"),
-        PSUHTTPMethod: tjsolerpsd2.String("eum"),
-        PSUIPAddress: tjsolerpsd2.String("suscipit"),
-        PSUIPPort: tjsolerpsd2.String("assumenda"),
-        PSUUserAgent: tjsolerpsd2.String("eos"),
-        Signature: "praesentium",
-        TPPSignatureCertificate: "quisquam",
-        XRequestID: "veritatis",
-        AccountID: tjsolerpsd2.String("ipsa"),
-        Aspsp: "id",
+        ConsentID: "Virginia Regional",
+        Digest: "Cambridgeshire",
+        Signature: "anenst",
+        TPPSignatureCertificate: "ability",
+        XRequestID: "alarm",
+        Aspsp: "Blues",
     })
     if err != nil {
         log.Fatal(err)

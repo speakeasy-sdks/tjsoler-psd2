@@ -1,4 +1,5 @@
 # LecturaDeBalances
+(*LecturaDeBalances*)
 
 ### Available Operations
 
@@ -25,23 +26,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeBalances.GetAccountBalances(ctx, operations.GetAccountBalancesRequest{
-        ConsentID: "suscipit",
-        Digest: "deserunt",
-        PSUAccept: tjsolerpsd2.String("provident"),
-        PSUAcceptCharset: tjsolerpsd2.String("minima"),
-        PSUAcceptEncoding: tjsolerpsd2.String("repellendus"),
-        PSUAcceptLanguage: tjsolerpsd2.String("totam"),
-        PSUDeviceID: tjsolerpsd2.String("similique"),
-        PSUGeoLocation: tjsolerpsd2.String("alias"),
-        PSUHTTPMethod: tjsolerpsd2.String("at"),
-        PSUIPAddress: tjsolerpsd2.String("quaerat"),
-        PSUIPPort: tjsolerpsd2.String("tempora"),
-        PSUUserAgent: tjsolerpsd2.String("vel"),
-        Signature: "quod",
-        TPPSignatureCertificate: "officiis",
-        XRequestID: "qui",
-        AccountID: "dolorum",
-        Aspsp: "a",
+        ConsentID: "ampere copying",
+        Digest: "Venezuela Chevrolet taxicab",
+        Signature: "Hybrid voluptatum benchmark",
+        TPPSignatureCertificate: "repudiandae monitor Russian",
+        XRequestID: "East consequently International",
+        AccountID: "Accounts Dubnium lux",
+        Aspsp: "project Hip",
     })
     if err != nil {
         log.Fatal(err)

@@ -37,6 +37,7 @@ pkg/utils/requestbody.go
 pkg/utils/retries.go
 pkg/utils/security.go
 pkg/utils/utils.go
+tests/helpers.go
 pkg/models/operations/putseleccionarscaautorizacioncancelacionpago.go
 pkg/models/operations/putseleccionarscaautorizacionconsentimientosais.go
 pkg/models/operations/putseleccionarscaautorizacionconsentimientosfcs.go

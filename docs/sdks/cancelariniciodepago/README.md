@@ -1,4 +1,5 @@
 # CancelarInicioDePago
+(*CancelarInicioDePago*)
 
 ### Available Operations
 
@@ -25,26 +26,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.CancelarInicioDePago.DeletePayment(ctx, operations.DeletePaymentRequest{
-        Digest: "aut",
-        PSUAccept: tjsolerpsd2.String("quasi"),
-        PSUAcceptCharset: tjsolerpsd2.String("error"),
-        PSUAcceptEncoding: tjsolerpsd2.String("temporibus"),
-        PSUAcceptLanguage: tjsolerpsd2.String("laborum"),
-        PSUDeviceID: tjsolerpsd2.String("quasi"),
-        PSUGeoLocation: tjsolerpsd2.String("reiciendis"),
-        PSUHTTPMethod: tjsolerpsd2.String("voluptatibus"),
-        PSUIPAddress: tjsolerpsd2.String("vero"),
-        PSUIPPort: tjsolerpsd2.String("nihil"),
-        PSUUserAgent: tjsolerpsd2.String("praesentium"),
-        Signature: "voluptatibus",
-        TPPExplicitAuthorisationPreferred: tjsolerpsd2.Bool(false),
-        TPPNokRedirectURI: tjsolerpsd2.String("ipsa"),
-        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("omnis"),
-        TPPSignatureCertificate: "voluptate",
-        XRequestID: "cum",
-        Aspsp: "perferendis",
-        PaymentID: "doloremque",
+        Digest: "Australian",
+        Signature: "Bronze but",
+        TPPSignatureCertificate: "Brand Sports Brand",
+        XRequestID: "disinherit local Rutherfordium",
+        Aspsp: "repurpose Chevrolet Unbranded",
+        PaymentID: "Hybrid Electric Account",
         PaymentProduct: operations.DeletePaymentPaymentProductInstantSepaCreditTransfers,
         PaymentService: operations.DeletePaymentPaymentServicePayments,
     })

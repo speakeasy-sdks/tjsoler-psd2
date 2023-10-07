@@ -1,4 +1,5 @@
 # LecturaDeTransacciones
+(*LecturaDeTransacciones*)
 
 ### Available Operations
 
@@ -25,29 +26,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeTransacciones.AccountsTrasactions(ctx, operations.AccountsTrasactionsRequest{
-        ConsentID: "totam",
-        Digest: "incidunt",
-        PSUAccept: tjsolerpsd2.String("aspernatur"),
-        PSUAcceptCharset: tjsolerpsd2.String("dolores"),
-        PSUAcceptEncoding: tjsolerpsd2.String("distinctio"),
-        PSUAcceptLanguage: tjsolerpsd2.String("facilis"),
-        PSUDeviceID: tjsolerpsd2.String("aliquid"),
-        PSUGeoLocation: tjsolerpsd2.String("quam"),
-        PSUHTTPMethod: tjsolerpsd2.String("molestias"),
-        PSUIPAddress: tjsolerpsd2.String("temporibus"),
-        PSUIPPort: tjsolerpsd2.String("qui"),
-        PSUUserAgent: tjsolerpsd2.String("neque"),
-        Signature: "fugit",
-        TPPSignatureCertificate: "magni",
-        XRequestID: "odio",
-        AccountID: "sunt",
-        Aspsp: "ullam",
-        BookingStatus: "nam",
-        DateFrom: tjsolerpsd2.String("hic"),
-        DateTo: tjsolerpsd2.String("voluptatem"),
-        DeltaList: tjsolerpsd2.Bool(false),
-        EntryReferenceFrom: tjsolerpsd2.String("cumque"),
-        WithBalance: tjsolerpsd2.Bool(false),
+        ConsentID: "Convertible during Northwest",
+        Digest: "granular Folk microchip",
+        Signature: "minus",
+        TPPSignatureCertificate: "Smart",
+        XRequestID: "tangible atop joule",
+        AccountID: "Hat City",
+        Aspsp: "female Tesla",
+        BookingStatus: "Newton monitor",
     })
     if err != nil {
         log.Fatal(err)

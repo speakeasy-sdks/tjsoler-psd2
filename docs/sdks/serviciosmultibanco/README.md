@@ -1,4 +1,5 @@
 # ServiciosMultibanco
+(*ServiciosMultibanco*)
 
 ### Available Operations
 
@@ -34,23 +35,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-        Digest: "omnis",
-        PSUAccept: tjsolerpsd2.String("tenetur"),
-        PSUAcceptCharset: tjsolerpsd2.String("quasi"),
-        PSUAcceptEncoding: tjsolerpsd2.String("at"),
-        PSUAcceptLanguage: tjsolerpsd2.String("et"),
-        PSUDeviceID: tjsolerpsd2.String("voluptate"),
-        PSUGeoLocation: tjsolerpsd2.String("ipsa"),
-        PSUHTTPMethod: tjsolerpsd2.String("minima"),
-        PSUIPAddress: "veritatis",
-        PSUIPPort: tjsolerpsd2.String("consectetur"),
-        PSUUserAgent: tjsolerpsd2.String("adipisci"),
-        Signature: "iste",
-        TPPSignatureCertificate: "temporibus",
-        XRequestID: "accusantium",
-        AspName: "rem",
-        MultibancoPaymentType: "aut",
-        PaymentID: "laudantium",
+        Digest: "API",
+        PSUIPAddress: "Savings Kwanza female",
+        Signature: "male Praseodymium",
+        TPPSignatureCertificate: "East Nissan",
+        XRequestID: "meter Fantastic sievert",
+        AspName: "SMTP",
+        MultibancoPaymentType: "Associate circuit",
+        PaymentID: "Gambia",
     })
     if err != nil {
         log.Fatal(err)
@@ -96,15 +88,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetMultibancoCatalogue(ctx, operations.GetMultibancoCatalogueRequest{
-        Digest: "eum",
-        Signature: "mollitia",
-        TPPSignatureCertificate: "ab",
-        XRequestID: "corrupti",
-        AspName: "non",
-        InstructedAmount: tjsolerpsd2.String("voluptatem"),
-        MultibancoPaymentType: "dolor",
-        PaymentReference: tjsolerpsd2.String("occaecati"),
-        RequestedExecutionDate: tjsolerpsd2.String("numquam"),
+        Digest: "Trial",
+        Signature: "Senegal Bhutan",
+        TPPSignatureCertificate: "brown Gold CSS",
+        XRequestID: "reprehenderit",
+        AspName: "until West victoriously",
+        MultibancoPaymentType: "Keyboard seamless Smart",
     })
     if err != nil {
         log.Fatal(err)
@@ -150,23 +139,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-        Digest: "impedit",
-        PSUAccept: tjsolerpsd2.String("explicabo"),
-        PSUAcceptCharset: tjsolerpsd2.String("voluptas"),
-        PSUAcceptEncoding: tjsolerpsd2.String("aut"),
-        PSUAcceptLanguage: tjsolerpsd2.String("dignissimos"),
-        PSUDeviceID: tjsolerpsd2.String("dicta"),
-        PSUGeoLocation: tjsolerpsd2.String("maiores"),
-        PSUHTTPMethod: tjsolerpsd2.String("natus"),
-        PSUIPAddress: "velit",
-        PSUIPPort: tjsolerpsd2.String("voluptatibus"),
-        PSUUserAgent: tjsolerpsd2.String("voluptas"),
-        Signature: "asperiores",
-        TPPSignatureCertificate: "aperiam",
-        XRequestID: "ea",
-        AspName: "quaerat",
-        MultibancoPaymentType: "consequuntur",
-        PaymentID: "repellendus",
+        Digest: "Hagenes",
+        PSUIPAddress: "molder Interactions",
+        Signature: "Bugatti",
+        TPPSignatureCertificate: "Account",
+        XRequestID: "Outdoors",
+        AspName: "Extended Antimony Northwest",
+        MultibancoPaymentType: "capacitor",
+        PaymentID: "JSON",
     })
     if err != nil {
         log.Fatal(err)
@@ -210,25 +190,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest{
-        Digest: "officia",
-        PSUAccept: tjsolerpsd2.String("maxime"),
-        PSUAcceptCharset: tjsolerpsd2.String("dignissimos"),
-        PSUAcceptEncoding: tjsolerpsd2.String("officia"),
-        PSUAcceptLanguage: tjsolerpsd2.String("asperiores"),
-        PSUCorporateID: tjsolerpsd2.String("nemo"),
-        PSUCorporateIDType: tjsolerpsd2.String("quae"),
-        PSUDeviceID: tjsolerpsd2.String("quaerat"),
-        PSUGeoLocation: tjsolerpsd2.String("porro"),
-        PSUHTTPMethod: tjsolerpsd2.String("quod"),
-        PSUIPAddress: "labore",
-        PSUIPPort: tjsolerpsd2.String("ab"),
-        PSUUserAgent: tjsolerpsd2.String("adipisci"),
-        Signature: "fuga",
-        TPPSignatureCertificate: "id",
-        XRequestID: "suscipit",
-        AspName: "velit",
-        MultibancoPaymentType: "culpa",
-        PaymentID: "est",
+        Digest: "minima Rubber",
+        PSUIPAddress: "Direct earum",
+        Signature: "redundant",
+        TPPSignatureCertificate: "base",
+        XRequestID: "online Southwest",
+        AspName: "Toys Northeast static",
+        MultibancoPaymentType: "Pop transmitting",
+        PaymentID: "candela",
     })
     if err != nil {
         log.Fatal(err)
@@ -272,26 +241,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest{
-        Digest: "recusandae",
-        PSUAccept: tjsolerpsd2.String("totam"),
-        PSUAcceptCharset: tjsolerpsd2.String("fugiat"),
-        PSUAcceptEncoding: tjsolerpsd2.String("vel"),
-        PSUAcceptLanguage: tjsolerpsd2.String("ducimus"),
-        PSUCorporateID: tjsolerpsd2.String("quos"),
-        PSUCorporateIDType: tjsolerpsd2.String("vel"),
-        PSUDeviceID: tjsolerpsd2.String("labore"),
-        PSUGeoLocation: tjsolerpsd2.String("possimus"),
-        PSUHTTPMethod: tjsolerpsd2.String("facilis"),
-        PSUIPAddress: "cum",
-        PSUIPPort: tjsolerpsd2.String("commodi"),
-        PSUUserAgent: tjsolerpsd2.String("in"),
-        Signature: "corporis",
-        TPPSignatureCertificate: "reiciendis",
-        XRequestID: "assumenda",
-        AspName: "nemo",
-        AuthorisationID: "recusandae",
-        MultibancoPaymentType: "aliquid",
-        PaymentID: "aperiam",
+        Digest: "Habra female",
+        PSUIPAddress: "Hybrid Investor Bronze",
+        Signature: "infrastructures",
+        TPPSignatureCertificate: "Hybrid transmitting",
+        XRequestID: "synthesizing quizzical",
+        AspName: "slight Auto VGA",
+        AuthorisationID: "afore cyan",
+        MultibancoPaymentType: "Polygender navigating",
+        PaymentID: "Baby Borders Northeast",
     })
     if err != nil {
         log.Fatal(err)
@@ -337,23 +295,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatus(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatusRequest{
-        Digest: "cum",
-        PSUAccept: tjsolerpsd2.String("consectetur"),
-        PSUAcceptCharset: tjsolerpsd2.String("in"),
-        PSUAcceptEncoding: tjsolerpsd2.String("exercitationem"),
-        PSUAcceptLanguage: tjsolerpsd2.String("earum"),
-        PSUDeviceID: tjsolerpsd2.String("facere"),
-        PSUGeoLocation: tjsolerpsd2.String("numquam"),
-        PSUHTTPMethod: tjsolerpsd2.String("doloribus"),
-        PSUIPAddress: "suscipit",
-        PSUIPPort: tjsolerpsd2.String("reiciendis"),
-        PSUUserAgent: tjsolerpsd2.String("quidem"),
-        Signature: "saepe",
-        TPPSignatureCertificate: "necessitatibus",
-        XRequestID: "dolore",
-        AspName: "sunt",
-        MultibancoPaymentType: "asperiores",
-        PaymentID: "adipisci",
+        Digest: "Ball car skulk",
+        PSUIPAddress: "Digitized Marketing",
+        Signature: "networks and",
+        TPPSignatureCertificate: "than female sans",
+        XRequestID: "Wagon array navigate",
+        AspName: "hack",
+        MultibancoPaymentType: "voluptatum Robust Borders",
+        PaymentID: "opportunist silver",
     })
     if err != nil {
         log.Fatal(err)
@@ -397,25 +346,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest{
-        Digest: "non",
-        PSUAccept: tjsolerpsd2.String("amet"),
-        PSUAcceptCharset: tjsolerpsd2.String("beatae"),
-        PSUAcceptEncoding: tjsolerpsd2.String("dignissimos"),
-        PSUAcceptLanguage: tjsolerpsd2.String("a"),
-        PSUCorporateID: tjsolerpsd2.String("debitis"),
-        PSUCorporateIDType: tjsolerpsd2.String("consectetur"),
-        PSUDeviceID: tjsolerpsd2.String("corporis"),
-        PSUGeoLocation: tjsolerpsd2.String("harum"),
-        PSUHTTPMethod: tjsolerpsd2.String("laboriosam"),
-        PSUIPAddress: "ipsa",
-        PSUIPPort: tjsolerpsd2.String("voluptates"),
-        PSUUserAgent: tjsolerpsd2.String("libero"),
-        Signature: "vitae",
-        TPPSignatureCertificate: "accusamus",
-        XRequestID: "similique",
-        AspName: "tempora",
-        MultibancoPaymentType: "aspernatur",
-        PaymentID: "voluptas",
+        Digest: "SSD transform",
+        PSUIPAddress: "teal",
+        Signature: "FTP uncomfortable",
+        TPPSignatureCertificate: "Virginia",
+        XRequestID: "jovially unleash Lanka",
+        AspName: "smart Soft Electric",
+        MultibancoPaymentType: "Krona transmitting",
+        PaymentID: "Metal Volvo ick",
     })
     if err != nil {
         log.Fatal(err)
@@ -462,21 +400,8 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentType(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypeRequest{
-        Digest: "voluptas",
-        PSUAccept: tjsolerpsd2.String("voluptas"),
-        PSUAcceptCharset: tjsolerpsd2.String("minima"),
-        PSUAcceptEncoding: tjsolerpsd2.String("nobis"),
-        PSUAcceptLanguage: tjsolerpsd2.String("dolorum"),
-        PSUCorporateID: tjsolerpsd2.String("adipisci"),
-        PSUCorporateIDType: tjsolerpsd2.String("minus"),
-        PSUDeviceID: tjsolerpsd2.String("dolores"),
-        PSUGeoLocation: tjsolerpsd2.String("blanditiis"),
-        PSUHTTPMethod: tjsolerpsd2.String("in"),
-        PsuID: tjsolerpsd2.String("dolore"),
-        PSUIDType: tjsolerpsd2.String("aliquam"),
-        PSUIPAddress: "officiis",
-        PSUIPPort: tjsolerpsd2.String("temporibus"),
-        PSUUserAgent: tjsolerpsd2.String("ullam"),
+        Digest: "Avon Tuna",
+        PSUIPAddress: "haptic mint Gasoline",
         RequestStartMultibankPayment: shared.RequestStartMultibankPayment{
             DebtorAccount: &shared.RequestStartMultibankPaymentDebtorAccount{},
             EntityCode: tjsolerpsd2.Int64(10003),
@@ -491,15 +416,11 @@ func main() {
             TaxpayerIdentificationNumber: tjsolerpsd2.Int64(6244688226942976),
             TsuCenterCode: tjsolerpsd2.Int64(2698),
         },
-        Signature: "adipisci",
-        TPPExplicitAuthorisationPreferred: tjsolerpsd2.Bool(false),
-        TPPNokRedirectURI: tjsolerpsd2.String("cum"),
-        TPPRedirectPreferred: tjsolerpsd2.String("blanditiis"),
-        TPPRedirectURI: tjsolerpsd2.String("quas"),
-        TPPSignatureCertificate: "hic",
-        XRequestID: "nesciunt",
-        AspName: "culpa",
-        MultibancoPaymentType: "corrupti",
+        Signature: "Directives",
+        TPPSignatureCertificate: "Transexual pink",
+        XRequestID: "newton because Electric",
+        AspName: "navigate olive",
+        MultibancoPaymentType: "Ohio elicit",
     })
     if err != nil {
         log.Fatal(err)
@@ -546,21 +467,8 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholding(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequest{
-        Digest: "pariatur",
-        PSUAccept: tjsolerpsd2.String("totam"),
-        PSUAcceptCharset: tjsolerpsd2.String("hic"),
-        PSUAcceptEncoding: tjsolerpsd2.String("exercitationem"),
-        PSUAcceptLanguage: tjsolerpsd2.String("nobis"),
-        PSUCorporateID: tjsolerpsd2.String("sit"),
-        PSUCorporateIDType: tjsolerpsd2.String("rerum"),
-        PSUDeviceID: tjsolerpsd2.String("sed"),
-        PSUGeoLocation: tjsolerpsd2.String("reiciendis"),
-        PSUHTTPMethod: tjsolerpsd2.String("explicabo"),
-        PsuID: tjsolerpsd2.String("asperiores"),
-        PSUIDType: tjsolerpsd2.String("facilis"),
-        PSUIPAddress: "voluptate",
-        PSUIPPort: tjsolerpsd2.String("expedita"),
-        PSUUserAgent: tjsolerpsd2.String("ab"),
+        Digest: "Borders Hybrid compressing",
+        PSUIPAddress: "Factors Shoes degree",
         RequestSocialSecurityWithholding: shared.RequestSocialSecurityWithholding{
             DebtorAccount: shared.RequestSocialSecurityWithholdingDebtorAccount{},
             Niss: tjsolerpsd2.Int64(65136589331),
@@ -571,10 +479,10 @@ func main() {
             RemunerationAmount: shared.RequestSocialSecurityWithholdingRemunerationAmount{},
             RemunerationCode: 1,
         },
-        Signature: "iste",
-        TPPSignatureCertificate: "dolore",
-        XRequestID: "laborum",
-        AspName: "sed",
+        Signature: "Personal",
+        TPPSignatureCertificate: "Cab JBOD",
+        XRequestID: "woman embrace Kazakhstan",
+        AspName: "Gasoline Aston Modern",
     })
     if err != nil {
         log.Fatal(err)
@@ -619,29 +527,18 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx, operations.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest{
-        Digest: "in",
-        PSUAccept: tjsolerpsd2.String("commodi"),
-        PSUAcceptCharset: tjsolerpsd2.String("quidem"),
-        PSUAcceptEncoding: tjsolerpsd2.String("explicabo"),
-        PSUAcceptLanguage: tjsolerpsd2.String("voluptas"),
-        PSUCorporateID: tjsolerpsd2.String("unde"),
-        PSUCorporateIDType: tjsolerpsd2.String("architecto"),
-        PSUDeviceID: tjsolerpsd2.String("suscipit"),
-        PSUGeoLocation: tjsolerpsd2.String("sapiente"),
-        PSUHTTPMethod: tjsolerpsd2.String("debitis"),
-        PSUIPAddress: "illo",
-        PSUIPPort: tjsolerpsd2.String("reiciendis"),
-        PSUUserAgent: tjsolerpsd2.String("perferendis"),
+        Digest: "Car",
+        PSUIPAddress: "Money Woman",
         RequestActualizarDatosPsu: shared.RequestActualizarDatosPsu{
             AuthenticationMethodID: tjsolerpsd2.String("123"),
         },
-        Signature: "corrupti",
-        TPPSignatureCertificate: "maiores",
-        XRequestID: "incidunt",
-        AspName: "sed",
-        AuthorisationID: "provident",
-        MultibancoPaymentType: "eius",
-        PaymentID: "necessitatibus",
+        Signature: "Central",
+        TPPSignatureCertificate: "networks West shy",
+        XRequestID: "mobile reboot",
+        AspName: "Bronze",
+        AuthorisationID: "Jazz indeed Exclusive",
+        MultibancoPaymentType: "hm Cis Forward",
+        PaymentID: "Transexual Money",
     })
     if err != nil {
         log.Fatal(err)

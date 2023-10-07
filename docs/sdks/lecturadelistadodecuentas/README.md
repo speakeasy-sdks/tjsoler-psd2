@@ -1,4 +1,5 @@
 # LecturaDeListadoDeCuentas
+(*LecturaDeListadoDeCuentas*)
 
 ### Available Operations
 
@@ -25,23 +26,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeListadoDeCuentas.GetAccountListv11(ctx, operations.GetAccountListv11Request{
-        ConsentID: "neque",
-        Digest: "sed",
-        PSUAccept: tjsolerpsd2.String("vel"),
-        PSUAcceptCharset: tjsolerpsd2.String("libero"),
-        PSUAcceptEncoding: tjsolerpsd2.String("voluptas"),
-        PSUAcceptLanguage: tjsolerpsd2.String("deserunt"),
-        PSUDeviceID: tjsolerpsd2.String("quam"),
-        PSUGeoLocation: tjsolerpsd2.String("ipsum"),
-        PSUHTTPMethod: tjsolerpsd2.String("incidunt"),
-        PSUIPAddress: tjsolerpsd2.String("qui"),
-        PSUIPPort: tjsolerpsd2.String("cupiditate"),
-        PSUUserAgent: tjsolerpsd2.String("maxime"),
-        Signature: "pariatur",
-        TPPSignatureCertificate: "soluta",
-        XRequestID: "dicta",
-        Aspsp: "laborum",
-        WithBalance: tjsolerpsd2.Bool(false),
+        ConsentID: "multimedia Fresh coulomb",
+        Digest: "red Ferrari female",
+        Signature: "female methodologies Assimilated",
+        TPPSignatureCertificate: "empower",
+        XRequestID: "Future Kwacha female",
+        Aspsp: "to middleware to",
     })
     if err != nil {
         log.Fatal(err)

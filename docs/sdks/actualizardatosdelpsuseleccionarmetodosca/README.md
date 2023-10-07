@@ -1,4 +1,5 @@
 # ActualizarDatosDelPSUSeleccionarMetodoSCA
+(*ActualizarDatosDelPSUSeleccionarMetodoSCA*)
 
 ### Available Operations
 
@@ -28,29 +29,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionCancelacionPago(ctx, operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest{
-        ConsentID: tjsolerpsd2.String("esse"),
-        Digest: "totam",
-        PSUAccept: tjsolerpsd2.String("porro"),
-        PSUAcceptCharset: tjsolerpsd2.String("dolorum"),
-        PSUAcceptEncoding: tjsolerpsd2.String("dicta"),
-        PSUAcceptLanguage: tjsolerpsd2.String("nam"),
-        PSUDeviceID: tjsolerpsd2.String("officia"),
-        PSUGeoLocation: tjsolerpsd2.String("occaecati"),
-        PSUHTTPMethod: tjsolerpsd2.String("fugit"),
-        PSUIPAddress: "deleniti",
-        PSUIPPort: tjsolerpsd2.String("hic"),
-        PSUUserAgent: tjsolerpsd2.String("optio"),
-        Signature: "totam",
-        TPPNokRedirectURI: tjsolerpsd2.String("beatae"),
-        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("commodi"),
-        TPPSignatureCertificate: "molestiae",
-        XRequestID: "modi",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspCaixabank,
-        AuthorisationID: "impedit",
-        PaymentID: "cum",
-        PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductCrossBorderCreditTransfers,
-        PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePayments,
+        Digest: "driver Metal",
+        PSUIPAddress: "Recycled Northwest",
+        Signature: "Connelly",
+        TPPSignatureCertificate: "Sleek",
+        XRequestID: "grow sunt",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBff,
+        AuthorisationID: "bus Dakota",
+        PaymentID: "outside",
+        PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductTarget2Payments,
+        PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -97,30 +85,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionConsentimientosAIS(ctx, operations.PutSeleccionarSCAAutorizacionConsentimientosAISRequest{
-        ConsentID: tjsolerpsd2.String("excepturi"),
-        Digest: "aspernatur",
-        PSUAccept: tjsolerpsd2.String("perferendis"),
-        PSUAcceptCharset: tjsolerpsd2.String("ad"),
-        PSUAcceptEncoding: tjsolerpsd2.String("natus"),
-        PSUAcceptLanguage: tjsolerpsd2.String("sed"),
-        PSUDeviceID: tjsolerpsd2.String("iste"),
-        PSUGeoLocation: tjsolerpsd2.String("dolor"),
-        PSUHTTPMethod: tjsolerpsd2.String("natus"),
-        PSUIPAddress: "laboriosam",
-        PSUIPPort: tjsolerpsd2.String("hic"),
-        PSUUserAgent: tjsolerpsd2.String("saepe"),
+        Digest: "Trial Kirkland turquoise",
+        PSUIPAddress: "Dunwoody male",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "fuga",
+            AuthenticationMethodID: "IB",
         },
-        Signature: "in",
-        TPPNokRedirectURI: tjsolerpsd2.String("corporis"),
-        TPPRedirectPreferred: tjsolerpsd2.String("iste"),
-        TPPRedirectURI: tjsolerpsd2.String("iure"),
-        TPPSignatureCertificate: "saepe",
-        XRequestID: "quidem",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosAISAspspBbvabe,
-        AuthorisationID: "ipsa",
-        ConsentIDPathParameter: "reiciendis",
+        Signature: "Arizona Belgium",
+        TPPSignatureCertificate: "Pop repurpose",
+        XRequestID: "engineer BMW Executive",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosAISAspspBbva,
+        AuthorisationID: "greedily robust",
+        ConsentIDPathParameter: "monopoly",
     })
     if err != nil {
         log.Fatal(err)
@@ -167,30 +142,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionConsentimientosFCS(ctx, operations.PutSeleccionarSCAAutorizacionConsentimientosFCSRequest{
-        ConsentID: tjsolerpsd2.String("est"),
-        Digest: "mollitia",
-        PSUAccept: tjsolerpsd2.String("laborum"),
-        PSUAcceptCharset: tjsolerpsd2.String("dolores"),
-        PSUAcceptEncoding: tjsolerpsd2.String("dolorem"),
-        PSUAcceptLanguage: tjsolerpsd2.String("corporis"),
-        PSUDeviceID: tjsolerpsd2.String("explicabo"),
-        PSUGeoLocation: tjsolerpsd2.String("nobis"),
-        PSUHTTPMethod: tjsolerpsd2.String("enim"),
-        PSUIPAddress: "omnis",
-        PSUIPPort: tjsolerpsd2.String("nemo"),
-        PSUUserAgent: tjsolerpsd2.String("minima"),
+        Digest: "Loaf Cotton",
+        PSUIPAddress: "Cicero gray",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "excepturi",
+            AuthenticationMethodID: "siemens to",
         },
-        Signature: "accusantium",
-        TPPNokRedirectURI: tjsolerpsd2.String("iure"),
-        TPPRedirectPreferred: tjsolerpsd2.String("culpa"),
-        TPPRedirectURI: tjsolerpsd2.String("doloribus"),
-        TPPSignatureCertificate: "sapiente",
-        XRequestID: "architecto",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSAspspKutxabank,
-        AuthorisationID: "dolorem",
-        ConsentIDPathParameter: "culpa",
+        Signature: "Fish Frozen",
+        TPPSignatureCertificate: "Quality Garrison Garden",
+        XRequestID: "West Books",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSAspspBbva,
+        AuthorisationID: "Hafnium",
+        ConsentIDPathParameter: "Account violet",
     })
     if err != nil {
         log.Fatal(err)
@@ -237,32 +199,19 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionInicioPago(ctx, operations.PutSeleccionarSCAAutorizacionInicioPagoRequest{
-        ConsentID: tjsolerpsd2.String("consequuntur"),
-        Digest: "repellat",
-        PSUAccept: tjsolerpsd2.String("mollitia"),
-        PSUAcceptCharset: tjsolerpsd2.String("occaecati"),
-        PSUAcceptEncoding: tjsolerpsd2.String("numquam"),
-        PSUAcceptLanguage: tjsolerpsd2.String("commodi"),
-        PSUDeviceID: tjsolerpsd2.String("quam"),
-        PSUGeoLocation: tjsolerpsd2.String("molestiae"),
-        PSUHTTPMethod: tjsolerpsd2.String("velit"),
-        PSUIPAddress: "error",
-        PSUIPPort: tjsolerpsd2.String("quia"),
-        PSUUserAgent: tjsolerpsd2.String("quis"),
+        Digest: "Operations Configuration",
+        PSUIPAddress: "Southeast bifurcated",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "vitae",
+            AuthenticationMethodID: "Wagon",
         },
-        Signature: "laborum",
-        TPPNokRedirectURI: tjsolerpsd2.String("animi"),
-        TPPRedirectPreferred: tjsolerpsd2.Bool(false),
-        TPPRedirectURI: tjsolerpsd2.String("enim"),
-        TPPSignatureCertificate: "odit",
-        XRequestID: "quo",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoAspspCaixabank,
-        AuthorisationID: "tenetur",
-        PaymentID: "ipsam",
-        PaymentProduct: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticChapsPaymentsUk,
-        PaymentService: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentServicePeriodicPayments,
+        Signature: "Gasoline",
+        TPPSignatureCertificate: "Palladium commonly Principal",
+        XRequestID: "Avon",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoAspspBbva,
+        AuthorisationID: "plum Northeast",
+        PaymentID: "Electric",
+        PaymentProduct: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers,
+        PaymentService: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)
