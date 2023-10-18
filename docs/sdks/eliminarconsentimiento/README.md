@@ -27,12 +27,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.EliminarConsentimiento.DeleteConsentID(ctx, operations.DeleteConsentIDRequest{
-        Digest: "Bicycle",
-        Signature: "sans Cambridgeshire",
-        TPPSignatureCertificate: "doubtfully",
-        XRequestID: "Cambridgeshire",
-        Aspsp: "Radon",
-        ConsentID: "Bike conciliate",
+        Digest: "West",
+        Signature: "application",
+        TPPSignatureCertificate: "Usability",
+        XRequestID: "Bicycle",
+        Aspsp: "Southwest",
+        ConsentID: "teal",
     })
     if err != nil {
         log.Fatal(err)
@@ -78,12 +78,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.EliminarConsentimiento.DeleteConsentsConfirmationOfFunds(ctx, operations.DeleteConsentsConfirmationOfFundsRequest{
-        Digest: "deposit granular Money",
-        Signature: "copying withdrawal farad",
-        TPPSignatureCertificate: "Security Sausages Books",
-        XRequestID: "coffee Concrete West",
-        Aspsp: "calculating",
-        ConsentID: "Gloves ratione",
+        Digest: "Jaguar",
+        Signature: "Enid",
+        TPPSignatureCertificate: "synergize",
+        XRequestID: "optimize",
+        Aspsp: "mammoth",
+        ConsentID: "1080p",
     })
     if err != nil {
         log.Fatal(err)

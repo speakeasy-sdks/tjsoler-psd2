@@ -29,14 +29,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionCancelacionPago(ctx, operations.GetSubRecursosAutorizacionCancelacionPagoRequest{
-        Digest: "Van emulation Mouse",
-        PSUIPAddress: "Avon clove recontextualize",
-        Signature: "Soul",
-        TPPSignatureCertificate: "Bedfordshire",
-        XRequestID: "Cab black male",
-        Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoAspspCaixabank,
-        PaymentID: "at monitoring Fermium",
-        PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk,
+        Digest: "Hybrid",
+        PSUIPAddress: "Human",
+        Signature: "Clothing",
+        TPPSignatureCertificate: "Avon",
+        XRequestID: "clove",
+        Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoAspspBankoa,
+        PaymentID: "coexist",
+        PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk,
         PaymentService: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentServiceBulkPayments,
     })
     if err != nil {
@@ -83,13 +83,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionConsentimientosAIS(ctx, operations.GetSubRecursosAutorizacionConsentimientosAISRequest{
-        Digest: "Harrisonburg",
-        PSUIPAddress: "why haptic Virginia",
-        Signature: "Accounts Hat Health",
-        TPPSignatureCertificate: "wireless Loan Bahamian",
-        XRequestID: "Northeast",
-        Aspsp: "loyalty Electronic",
-        ConsentIDPathParameter: "geez",
+        Digest: "protocol",
+        PSUIPAddress: "why",
+        Signature: "haptic",
+        TPPSignatureCertificate: "Virginia",
+        XRequestID: "Van",
+        Aspsp: "Hat",
+        ConsentIDPathParameter: "Health",
     })
     if err != nil {
         log.Fatal(err)
@@ -135,13 +135,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionConsentimientosFCS(ctx, operations.GetSubRecursosAutorizacionConsentimientosFCSRequest{
-        Digest: "hybrid extend geez",
-        PSUIPAddress: "Refined huzzah",
-        Signature: "Azusa SCSI",
-        TPPSignatureCertificate: "deposit",
-        XRequestID: "HEX",
-        Aspsp: "Loan Reactive Iraqi",
-        ConsentIDPathParameter: "Central gray Soap",
+        Digest: "irritably",
+        PSUIPAddress: "copying",
+        Signature: "lavender",
+        TPPSignatureCertificate: "Modern",
+        XRequestID: "Refined",
+        Aspsp: "huzzah",
+        ConsentIDPathParameter: "back",
     })
     if err != nil {
         log.Fatal(err)
@@ -187,14 +187,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionInicioPago(ctx, operations.GetSubRecursosAutorizacionInicioPagoRequest{
-        Digest: "unsung Metal",
-        PSUIPAddress: "Associate",
-        Signature: "withdrawal Handmade",
-        TPPSignatureCertificate: "teal strategic",
-        XRequestID: "virtual",
-        Aspsp: operations.GetSubRecursosAutorizacionInicioPagoAspspMediolanum,
-        PaymentID: "Cis parse Music",
-        PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk,
+        Digest: "systemic",
+        PSUIPAddress: "when",
+        Signature: "enhance",
+        TPPSignatureCertificate: "kilogram",
+        XRequestID: "Associate",
+        Aspsp: operations.GetSubRecursosAutorizacionInicioPagoAspspEurocajarural,
+        PaymentID: "withdrawal",
+        PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers,
         PaymentService: operations.GetSubRecursosAutorizacionInicioPagoPaymentServicePeriodicPayments,
     })
     if err != nil {

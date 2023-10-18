@@ -26,14 +26,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.CancelarInicioDePago.DeletePayment(ctx, operations.DeletePaymentRequest{
-        Digest: "Australian",
-        Signature: "Bronze but",
-        TPPSignatureCertificate: "Brand Sports Brand",
-        XRequestID: "disinherit local Rutherfordium",
-        Aspsp: "repurpose Chevrolet Unbranded",
-        PaymentID: "Hybrid Electric Account",
-        PaymentProduct: operations.DeletePaymentPaymentProductInstantSepaCreditTransfers,
-        PaymentService: operations.DeletePaymentPaymentServicePayments,
+        Digest: "Grocery",
+        Signature: "Kazakhstan",
+        TPPSignatureCertificate: "Soul",
+        XRequestID: "but",
+        Aspsp: "Van",
+        PaymentID: "Brand",
+        PaymentProduct: operations.DeletePaymentPaymentProductSepaCreditTransfers,
+        PaymentService: operations.DeletePaymentPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)

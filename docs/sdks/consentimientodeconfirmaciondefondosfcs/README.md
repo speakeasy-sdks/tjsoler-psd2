@@ -27,13 +27,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ConsentimientoDeConfirmacionDeFondosFCS.PostConsentsConfirmationOfFunds(ctx, operations.PostConsentsConfirmationOfFundsRequest{
-        Digest: "neque",
-        PSUIPAddress: "ability Strategist Fundamental",
-        RequestBody: []byte("n4:!0Qz2eo"),
-        Signature: "engage transmitter Blues",
-        TPPSignatureCertificate: "Sri",
-        XRequestID: "payment",
-        Aspsp: "Bellingham",
+        Digest: "Southeast",
+        PSUIPAddress: "Chicken",
+        RequestBody: []byte("E!^Fc|fB@n"),
+        Signature: "Ball",
+        TPPSignatureCertificate: "North",
+        XRequestID: "parsing",
+        Aspsp: "Shoes",
     })
     if err != nil {
         log.Fatal(err)

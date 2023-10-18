@@ -29,16 +29,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiateRecurringPayment(ctx, operations.InitiateRecurringPaymentRequest{
-        Digest: "VGA intrepid",
-        PSUIPAddress: "vortals when",
+        Digest: "OCR",
+        PSUIPAddress: "hmph",
         RequestPeriodicPayment: shared.RequestPeriodicPayment{
-            StartDate: "Senior SUV",
+            StartDate: "payment",
         },
-        Signature: "Sleek",
-        TPPSignatureCertificate: "Consultant",
-        XRequestID: "ASCII",
-        Aspsp: "indigo merrily",
-        PaymentProduct: operations.InitiateRecurringPaymentPaymentProductInstantSepaCreditTransfers,
+        Signature: "vortals",
+        TPPSignatureCertificate: "when",
+        XRequestID: "national",
+        Aspsp: "Berkshire",
+        PaymentProduct: operations.InitiateRecurringPaymentPaymentProductCrossBorderCreditTransfers,
     })
     if err != nil {
         log.Fatal(err)
@@ -85,8 +85,8 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiationBulkPayment(ctx, operations.InitiationBulkPaymentRequest{
-        Digest: "Orchestrator Generic online",
-        PSUIPAddress: "Buckinghamshire",
+        Digest: "rigidly",
+        PSUIPAddress: "Demigender",
         RequestBulkPayment: shared.RequestBulkPayment{
             BatchBookingPreferred: tjsolerpsd2.Bool(true),
             DebtorAccount: shared.RequestBulkPaymentDebtorAccount{},
@@ -94,11 +94,11 @@ func main() {
                 shared.RequestBulkPaymentPayments{},
             },
         },
-        Signature: "North Assurance",
-        TPPSignatureCertificate: "fuchsia",
-        XRequestID: "Well olive hence",
-        Aspsp: "SCSI Oriental bold",
-        PaymentProduct: operations.InitiationBulkPaymentPaymentProductCrossBorderCreditTransfers,
+        Signature: "Infrastructure",
+        TPPSignatureCertificate: "digital",
+        XRequestID: "Buckinghamshire",
+        Aspsp: "Checking",
+        PaymentProduct: operations.InitiationBulkPaymentPaymentProductTarget2Payments,
     })
     if err != nil {
         log.Fatal(err)
@@ -145,9 +145,9 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiationPayment(ctx, operations.InitiationPaymentRequest{
-        Digest: "Jewelery bottom",
-        PSUIPAddress: "Sedan mobile Screen",
-        Signature: "Plastic",
+        Digest: "override",
+        PSUIPAddress: "lavender",
+        Signature: "Southwest",
         SinglePayment: shared.SinglePayment{
             ChargeBearer: tjsolerpsd2.String("SLEV"),
             CreditorAccount: &shared.SinglePaymentCreditorAccount{},
@@ -161,13 +161,13 @@ func main() {
             RemittanceInformationStructuredArray: &shared.SinglePaymentRemittanceInformationStructuredArray{},
             RemittanceInformationUnstructured: tjsolerpsd2.String("Informacion adicional"),
             RemittanceInformationUnstructuredArray: []string{
-                "infrastructures",
+                "Sedan",
             },
         },
-        TPPSignatureCertificate: "green veritatis Southeast",
-        XRequestID: "Legacy Southwest",
-        Aspsp: "amidst success Cliff",
-        PaymentProduct: operations.InitiationPaymentPaymentProductSepaCreditTransfers,
+        TPPSignatureCertificate: "mobile",
+        XRequestID: "Screen",
+        Aspsp: "Concrete",
+        PaymentProduct: operations.InitiationPaymentPaymentProductInstantSepaCreditTransfers,
     })
     if err != nil {
         log.Fatal(err)

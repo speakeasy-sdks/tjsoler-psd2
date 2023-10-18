@@ -27,13 +27,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ConsultaDeFondos.FundsConfirmation(ctx, operations.FundsConfirmationRequest{
-        ConsentID: "SCSI Cab ASCII",
-        Digest: "candela hm",
-        RequestBody: []byte("sXp<5lP:&a"),
-        Signature: "experiences",
-        TPPSignatureCertificate: "Nissan Movies Mexico",
-        XRequestID: "calculate input",
-        Aspsp: "collaborative Administrator dramatize",
+        ConsentID: "for",
+        Digest: "Configuration",
+        RequestBody: []byte(":[L*Hf3wBs"),
+        Signature: "Blues",
+        TPPSignatureCertificate: "Gasoline",
+        XRequestID: "Ergonomic",
+        Aspsp: "which",
     })
     if err != nil {
         log.Fatal(err)

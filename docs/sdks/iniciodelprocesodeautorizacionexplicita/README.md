@@ -29,14 +29,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionCancelacionPago(ctx, operations.PostAutorizacionCancelacionPagoRequest{
-        Digest: "Global",
-        PSUIPAddress: "Tricycle",
-        Signature: "in expedite Cambridgeshire",
-        TPPSignatureCertificate: "conspirator yum SSD",
-        XRequestID: "to male",
-        Aspsp: operations.PostAutorizacionCancelacionPagoAspspEvobanco,
-        PaymentID: "prostacyclin",
-        PaymentProduct: operations.PostAutorizacionCancelacionPagoPaymentProductCrossBorderCreditTransfers,
+        Digest: "Island",
+        PSUIPAddress: "Cheese",
+        Signature: "win",
+        TPPSignatureCertificate: "in",
+        XRequestID: "expedite",
+        Aspsp: operations.PostAutorizacionCancelacionPagoAspspBbvapt,
+        PaymentID: "mmm",
+        PaymentProduct: operations.PostAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk,
         PaymentService: operations.PostAutorizacionCancelacionPagoPaymentServicePayments,
     })
     if err != nil {
@@ -83,13 +83,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionConsentimientosAIS(ctx, operations.PostAutorizacionConsentimientosAISRequest{
-        Digest: "interactive aggregate Shirt",
-        PSUIPAddress: "deposit",
-        Signature: "deposit",
-        TPPSignatureCertificate: "Credit",
-        XRequestID: "yowza Hatchback cap",
-        Aspsp: "drat",
-        ConsentIDPathParameter: "Account bypass yippee",
+        Digest: "indeed",
+        PSUIPAddress: "card",
+        Signature: "Ball",
+        TPPSignatureCertificate: "New",
+        XRequestID: "Direct",
+        Aspsp: "deposit",
+        ConsentIDPathParameter: "Practical",
     })
     if err != nil {
         log.Fatal(err)
@@ -135,13 +135,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionConsentimientosFCS(ctx, operations.PostAutorizacionConsentimientosFCSRequest{
-        Digest: "South",
-        PSUIPAddress: "vice",
-        Signature: "orchestration",
-        TPPSignatureCertificate: "Southeast",
-        XRequestID: "over",
-        Aspsp: "Reduced Southwest",
-        ConsentIDPathParameter: "Visionary",
+        Digest: "Books",
+        PSUIPAddress: "Lead",
+        Signature: "vice",
+        TPPSignatureCertificate: "niches",
+        XRequestID: "female",
+        Aspsp: "Southeast",
+        ConsentIDPathParameter: "West",
     })
     if err != nil {
         log.Fatal(err)
@@ -187,15 +187,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionInicioPago(ctx, operations.PostAutorizacionInicioPagoRequest{
-        Digest: "yum Soap",
-        PSUIPAddress: "Bedfordshire Intersex contingency",
-        Signature: "Demigender Delaware Carolina",
-        TPPSignatureCertificate: "kilogram Metrics Sedan",
-        XRequestID: "er Industrial",
-        Aspsp: operations.PostAutorizacionInicioPagoAspspArquia,
-        PaymentID: "Grocery defect occaecati",
-        PaymentProduct: operations.PostAutorizacionInicioPagoPaymentProductTarget2Payments,
-        PaymentService: operations.PostAutorizacionInicioPagoPaymentServicePeriodicPayments,
+        Digest: "aggregate",
+        PSUIPAddress: "Trans",
+        Signature: "seamless",
+        TPPSignatureCertificate: "API",
+        XRequestID: "contingency",
+        Aspsp: operations.PostAutorizacionInicioPagoAspspLaboralkutxa,
+        PaymentID: "Demigender",
+        PaymentProduct: operations.PostAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers,
+        PaymentService: operations.PostAutorizacionInicioPagoPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)

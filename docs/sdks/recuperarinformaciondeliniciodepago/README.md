@@ -26,15 +26,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDelInicioDePago.GetInfoPayment(ctx, operations.GetInfoPaymentRequest{
-        Digest: "moderator Non Lead",
-        PSUIPAddress: "payment Neon wireless",
-        Signature: "intuitive Zambia orange",
-        TPPSignatureCertificate: "Bedfordshire Fresh",
-        XRequestID: "Martin",
-        Aspsp: "Incredible Shoes",
-        PaymentID: "incentivize",
-        PaymentProduct: operations.GetInfoPaymentPaymentProductSepaCreditTransfers,
-        PaymentService: operations.GetInfoPaymentPaymentServiceBulkPayments,
+        Digest: "lest",
+        PSUIPAddress: "Customer",
+        Signature: "and",
+        TPPSignatureCertificate: "Lead",
+        XRequestID: "individual",
+        Aspsp: "Reggae",
+        PaymentID: "Berkshire",
+        PaymentProduct: operations.GetInfoPaymentPaymentProductTarget2Payments,
+        PaymentService: operations.GetInfoPaymentPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)

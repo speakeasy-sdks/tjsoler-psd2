@@ -29,16 +29,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionCancelacionPago(ctx, operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest{
-        Digest: "driver Metal",
-        PSUIPAddress: "Recycled Northwest",
-        Signature: "Connelly",
-        TPPSignatureCertificate: "Sleek",
-        XRequestID: "grow sunt",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBff,
-        AuthorisationID: "bus Dakota",
-        PaymentID: "outside",
-        PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductTarget2Payments,
-        PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePeriodicPayments,
+        Digest: "Tugrik",
+        PSUIPAddress: "South",
+        Signature: "Northeast",
+        TPPSignatureCertificate: "Recycled",
+        XRequestID: "Northwest",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBbvafr,
+        AuthorisationID: "Connelly",
+        PaymentID: "B2B",
+        PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk,
+        PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -85,17 +85,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionConsentimientosAIS(ctx, operations.PutSeleccionarSCAAutorizacionConsentimientosAISRequest{
-        Digest: "Trial Kirkland turquoise",
-        PSUIPAddress: "Dunwoody male",
+        Digest: "Hybrid",
+        PSUIPAddress: "lightly",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "IB",
+            AuthenticationMethodID: "Kirkland",
         },
-        Signature: "Arizona Belgium",
-        TPPSignatureCertificate: "Pop repurpose",
-        XRequestID: "engineer BMW Executive",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosAISAspspBbva,
-        AuthorisationID: "greedily robust",
-        ConsentIDPathParameter: "monopoly",
+        Signature: "turquoise",
+        TPPSignatureCertificate: "back",
+        XRequestID: "male",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosAISAspspBankoa,
+        AuthorisationID: "IB",
+        ConsentIDPathParameter: "Cisgender",
     })
     if err != nil {
         log.Fatal(err)
@@ -142,17 +142,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionConsentimientosFCS(ctx, operations.PutSeleccionarSCAAutorizacionConsentimientosFCSRequest{
-        Digest: "Loaf Cotton",
-        PSUIPAddress: "Cicero gray",
+        Digest: "toolset",
+        PSUIPAddress: "mobile",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "siemens to",
+            AuthenticationMethodID: "Cotton",
         },
-        Signature: "Fish Frozen",
-        TPPSignatureCertificate: "Quality Garrison Garden",
-        XRequestID: "West Books",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSAspspBbva,
-        AuthorisationID: "Hafnium",
-        ConsentIDPathParameter: "Account violet",
+        Signature: "Ameliorated",
+        TPPSignatureCertificate: "Shoes",
+        XRequestID: "Designer",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSAspspBce,
+        AuthorisationID: "Volvo",
+        ConsentIDPathParameter: "Crew",
     })
     if err != nil {
         log.Fatal(err)
@@ -199,18 +199,18 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionInicioPago(ctx, operations.PutSeleccionarSCAAutorizacionInicioPagoRequest{
-        Digest: "Operations Configuration",
-        PSUIPAddress: "Southeast bifurcated",
+        Digest: "model",
+        PSUIPAddress: "pixel",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "Wagon",
+            AuthenticationMethodID: "Extended",
         },
-        Signature: "Gasoline",
-        TPPSignatureCertificate: "Palladium commonly Principal",
-        XRequestID: "Avon",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoAspspBbva,
-        AuthorisationID: "plum Northeast",
-        PaymentID: "Electric",
-        PaymentProduct: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers,
+        Signature: "Extended",
+        TPPSignatureCertificate: "Southwest",
+        XRequestID: "attenuation",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoAspspMediolanum,
+        AuthorisationID: "Nihonium",
+        PaymentID: "Palladium",
+        PaymentProduct: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk,
         PaymentService: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentServicePayments,
     })
     if err != nil {

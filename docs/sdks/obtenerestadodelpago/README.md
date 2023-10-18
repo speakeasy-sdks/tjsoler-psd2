@@ -26,15 +26,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDelPago.StatusPayment(ctx, operations.StatusPaymentRequest{
-        Digest: "Electric oat Cruiser",
-        PSUIPAddress: "capacitor",
-        Signature: "Ball Intelligent",
-        TPPSignatureCertificate: "iterate",
-        XRequestID: "Car Movies carter",
-        Aspsp: "Falkland bifurcated",
-        PaymentID: "manufacturer Steel",
-        PaymentProduct: operations.StatusPaymentPaymentProductInstantSepaCreditTransfers,
-        PaymentService: operations.StatusPaymentPaymentServiceBulkPayments,
+        Digest: "Curium",
+        PSUIPAddress: "invoice",
+        Signature: "Trans",
+        TPPSignatureCertificate: "Granite",
+        XRequestID: "Ball",
+        Aspsp: "Intelligent",
+        PaymentID: "Kansas",
+        PaymentProduct: operations.StatusPaymentPaymentProductCrossBorderCreditTransfers,
+        PaymentService: operations.StatusPaymentPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)

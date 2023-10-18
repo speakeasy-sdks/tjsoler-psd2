@@ -29,16 +29,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionCancelacionPago(ctx, operations.GetEstadoSCAAutorizacionCancelacionPagoRequest{
-        Digest: "ADP",
-        PSUIPAddress: "Fish vortals",
-        Signature: "female shudder",
-        TPPSignatureCertificate: "local index streamline",
-        XRequestID: "Land volt er",
-        Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoAspspBancSabadell,
-        AuthorisationID: "gleefully Division Diesel",
-        PaymentID: "Montana West",
-        PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk,
-        PaymentService: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentServiceBulkPayments,
+        Digest: "Mississippi",
+        PSUIPAddress: "East",
+        Signature: "Fish",
+        TPPSignatureCertificate: "vortals",
+        XRequestID: "distinctio",
+        Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoAspspCaixabank,
+        AuthorisationID: "shudder",
+        PaymentID: "Cadmium",
+        PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk,
+        PaymentService: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -84,14 +84,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionConsentimientosAIS(ctx, operations.GetEstadoSCAAutorizacionConsentimientosAISRequest{
-        Digest: "Account",
-        PSUIPAddress: "Carolina reinvent beatae",
-        Signature: "Malawi algorithm Quality",
-        TPPSignatureCertificate: "cart East",
-        XRequestID: "silently primary tangible",
-        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISAspspBbva,
-        AuthorisationID: "Architect",
-        ConsentIDPathParameter: "lest South",
+        Digest: "maroon",
+        PSUIPAddress: "harum",
+        Signature: "ampere",
+        TPPSignatureCertificate: "Investor",
+        XRequestID: "reinvent",
+        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISAspspBancopichincha,
+        AuthorisationID: "Southeast",
+        ConsentIDPathParameter: "Malawi",
     })
     if err != nil {
         log.Fatal(err)
@@ -137,14 +137,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionConsentimientosFCS(ctx, operations.GetEstadoSCAAutorizacionConsentimientosFCSRequest{
-        Digest: "Bespoke connecting Cotton",
-        PSUIPAddress: "Outdoors Savings",
-        Signature: "peaceful",
-        TPPSignatureCertificate: "Central Barthelemy Ezra",
-        XRequestID: "North",
-        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSAspspWizink,
-        AuthorisationID: "bandwidth",
-        ConsentIDPathParameter: "Southwest",
+        Digest: "athwart",
+        PSUIPAddress: "laudantium",
+        Signature: "compress",
+        TPPSignatureCertificate: "RSS",
+        XRequestID: "Outdoors",
+        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSAspspBff,
+        AuthorisationID: "purple",
+        ConsentIDPathParameter: "Sunnyvale",
     })
     if err != nil {
         log.Fatal(err)
@@ -190,16 +190,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionInicioPago(ctx, operations.GetEstadoSCAAutorizacionInicioPagoRequest{
-        Digest: "withdrawal Southeast",
-        PSUIPAddress: "testy Avon hacking",
-        Signature: "West Connecticut gummy",
-        TPPSignatureCertificate: "Westminster",
-        XRequestID: "hic disintermediate",
-        Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoAspspUnicajabanco,
-        AuthorisationID: "Facilitator East Response",
-        PaymentID: "parse",
-        PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticChapsPaymentsUk,
-        PaymentService: operations.GetEstadoSCAAutorizacionInicioPagoPaymentServicePeriodicPayments,
+        Digest: "Investment",
+        PSUIPAddress: "Southeast",
+        Signature: "which",
+        TPPSignatureCertificate: "Cargo",
+        XRequestID: "hacking",
+        Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoAspspRenta4,
+        AuthorisationID: "West",
+        PaymentID: "Connecticut",
+        PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk,
+        PaymentService: operations.GetEstadoSCAAutorizacionInicioPagoPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)

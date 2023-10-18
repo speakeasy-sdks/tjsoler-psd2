@@ -26,12 +26,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeListadoDeCuentas.GetAccountListv11(ctx, operations.GetAccountListv11Request{
-        ConsentID: "multimedia Fresh coulomb",
-        Digest: "red Ferrari female",
-        Signature: "female methodologies Assimilated",
-        TPPSignatureCertificate: "empower",
-        XRequestID: "Future Kwacha female",
-        Aspsp: "to middleware to",
+        ConsentID: "indeed",
+        Digest: "Future",
+        Signature: "simplistic",
+        TPPSignatureCertificate: "VGA",
+        XRequestID: "red",
+        Aspsp: "Ferrari",
     })
     if err != nil {
         log.Fatal(err)

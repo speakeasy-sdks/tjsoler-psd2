@@ -26,14 +26,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeTransacciones.AccountsTrasactions(ctx, operations.AccountsTrasactionsRequest{
-        ConsentID: "Convertible during Northwest",
-        Digest: "granular Folk microchip",
-        Signature: "minus",
-        TPPSignatureCertificate: "Smart",
-        XRequestID: "tangible atop joule",
-        AccountID: "Hat City",
-        Aspsp: "female Tesla",
-        BookingStatus: "Newton monitor",
+        ConsentID: "Facilitator",
+        Digest: "Wisconsin",
+        Signature: "Account",
+        TPPSignatureCertificate: "Product",
+        XRequestID: "microchip",
+        AccountID: "Chips",
+        Aspsp: "labore",
+        BookingStatus: "Smart",
     })
     if err != nil {
         log.Fatal(err)

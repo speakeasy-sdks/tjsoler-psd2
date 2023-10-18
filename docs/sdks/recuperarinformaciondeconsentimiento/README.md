@@ -27,12 +27,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDeConsentimiento.GetConsentIDDetails(ctx, operations.GetConsentIDDetailsRequest{
-        Digest: "Ocala nasalise Calcium",
-        Signature: "reprehenderit for",
-        TPPSignatureCertificate: "huzzah",
-        XRequestID: "Loan",
-        Aspsp: "online Marketing",
-        ConsentID: "barring Assistant utilize",
+        Digest: "female",
+        Signature: "Metrics",
+        TPPSignatureCertificate: "input",
+        XRequestID: "plum",
+        Aspsp: "reprehenderit",
+        ConsentID: "for",
     })
     if err != nil {
         log.Fatal(err)
@@ -78,12 +78,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDeConsentimiento.GetConsentsConfirmationOfFundsInfo(ctx, operations.GetConsentsConfirmationOfFundsInfoRequest{
-        Digest: "Representative",
-        Signature: "payment",
-        TPPSignatureCertificate: "functionalities Forward",
-        XRequestID: "Hybrid kelvin",
-        Aspsp: "Northeast partially",
-        ConsentID: "sparkling copy Planner",
+        Digest: "Southeast",
+        Signature: "divan",
+        TPPSignatureCertificate: "payment",
+        XRequestID: "Lempira",
+        Aspsp: "that",
+        ConsentID: "Hybrid",
     })
     if err != nil {
         log.Fatal(err)

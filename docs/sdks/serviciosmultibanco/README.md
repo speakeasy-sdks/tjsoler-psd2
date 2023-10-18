@@ -35,14 +35,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-        Digest: "API",
-        PSUIPAddress: "Savings Kwanza female",
-        Signature: "male Praseodymium",
-        TPPSignatureCertificate: "East Nissan",
-        XRequestID: "meter Fantastic sievert",
-        AspName: "SMTP",
-        MultibancoPaymentType: "Associate circuit",
-        PaymentID: "Gambia",
+        Digest: "Kiribati",
+        PSUIPAddress: "Southwest",
+        Signature: "Savings",
+        TPPSignatureCertificate: "Kwanza",
+        XRequestID: "female",
+        AspName: "monitor",
+        MultibancoPaymentType: "lime",
+        PaymentID: "haptic",
     })
     if err != nil {
         log.Fatal(err)
@@ -88,12 +88,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetMultibancoCatalogue(ctx, operations.GetMultibancoCatalogueRequest{
-        Digest: "Trial",
-        Signature: "Senegal Bhutan",
-        TPPSignatureCertificate: "brown Gold CSS",
-        XRequestID: "reprehenderit",
-        AspName: "until West victoriously",
-        MultibancoPaymentType: "Keyboard seamless Smart",
+        Digest: "Island",
+        Signature: "sensor",
+        TPPSignatureCertificate: "Senegal",
+        XRequestID: "Bhutan",
+        AspName: "cyan",
+        MultibancoPaymentType: "West",
     })
     if err != nil {
         log.Fatal(err)
@@ -139,14 +139,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-        Digest: "Hagenes",
-        PSUIPAddress: "molder Interactions",
-        Signature: "Bugatti",
-        TPPSignatureCertificate: "Account",
-        XRequestID: "Outdoors",
-        AspName: "Extended Antimony Northwest",
-        MultibancoPaymentType: "capacitor",
-        PaymentID: "JSON",
+        Digest: "purple",
+        PSUIPAddress: "World",
+        Signature: "panel",
+        TPPSignatureCertificate: "Xenogender",
+        XRequestID: "calculate",
+        AspName: "although",
+        MultibancoPaymentType: "Bugatti",
+        PaymentID: "Iraq",
     })
     if err != nil {
         log.Fatal(err)
@@ -190,14 +190,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest{
-        Digest: "minima Rubber",
-        PSUIPAddress: "Direct earum",
-        Signature: "redundant",
-        TPPSignatureCertificate: "base",
-        XRequestID: "online Southwest",
-        AspName: "Toys Northeast static",
-        MultibancoPaymentType: "Pop transmitting",
-        PaymentID: "candela",
+        Digest: "Home",
+        PSUIPAddress: "Rubber",
+        Signature: "animi",
+        TPPSignatureCertificate: "Hampshire",
+        XRequestID: "Health",
+        AspName: "Savings",
+        MultibancoPaymentType: "earum",
+        PaymentID: "primary",
     })
     if err != nil {
         log.Fatal(err)
@@ -241,15 +241,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest{
-        Digest: "Habra female",
-        PSUIPAddress: "Hybrid Investor Bronze",
-        Signature: "infrastructures",
-        TPPSignatureCertificate: "Hybrid transmitting",
-        XRequestID: "synthesizing quizzical",
-        AspName: "slight Auto VGA",
-        AuthorisationID: "afore cyan",
-        MultibancoPaymentType: "Polygender navigating",
-        PaymentID: "Baby Borders Northeast",
+        Digest: "Ameliorated",
+        PSUIPAddress: "PNG",
+        Signature: "female",
+        TPPSignatureCertificate: "sip",
+        XRequestID: "though",
+        AspName: "Functionality",
+        AuthorisationID: "Court",
+        MultibancoPaymentType: "Hybrid",
+        PaymentID: "transmitting",
     })
     if err != nil {
         log.Fatal(err)
@@ -295,14 +295,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatus(ctx, operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatusRequest{
-        Digest: "Ball car skulk",
-        PSUIPAddress: "Digitized Marketing",
-        Signature: "networks and",
-        TPPSignatureCertificate: "than female sans",
-        XRequestID: "Wagon array navigate",
-        AspName: "hack",
-        MultibancoPaymentType: "voluptatum Robust Borders",
-        PaymentID: "opportunist silver",
+        Digest: "Diesel",
+        PSUIPAddress: "Frozen",
+        Signature: "Wyoming",
+        TPPSignatureCertificate: "Electric",
+        XRequestID: "Digitized",
+        AspName: "Marketing",
+        MultibancoPaymentType: "withdrawal",
+        PaymentID: "Hybrid",
     })
     if err != nil {
         log.Fatal(err)
@@ -346,14 +346,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest{
-        Digest: "SSD transform",
-        PSUIPAddress: "teal",
-        Signature: "FTP uncomfortable",
-        TPPSignatureCertificate: "Virginia",
-        XRequestID: "jovially unleash Lanka",
-        AspName: "smart Soft Electric",
-        MultibancoPaymentType: "Krona transmitting",
-        PaymentID: "Metal Volvo ick",
+        Digest: "Funk",
+        PSUIPAddress: "newton",
+        Signature: "Northeast",
+        TPPSignatureCertificate: "teal",
+        XRequestID: "JSON",
+        AspName: "visionary",
+        MultibancoPaymentType: "adventurously",
+        PaymentID: "Virginia",
     })
     if err != nil {
         log.Fatal(err)
@@ -400,8 +400,8 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentType(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypeRequest{
-        Digest: "Avon Tuna",
-        PSUIPAddress: "haptic mint Gasoline",
+        Digest: "Taka",
+        PSUIPAddress: "Bedfordshire",
         RequestStartMultibankPayment: shared.RequestStartMultibankPayment{
             DebtorAccount: &shared.RequestStartMultibankPaymentDebtorAccount{},
             EntityCode: tjsolerpsd2.Int64(10003),
@@ -416,11 +416,11 @@ func main() {
             TaxpayerIdentificationNumber: tjsolerpsd2.Int64(6244688226942976),
             TsuCenterCode: tjsolerpsd2.Int64(2698),
         },
-        Signature: "Directives",
-        TPPSignatureCertificate: "Transexual pink",
-        XRequestID: "newton because Electric",
-        AspName: "navigate olive",
-        MultibancoPaymentType: "Ohio elicit",
+        Signature: "International",
+        TPPSignatureCertificate: "haptic",
+        XRequestID: "mint",
+        AspName: "Gasoline",
+        MultibancoPaymentType: "Tuna",
     })
     if err != nil {
         log.Fatal(err)
@@ -467,8 +467,8 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholding(ctx, operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequest{
-        Digest: "Borders Hybrid compressing",
-        PSUIPAddress: "Factors Shoes degree",
+        Digest: "Neon",
+        PSUIPAddress: "transmitting",
         RequestSocialSecurityWithholding: shared.RequestSocialSecurityWithholding{
             DebtorAccount: shared.RequestSocialSecurityWithholdingDebtorAccount{},
             Niss: tjsolerpsd2.Int64(65136589331),
@@ -479,10 +479,10 @@ func main() {
             RemunerationAmount: shared.RequestSocialSecurityWithholdingRemunerationAmount{},
             RemunerationCode: 1,
         },
-        Signature: "Personal",
-        TPPSignatureCertificate: "Cab JBOD",
-        XRequestID: "woman embrace Kazakhstan",
-        AspName: "Gasoline Aston Modern",
+        Signature: "liar",
+        TPPSignatureCertificate: "Factors",
+        XRequestID: "Shoes",
+        AspName: "degree",
     })
     if err != nil {
         log.Fatal(err)
@@ -527,18 +527,18 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ServiciosMultibanco.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx, operations.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest{
-        Digest: "Car",
-        PSUIPAddress: "Money Woman",
+        Digest: "Claire",
+        PSUIPAddress: "Teagan",
         RequestActualizarDatosPsu: shared.RequestActualizarDatosPsu{
             AuthenticationMethodID: tjsolerpsd2.String("123"),
         },
-        Signature: "Central",
-        TPPSignatureCertificate: "networks West shy",
-        XRequestID: "mobile reboot",
-        AspName: "Bronze",
-        AuthorisationID: "Jazz indeed Exclusive",
-        MultibancoPaymentType: "hm Cis Forward",
-        PaymentID: "Transexual Money",
+        Signature: "partnerships",
+        TPPSignatureCertificate: "Woman",
+        XRequestID: "Buckinghamshire",
+        AspName: "matrix",
+        AuthorisationID: "female",
+        MultibancoPaymentType: "Pickup",
+        PaymentID: "West",
     })
     if err != nil {
         log.Fatal(err)

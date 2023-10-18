@@ -26,13 +26,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeDetallesDeCuenta.GetAccountIdv11(ctx, operations.GetAccountIdv11Request{
-        ConsentID: "BMW",
-        Digest: "Metal South Incredible",
-        Signature: "Brand Paucek",
-        TPPSignatureCertificate: "Burbank",
-        XRequestID: "Bicycle male Directives",
-        AccountID: "Ghana Highway Wyoming",
-        Aspsp: "male",
+        ConsentID: "Road",
+        Digest: "Northeast",
+        Signature: "overriding",
+        TPPSignatureCertificate: "Bespoke",
+        XRequestID: "Developer",
+        AccountID: "gently",
+        Aspsp: "Utah",
     })
     if err != nil {
         log.Fatal(err)
