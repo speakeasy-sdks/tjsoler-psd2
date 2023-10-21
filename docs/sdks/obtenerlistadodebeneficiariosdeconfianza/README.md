@@ -26,12 +26,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerListadoDeBeneficiariosDeConfianza.GetTrustedBeneficiaries(ctx, operations.GetTrustedBeneficiariesRequest{
-        ConsentID: "aspernatur",
-        Digest: "though",
-        Signature: "Money",
-        TPPSignatureCertificate: "both",
-        XRequestID: "anenst",
-        Aspsp: "Practical",
+        ConsentID: "string",
+        Digest: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
     })
     if err != nil {
         log.Fatal(err)

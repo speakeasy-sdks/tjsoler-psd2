@@ -29,15 +29,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionCancelacionPago(ctx, operations.PostAutorizacionCancelacionPagoRequest{
-        Digest: "Island",
-        PSUIPAddress: "Cheese",
-        Signature: "win",
-        TPPSignatureCertificate: "in",
-        XRequestID: "expedite",
-        Aspsp: operations.PostAutorizacionCancelacionPagoAspspBbvapt,
-        PaymentID: "mmm",
-        PaymentProduct: operations.PostAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk,
-        PaymentService: operations.PostAutorizacionCancelacionPagoPaymentServicePayments,
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.PostAutorizacionCancelacionPagoAspspBbva,
+        PaymentID: "string",
+        PaymentProduct: operations.PostAutorizacionCancelacionPagoPaymentProductDomesticChapsPaymentsUk,
+        PaymentService: operations.PostAutorizacionCancelacionPagoPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -83,13 +83,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionConsentimientosAIS(ctx, operations.PostAutorizacionConsentimientosAISRequest{
-        Digest: "indeed",
-        PSUIPAddress: "card",
-        Signature: "Ball",
-        TPPSignatureCertificate: "New",
-        XRequestID: "Direct",
-        Aspsp: "deposit",
-        ConsentIDPathParameter: "Practical",
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        ConsentIDPathParameter: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -135,13 +135,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionConsentimientosFCS(ctx, operations.PostAutorizacionConsentimientosFCSRequest{
-        Digest: "Books",
-        PSUIPAddress: "Lead",
-        Signature: "vice",
-        TPPSignatureCertificate: "niches",
-        XRequestID: "female",
-        Aspsp: "Southeast",
-        ConsentIDPathParameter: "West",
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        ConsentIDPathParameter: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -187,14 +187,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionInicioPago(ctx, operations.PostAutorizacionInicioPagoRequest{
-        Digest: "aggregate",
-        PSUIPAddress: "Trans",
-        Signature: "seamless",
-        TPPSignatureCertificate: "API",
-        XRequestID: "contingency",
-        Aspsp: operations.PostAutorizacionInicioPagoAspspLaboralkutxa,
-        PaymentID: "Demigender",
-        PaymentProduct: operations.PostAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers,
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.PostAutorizacionInicioPagoAspspCajasur,
+        PaymentID: "string",
+        PaymentProduct: operations.PostAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk,
         PaymentService: operations.PostAutorizacionInicioPagoPaymentServicePayments,
     })
     if err != nil {

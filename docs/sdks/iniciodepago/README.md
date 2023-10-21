@@ -29,16 +29,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiateRecurringPayment(ctx, operations.InitiateRecurringPaymentRequest{
-        Digest: "OCR",
-        PSUIPAddress: "hmph",
+        Digest: "string",
+        PSUIPAddress: "string",
         RequestPeriodicPayment: shared.RequestPeriodicPayment{
-            StartDate: "payment",
+            StartDate: "string",
         },
-        Signature: "vortals",
-        TPPSignatureCertificate: "when",
-        XRequestID: "national",
-        Aspsp: "Berkshire",
-        PaymentProduct: operations.InitiateRecurringPaymentPaymentProductCrossBorderCreditTransfers,
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        PaymentProduct: operations.InitiateRecurringPaymentPaymentProductInstantSepaCreditTransfers,
     })
     if err != nil {
         log.Fatal(err)
@@ -85,8 +85,8 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiationBulkPayment(ctx, operations.InitiationBulkPaymentRequest{
-        Digest: "rigidly",
-        PSUIPAddress: "Demigender",
+        Digest: "string",
+        PSUIPAddress: "string",
         RequestBulkPayment: shared.RequestBulkPayment{
             BatchBookingPreferred: tjsolerpsd2.Bool(true),
             DebtorAccount: shared.RequestBulkPaymentDebtorAccount{},
@@ -94,11 +94,11 @@ func main() {
                 shared.RequestBulkPaymentPayments{},
             },
         },
-        Signature: "Infrastructure",
-        TPPSignatureCertificate: "digital",
-        XRequestID: "Buckinghamshire",
-        Aspsp: "Checking",
-        PaymentProduct: operations.InitiationBulkPaymentPaymentProductTarget2Payments,
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        PaymentProduct: operations.InitiationBulkPaymentPaymentProductCrossBorderCreditTransfers,
     })
     if err != nil {
         log.Fatal(err)
@@ -145,9 +145,9 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiationPayment(ctx, operations.InitiationPaymentRequest{
-        Digest: "override",
-        PSUIPAddress: "lavender",
-        Signature: "Southwest",
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
         SinglePayment: shared.SinglePayment{
             ChargeBearer: tjsolerpsd2.String("SLEV"),
             CreditorAccount: &shared.SinglePaymentCreditorAccount{},
@@ -161,13 +161,13 @@ func main() {
             RemittanceInformationStructuredArray: &shared.SinglePaymentRemittanceInformationStructuredArray{},
             RemittanceInformationUnstructured: tjsolerpsd2.String("Informacion adicional"),
             RemittanceInformationUnstructuredArray: []string{
-                "Sedan",
+                "string",
             },
         },
-        TPPSignatureCertificate: "mobile",
-        XRequestID: "Screen",
-        Aspsp: "Concrete",
-        PaymentProduct: operations.InitiationPaymentPaymentProductInstantSepaCreditTransfers,
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        PaymentProduct: operations.InitiationPaymentPaymentProductTarget2Payments,
     })
     if err != nil {
         log.Fatal(err)

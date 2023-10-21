@@ -26,13 +26,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeBalances.GetAccountBalances(ctx, operations.GetAccountBalancesRequest{
-        ConsentID: "optimizing",
-        Digest: "Montana",
-        Signature: "Reactive",
-        TPPSignatureCertificate: "Venezuela",
-        XRequestID: "Chevrolet",
-        AccountID: "taxicab",
-        Aspsp: "male",
+        ConsentID: "string",
+        Digest: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        AccountID: "string",
+        Aspsp: "string",
     })
     if err != nil {
         log.Fatal(err)

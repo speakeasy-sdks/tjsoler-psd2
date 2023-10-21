@@ -29,15 +29,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionCancelacionPago(ctx, operations.GetEstadoSCAAutorizacionCancelacionPagoRequest{
-        Digest: "Mississippi",
-        PSUIPAddress: "East",
-        Signature: "Fish",
-        TPPSignatureCertificate: "vortals",
-        XRequestID: "distinctio",
-        Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoAspspCaixabank,
-        AuthorisationID: "shudder",
-        PaymentID: "Cadmium",
-        PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk,
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoAspspBbvafr,
+        AuthorisationID: "string",
+        PaymentID: "string",
+        PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentProductCrossBorderCreditTransfers,
         PaymentService: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentServicePayments,
     })
     if err != nil {
@@ -84,14 +84,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionConsentimientosAIS(ctx, operations.GetEstadoSCAAutorizacionConsentimientosAISRequest{
-        Digest: "maroon",
-        PSUIPAddress: "harum",
-        Signature: "ampere",
-        TPPSignatureCertificate: "Investor",
-        XRequestID: "reinvent",
-        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISAspspBancopichincha,
-        AuthorisationID: "Southeast",
-        ConsentIDPathParameter: "Malawi",
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISAspspBbvaeuk,
+        AuthorisationID: "string",
+        ConsentIDPathParameter: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -137,14 +137,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionConsentimientosFCS(ctx, operations.GetEstadoSCAAutorizacionConsentimientosFCSRequest{
-        Digest: "athwart",
-        PSUIPAddress: "laudantium",
-        Signature: "compress",
-        TPPSignatureCertificate: "RSS",
-        XRequestID: "Outdoors",
-        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSAspspBff,
-        AuthorisationID: "purple",
-        ConsentIDPathParameter: "Sunnyvale",
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSAspspWizink,
+        AuthorisationID: "string",
+        ConsentIDPathParameter: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -190,16 +190,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionInicioPago(ctx, operations.GetEstadoSCAAutorizacionInicioPagoRequest{
-        Digest: "Investment",
-        PSUIPAddress: "Southeast",
-        Signature: "which",
-        TPPSignatureCertificate: "Cargo",
-        XRequestID: "hacking",
-        Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoAspspRenta4,
-        AuthorisationID: "West",
-        PaymentID: "Connecticut",
-        PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk,
-        PaymentService: operations.GetEstadoSCAAutorizacionInicioPagoPaymentServiceBulkPayments,
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoAspspBff,
+        AuthorisationID: "string",
+        PaymentID: "string",
+        PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPaymentProductCrossBorderCreditTransfers,
+        PaymentService: operations.GetEstadoSCAAutorizacionInicioPagoPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)

@@ -26,14 +26,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.CancelarInicioDePago.DeletePayment(ctx, operations.DeletePaymentRequest{
-        Digest: "Grocery",
-        Signature: "Kazakhstan",
-        TPPSignatureCertificate: "Soul",
-        XRequestID: "but",
-        Aspsp: "Van",
-        PaymentID: "Brand",
+        Digest: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        PaymentID: "string",
         PaymentProduct: operations.DeletePaymentPaymentProductSepaCreditTransfers,
-        PaymentService: operations.DeletePaymentPaymentServicePeriodicPayments,
+        PaymentService: operations.DeletePaymentPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)

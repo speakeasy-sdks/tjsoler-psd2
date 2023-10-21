@@ -27,13 +27,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ConsentimientoDeInformacionSobreCuentasDePagoAIS.PostConsents(ctx, operations.PostConsentsRequest{
-        Digest: "Account",
-        PSUIPAddress: "Coupe",
-        RequestBody: []byte("O6-DT9ccp7"),
-        Signature: "silent",
-        TPPSignatureCertificate: "Northwest",
-        XRequestID: "Persevering",
-        Aspsp: "Soap",
+        Digest: "string",
+        PSUIPAddress: "string",
+        RequestBody: []byte("GGeo6O6-DT"),
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
     })
     if err != nil {
         log.Fatal(err)

@@ -32,16 +32,16 @@ func main() {
 
 	ctx := context.Background()
 	res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionCancelacionPago(ctx, operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest{
-		Digest:                  "Tugrik",
-		PSUIPAddress:            "South",
-		Signature:               "Northeast",
-		TPPSignatureCertificate: "Recycled",
-		XRequestID:              "Northwest",
-		Aspsp:                   operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBbvafr,
-		AuthorisationID:         "Connelly",
-		PaymentID:               "B2B",
+		Digest:                  "string",
+		PSUIPAddress:            "string",
+		Signature:               "string",
+		TPPSignatureCertificate: "string",
+		XRequestID:              "string",
+		Aspsp:                   operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBff,
+		AuthorisationID:         "string",
+		PaymentID:               "string",
 		PaymentProduct:          operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk,
-		PaymentService:          operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServiceBulkPayments,
+		PaymentService:          operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePayments,
 	})
 	if err != nil {
 		log.Fatal(err)

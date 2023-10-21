@@ -29,15 +29,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionCancelacionPago(ctx, operations.GetSubRecursosAutorizacionCancelacionPagoRequest{
-        Digest: "Hybrid",
-        PSUIPAddress: "Human",
-        Signature: "Clothing",
-        TPPSignatureCertificate: "Avon",
-        XRequestID: "clove",
-        Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoAspspBankoa,
-        PaymentID: "coexist",
-        PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk,
-        PaymentService: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentServiceBulkPayments,
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoAspspMediolanum,
+        PaymentID: "string",
+        PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk,
+        PaymentService: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -83,13 +83,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionConsentimientosAIS(ctx, operations.GetSubRecursosAutorizacionConsentimientosAISRequest{
-        Digest: "protocol",
-        PSUIPAddress: "why",
-        Signature: "haptic",
-        TPPSignatureCertificate: "Virginia",
-        XRequestID: "Van",
-        Aspsp: "Hat",
-        ConsentIDPathParameter: "Health",
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        ConsentIDPathParameter: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -135,13 +135,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionConsentimientosFCS(ctx, operations.GetSubRecursosAutorizacionConsentimientosFCSRequest{
-        Digest: "irritably",
-        PSUIPAddress: "copying",
-        Signature: "lavender",
-        TPPSignatureCertificate: "Modern",
-        XRequestID: "Refined",
-        Aspsp: "huzzah",
-        ConsentIDPathParameter: "back",
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        ConsentIDPathParameter: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -187,14 +187,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionInicioPago(ctx, operations.GetSubRecursosAutorizacionInicioPagoRequest{
-        Digest: "systemic",
-        PSUIPAddress: "when",
-        Signature: "enhance",
-        TPPSignatureCertificate: "kilogram",
-        XRequestID: "Associate",
-        Aspsp: operations.GetSubRecursosAutorizacionInicioPagoAspspEurocajarural,
-        PaymentID: "withdrawal",
-        PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers,
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.GetSubRecursosAutorizacionInicioPagoAspspArquia,
+        PaymentID: "string",
+        PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk,
         PaymentService: operations.GetSubRecursosAutorizacionInicioPagoPaymentServicePeriodicPayments,
     })
     if err != nil {

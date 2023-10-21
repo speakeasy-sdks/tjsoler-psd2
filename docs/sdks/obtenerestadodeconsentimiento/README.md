@@ -27,12 +27,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDeConsentimiento.GetConsentStatus(ctx, operations.GetConsentStatusRequest{
-        Digest: "withdrawal",
-        Signature: "instead",
-        TPPSignatureCertificate: "Dubnium",
-        XRequestID: "swill",
-        Aspsp: "applications",
-        ConsentID: "Bedfordshire",
+        Digest: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        ConsentID: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -78,12 +78,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDeConsentimiento.GetConsentsConfirmationOfFunds(ctx, operations.GetConsentsConfirmationOfFundsRequest{
-        Digest: "Nissan",
-        Signature: "Cambridgeshire",
-        TPPSignatureCertificate: "Buckinghamshire",
-        XRequestID: "Northeast",
-        Aspsp: "orange",
-        ConsentID: "withdrawal",
+        Digest: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: "string",
+        ConsentID: "string",
     })
     if err != nil {
         log.Fatal(err)

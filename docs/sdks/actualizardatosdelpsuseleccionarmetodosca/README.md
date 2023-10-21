@@ -29,16 +29,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionCancelacionPago(ctx, operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest{
-        Digest: "Tugrik",
-        PSUIPAddress: "South",
-        Signature: "Northeast",
-        TPPSignatureCertificate: "Recycled",
-        XRequestID: "Northwest",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBbvafr,
-        AuthorisationID: "Connelly",
-        PaymentID: "B2B",
+        Digest: "string",
+        PSUIPAddress: "string",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBff,
+        AuthorisationID: "string",
+        PaymentID: "string",
         PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk,
-        PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServiceBulkPayments,
+        PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -85,17 +85,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionConsentimientosAIS(ctx, operations.PutSeleccionarSCAAutorizacionConsentimientosAISRequest{
-        Digest: "Hybrid",
-        PSUIPAddress: "lightly",
+        Digest: "string",
+        PSUIPAddress: "string",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "Kirkland",
+            AuthenticationMethodID: "string",
         },
-        Signature: "turquoise",
-        TPPSignatureCertificate: "back",
-        XRequestID: "male",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosAISAspspBankoa,
-        AuthorisationID: "IB",
-        ConsentIDPathParameter: "Cisgender",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosAISAspspOpenbank,
+        AuthorisationID: "string",
+        ConsentIDPathParameter: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -142,17 +142,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionConsentimientosFCS(ctx, operations.PutSeleccionarSCAAutorizacionConsentimientosFCSRequest{
-        Digest: "toolset",
-        PSUIPAddress: "mobile",
+        Digest: "string",
+        PSUIPAddress: "string",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "Cotton",
+            AuthenticationMethodID: "string",
         },
-        Signature: "Ameliorated",
-        TPPSignatureCertificate: "Shoes",
-        XRequestID: "Designer",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSAspspBce,
-        AuthorisationID: "Volvo",
-        ConsentIDPathParameter: "Crew",
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSAspspEurocajarural,
+        AuthorisationID: "string",
+        ConsentIDPathParameter: "string",
     })
     if err != nil {
         log.Fatal(err)
@@ -199,19 +199,19 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionInicioPago(ctx, operations.PutSeleccionarSCAAutorizacionInicioPagoRequest{
-        Digest: "model",
-        PSUIPAddress: "pixel",
+        Digest: "string",
+        PSUIPAddress: "string",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "Extended",
+            AuthenticationMethodID: "string",
         },
-        Signature: "Extended",
-        TPPSignatureCertificate: "Southwest",
-        XRequestID: "attenuation",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoAspspMediolanum,
-        AuthorisationID: "Nihonium",
-        PaymentID: "Palladium",
-        PaymentProduct: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk,
-        PaymentService: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentServicePayments,
+        Signature: "string",
+        TPPSignatureCertificate: "string",
+        XRequestID: "string",
+        Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoAspspArquia,
+        AuthorisationID: "string",
+        PaymentID: "string",
+        PaymentProduct: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticChapsPaymentsUk,
+        PaymentService: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)
