@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// PostAutorizacionInicioPagoAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type PostAutorizacionInicioPagoAspsp string
+// PostAutorizacionInicioPagoPathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type PostAutorizacionInicioPagoPathParamAspsp string
 
 const (
-	PostAutorizacionInicioPagoAspspRedsys          PostAutorizacionInicioPagoAspsp = "redsys"
-	PostAutorizacionInicioPagoAspspBbva            PostAutorizacionInicioPagoAspsp = "BBVA"
-	PostAutorizacionInicioPagoAspspBbvapt          PostAutorizacionInicioPagoAspsp = "BBVAPT"
-	PostAutorizacionInicioPagoAspspBbvabe          PostAutorizacionInicioPagoAspsp = "BBVABE"
-	PostAutorizacionInicioPagoAspspBbvafr          PostAutorizacionInicioPagoAspsp = "BBVAFR"
-	PostAutorizacionInicioPagoAspspBbvaeuk         PostAutorizacionInicioPagoAspsp = "BBVAEUK"
-	PostAutorizacionInicioPagoAspspCaixabank       PostAutorizacionInicioPagoAspsp = "caixabank"
-	PostAutorizacionInicioPagoAspspBancSabadell    PostAutorizacionInicioPagoAspsp = "BancSabadell"
-	PostAutorizacionInicioPagoAspspBancosantander  PostAutorizacionInicioPagoAspsp = "bancosantander"
-	PostAutorizacionInicioPagoAspspBancamarch      PostAutorizacionInicioPagoAspsp = "bancamarch"
-	PostAutorizacionInicioPagoAspspBankoa          PostAutorizacionInicioPagoAspsp = "bankoa"
-	PostAutorizacionInicioPagoAspspCajamar         PostAutorizacionInicioPagoAspsp = "cajamar"
-	PostAutorizacionInicioPagoAspspArquia          PostAutorizacionInicioPagoAspsp = "arquia"
-	PostAutorizacionInicioPagoAspspBff             PostAutorizacionInicioPagoAspsp = "BFF"
-	PostAutorizacionInicioPagoAspspColonya         PostAutorizacionInicioPagoAspsp = "colonya"
-	PostAutorizacionInicioPagoAspspEurocajarural   PostAutorizacionInicioPagoAspsp = "eurocajarural"
-	PostAutorizacionInicioPagoAspspEvobanco        PostAutorizacionInicioPagoAspsp = "evobanco"
-	PostAutorizacionInicioPagoAspspFiarebancaetica PostAutorizacionInicioPagoAspsp = "fiarebancaetica"
-	PostAutorizacionInicioPagoAspspBancopichincha  PostAutorizacionInicioPagoAspsp = "bancopichincha"
-	PostAutorizacionInicioPagoAspspUnicajabanco    PostAutorizacionInicioPagoAspsp = "unicajabanco"
-	PostAutorizacionInicioPagoAspspCajasur         PostAutorizacionInicioPagoAspsp = "cajasur"
-	PostAutorizacionInicioPagoAspspKutxabank       PostAutorizacionInicioPagoAspsp = "kutxabank"
-	PostAutorizacionInicioPagoAspspBankinter       PostAutorizacionInicioPagoAspsp = "bankinter"
-	PostAutorizacionInicioPagoAspspRenta4          PostAutorizacionInicioPagoAspsp = "renta4"
-	PostAutorizacionInicioPagoAspspBce             PostAutorizacionInicioPagoAspsp = "BCE"
-	PostAutorizacionInicioPagoAspspLaboralkutxa    PostAutorizacionInicioPagoAspsp = "laboralkutxa"
-	PostAutorizacionInicioPagoAspspMediolanum      PostAutorizacionInicioPagoAspsp = "mediolanum"
-	PostAutorizacionInicioPagoAspspOpenbank        PostAutorizacionInicioPagoAspsp = "openbank"
-	PostAutorizacionInicioPagoAspspIbercaja        PostAutorizacionInicioPagoAspsp = "ibercaja"
-	PostAutorizacionInicioPagoAspspSelfbank        PostAutorizacionInicioPagoAspsp = "selfbank"
-	PostAutorizacionInicioPagoAspspInversis        PostAutorizacionInicioPagoAspsp = "inversis"
-	PostAutorizacionInicioPagoAspspAndbank         PostAutorizacionInicioPagoAspsp = "andbank"
-	PostAutorizacionInicioPagoAspspWizink          PostAutorizacionInicioPagoAspsp = "wizink"
+	PostAutorizacionInicioPagoPathParamAspspRedsys          PostAutorizacionInicioPagoPathParamAspsp = "redsys"
+	PostAutorizacionInicioPagoPathParamAspspBbva            PostAutorizacionInicioPagoPathParamAspsp = "BBVA"
+	PostAutorizacionInicioPagoPathParamAspspBbvapt          PostAutorizacionInicioPagoPathParamAspsp = "BBVAPT"
+	PostAutorizacionInicioPagoPathParamAspspBbvabe          PostAutorizacionInicioPagoPathParamAspsp = "BBVABE"
+	PostAutorizacionInicioPagoPathParamAspspBbvafr          PostAutorizacionInicioPagoPathParamAspsp = "BBVAFR"
+	PostAutorizacionInicioPagoPathParamAspspBbvaeuk         PostAutorizacionInicioPagoPathParamAspsp = "BBVAEUK"
+	PostAutorizacionInicioPagoPathParamAspspCaixabank       PostAutorizacionInicioPagoPathParamAspsp = "caixabank"
+	PostAutorizacionInicioPagoPathParamAspspBancSabadell    PostAutorizacionInicioPagoPathParamAspsp = "BancSabadell"
+	PostAutorizacionInicioPagoPathParamAspspBancosantander  PostAutorizacionInicioPagoPathParamAspsp = "bancosantander"
+	PostAutorizacionInicioPagoPathParamAspspBancamarch      PostAutorizacionInicioPagoPathParamAspsp = "bancamarch"
+	PostAutorizacionInicioPagoPathParamAspspBankoa          PostAutorizacionInicioPagoPathParamAspsp = "bankoa"
+	PostAutorizacionInicioPagoPathParamAspspCajamar         PostAutorizacionInicioPagoPathParamAspsp = "cajamar"
+	PostAutorizacionInicioPagoPathParamAspspArquia          PostAutorizacionInicioPagoPathParamAspsp = "arquia"
+	PostAutorizacionInicioPagoPathParamAspspBff             PostAutorizacionInicioPagoPathParamAspsp = "BFF"
+	PostAutorizacionInicioPagoPathParamAspspColonya         PostAutorizacionInicioPagoPathParamAspsp = "colonya"
+	PostAutorizacionInicioPagoPathParamAspspEurocajarural   PostAutorizacionInicioPagoPathParamAspsp = "eurocajarural"
+	PostAutorizacionInicioPagoPathParamAspspEvobanco        PostAutorizacionInicioPagoPathParamAspsp = "evobanco"
+	PostAutorizacionInicioPagoPathParamAspspFiarebancaetica PostAutorizacionInicioPagoPathParamAspsp = "fiarebancaetica"
+	PostAutorizacionInicioPagoPathParamAspspBancopichincha  PostAutorizacionInicioPagoPathParamAspsp = "bancopichincha"
+	PostAutorizacionInicioPagoPathParamAspspUnicajabanco    PostAutorizacionInicioPagoPathParamAspsp = "unicajabanco"
+	PostAutorizacionInicioPagoPathParamAspspCajasur         PostAutorizacionInicioPagoPathParamAspsp = "cajasur"
+	PostAutorizacionInicioPagoPathParamAspspKutxabank       PostAutorizacionInicioPagoPathParamAspsp = "kutxabank"
+	PostAutorizacionInicioPagoPathParamAspspBankinter       PostAutorizacionInicioPagoPathParamAspsp = "bankinter"
+	PostAutorizacionInicioPagoPathParamAspspRenta4          PostAutorizacionInicioPagoPathParamAspsp = "renta4"
+	PostAutorizacionInicioPagoPathParamAspspBce             PostAutorizacionInicioPagoPathParamAspsp = "BCE"
+	PostAutorizacionInicioPagoPathParamAspspLaboralkutxa    PostAutorizacionInicioPagoPathParamAspsp = "laboralkutxa"
+	PostAutorizacionInicioPagoPathParamAspspMediolanum      PostAutorizacionInicioPagoPathParamAspsp = "mediolanum"
+	PostAutorizacionInicioPagoPathParamAspspOpenbank        PostAutorizacionInicioPagoPathParamAspsp = "openbank"
+	PostAutorizacionInicioPagoPathParamAspspIbercaja        PostAutorizacionInicioPagoPathParamAspsp = "ibercaja"
+	PostAutorizacionInicioPagoPathParamAspspSelfbank        PostAutorizacionInicioPagoPathParamAspsp = "selfbank"
+	PostAutorizacionInicioPagoPathParamAspspInversis        PostAutorizacionInicioPagoPathParamAspsp = "inversis"
+	PostAutorizacionInicioPagoPathParamAspspAndbank         PostAutorizacionInicioPagoPathParamAspsp = "andbank"
+	PostAutorizacionInicioPagoPathParamAspspWizink          PostAutorizacionInicioPagoPathParamAspsp = "wizink"
 )
 
-func (e PostAutorizacionInicioPagoAspsp) ToPointer() *PostAutorizacionInicioPagoAspsp {
+func (e PostAutorizacionInicioPagoPathParamAspsp) ToPointer() *PostAutorizacionInicioPagoPathParamAspsp {
 	return &e
 }
 
-func (e *PostAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) error {
+func (e *PostAutorizacionInicioPagoPathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,31 +124,31 @@ func (e *PostAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) error {
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = PostAutorizacionInicioPagoAspsp(v)
+		*e = PostAutorizacionInicioPagoPathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PostAutorizacionInicioPagoAspsp: %v", v)
+		return fmt.Errorf("invalid value for PostAutorizacionInicioPagoPathParamAspsp: %v", v)
 	}
 }
 
-type PostAutorizacionInicioPagoPaymentProduct string
+type PostAutorizacionInicioPagoPathParamPaymentProduct string
 
 const (
-	PostAutorizacionInicioPagoPaymentProductSepaCreditTransfers             PostAutorizacionInicioPagoPaymentProduct = "sepa-credit-transfers"
-	PostAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers      PostAutorizacionInicioPagoPaymentProduct = "instant-sepa-credit-transfers"
-	PostAutorizacionInicioPagoPaymentProductTarget2Payments                 PostAutorizacionInicioPagoPaymentProduct = "target-2-payments"
-	PostAutorizacionInicioPagoPaymentProductCrossBorderCreditTransfers      PostAutorizacionInicioPagoPaymentProduct = "cross-border-credit-transfers"
-	PostAutorizacionInicioPagoPaymentProductDomesticCrossCurrencyPaymentsUk PostAutorizacionInicioPagoPaymentProduct = "domestic-cross-currency-payments-uk"
-	PostAutorizacionInicioPagoPaymentProductDomesticChapsPaymentsUk         PostAutorizacionInicioPagoPaymentProduct = "domestic-chaps-payments-uk"
-	PostAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk        PostAutorizacionInicioPagoPaymentProduct = "domestic-faster-payments-uk"
-	PostAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk          PostAutorizacionInicioPagoPaymentProduct = "domestic-bacs-payments-uk"
+	PostAutorizacionInicioPagoPathParamPaymentProductSepaCreditTransfers             PostAutorizacionInicioPagoPathParamPaymentProduct = "sepa-credit-transfers"
+	PostAutorizacionInicioPagoPathParamPaymentProductInstantSepaCreditTransfers      PostAutorizacionInicioPagoPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	PostAutorizacionInicioPagoPathParamPaymentProductTarget2Payments                 PostAutorizacionInicioPagoPathParamPaymentProduct = "target-2-payments"
+	PostAutorizacionInicioPagoPathParamPaymentProductCrossBorderCreditTransfers      PostAutorizacionInicioPagoPathParamPaymentProduct = "cross-border-credit-transfers"
+	PostAutorizacionInicioPagoPathParamPaymentProductDomesticCrossCurrencyPaymentsUk PostAutorizacionInicioPagoPathParamPaymentProduct = "domestic-cross-currency-payments-uk"
+	PostAutorizacionInicioPagoPathParamPaymentProductDomesticChapsPaymentsUk         PostAutorizacionInicioPagoPathParamPaymentProduct = "domestic-chaps-payments-uk"
+	PostAutorizacionInicioPagoPathParamPaymentProductDomesticFasterPaymentsUk        PostAutorizacionInicioPagoPathParamPaymentProduct = "domestic-faster-payments-uk"
+	PostAutorizacionInicioPagoPathParamPaymentProductDomesticBacsPaymentsUk          PostAutorizacionInicioPagoPathParamPaymentProduct = "domestic-bacs-payments-uk"
 )
 
-func (e PostAutorizacionInicioPagoPaymentProduct) ToPointer() *PostAutorizacionInicioPagoPaymentProduct {
+func (e PostAutorizacionInicioPagoPathParamPaymentProduct) ToPointer() *PostAutorizacionInicioPagoPathParamPaymentProduct {
 	return &e
 }
 
-func (e *PostAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *PostAutorizacionInicioPagoPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -169,26 +169,26 @@ func (e *PostAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data []byte) er
 	case "domestic-faster-payments-uk":
 		fallthrough
 	case "domestic-bacs-payments-uk":
-		*e = PostAutorizacionInicioPagoPaymentProduct(v)
+		*e = PostAutorizacionInicioPagoPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PostAutorizacionInicioPagoPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for PostAutorizacionInicioPagoPathParamPaymentProduct: %v", v)
 	}
 }
 
-type PostAutorizacionInicioPagoPaymentService string
+type PostAutorizacionInicioPagoPathParamPaymentService string
 
 const (
-	PostAutorizacionInicioPagoPaymentServicePayments         PostAutorizacionInicioPagoPaymentService = "payments"
-	PostAutorizacionInicioPagoPaymentServiceBulkPayments     PostAutorizacionInicioPagoPaymentService = "bulk-payments"
-	PostAutorizacionInicioPagoPaymentServicePeriodicPayments PostAutorizacionInicioPagoPaymentService = "periodic-payments"
+	PostAutorizacionInicioPagoPathParamPaymentServicePayments         PostAutorizacionInicioPagoPathParamPaymentService = "payments"
+	PostAutorizacionInicioPagoPathParamPaymentServiceBulkPayments     PostAutorizacionInicioPagoPathParamPaymentService = "bulk-payments"
+	PostAutorizacionInicioPagoPathParamPaymentServicePeriodicPayments PostAutorizacionInicioPagoPathParamPaymentService = "periodic-payments"
 )
 
-func (e PostAutorizacionInicioPagoPaymentService) ToPointer() *PostAutorizacionInicioPagoPaymentService {
+func (e PostAutorizacionInicioPagoPathParamPaymentService) ToPointer() *PostAutorizacionInicioPagoPathParamPaymentService {
 	return &e
 }
 
-func (e *PostAutorizacionInicioPagoPaymentService) UnmarshalJSON(data []byte) error {
+func (e *PostAutorizacionInicioPagoPathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -199,10 +199,10 @@ func (e *PostAutorizacionInicioPagoPaymentService) UnmarshalJSON(data []byte) er
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = PostAutorizacionInicioPagoPaymentService(v)
+		*e = PostAutorizacionInicioPagoPathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PostAutorizacionInicioPagoPaymentService: %v", v)
+		return fmt.Errorf("invalid value for PostAutorizacionInicioPagoPathParamPaymentService: %v", v)
 	}
 }
 
@@ -244,10 +244,10 @@ type PostAutorizacionInicioPagoRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp          PostAutorizacionInicioPagoAspsp          `pathParam:"style=simple,explode=false,name=aspsp"`
-	PaymentID      string                                   `pathParam:"style=simple,explode=false,name=payment-id"`
-	PaymentProduct PostAutorizacionInicioPagoPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
-	PaymentService PostAutorizacionInicioPagoPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	Aspsp          PostAutorizacionInicioPagoPathParamAspsp          `pathParam:"style=simple,explode=false,name=aspsp"`
+	PaymentID      string                                            `pathParam:"style=simple,explode=false,name=payment-id"`
+	PaymentProduct PostAutorizacionInicioPagoPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentService PostAutorizacionInicioPagoPathParamPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (p PostAutorizacionInicioPagoRequest) MarshalJSON() ([]byte, error) {
@@ -387,9 +387,9 @@ func (o *PostAutorizacionInicioPagoRequest) GetXRequestID() string {
 	return o.XRequestID
 }
 
-func (o *PostAutorizacionInicioPagoRequest) GetAspsp() PostAutorizacionInicioPagoAspsp {
+func (o *PostAutorizacionInicioPagoRequest) GetAspsp() PostAutorizacionInicioPagoPathParamAspsp {
 	if o == nil {
-		return PostAutorizacionInicioPagoAspsp("")
+		return PostAutorizacionInicioPagoPathParamAspsp("")
 	}
 	return o.Aspsp
 }
@@ -401,16 +401,16 @@ func (o *PostAutorizacionInicioPagoRequest) GetPaymentID() string {
 	return o.PaymentID
 }
 
-func (o *PostAutorizacionInicioPagoRequest) GetPaymentProduct() PostAutorizacionInicioPagoPaymentProduct {
+func (o *PostAutorizacionInicioPagoRequest) GetPaymentProduct() PostAutorizacionInicioPagoPathParamPaymentProduct {
 	if o == nil {
-		return PostAutorizacionInicioPagoPaymentProduct("")
+		return PostAutorizacionInicioPagoPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *PostAutorizacionInicioPagoRequest) GetPaymentService() PostAutorizacionInicioPagoPaymentService {
+func (o *PostAutorizacionInicioPagoRequest) GetPaymentService() PostAutorizacionInicioPagoPathParamPaymentService {
 	if o == nil {
-		return PostAutorizacionInicioPagoPaymentService("")
+		return PostAutorizacionInicioPagoPathParamPaymentService("")
 	}
 	return o.PaymentService
 }

@@ -6,8 +6,8 @@ package shared
 type ResponseTrustedBeneficiaryTppMessage struct {
 }
 
-// ResponseTrustedBeneficiaryTrustedBeneficiaries - Este reporte contiene todos los beneficarios de confianza del PSU para aquellas cuentas que fueron consentidas. Este array podría devolverse vacío.
-type ResponseTrustedBeneficiaryTrustedBeneficiaries struct {
+// TrustedBeneficiaries - Este reporte contiene todos los beneficarios de confianza del PSU para aquellas cuentas que fueron consentidas. Este array podría devolverse vacío.
+type TrustedBeneficiaries struct {
 }
 
 type ResponseTrustedBeneficiary struct {
@@ -16,7 +16,7 @@ type ResponseTrustedBeneficiary struct {
 	// Mensaje para el TPP enviado a través del HUB.
 	TppMessage *ResponseTrustedBeneficiaryTppMessage
 	// Este reporte contiene todos los beneficarios de confianza del PSU para aquellas cuentas que fueron consentidas. Este array podría devolverse vacío.
-	TrustedBeneficiaries ResponseTrustedBeneficiaryTrustedBeneficiaries
+	TrustedBeneficiaries TrustedBeneficiaries
 }
 
 func (o *ResponseTrustedBeneficiary) GetPsuMessage() *string {
@@ -33,9 +33,9 @@ func (o *ResponseTrustedBeneficiary) GetTppMessage() *ResponseTrustedBeneficiary
 	return o.TppMessage
 }
 
-func (o *ResponseTrustedBeneficiary) GetTrustedBeneficiaries() ResponseTrustedBeneficiaryTrustedBeneficiaries {
+func (o *ResponseTrustedBeneficiary) GetTrustedBeneficiaries() TrustedBeneficiaries {
 	if o == nil {
-		return ResponseTrustedBeneficiaryTrustedBeneficiaries{}
+		return TrustedBeneficiaries{}
 	}
 	return o.TrustedBeneficiaries
 }

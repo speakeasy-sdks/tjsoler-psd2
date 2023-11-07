@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// PutSeleccionarSCAAutorizacionInicioPagoAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type PutSeleccionarSCAAutorizacionInicioPagoAspsp string
+// PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp string
 
 const (
-	PutSeleccionarSCAAutorizacionInicioPagoAspspRedsys          PutSeleccionarSCAAutorizacionInicioPagoAspsp = "redsys"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBbva            PutSeleccionarSCAAutorizacionInicioPagoAspsp = "BBVA"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBbvapt          PutSeleccionarSCAAutorizacionInicioPagoAspsp = "BBVAPT"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBbvabe          PutSeleccionarSCAAutorizacionInicioPagoAspsp = "BBVABE"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBbvafr          PutSeleccionarSCAAutorizacionInicioPagoAspsp = "BBVAFR"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBbvaeuk         PutSeleccionarSCAAutorizacionInicioPagoAspsp = "BBVAEUK"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspCaixabank       PutSeleccionarSCAAutorizacionInicioPagoAspsp = "caixabank"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBancSabadell    PutSeleccionarSCAAutorizacionInicioPagoAspsp = "BancSabadell"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBancosantander  PutSeleccionarSCAAutorizacionInicioPagoAspsp = "bancosantander"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBancamarch      PutSeleccionarSCAAutorizacionInicioPagoAspsp = "bancamarch"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBankoa          PutSeleccionarSCAAutorizacionInicioPagoAspsp = "bankoa"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspCajamar         PutSeleccionarSCAAutorizacionInicioPagoAspsp = "cajamar"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspArquia          PutSeleccionarSCAAutorizacionInicioPagoAspsp = "arquia"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBff             PutSeleccionarSCAAutorizacionInicioPagoAspsp = "BFF"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspColonya         PutSeleccionarSCAAutorizacionInicioPagoAspsp = "colonya"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspEurocajarural   PutSeleccionarSCAAutorizacionInicioPagoAspsp = "eurocajarural"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspEvobanco        PutSeleccionarSCAAutorizacionInicioPagoAspsp = "evobanco"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspFiarebancaetica PutSeleccionarSCAAutorizacionInicioPagoAspsp = "fiarebancaetica"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBancopichincha  PutSeleccionarSCAAutorizacionInicioPagoAspsp = "bancopichincha"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspUnicajabanco    PutSeleccionarSCAAutorizacionInicioPagoAspsp = "unicajabanco"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspCajasur         PutSeleccionarSCAAutorizacionInicioPagoAspsp = "cajasur"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspKutxabank       PutSeleccionarSCAAutorizacionInicioPagoAspsp = "kutxabank"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBankinter       PutSeleccionarSCAAutorizacionInicioPagoAspsp = "bankinter"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspRenta4          PutSeleccionarSCAAutorizacionInicioPagoAspsp = "renta4"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspBce             PutSeleccionarSCAAutorizacionInicioPagoAspsp = "BCE"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspLaboralkutxa    PutSeleccionarSCAAutorizacionInicioPagoAspsp = "laboralkutxa"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspMediolanum      PutSeleccionarSCAAutorizacionInicioPagoAspsp = "mediolanum"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspOpenbank        PutSeleccionarSCAAutorizacionInicioPagoAspsp = "openbank"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspIbercaja        PutSeleccionarSCAAutorizacionInicioPagoAspsp = "ibercaja"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspSelfbank        PutSeleccionarSCAAutorizacionInicioPagoAspsp = "selfbank"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspInversis        PutSeleccionarSCAAutorizacionInicioPagoAspsp = "inversis"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspAndbank         PutSeleccionarSCAAutorizacionInicioPagoAspsp = "andbank"
-	PutSeleccionarSCAAutorizacionInicioPagoAspspWizink          PutSeleccionarSCAAutorizacionInicioPagoAspsp = "wizink"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspRedsys          PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "redsys"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBbva            PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "BBVA"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBbvapt          PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "BBVAPT"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBbvabe          PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "BBVABE"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBbvafr          PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "BBVAFR"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBbvaeuk         PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "BBVAEUK"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspCaixabank       PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "caixabank"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBancSabadell    PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "BancSabadell"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBancosantander  PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "bancosantander"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBancamarch      PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "bancamarch"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBankoa          PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "bankoa"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspCajamar         PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "cajamar"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspArquia          PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "arquia"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBff             PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "BFF"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspColonya         PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "colonya"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspEurocajarural   PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "eurocajarural"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspEvobanco        PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "evobanco"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspFiarebancaetica PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "fiarebancaetica"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBancopichincha  PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "bancopichincha"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspUnicajabanco    PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "unicajabanco"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspCajasur         PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "cajasur"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspKutxabank       PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "kutxabank"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBankinter       PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "bankinter"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspRenta4          PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "renta4"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspBce             PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "BCE"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspLaboralkutxa    PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "laboralkutxa"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspMediolanum      PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "mediolanum"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspOpenbank        PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "openbank"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspIbercaja        PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "ibercaja"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspSelfbank        PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "selfbank"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspInversis        PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "inversis"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspAndbank         PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "andbank"
+	PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspWizink          PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp = "wizink"
 )
 
-func (e PutSeleccionarSCAAutorizacionInicioPagoAspsp) ToPointer() *PutSeleccionarSCAAutorizacionInicioPagoAspsp {
+func (e PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp) ToPointer() *PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp {
 	return &e
 }
 
-func (e *PutSeleccionarSCAAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) error {
+func (e *PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,31 +124,31 @@ func (e *PutSeleccionarSCAAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = PutSeleccionarSCAAutorizacionInicioPagoAspsp(v)
+		*e = PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PutSeleccionarSCAAutorizacionInicioPagoAspsp: %v", v)
+		return fmt.Errorf("invalid value for PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp: %v", v)
 	}
 }
 
-type PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct string
+type PathParamPaymentProduct string
 
 const (
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentProductSepaCreditTransfers             PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct = "sepa-credit-transfers"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers      PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct = "instant-sepa-credit-transfers"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentProductTarget2Payments                 PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct = "target-2-payments"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentProductCrossBorderCreditTransfers      PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct = "cross-border-credit-transfers"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticCrossCurrencyPaymentsUk PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct = "domestic-cross-currency-payments-uk"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticChapsPaymentsUk         PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct = "domestic-chaps-payments-uk"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk        PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct = "domestic-faster-payments-uk"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk          PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct = "domestic-bacs-payments-uk"
+	PathParamPaymentProductSepaCreditTransfers             PathParamPaymentProduct = "sepa-credit-transfers"
+	PathParamPaymentProductInstantSepaCreditTransfers      PathParamPaymentProduct = "instant-sepa-credit-transfers"
+	PathParamPaymentProductTarget2Payments                 PathParamPaymentProduct = "target-2-payments"
+	PathParamPaymentProductCrossBorderCreditTransfers      PathParamPaymentProduct = "cross-border-credit-transfers"
+	PathParamPaymentProductDomesticCrossCurrencyPaymentsUk PathParamPaymentProduct = "domestic-cross-currency-payments-uk"
+	PathParamPaymentProductDomesticChapsPaymentsUk         PathParamPaymentProduct = "domestic-chaps-payments-uk"
+	PathParamPaymentProductDomesticFasterPaymentsUk        PathParamPaymentProduct = "domestic-faster-payments-uk"
+	PathParamPaymentProductDomesticBacsPaymentsUk          PathParamPaymentProduct = "domestic-bacs-payments-uk"
 )
 
-func (e PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct) ToPointer() *PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct {
+func (e PathParamPaymentProduct) ToPointer() *PathParamPaymentProduct {
 	return &e
 }
 
-func (e *PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *PathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -169,26 +169,26 @@ func (e *PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(da
 	case "domestic-faster-payments-uk":
 		fallthrough
 	case "domestic-bacs-payments-uk":
-		*e = PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct(v)
+		*e = PathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for PathParamPaymentProduct: %v", v)
 	}
 }
 
-type PutSeleccionarSCAAutorizacionInicioPagoPaymentService string
+type PathParamPaymentService string
 
 const (
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentServicePayments         PutSeleccionarSCAAutorizacionInicioPagoPaymentService = "payments"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentServiceBulkPayments     PutSeleccionarSCAAutorizacionInicioPagoPaymentService = "bulk-payments"
-	PutSeleccionarSCAAutorizacionInicioPagoPaymentServicePeriodicPayments PutSeleccionarSCAAutorizacionInicioPagoPaymentService = "periodic-payments"
+	PathParamPaymentServicePayments         PathParamPaymentService = "payments"
+	PathParamPaymentServiceBulkPayments     PathParamPaymentService = "bulk-payments"
+	PathParamPaymentServicePeriodicPayments PathParamPaymentService = "periodic-payments"
 )
 
-func (e PutSeleccionarSCAAutorizacionInicioPagoPaymentService) ToPointer() *PutSeleccionarSCAAutorizacionInicioPagoPaymentService {
+func (e PathParamPaymentService) ToPointer() *PathParamPaymentService {
 	return &e
 }
 
-func (e *PutSeleccionarSCAAutorizacionInicioPagoPaymentService) UnmarshalJSON(data []byte) error {
+func (e *PathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -199,10 +199,10 @@ func (e *PutSeleccionarSCAAutorizacionInicioPagoPaymentService) UnmarshalJSON(da
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = PutSeleccionarSCAAutorizacionInicioPagoPaymentService(v)
+		*e = PathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PutSeleccionarSCAAutorizacionInicioPagoPaymentService: %v", v)
+		return fmt.Errorf("invalid value for PathParamPaymentService: %v", v)
 	}
 }
 
@@ -245,11 +245,11 @@ type PutSeleccionarSCAAutorizacionInicioPagoRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp           PutSeleccionarSCAAutorizacionInicioPagoAspsp          `pathParam:"style=simple,explode=false,name=aspsp"`
+	Aspsp           PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
 	AuthorisationID string                                                `pathParam:"style=simple,explode=false,name=authorisation-id"`
 	PaymentID       string                                                `pathParam:"style=simple,explode=false,name=payment-id"`
-	PaymentProduct  PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
-	PaymentService  PutSeleccionarSCAAutorizacionInicioPagoPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	PaymentProduct  PathParamPaymentProduct                               `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentService  PathParamPaymentService                               `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (p PutSeleccionarSCAAutorizacionInicioPagoRequest) MarshalJSON() ([]byte, error) {
@@ -396,9 +396,9 @@ func (o *PutSeleccionarSCAAutorizacionInicioPagoRequest) GetXRequestID() string 
 	return o.XRequestID
 }
 
-func (o *PutSeleccionarSCAAutorizacionInicioPagoRequest) GetAspsp() PutSeleccionarSCAAutorizacionInicioPagoAspsp {
+func (o *PutSeleccionarSCAAutorizacionInicioPagoRequest) GetAspsp() PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp {
 	if o == nil {
-		return PutSeleccionarSCAAutorizacionInicioPagoAspsp("")
+		return PutSeleccionarSCAAutorizacionInicioPagoPathParamAspsp("")
 	}
 	return o.Aspsp
 }
@@ -417,16 +417,16 @@ func (o *PutSeleccionarSCAAutorizacionInicioPagoRequest) GetPaymentID() string {
 	return o.PaymentID
 }
 
-func (o *PutSeleccionarSCAAutorizacionInicioPagoRequest) GetPaymentProduct() PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct {
+func (o *PutSeleccionarSCAAutorizacionInicioPagoRequest) GetPaymentProduct() PathParamPaymentProduct {
 	if o == nil {
-		return PutSeleccionarSCAAutorizacionInicioPagoPaymentProduct("")
+		return PathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *PutSeleccionarSCAAutorizacionInicioPagoRequest) GetPaymentService() PutSeleccionarSCAAutorizacionInicioPagoPaymentService {
+func (o *PutSeleccionarSCAAutorizacionInicioPagoRequest) GetPaymentService() PathParamPaymentService {
 	if o == nil {
-		return PutSeleccionarSCAAutorizacionInicioPagoPaymentService("")
+		return PathParamPaymentService("")
 	}
 	return o.PaymentService
 }

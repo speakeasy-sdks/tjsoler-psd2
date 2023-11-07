@@ -1,5 +1,5 @@
 # ConsultaDeFondos
-(*ConsultaDeFondos*)
+(*.ConsultaDeFondos*)
 
 ### Available Operations
 
@@ -29,7 +29,7 @@ func main() {
     res, err := s.ConsultaDeFondos.FundsConfirmation(ctx, operations.FundsConfirmationRequest{
         ConsentID: "string",
         Digest: "string",
-        RequestBody: []byte("zK[o:[L*Hf"),
+        RequestBody: []byte("0xFadC6da29A"),
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",

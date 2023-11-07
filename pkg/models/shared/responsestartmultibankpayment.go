@@ -18,8 +18,8 @@ type ResponseStartMultibankPaymentScaMethods struct {
 type ResponseStartMultibankPaymentTppMessages struct {
 }
 
-// ResponseStartMultibankPaymentTransactionFees - Comisiones asociadas al pago.
-type ResponseStartMultibankPaymentTransactionFees struct {
+// TransactionFees - Comisiones asociadas al pago.
+type TransactionFees struct {
 }
 
 type ResponseStartMultibankPayment struct {
@@ -40,7 +40,7 @@ type ResponseStartMultibankPayment struct {
 	// Si es igual a "true", la transacción implicará una comisión según el ASPSP o según lo acordado entre ASPSP y PSU.
 	TransactionFeeIndicator *bool `json:"transactionFeeIndicator,omitempty"`
 	// Comisiones asociadas al pago.
-	TransactionFees *ResponseStartMultibankPaymentTransactionFees `json:"transactionFees,omitempty"`
+	TransactionFees *TransactionFees `json:"transactionFees,omitempty"`
 	// Estado de la transacción.
 	TransactionStatus string `json:"transactionStatus"`
 }
@@ -101,7 +101,7 @@ func (o *ResponseStartMultibankPayment) GetTransactionFeeIndicator() *bool {
 	return o.TransactionFeeIndicator
 }
 
-func (o *ResponseStartMultibankPayment) GetTransactionFees() *ResponseStartMultibankPaymentTransactionFees {
+func (o *ResponseStartMultibankPayment) GetTransactionFees() *TransactionFees {
 	if o == nil {
 		return nil
 	}

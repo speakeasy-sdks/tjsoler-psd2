@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// GetEstadoSCAAutorizacionConsentimientosFCSAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type GetEstadoSCAAutorizacionConsentimientosFCSAspsp string
+// GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp string
 
 const (
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspRedsys          GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "redsys"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBbva            GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "BBVA"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBbvapt          GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "BBVAPT"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBbvabe          GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "BBVABE"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBbvafr          GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "BBVAFR"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBbvaeuk         GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "BBVAEUK"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspCaixabank       GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "caixabank"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBancSabadell    GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "BancSabadell"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBancosantander  GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "bancosantander"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBancamarch      GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "bancamarch"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBankoa          GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "bankoa"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspCajamar         GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "cajamar"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspArquia          GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "arquia"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBff             GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "BFF"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspColonya         GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "colonya"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspEurocajarural   GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "eurocajarural"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspEvobanco        GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "evobanco"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspFiarebancaetica GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "fiarebancaetica"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBancopichincha  GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "bancopichincha"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspUnicajabanco    GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "unicajabanco"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspCajasur         GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "cajasur"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspKutxabank       GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "kutxabank"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBankinter       GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "bankinter"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspRenta4          GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "renta4"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspBce             GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "BCE"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspLaboralkutxa    GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "laboralkutxa"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspMediolanum      GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "mediolanum"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspOpenbank        GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "openbank"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspIbercaja        GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "ibercaja"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspSelfbank        GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "selfbank"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspInversis        GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "inversis"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspAndbank         GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "andbank"
-	GetEstadoSCAAutorizacionConsentimientosFCSAspspWizink          GetEstadoSCAAutorizacionConsentimientosFCSAspsp = "wizink"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspRedsys          GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "redsys"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBbva            GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "BBVA"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBbvapt          GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "BBVAPT"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBbvabe          GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "BBVABE"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBbvafr          GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "BBVAFR"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBbvaeuk         GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "BBVAEUK"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspCaixabank       GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "caixabank"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBancSabadell    GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "BancSabadell"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBancosantander  GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "bancosantander"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBancamarch      GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "bancamarch"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBankoa          GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "bankoa"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspCajamar         GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "cajamar"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspArquia          GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "arquia"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBff             GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "BFF"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspColonya         GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "colonya"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspEurocajarural   GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "eurocajarural"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspEvobanco        GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "evobanco"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspFiarebancaetica GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "fiarebancaetica"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBancopichincha  GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "bancopichincha"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspUnicajabanco    GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "unicajabanco"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspCajasur         GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "cajasur"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspKutxabank       GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "kutxabank"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBankinter       GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "bankinter"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspRenta4          GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "renta4"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspBce             GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "BCE"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspLaboralkutxa    GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "laboralkutxa"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspMediolanum      GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "mediolanum"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspOpenbank        GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "openbank"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspIbercaja        GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "ibercaja"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspSelfbank        GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "selfbank"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspInversis        GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "inversis"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspAndbank         GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "andbank"
+	GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspWizink          GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp = "wizink"
 )
 
-func (e GetEstadoSCAAutorizacionConsentimientosFCSAspsp) ToPointer() *GetEstadoSCAAutorizacionConsentimientosFCSAspsp {
+func (e GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp) ToPointer() *GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp {
 	return &e
 }
 
-func (e *GetEstadoSCAAutorizacionConsentimientosFCSAspsp) UnmarshalJSON(data []byte) error {
+func (e *GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,10 +124,10 @@ func (e *GetEstadoSCAAutorizacionConsentimientosFCSAspsp) UnmarshalJSON(data []b
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = GetEstadoSCAAutorizacionConsentimientosFCSAspsp(v)
+		*e = GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionConsentimientosFCSAspsp: %v", v)
+		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp: %v", v)
 	}
 }
 
@@ -169,7 +169,7 @@ type GetEstadoSCAAutorizacionConsentimientosFCSRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp GetEstadoSCAAutorizacionConsentimientosFCSAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
+	Aspsp GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
 	// Identificador del subrecurso asociado al ID de autorización
 	AuthorisationID string `pathParam:"style=simple,explode=false,name=authorisation-id"`
 	// Identificador asociado al ID de consentimiento, creado previamente
@@ -313,9 +313,9 @@ func (o *GetEstadoSCAAutorizacionConsentimientosFCSRequest) GetXRequestID() stri
 	return o.XRequestID
 }
 
-func (o *GetEstadoSCAAutorizacionConsentimientosFCSRequest) GetAspsp() GetEstadoSCAAutorizacionConsentimientosFCSAspsp {
+func (o *GetEstadoSCAAutorizacionConsentimientosFCSRequest) GetAspsp() GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp {
 	if o == nil {
-		return GetEstadoSCAAutorizacionConsentimientosFCSAspsp("")
+		return GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspsp("")
 	}
 	return o.Aspsp
 }

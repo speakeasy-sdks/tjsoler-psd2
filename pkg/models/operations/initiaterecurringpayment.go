@@ -10,20 +10,20 @@ import (
 	"net/http"
 )
 
-type InitiateRecurringPaymentPaymentProduct string
+type InitiateRecurringPaymentPathParamPaymentProduct string
 
 const (
-	InitiateRecurringPaymentPaymentProductSepaCreditTransfers        InitiateRecurringPaymentPaymentProduct = "sepa-credit-transfers"
-	InitiateRecurringPaymentPaymentProductInstantSepaCreditTransfers InitiateRecurringPaymentPaymentProduct = "instant-sepa-credit-transfers"
-	InitiateRecurringPaymentPaymentProductTarget2Payments            InitiateRecurringPaymentPaymentProduct = "target-2-payments"
-	InitiateRecurringPaymentPaymentProductCrossBorderCreditTransfers InitiateRecurringPaymentPaymentProduct = "cross-border-credit-transfers"
+	InitiateRecurringPaymentPathParamPaymentProductSepaCreditTransfers        InitiateRecurringPaymentPathParamPaymentProduct = "sepa-credit-transfers"
+	InitiateRecurringPaymentPathParamPaymentProductInstantSepaCreditTransfers InitiateRecurringPaymentPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	InitiateRecurringPaymentPathParamPaymentProductTarget2Payments            InitiateRecurringPaymentPathParamPaymentProduct = "target-2-payments"
+	InitiateRecurringPaymentPathParamPaymentProductCrossBorderCreditTransfers InitiateRecurringPaymentPathParamPaymentProduct = "cross-border-credit-transfers"
 )
 
-func (e InitiateRecurringPaymentPaymentProduct) ToPointer() *InitiateRecurringPaymentPaymentProduct {
+func (e InitiateRecurringPaymentPathParamPaymentProduct) ToPointer() *InitiateRecurringPaymentPathParamPaymentProduct {
 	return &e
 }
 
-func (e *InitiateRecurringPaymentPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *InitiateRecurringPaymentPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -36,10 +36,10 @@ func (e *InitiateRecurringPaymentPaymentProduct) UnmarshalJSON(data []byte) erro
 	case "target-2-payments":
 		fallthrough
 	case "cross-border-credit-transfers":
-		*e = InitiateRecurringPaymentPaymentProduct(v)
+		*e = InitiateRecurringPaymentPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for InitiateRecurringPaymentPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for InitiateRecurringPaymentPathParamPaymentProduct: %v", v)
 	}
 }
 
@@ -100,8 +100,8 @@ type InitiateRecurringPaymentRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.
-	Aspsp          string                                 `pathParam:"style=simple,explode=false,name=aspsp"`
-	PaymentProduct InitiateRecurringPaymentPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	Aspsp          string                                          `pathParam:"style=simple,explode=false,name=aspsp"`
+	PaymentProduct InitiateRecurringPaymentPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
 }
 
 func (i InitiateRecurringPaymentRequest) MarshalJSON() ([]byte, error) {
@@ -318,9 +318,9 @@ func (o *InitiateRecurringPaymentRequest) GetAspsp() string {
 	return o.Aspsp
 }
 
-func (o *InitiateRecurringPaymentRequest) GetPaymentProduct() InitiateRecurringPaymentPaymentProduct {
+func (o *InitiateRecurringPaymentRequest) GetPaymentProduct() InitiateRecurringPaymentPathParamPaymentProduct {
 	if o == nil {
-		return InitiateRecurringPaymentPaymentProduct("")
+		return InitiateRecurringPaymentPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }

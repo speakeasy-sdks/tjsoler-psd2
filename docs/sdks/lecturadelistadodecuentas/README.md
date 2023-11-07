@@ -1,5 +1,5 @@
 # LecturaDeListadoDeCuentas
-(*LecturaDeListadoDeCuentas*)
+(*.LecturaDeListadoDeCuentas*)
 
 ### Available Operations
 

@@ -14,19 +14,19 @@ import (
 	"net/http"
 )
 
-type serviciosMultibanco struct {
+type ServiciosMultibanco struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newServiciosMultibanco(sdkConfig sdkConfiguration) *serviciosMultibanco {
-	return &serviciosMultibanco{
+func newServiciosMultibanco(sdkConfig sdkConfiguration) *ServiciosMultibanco {
+	return &ServiciosMultibanco{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID - Esta petición permite iniciar la cancelación de un pago. Dependiendo del servicio de pago, el producto de pago y la implementación del ASPSP, esta petición podría ser suficiente para cancelar el pago o podría ser necesario una autorización. Si una autorización de la cancelación de pago es necesaria por el ASPSP, el link correspondiente será contenido en el mensaje de respuesta
 // Esta petición permite iniciar la cancelación de un pago. Dependiendo del servicio de pago, el producto de pago y la implementación del ASPSP, esta petición podría ser suficiente para cancelar el pago o podría ser necesario una autorización. Si una autorización de la cancelación de pago es necesaria por el ASPSP, el link correspondiente será contenido en el mensaje de respuesta
-func (s *serviciosMultibanco) DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx context.Context, request operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest) (*operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDResponse, error) {
+func (s *ServiciosMultibanco) DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx context.Context, request operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest) (*operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco-payments/{multibanco-payment-type}/{paymentId}", request, nil)
 	if err != nil {
@@ -90,7 +90,7 @@ func (s *serviciosMultibanco) DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPa
 
 // GetMultibancoCatalogue - Petición iniciada por el TPP para obtener el catálogo de pagos MULTIBANCO
 // Petición iniciada por el TPP para obtener el catálogo de pagos MULTIBANCO.
-func (s *serviciosMultibanco) GetMultibancoCatalogue(ctx context.Context, request operations.GetMultibancoCatalogueRequest) (*operations.GetMultibancoCatalogueResponse, error) {
+func (s *ServiciosMultibanco) GetMultibancoCatalogue(ctx context.Context, request operations.GetMultibancoCatalogueRequest) (*operations.GetMultibancoCatalogueResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco/catalogue/{multibanco-payment-type}", request, nil)
 	if err != nil {
@@ -153,7 +153,7 @@ func (s *serviciosMultibanco) GetMultibancoCatalogue(ctx context.Context, reques
 
 // GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID - Este mensaje es enviado por el TPP hacia el ASPSP a través del HUB para la recuperación de información del inicio de pago MULTIBANCO.
 // Este mensaje es enviado por el TPP hacia el ASPSP a través del HUB para la recuperación de información del inicio de pago MULTIBANCO.
-func (s *serviciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx context.Context, request operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest) (*operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDResponse, error) {
+func (s *ServiciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx context.Context, request operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest) (*operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco-payments/{multibanco-payment-type}/{paymentId}", request, nil)
 	if err != nil {
@@ -215,7 +215,7 @@ func (s *serviciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPayme
 	return res, nil
 }
 
-func (s *serviciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx context.Context, request operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest) (*operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsResponse, error) {
+func (s *ServiciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx context.Context, request operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest) (*operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco-payments/{multibanco-payment-type}/{paymentId}/authorisations", request, nil)
 	if err != nil {
@@ -277,7 +277,7 @@ func (s *serviciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPayme
 	return res, nil
 }
 
-func (s *serviciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx context.Context, request operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest) (*operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDResponse, error) {
+func (s *ServiciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx context.Context, request operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest) (*operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco-payments/{multibanco-payment-type}/{paymentId}/authorisations/{authorisationId}", request, nil)
 	if err != nil {
@@ -341,7 +341,7 @@ func (s *serviciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPayme
 
 // GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatus - Mensaje enviado por el TPP al ASPSP a través del Hub para solicitar el estado en el que se encuentra una iniciación de pago.
 // Mensaje enviado por el TPP al ASPSP a través del Hub para solicitar el estado en el que se encuentra una iniciación de pago.
-func (s *serviciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatus(ctx context.Context, request operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatusRequest) (*operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatusResponse, error) {
+func (s *ServiciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatus(ctx context.Context, request operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatusRequest) (*operations.GetAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDStatusResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco-payments/{multibanco-payment-type}/{paymentId}/status", request, nil)
 	if err != nil {
@@ -403,7 +403,7 @@ func (s *serviciosMultibanco) GetAPIEntradaXs2aServicesAspNameV11MultibancoPayme
 	return res, nil
 }
 
-func (s *serviciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx context.Context, request operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest) (*operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsResponse, error) {
+func (s *ServiciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisations(ctx context.Context, request operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsRequest) (*operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco-payments/{multibanco-payment-type}/{paymentId}/authorisations", request, nil)
 	if err != nil {
@@ -467,7 +467,7 @@ func (s *serviciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoPaym
 
 // PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentType - Mensaje enviado por el TPP al ASPSP a través del Hub para crear un inicio de pago MULTIBANCO
 // Mensaje enviado por el TPP al ASPSP a través del Hub para crear un inicio de pago MULTIBANCO
-func (s *serviciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentType(ctx context.Context, request operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypeRequest) (*operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypeResponse, error) {
+func (s *ServiciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentType(ctx context.Context, request operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypeRequest) (*operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypeResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco/payments/{multibanco-payment-type}", request, nil)
 	if err != nil {
@@ -541,7 +541,7 @@ func (s *serviciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoPaym
 
 // PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholding - Mensaje enviado por el TPP al ASPSP a través del Hub para conocer el valor del importe a pagar en la seguridad social
 // Mensaje enviado por el TPP al ASPSP a través del Hub para conocer el valor del importe a pagar en la seguridad social.
-func (s *serviciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholding(ctx context.Context, request operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequest) (*operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingResponse, error) {
+func (s *ServiciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholding(ctx context.Context, request operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingRequest) (*operations.PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholdingResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco/social-security/withholding", request, nil)
 	if err != nil {
@@ -613,7 +613,7 @@ func (s *serviciosMultibanco) PostAPIEntradaXs2aServicesAspNameV11MultibancoSoci
 	return res, nil
 }
 
-func (s *serviciosMultibanco) PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx context.Context, request operations.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest) (*operations.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDResponse, error) {
+func (s *ServiciosMultibanco) PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID(ctx context.Context, request operations.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDRequest) (*operations.PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationIDResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{asp-name}/v1.1/multibanco-payments/{multibanco-payment-type}/{paymentId}/authorisations/{authorisationId}", request, nil)
 	if err != nil {

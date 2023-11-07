@@ -14,19 +14,19 @@ import (
 	"net/http"
 )
 
-type obtenerEstadoSCA struct {
+type ObtenerEstadoSCA struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newObtenerEstadoSCA(sdkConfig sdkConfiguration) *obtenerEstadoSCA {
-	return &obtenerEstadoSCA{
+func newObtenerEstadoSCA(sdkConfig sdkConfiguration) *ObtenerEstadoSCA {
+	return &ObtenerEstadoSCA{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetEstadoSCAAutorizacionCancelacionPago - Endpoint en caso de obtener el Estado SCA para Autorización de Cancelación de Pago
 // Endpoint en caso de obtener el Estado SCA para Autorización de Cancelación de Pago
-func (s *obtenerEstadoSCA) GetEstadoSCAAutorizacionCancelacionPago(ctx context.Context, request operations.GetEstadoSCAAutorizacionCancelacionPagoRequest) (*operations.GetEstadoSCAAutorizacionCancelacionPagoResponse, error) {
+func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionCancelacionPago(ctx context.Context, request operations.GetEstadoSCAAutorizacionCancelacionPagoRequest) (*operations.GetEstadoSCAAutorizacionCancelacionPagoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/cancellation-authorisations/{authorisation-id}", request, nil)
 	if err != nil {
@@ -92,7 +92,7 @@ func (s *obtenerEstadoSCA) GetEstadoSCAAutorizacionCancelacionPago(ctx context.C
 
 // GetEstadoSCAAutorizacionConsentimientosAIS - Endpoint en caso de obtener el Estado SCA para Autorización de Consentimientos AIS
 // Endpoint en caso de obtener el Estado SCA para Autorización de Consentimientos AIS
-func (s *obtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosAIS(ctx context.Context, request operations.GetEstadoSCAAutorizacionConsentimientosAISRequest) (*operations.GetEstadoSCAAutorizacionConsentimientosAISResponse, error) {
+func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosAIS(ctx context.Context, request operations.GetEstadoSCAAutorizacionConsentimientosAISRequest) (*operations.GetEstadoSCAAutorizacionConsentimientosAISResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}/authorisations/{authorisation-id}", request, nil)
 	if err != nil {
@@ -158,7 +158,7 @@ func (s *obtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosAIS(ctx contex
 
 // GetEstadoSCAAutorizacionConsentimientosFCS - Endpoint en caso de obtener el Estado SCA para Autorización de Consentimientos FCS
 // Endpoint en caso de obtener el Estado SCA para Autorización de Consentimientos FCS
-func (s *obtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosFCS(ctx context.Context, request operations.GetEstadoSCAAutorizacionConsentimientosFCSRequest) (*operations.GetEstadoSCAAutorizacionConsentimientosFCSResponse, error) {
+func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosFCS(ctx context.Context, request operations.GetEstadoSCAAutorizacionConsentimientosFCSRequest) (*operations.GetEstadoSCAAutorizacionConsentimientosFCSResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}/authorisations/{authorisation-id}", request, nil)
 	if err != nil {
@@ -224,7 +224,7 @@ func (s *obtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosFCS(ctx contex
 
 // GetEstadoSCAAutorizacionInicioPago - Endpoint en caso de obtener el Estado SCA para Autorización de Inicio de Pago
 // Endpoint en caso de obtener el Estado SCA para Autorización de Inicio de Pago
-func (s *obtenerEstadoSCA) GetEstadoSCAAutorizacionInicioPago(ctx context.Context, request operations.GetEstadoSCAAutorizacionInicioPagoRequest) (*operations.GetEstadoSCAAutorizacionInicioPagoResponse, error) {
+func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionInicioPago(ctx context.Context, request operations.GetEstadoSCAAutorizacionInicioPagoRequest) (*operations.GetEstadoSCAAutorizacionInicioPagoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/authorisations/{authorisation-id}", request, nil)
 	if err != nil {

@@ -1,5 +1,5 @@
 # ObtenerSubRecursosDeLaAutorizacion
-(*ObtenerSubRecursosDeLaAutorizacion*)
+(*.ObtenerSubRecursosDeLaAutorizacion*)
 
 ### Available Operations
 
@@ -34,10 +34,10 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoAspspMediolanum,
+        Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoPathParamAspspMediolanum,
         PaymentID: "string",
-        PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk,
-        PaymentService: operations.GetSubRecursosAutorizacionCancelacionPagoPaymentServicePeriodicPayments,
+        PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductDomesticFasterPaymentsUk,
+        PaymentService: operations.GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -192,10 +192,10 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.GetSubRecursosAutorizacionInicioPagoAspspArquia,
+        Aspsp: operations.GetSubRecursosAutorizacionInicioPagoPathParamAspspArquia,
         PaymentID: "string",
-        PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk,
-        PaymentService: operations.GetSubRecursosAutorizacionInicioPagoPaymentServicePeriodicPayments,
+        PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductDomesticFasterPaymentsUk,
+        PaymentService: operations.GetSubRecursosAutorizacionInicioPagoPathParamPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)

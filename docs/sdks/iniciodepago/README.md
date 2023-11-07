@@ -1,5 +1,5 @@
 # InicioDePago
-(*InicioDePago*)
+(*.InicioDePago*)
 
 ### Available Operations
 
@@ -38,7 +38,7 @@ func main() {
         TPPSignatureCertificate: "string",
         XRequestID: "string",
         Aspsp: "string",
-        PaymentProduct: operations.InitiateRecurringPaymentPaymentProductInstantSepaCreditTransfers,
+        PaymentProduct: operations.InitiateRecurringPaymentPathParamPaymentProductInstantSepaCreditTransfers,
     })
     if err != nil {
         log.Fatal(err)
@@ -90,15 +90,15 @@ func main() {
         RequestBulkPayment: shared.RequestBulkPayment{
             BatchBookingPreferred: tjsolerpsd2.Bool(true),
             DebtorAccount: shared.RequestBulkPaymentDebtorAccount{},
-            Payments: []shared.RequestBulkPaymentPayments{
-                shared.RequestBulkPaymentPayments{},
+            Payments: []shared.Payments{
+                shared.Payments{},
             },
         },
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
         Aspsp: "string",
-        PaymentProduct: operations.InitiationBulkPaymentPaymentProductCrossBorderCreditTransfers,
+        PaymentProduct: operations.InitiationBulkPaymentPathParamPaymentProductCrossBorderCreditTransfers,
     })
     if err != nil {
         log.Fatal(err)
@@ -150,15 +150,15 @@ func main() {
         Signature: "string",
         SinglePayment: shared.SinglePayment{
             ChargeBearer: tjsolerpsd2.String("SLEV"),
-            CreditorAccount: &shared.SinglePaymentCreditorAccount{},
-            CreditorAddress: &shared.SinglePaymentCreditorAddress{},
+            CreditorAccount: &shared.CreditorAccount{},
+            CreditorAddress: &shared.CreditorAddress{},
             CreditorAgent: tjsolerpsd2.String("XXXLESMMXXX"),
             CreditorName: tjsolerpsd2.String("Nombre"),
             DebtorAccount: &shared.SinglePaymentDebtorAccount{},
-            ExchangeRateInformation: &shared.SinglePaymentExchangeRateInformation{},
+            ExchangeRateInformation: &shared.ExchangeRateInformation{},
             InstructedAmount: &shared.SinglePaymentInstructedAmount{},
-            RemittanceInformationStructured: &shared.SinglePaymentRemittanceInformationStructured{},
-            RemittanceInformationStructuredArray: &shared.SinglePaymentRemittanceInformationStructuredArray{},
+            RemittanceInformationStructured: &shared.RemittanceInformationStructured{},
+            RemittanceInformationStructuredArray: &shared.RemittanceInformationStructuredArray{},
             RemittanceInformationUnstructured: tjsolerpsd2.String("Informacion adicional"),
             RemittanceInformationUnstructuredArray: []string{
                 "string",
@@ -167,7 +167,7 @@ func main() {
         TPPSignatureCertificate: "string",
         XRequestID: "string",
         Aspsp: "string",
-        PaymentProduct: operations.InitiationPaymentPaymentProductTarget2Payments,
+        PaymentProduct: operations.InitiationPaymentPathParamPaymentProductTarget2Payments,
     })
     if err != nil {
         log.Fatal(err)

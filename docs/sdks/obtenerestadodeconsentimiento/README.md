@@ -1,5 +1,5 @@
 # ObtenerEstadoDeConsentimiento
-(*ObtenerEstadoDeConsentimiento*)
+(*.ObtenerEstadoDeConsentimiento*)
 
 ### Available Operations
 

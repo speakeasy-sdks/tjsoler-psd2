@@ -6,20 +6,20 @@ package shared
 type ResponseAuthorizationInitiationPaymentLinks struct {
 }
 
-// ResponseAuthorizationInitiationPaymentChoosenScaMethod - NO SOPORTADO EN ESTA VERSIÓN. SOLO EMBEBIDO
-type ResponseAuthorizationInitiationPaymentChoosenScaMethod struct {
+// ChoosenScaMethod - NO SOPORTADO EN ESTA VERSIÓN. SOLO EMBEBIDO
+type ChoosenScaMethod struct {
 }
 
-// ResponseAuthorizationInitiationPaymentCurrencyConversionFee - Podría ser usado por el ASPSP para transportar comisiones por conversión específica de la moneda asociada a la transferencia de crédito iniciada.
-type ResponseAuthorizationInitiationPaymentCurrencyConversionFee struct {
+// CurrencyConversionFee - Podría ser usado por el ASPSP para transportar comisiones por conversión específica de la moneda asociada a la transferencia de crédito iniciada.
+type CurrencyConversionFee struct {
 }
 
-// ResponseAuthorizationInitiationPaymentEstimatedInterbankSettlementAmount - Importe estimado a ser transferido al beneficiario.
-type ResponseAuthorizationInitiationPaymentEstimatedInterbankSettlementAmount struct {
+// EstimatedInterbankSettlementAmount - Importe estimado a ser transferido al beneficiario.
+type EstimatedInterbankSettlementAmount struct {
 }
 
-// ResponseAuthorizationInitiationPaymentEstimatedTotalAmount - Importe el cual se estima que será retirado de la cuenta del ordenante. Este importe incluye comisiones.
-type ResponseAuthorizationInitiationPaymentEstimatedTotalAmount struct {
+// EstimatedTotalAmount - Importe el cual se estima que será retirado de la cuenta del ordenante. Este importe incluye comisiones.
+type EstimatedTotalAmount struct {
 }
 
 // ResponseAuthorizationInitiationPaymentTppMessages - Mensaje para el TPP enviado a través del HUB.
@@ -36,13 +36,13 @@ type ResponseAuthorizationInitiationPayment struct {
 	// Identificador del recurso que referencia al sub-recurso de autorización creado
 	AuthorisationID string `json:"authorisationId"`
 	// NO SOPORTADO EN ESTA VERSIÓN. SOLO EMBEBIDO
-	ChoosenScaMethod *ResponseAuthorizationInitiationPaymentChoosenScaMethod `json:"choosenScaMethod,omitempty"`
+	ChoosenScaMethod *ChoosenScaMethod `json:"choosenScaMethod,omitempty"`
 	// Podría ser usado por el ASPSP para transportar comisiones por conversión específica de la moneda asociada a la transferencia de crédito iniciada.
-	CurrencyConversionFee *ResponseAuthorizationInitiationPaymentCurrencyConversionFee `json:"currencyConversionFee,omitempty"`
+	CurrencyConversionFee *CurrencyConversionFee `json:"currencyConversionFee,omitempty"`
 	// Importe estimado a ser transferido al beneficiario.
-	EstimatedInterbankSettlementAmount *ResponseAuthorizationInitiationPaymentEstimatedInterbankSettlementAmount `json:"estimatedInterbankSettlementAmount,omitempty"`
+	EstimatedInterbankSettlementAmount *EstimatedInterbankSettlementAmount `json:"estimatedInterbankSettlementAmount,omitempty"`
 	// Importe el cual se estima que será retirado de la cuenta del ordenante. Este importe incluye comisiones.
-	EstimatedTotalAmount *ResponseAuthorizationInitiationPaymentEstimatedTotalAmount `json:"estimatedTotalAmount,omitempty"`
+	EstimatedTotalAmount *EstimatedTotalAmount `json:"estimatedTotalAmount,omitempty"`
 	// Texto enviado al TPP a través del HUB para ser mostrado al PSU.
 	PsuMessage *string `json:"psuMessage,omitempty"`
 	// Este elemento es contenido si SCA es requerido y si el PSU puede elegir entre diferentes métodos de autenticación. Si este dato es contenido también se informará el link "selectAuthenticationM ethod”. Estos métodos deberán ser presentados al PSU. Nota: Solo si ASPSP soporta selección del método SCA
@@ -69,28 +69,28 @@ func (o *ResponseAuthorizationInitiationPayment) GetAuthorisationID() string {
 	return o.AuthorisationID
 }
 
-func (o *ResponseAuthorizationInitiationPayment) GetChoosenScaMethod() *ResponseAuthorizationInitiationPaymentChoosenScaMethod {
+func (o *ResponseAuthorizationInitiationPayment) GetChoosenScaMethod() *ChoosenScaMethod {
 	if o == nil {
 		return nil
 	}
 	return o.ChoosenScaMethod
 }
 
-func (o *ResponseAuthorizationInitiationPayment) GetCurrencyConversionFee() *ResponseAuthorizationInitiationPaymentCurrencyConversionFee {
+func (o *ResponseAuthorizationInitiationPayment) GetCurrencyConversionFee() *CurrencyConversionFee {
 	if o == nil {
 		return nil
 	}
 	return o.CurrencyConversionFee
 }
 
-func (o *ResponseAuthorizationInitiationPayment) GetEstimatedInterbankSettlementAmount() *ResponseAuthorizationInitiationPaymentEstimatedInterbankSettlementAmount {
+func (o *ResponseAuthorizationInitiationPayment) GetEstimatedInterbankSettlementAmount() *EstimatedInterbankSettlementAmount {
 	if o == nil {
 		return nil
 	}
 	return o.EstimatedInterbankSettlementAmount
 }
 
-func (o *ResponseAuthorizationInitiationPayment) GetEstimatedTotalAmount() *ResponseAuthorizationInitiationPaymentEstimatedTotalAmount {
+func (o *ResponseAuthorizationInitiationPayment) GetEstimatedTotalAmount() *EstimatedTotalAmount {
 	if o == nil {
 		return nil
 	}

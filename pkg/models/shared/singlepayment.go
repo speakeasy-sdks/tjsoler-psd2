@@ -2,38 +2,38 @@
 
 package shared
 
-// SinglePaymentCreditorAccount - Cuenta del ordenante. Nota: este campo puede ser opcional en algunos servicios como pagos bulk
-type SinglePaymentCreditorAccount struct {
+// CreditorAccount - Cuenta del ordenante. Nota: este campo puede ser opcional en algunos servicios como pagos bulk
+type CreditorAccount struct {
 }
 
-// SinglePaymentCreditorAddress - Direccion Beneficiario
-type SinglePaymentCreditorAddress struct {
+// CreditorAddress - Direccion Beneficiario
+type CreditorAddress struct {
 }
 
 // SinglePaymentDebtorAccount - Cuenta del ordenante. Nota: este campo puede ser opcional en algunos servicios como pagos bulk
 type SinglePaymentDebtorAccount struct {
 }
 
-type SinglePaymentExchangeRateInformation struct {
+type ExchangeRateInformation struct {
 }
 
 // SinglePaymentInstructedAmount - Información de la transferencia realizada.
 type SinglePaymentInstructedAmount struct {
 }
 
-type SinglePaymentRemittanceInformationStructured struct {
+type RemittanceInformationStructured struct {
 }
 
-type SinglePaymentRemittanceInformationStructuredArray struct {
+type RemittanceInformationStructuredArray struct {
 }
 
 type SinglePayment struct {
 	// Valores permitidos: Valores permitidos: • DEBT • CRED • SHAR • SLEV
 	ChargeBearer *string `json:"chargeBearer,omitempty"`
 	// Cuenta del ordenante. Nota: este campo puede ser opcional en algunos servicios como pagos bulk
-	CreditorAccount *SinglePaymentCreditorAccount `json:"creditorAccount,omitempty"`
+	CreditorAccount *CreditorAccount `json:"creditorAccount,omitempty"`
 	// Direccion Beneficiario
-	CreditorAddress *SinglePaymentCreditorAddress `json:"creditorAddress,omitempty"`
+	CreditorAddress *CreditorAddress `json:"creditorAddress,omitempty"`
 	// BIC de la cuenta del beneficiario
 	CreditorAgent *string `json:"creditorAgent,omitempty"`
 	CreditorID    *string `json:"creditorId,omitempty"`
@@ -47,16 +47,16 @@ type SinglePayment struct {
 	// Nombre del ordenante
 	DebtorName *string `json:"debtorName,omitempty"`
 	// Identificador único end to end.
-	EndToEndIdentification  *string                               `json:"endToEndIdentification,omitempty"`
-	ExchangeRateInformation *SinglePaymentExchangeRateInformation `json:"exchangeRateInformation,omitempty"`
+	EndToEndIdentification  *string                  `json:"endToEndIdentification,omitempty"`
+	ExchangeRateInformation *ExchangeRateInformation `json:"exchangeRateInformation,omitempty"`
 	// Información de la transferencia realizada.
 	InstructedAmount *SinglePaymentInstructedAmount `json:"instructedAmount,omitempty"`
 	// Identificación única de la instrucción asignada por la parte instructora
 	InstructionIdentification *string `json:"instructionIdentification,omitempty"`
 	// Lista de códigos ISO
-	PurposeCode                          *string                                            `json:"purposeCode,omitempty"`
-	RemittanceInformationStructured      *SinglePaymentRemittanceInformationStructured      `json:"remittanceInformationStructured,omitempty"`
-	RemittanceInformationStructuredArray *SinglePaymentRemittanceInformationStructuredArray `json:"remittanceInformationStructuredArray,omitempty"`
+	PurposeCode                          *string                               `json:"purposeCode,omitempty"`
+	RemittanceInformationStructured      *RemittanceInformationStructured      `json:"remittanceInformationStructured,omitempty"`
+	RemittanceInformationStructuredArray *RemittanceInformationStructuredArray `json:"remittanceInformationStructuredArray,omitempty"`
 	// Informacion Adicional
 	RemittanceInformationUnstructured      *string  `json:"remittanceInformationUnstructured,omitempty"`
 	RemittanceInformationUnstructuredArray []string `json:"remittanceInformationUnstructuredArray,omitempty"`
@@ -76,14 +76,14 @@ func (o *SinglePayment) GetChargeBearer() *string {
 	return o.ChargeBearer
 }
 
-func (o *SinglePayment) GetCreditorAccount() *SinglePaymentCreditorAccount {
+func (o *SinglePayment) GetCreditorAccount() *CreditorAccount {
 	if o == nil {
 		return nil
 	}
 	return o.CreditorAccount
 }
 
-func (o *SinglePayment) GetCreditorAddress() *SinglePaymentCreditorAddress {
+func (o *SinglePayment) GetCreditorAddress() *CreditorAddress {
 	if o == nil {
 		return nil
 	}
@@ -153,7 +153,7 @@ func (o *SinglePayment) GetEndToEndIdentification() *string {
 	return o.EndToEndIdentification
 }
 
-func (o *SinglePayment) GetExchangeRateInformation() *SinglePaymentExchangeRateInformation {
+func (o *SinglePayment) GetExchangeRateInformation() *ExchangeRateInformation {
 	if o == nil {
 		return nil
 	}
@@ -181,14 +181,14 @@ func (o *SinglePayment) GetPurposeCode() *string {
 	return o.PurposeCode
 }
 
-func (o *SinglePayment) GetRemittanceInformationStructured() *SinglePaymentRemittanceInformationStructured {
+func (o *SinglePayment) GetRemittanceInformationStructured() *RemittanceInformationStructured {
 	if o == nil {
 		return nil
 	}
 	return o.RemittanceInformationStructured
 }
 
-func (o *SinglePayment) GetRemittanceInformationStructuredArray() *SinglePaymentRemittanceInformationStructuredArray {
+func (o *SinglePayment) GetRemittanceInformationStructuredArray() *RemittanceInformationStructuredArray {
 	if o == nil {
 		return nil
 	}

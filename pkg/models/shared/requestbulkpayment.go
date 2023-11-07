@@ -6,7 +6,7 @@ package shared
 type RequestBulkPaymentDebtorAccount struct {
 }
 
-type RequestBulkPaymentPayments struct {
+type Payments struct {
 }
 
 type RequestBulkPayment struct {
@@ -17,7 +17,7 @@ type RequestBulkPayment struct {
 	// Identificador único asignado por la parte iniciadora para identificar el pago bulk. Este atributo puede ser usado por el ASPSP como un campo opcional.
 	PaymentInformationID *string `json:"paymentInformationId,omitempty"`
 	// Este elemento es un array de inicios de pago en notación JSON para los productos de pago soportados. Excluyendo los datos: • debtorAccount • requestedExecutionDate • requestedExecutionTime
-	Payments []RequestBulkPaymentPayments `json:"payments"`
+	Payments []Payments `json:"payments"`
 	// Si es contenido, los pagos contenidos en el lote serán ejecutados en la fecha indicada. Este campo podría no ser usado junto con el campo requestedExecutionTime
 	RequestedExecutionDate *string `json:"requestedExecutionDate,omitempty"`
 	// Si es contenido, los pagos contenidos en el lote serán ejecutados en la fecha/hora indicada. Este campo podría no ser usado junto con el campo requestedExecutionDate
@@ -45,9 +45,9 @@ func (o *RequestBulkPayment) GetPaymentInformationID() *string {
 	return o.PaymentInformationID
 }
 
-func (o *RequestBulkPayment) GetPayments() []RequestBulkPaymentPayments {
+func (o *RequestBulkPayment) GetPayments() []Payments {
 	if o == nil {
-		return []RequestBulkPaymentPayments{}
+		return []Payments{}
 	}
 	return o.Payments
 }

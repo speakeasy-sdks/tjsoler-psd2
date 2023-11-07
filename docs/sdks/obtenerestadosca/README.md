@@ -1,5 +1,5 @@
 # ObtenerEstadoSCA
-(*ObtenerEstadoSCA*)
+(*.ObtenerEstadoSCA*)
 
 ### Available Operations
 
@@ -34,11 +34,11 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoAspspBbvafr,
+        Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBbvafr,
         AuthorisationID: "string",
         PaymentID: "string",
-        PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentProductCrossBorderCreditTransfers,
-        PaymentService: operations.GetEstadoSCAAutorizacionCancelacionPagoPaymentServicePayments,
+        PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductCrossBorderCreditTransfers,
+        PaymentService: operations.GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -89,7 +89,7 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISAspspBbvaeuk,
+        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISPathParamAspspBbvaeuk,
         AuthorisationID: "string",
         ConsentIDPathParameter: "string",
     })
@@ -142,7 +142,7 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSAspspWizink,
+        Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspWizink,
         AuthorisationID: "string",
         ConsentIDPathParameter: "string",
     })
@@ -195,11 +195,11 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoAspspBff,
+        Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoPathParamAspspBff,
         AuthorisationID: "string",
         PaymentID: "string",
-        PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPaymentProductCrossBorderCreditTransfers,
-        PaymentService: operations.GetEstadoSCAAutorizacionInicioPagoPaymentServicePayments,
+        PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductCrossBorderCreditTransfers,
+        PaymentService: operations.GetEstadoSCAAutorizacionInicioPagoPathParamPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)

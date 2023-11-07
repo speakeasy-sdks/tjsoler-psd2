@@ -10,20 +10,20 @@ import (
 	"net/http"
 )
 
-type InitiationPaymentPaymentProduct string
+type InitiationPaymentPathParamPaymentProduct string
 
 const (
-	InitiationPaymentPaymentProductSepaCreditTransfers        InitiationPaymentPaymentProduct = "sepa-credit-transfers"
-	InitiationPaymentPaymentProductInstantSepaCreditTransfers InitiationPaymentPaymentProduct = "instant-sepa-credit-transfers"
-	InitiationPaymentPaymentProductTarget2Payments            InitiationPaymentPaymentProduct = "target-2-payments"
-	InitiationPaymentPaymentProductCrossBorderCreditTransfers InitiationPaymentPaymentProduct = "cross-border-credit-transfers"
+	InitiationPaymentPathParamPaymentProductSepaCreditTransfers        InitiationPaymentPathParamPaymentProduct = "sepa-credit-transfers"
+	InitiationPaymentPathParamPaymentProductInstantSepaCreditTransfers InitiationPaymentPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	InitiationPaymentPathParamPaymentProductTarget2Payments            InitiationPaymentPathParamPaymentProduct = "target-2-payments"
+	InitiationPaymentPathParamPaymentProductCrossBorderCreditTransfers InitiationPaymentPathParamPaymentProduct = "cross-border-credit-transfers"
 )
 
-func (e InitiationPaymentPaymentProduct) ToPointer() *InitiationPaymentPaymentProduct {
+func (e InitiationPaymentPathParamPaymentProduct) ToPointer() *InitiationPaymentPathParamPaymentProduct {
 	return &e
 }
 
-func (e *InitiationPaymentPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *InitiationPaymentPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -36,10 +36,10 @@ func (e *InitiationPaymentPaymentProduct) UnmarshalJSON(data []byte) error {
 	case "target-2-payments":
 		fallthrough
 	case "cross-border-credit-transfers":
-		*e = InitiationPaymentPaymentProduct(v)
+		*e = InitiationPaymentPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for InitiationPaymentPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for InitiationPaymentPathParamPaymentProduct: %v", v)
 	}
 }
 
@@ -100,8 +100,8 @@ type InitiationPaymentRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.
-	Aspsp          string                          `pathParam:"style=simple,explode=false,name=aspsp"`
-	PaymentProduct InitiationPaymentPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	Aspsp          string                                   `pathParam:"style=simple,explode=false,name=aspsp"`
+	PaymentProduct InitiationPaymentPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
 }
 
 func (i InitiationPaymentRequest) MarshalJSON() ([]byte, error) {
@@ -318,9 +318,9 @@ func (o *InitiationPaymentRequest) GetAspsp() string {
 	return o.Aspsp
 }
 
-func (o *InitiationPaymentRequest) GetPaymentProduct() InitiationPaymentPaymentProduct {
+func (o *InitiationPaymentRequest) GetPaymentProduct() InitiationPaymentPathParamPaymentProduct {
 	if o == nil {
-		return InitiationPaymentPaymentProduct("")
+		return InitiationPaymentPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }

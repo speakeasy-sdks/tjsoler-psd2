@@ -2,11 +2,11 @@
 
 package shared
 
-type RequestGetConsentAccess struct {
+type Access struct {
 }
 
 type RequestGetConsent struct {
-	Access RequestGetConsentAccess
+	Access Access
 	// Indica que un inicio de pago se realizará en la misma sesión. De momento el HUB no implementará servicios combinados por lo que este campo deberá tomar el valor de falso.
 	CombinedServiceIndicator bool
 	// Indica la frecuencia de acceso a la cuenta por día. 1 si es de un solo acceso.
@@ -17,9 +17,9 @@ type RequestGetConsent struct {
 	ValidUntil string
 }
 
-func (o *RequestGetConsent) GetAccess() RequestGetConsentAccess {
+func (o *RequestGetConsent) GetAccess() Access {
 	if o == nil {
-		return RequestGetConsentAccess{}
+		return Access{}
 	}
 	return o.Access
 }

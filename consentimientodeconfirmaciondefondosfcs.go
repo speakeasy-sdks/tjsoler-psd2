@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type consentimientoDeConfirmacionDeFondosFCS struct {
+type ConsentimientoDeConfirmacionDeFondosFCS struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newConsentimientoDeConfirmacionDeFondosFCS(sdkConfig sdkConfiguration) *consentimientoDeConfirmacionDeFondosFCS {
-	return &consentimientoDeConfirmacionDeFondosFCS{
+func newConsentimientoDeConfirmacionDeFondosFCS(sdkConfig sdkConfiguration) *ConsentimientoDeConfirmacionDeFondosFCS {
+	return &ConsentimientoDeConfirmacionDeFondosFCS{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // PostConsentsConfirmationOfFunds - Solicitud de consentimiento FCS
 // Con este servicio, un TPP a través del HUB puede solicitar un consentimiento para acceder a las cuentas del PSU. Esta solicitud puede ser sobre unas cuentas indicadas o no.
-func (s *consentimientoDeConfirmacionDeFondosFCS) PostConsentsConfirmationOfFunds(ctx context.Context, request operations.PostConsentsConfirmationOfFundsRequest) (*operations.PostConsentsConfirmationOfFundsResponse, error) {
+func (s *ConsentimientoDeConfirmacionDeFondosFCS) PostConsentsConfirmationOfFunds(ctx context.Context, request operations.PostConsentsConfirmationOfFundsRequest) (*operations.PostConsentsConfirmationOfFundsResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds", request, nil)
 	if err != nil {

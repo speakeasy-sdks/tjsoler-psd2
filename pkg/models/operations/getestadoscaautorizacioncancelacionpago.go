@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// GetEstadoSCAAutorizacionCancelacionPagoAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type GetEstadoSCAAutorizacionCancelacionPagoAspsp string
+// GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp string
 
 const (
-	GetEstadoSCAAutorizacionCancelacionPagoAspspRedsys          GetEstadoSCAAutorizacionCancelacionPagoAspsp = "redsys"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBbva            GetEstadoSCAAutorizacionCancelacionPagoAspsp = "BBVA"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBbvapt          GetEstadoSCAAutorizacionCancelacionPagoAspsp = "BBVAPT"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBbvabe          GetEstadoSCAAutorizacionCancelacionPagoAspsp = "BBVABE"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBbvafr          GetEstadoSCAAutorizacionCancelacionPagoAspsp = "BBVAFR"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBbvaeuk         GetEstadoSCAAutorizacionCancelacionPagoAspsp = "BBVAEUK"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspCaixabank       GetEstadoSCAAutorizacionCancelacionPagoAspsp = "caixabank"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBancSabadell    GetEstadoSCAAutorizacionCancelacionPagoAspsp = "BancSabadell"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBancosantander  GetEstadoSCAAutorizacionCancelacionPagoAspsp = "bancosantander"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBancamarch      GetEstadoSCAAutorizacionCancelacionPagoAspsp = "bancamarch"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBankoa          GetEstadoSCAAutorizacionCancelacionPagoAspsp = "bankoa"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspCajamar         GetEstadoSCAAutorizacionCancelacionPagoAspsp = "cajamar"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspArquia          GetEstadoSCAAutorizacionCancelacionPagoAspsp = "arquia"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBff             GetEstadoSCAAutorizacionCancelacionPagoAspsp = "BFF"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspColonya         GetEstadoSCAAutorizacionCancelacionPagoAspsp = "colonya"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspEurocajarural   GetEstadoSCAAutorizacionCancelacionPagoAspsp = "eurocajarural"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspEvobanco        GetEstadoSCAAutorizacionCancelacionPagoAspsp = "evobanco"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspFiarebancaetica GetEstadoSCAAutorizacionCancelacionPagoAspsp = "fiarebancaetica"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBancopichincha  GetEstadoSCAAutorizacionCancelacionPagoAspsp = "bancopichincha"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspUnicajabanco    GetEstadoSCAAutorizacionCancelacionPagoAspsp = "unicajabanco"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspCajasur         GetEstadoSCAAutorizacionCancelacionPagoAspsp = "cajasur"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspKutxabank       GetEstadoSCAAutorizacionCancelacionPagoAspsp = "kutxabank"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBankinter       GetEstadoSCAAutorizacionCancelacionPagoAspsp = "bankinter"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspRenta4          GetEstadoSCAAutorizacionCancelacionPagoAspsp = "renta4"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspBce             GetEstadoSCAAutorizacionCancelacionPagoAspsp = "BCE"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspLaboralkutxa    GetEstadoSCAAutorizacionCancelacionPagoAspsp = "laboralkutxa"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspMediolanum      GetEstadoSCAAutorizacionCancelacionPagoAspsp = "mediolanum"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspOpenbank        GetEstadoSCAAutorizacionCancelacionPagoAspsp = "openbank"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspIbercaja        GetEstadoSCAAutorizacionCancelacionPagoAspsp = "ibercaja"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspSelfbank        GetEstadoSCAAutorizacionCancelacionPagoAspsp = "selfbank"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspInversis        GetEstadoSCAAutorizacionCancelacionPagoAspsp = "inversis"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspAndbank         GetEstadoSCAAutorizacionCancelacionPagoAspsp = "andbank"
-	GetEstadoSCAAutorizacionCancelacionPagoAspspWizink          GetEstadoSCAAutorizacionCancelacionPagoAspsp = "wizink"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspRedsys          GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "redsys"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBbva            GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "BBVA"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBbvapt          GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "BBVAPT"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBbvabe          GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "BBVABE"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBbvafr          GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "BBVAFR"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBbvaeuk         GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "BBVAEUK"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspCaixabank       GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "caixabank"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBancSabadell    GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "BancSabadell"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBancosantander  GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "bancosantander"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBancamarch      GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "bancamarch"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBankoa          GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "bankoa"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspCajamar         GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "cajamar"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspArquia          GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "arquia"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBff             GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "BFF"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspColonya         GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "colonya"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspEurocajarural   GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "eurocajarural"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspEvobanco        GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "evobanco"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspFiarebancaetica GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "fiarebancaetica"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBancopichincha  GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "bancopichincha"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspUnicajabanco    GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "unicajabanco"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspCajasur         GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "cajasur"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspKutxabank       GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "kutxabank"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBankinter       GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "bankinter"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspRenta4          GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "renta4"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBce             GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "BCE"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspLaboralkutxa    GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "laboralkutxa"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspMediolanum      GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "mediolanum"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspOpenbank        GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "openbank"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspIbercaja        GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "ibercaja"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspSelfbank        GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "selfbank"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspInversis        GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "inversis"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspAndbank         GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "andbank"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspWizink          GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp = "wizink"
 )
 
-func (e GetEstadoSCAAutorizacionCancelacionPagoAspsp) ToPointer() *GetEstadoSCAAutorizacionCancelacionPagoAspsp {
+func (e GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp) ToPointer() *GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp {
 	return &e
 }
 
-func (e *GetEstadoSCAAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []byte) error {
+func (e *GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,31 +124,31 @@ func (e *GetEstadoSCAAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []byte
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = GetEstadoSCAAutorizacionCancelacionPagoAspsp(v)
+		*e = GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionCancelacionPagoAspsp: %v", v)
+		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp: %v", v)
 	}
 }
 
-type GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct string
+type GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct string
 
 const (
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentProductSepaCreditTransfers             GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct = "sepa-credit-transfers"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentProductInstantSepaCreditTransfers      GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct = "instant-sepa-credit-transfers"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentProductTarget2Payments                 GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct = "target-2-payments"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentProductCrossBorderCreditTransfers      GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct = "cross-border-credit-transfers"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct = "domestic-cross-currency-payments-uk"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticChapsPaymentsUk         GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct = "domestic-chaps-payments-uk"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk        GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct = "domestic-faster-payments-uk"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk          GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct = "domestic-bacs-payments-uk"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductSepaCreditTransfers             GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct = "sepa-credit-transfers"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductInstantSepaCreditTransfers      GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductTarget2Payments                 GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct = "target-2-payments"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductCrossBorderCreditTransfers      GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct = "cross-border-credit-transfers"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductDomesticCrossCurrencyPaymentsUk GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-cross-currency-payments-uk"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductDomesticChapsPaymentsUk         GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-chaps-payments-uk"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductDomesticFasterPaymentsUk        GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-faster-payments-uk"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductDomesticBacsPaymentsUk          GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-bacs-payments-uk"
 )
 
-func (e GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct) ToPointer() *GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct {
+func (e GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct) ToPointer() *GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct {
 	return &e
 }
 
-func (e *GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -169,26 +169,26 @@ func (e *GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(da
 	case "domestic-faster-payments-uk":
 		fallthrough
 	case "domestic-bacs-payments-uk":
-		*e = GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct(v)
+		*e = GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct: %v", v)
 	}
 }
 
-type GetEstadoSCAAutorizacionCancelacionPagoPaymentService string
+type GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService string
 
 const (
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentServicePayments         GetEstadoSCAAutorizacionCancelacionPagoPaymentService = "payments"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentServiceBulkPayments     GetEstadoSCAAutorizacionCancelacionPagoPaymentService = "bulk-payments"
-	GetEstadoSCAAutorizacionCancelacionPagoPaymentServicePeriodicPayments GetEstadoSCAAutorizacionCancelacionPagoPaymentService = "periodic-payments"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentServicePayments         GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService = "payments"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentServiceBulkPayments     GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService = "bulk-payments"
+	GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentServicePeriodicPayments GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService = "periodic-payments"
 )
 
-func (e GetEstadoSCAAutorizacionCancelacionPagoPaymentService) ToPointer() *GetEstadoSCAAutorizacionCancelacionPagoPaymentService {
+func (e GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService) ToPointer() *GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService {
 	return &e
 }
 
-func (e *GetEstadoSCAAutorizacionCancelacionPagoPaymentService) UnmarshalJSON(data []byte) error {
+func (e *GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -199,10 +199,10 @@ func (e *GetEstadoSCAAutorizacionCancelacionPagoPaymentService) UnmarshalJSON(da
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = GetEstadoSCAAutorizacionCancelacionPagoPaymentService(v)
+		*e = GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionCancelacionPagoPaymentService: %v", v)
+		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService: %v", v)
 	}
 }
 
@@ -244,12 +244,12 @@ type GetEstadoSCAAutorizacionCancelacionPagoRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp           GetEstadoSCAAutorizacionCancelacionPagoAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
-	AuthorisationID string                                       `pathParam:"style=simple,explode=false,name=authorisation-id"`
+	Aspsp           GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
+	AuthorisationID string                                                `pathParam:"style=simple,explode=false,name=authorisation-id"`
 	// Identificador del recurso que referencia a la iniciación de pago o consentimiento.
-	PaymentID      string                                                `pathParam:"style=simple,explode=false,name=payment-id"`
-	PaymentProduct GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
-	PaymentService GetEstadoSCAAutorizacionCancelacionPagoPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	PaymentID      string                                                         `pathParam:"style=simple,explode=false,name=payment-id"`
+	PaymentProduct GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentService GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (g GetEstadoSCAAutorizacionCancelacionPagoRequest) MarshalJSON() ([]byte, error) {
@@ -389,9 +389,9 @@ func (o *GetEstadoSCAAutorizacionCancelacionPagoRequest) GetXRequestID() string 
 	return o.XRequestID
 }
 
-func (o *GetEstadoSCAAutorizacionCancelacionPagoRequest) GetAspsp() GetEstadoSCAAutorizacionCancelacionPagoAspsp {
+func (o *GetEstadoSCAAutorizacionCancelacionPagoRequest) GetAspsp() GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp {
 	if o == nil {
-		return GetEstadoSCAAutorizacionCancelacionPagoAspsp("")
+		return GetEstadoSCAAutorizacionCancelacionPagoPathParamAspsp("")
 	}
 	return o.Aspsp
 }
@@ -410,16 +410,16 @@ func (o *GetEstadoSCAAutorizacionCancelacionPagoRequest) GetPaymentID() string {
 	return o.PaymentID
 }
 
-func (o *GetEstadoSCAAutorizacionCancelacionPagoRequest) GetPaymentProduct() GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct {
+func (o *GetEstadoSCAAutorizacionCancelacionPagoRequest) GetPaymentProduct() GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct {
 	if o == nil {
-		return GetEstadoSCAAutorizacionCancelacionPagoPaymentProduct("")
+		return GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *GetEstadoSCAAutorizacionCancelacionPagoRequest) GetPaymentService() GetEstadoSCAAutorizacionCancelacionPagoPaymentService {
+func (o *GetEstadoSCAAutorizacionCancelacionPagoRequest) GetPaymentService() GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService {
 	if o == nil {
-		return GetEstadoSCAAutorizacionCancelacionPagoPaymentService("")
+		return GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentService("")
 	}
 	return o.PaymentService
 }

@@ -1,5 +1,5 @@
 # RecuperarInformacionDeConsentimiento
-(*RecuperarInformacionDeConsentimiento*)
+(*.RecuperarInformacionDeConsentimiento*)
 
 ### Available Operations
 

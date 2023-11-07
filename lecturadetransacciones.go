@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type lecturaDeTransacciones struct {
+type LecturaDeTransacciones struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newLecturaDeTransacciones(sdkConfig sdkConfiguration) *lecturaDeTransacciones {
-	return &lecturaDeTransacciones{
+func newLecturaDeTransacciones(sdkConfig sdkConfiguration) *LecturaDeTransacciones {
+	return &LecturaDeTransacciones{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // AccountsTrasactions - Lectura de transacciones de una cuenta
 // Este servicio permite obtener las transacciones de una cuenta determinada por su identificador. Este servicio permite obtener los balances de una cuenta determinada por su identificador. Como requisito, se asume que el PSU ha dado su consentimiento para este acceso y ha sido almacenado por el ASPSP.
-func (s *lecturaDeTransacciones) AccountsTrasactions(ctx context.Context, request operations.AccountsTrasactionsRequest) (*operations.AccountsTrasactionsResponse, error) {
+func (s *LecturaDeTransacciones) AccountsTrasactions(ctx context.Context, request operations.AccountsTrasactionsRequest) (*operations.AccountsTrasactionsResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/accounts/{account-id}/transactions", request, nil)
 	if err != nil {

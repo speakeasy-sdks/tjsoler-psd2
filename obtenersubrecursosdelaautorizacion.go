@@ -14,19 +14,19 @@ import (
 	"net/http"
 )
 
-type obtenerSubRecursosDeLaAutorizacion struct {
+type ObtenerSubRecursosDeLaAutorizacion struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newObtenerSubRecursosDeLaAutorizacion(sdkConfig sdkConfiguration) *obtenerSubRecursosDeLaAutorizacion {
-	return &obtenerSubRecursosDeLaAutorizacion{
+func newObtenerSubRecursosDeLaAutorizacion(sdkConfig sdkConfiguration) *ObtenerSubRecursosDeLaAutorizacion {
+	return &ObtenerSubRecursosDeLaAutorizacion{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetSubRecursosAutorizacionCancelacionPago - Endpoint en caso de obtener sub-recursos de la Autorización para Cancelación de Pago
 // Endpoint en caso de obtener sub-recursos de la Autorización para Cancelación de Pago
-func (s *obtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelacionPago(ctx context.Context, request operations.GetSubRecursosAutorizacionCancelacionPagoRequest) (*operations.GetSubRecursosAutorizacionCancelacionPagoResponse, error) {
+func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelacionPago(ctx context.Context, request operations.GetSubRecursosAutorizacionCancelacionPagoRequest) (*operations.GetSubRecursosAutorizacionCancelacionPagoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/cancellation-authorisations", request, nil)
 	if err != nil {
@@ -92,7 +92,7 @@ func (s *obtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelaci
 
 // GetSubRecursosAutorizacionConsentimientosAIS - Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos AIS
 // Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos AIS
-func (s *obtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentimientosAIS(ctx context.Context, request operations.GetSubRecursosAutorizacionConsentimientosAISRequest) (*operations.GetSubRecursosAutorizacionConsentimientosAISResponse, error) {
+func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentimientosAIS(ctx context.Context, request operations.GetSubRecursosAutorizacionConsentimientosAISRequest) (*operations.GetSubRecursosAutorizacionConsentimientosAISResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}/authorisations", request, nil)
 	if err != nil {
@@ -158,7 +158,7 @@ func (s *obtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 
 // GetSubRecursosAutorizacionConsentimientosFCS - Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos FCS
 // Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos FCS
-func (s *obtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentimientosFCS(ctx context.Context, request operations.GetSubRecursosAutorizacionConsentimientosFCSRequest) (*operations.GetSubRecursosAutorizacionConsentimientosFCSResponse, error) {
+func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentimientosFCS(ctx context.Context, request operations.GetSubRecursosAutorizacionConsentimientosFCSRequest) (*operations.GetSubRecursosAutorizacionConsentimientosFCSResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}/authorisations", request, nil)
 	if err != nil {
@@ -224,7 +224,7 @@ func (s *obtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 
 // GetSubRecursosAutorizacionInicioPago - Endpoint en caso de obtener sub-recursos de la Autorización para Inicio de Pago
 // Endpoint en caso de obtener sub-recursos de la Autorización para Inicio de Pago
-func (s *obtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionInicioPago(ctx context.Context, request operations.GetSubRecursosAutorizacionInicioPagoRequest) (*operations.GetSubRecursosAutorizacionInicioPagoResponse, error) {
+func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionInicioPago(ctx context.Context, request operations.GetSubRecursosAutorizacionInicioPagoRequest) (*operations.GetSubRecursosAutorizacionInicioPagoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/authorisations", request, nil)
 	if err != nil {

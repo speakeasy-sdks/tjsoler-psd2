@@ -9,21 +9,21 @@ import (
 	"net/http"
 )
 
-// DeletePaymentPaymentProduct - Producto de pago a usar.
-type DeletePaymentPaymentProduct string
+// DeletePaymentPathParamPaymentProduct - Producto de pago a usar.
+type DeletePaymentPathParamPaymentProduct string
 
 const (
-	DeletePaymentPaymentProductSepaCreditTransfers        DeletePaymentPaymentProduct = "sepa-credit-transfers"
-	DeletePaymentPaymentProductInstantSepaCreditTransfers DeletePaymentPaymentProduct = "instant-sepa-credit-transfers"
-	DeletePaymentPaymentProductTarget2Payments            DeletePaymentPaymentProduct = "target-2-payments"
-	DeletePaymentPaymentProductCrossBorderCreditTransfers DeletePaymentPaymentProduct = "cross-border-credit-transfers"
+	DeletePaymentPathParamPaymentProductSepaCreditTransfers        DeletePaymentPathParamPaymentProduct = "sepa-credit-transfers"
+	DeletePaymentPathParamPaymentProductInstantSepaCreditTransfers DeletePaymentPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	DeletePaymentPathParamPaymentProductTarget2Payments            DeletePaymentPathParamPaymentProduct = "target-2-payments"
+	DeletePaymentPathParamPaymentProductCrossBorderCreditTransfers DeletePaymentPathParamPaymentProduct = "cross-border-credit-transfers"
 )
 
-func (e DeletePaymentPaymentProduct) ToPointer() *DeletePaymentPaymentProduct {
+func (e DeletePaymentPathParamPaymentProduct) ToPointer() *DeletePaymentPathParamPaymentProduct {
 	return &e
 }
 
-func (e *DeletePaymentPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *DeletePaymentPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -36,27 +36,27 @@ func (e *DeletePaymentPaymentProduct) UnmarshalJSON(data []byte) error {
 	case "target-2-payments":
 		fallthrough
 	case "cross-border-credit-transfers":
-		*e = DeletePaymentPaymentProduct(v)
+		*e = DeletePaymentPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for DeletePaymentPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for DeletePaymentPathParamPaymentProduct: %v", v)
 	}
 }
 
-// DeletePaymentPaymentService - Producto de pago a usar.
-type DeletePaymentPaymentService string
+// DeletePaymentPathParamPaymentService - Producto de pago a usar.
+type DeletePaymentPathParamPaymentService string
 
 const (
-	DeletePaymentPaymentServicePayments         DeletePaymentPaymentService = "payments"
-	DeletePaymentPaymentServiceBulkPayments     DeletePaymentPaymentService = "bulk-payments"
-	DeletePaymentPaymentServicePeriodicPayments DeletePaymentPaymentService = "periodic-payments"
+	DeletePaymentPathParamPaymentServicePayments         DeletePaymentPathParamPaymentService = "payments"
+	DeletePaymentPathParamPaymentServiceBulkPayments     DeletePaymentPathParamPaymentService = "bulk-payments"
+	DeletePaymentPathParamPaymentServicePeriodicPayments DeletePaymentPathParamPaymentService = "periodic-payments"
 )
 
-func (e DeletePaymentPaymentService) ToPointer() *DeletePaymentPaymentService {
+func (e DeletePaymentPathParamPaymentService) ToPointer() *DeletePaymentPathParamPaymentService {
 	return &e
 }
 
-func (e *DeletePaymentPaymentService) UnmarshalJSON(data []byte) error {
+func (e *DeletePaymentPathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -67,10 +67,10 @@ func (e *DeletePaymentPaymentService) UnmarshalJSON(data []byte) error {
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = DeletePaymentPaymentService(v)
+		*e = DeletePaymentPathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for DeletePaymentPaymentService: %v", v)
+		return fmt.Errorf("invalid value for DeletePaymentPathParamPaymentService: %v", v)
 	}
 }
 
@@ -116,9 +116,9 @@ type DeletePaymentRequest struct {
 	// Identificador del recurso que referencia a la iniciación de pago.Enviado previamente como respuesta a un mensaje de iniciación de pago del HUB al ASPSP.
 	PaymentID string `pathParam:"style=simple,explode=false,name=payment-id"`
 	// Producto de pago a usar.
-	PaymentProduct DeletePaymentPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentProduct DeletePaymentPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
 	// Producto de pago a usar.
-	PaymentService DeletePaymentPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	PaymentService DeletePaymentPathParamPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (d DeletePaymentRequest) MarshalJSON() ([]byte, error) {
@@ -272,16 +272,16 @@ func (o *DeletePaymentRequest) GetPaymentID() string {
 	return o.PaymentID
 }
 
-func (o *DeletePaymentRequest) GetPaymentProduct() DeletePaymentPaymentProduct {
+func (o *DeletePaymentRequest) GetPaymentProduct() DeletePaymentPathParamPaymentProduct {
 	if o == nil {
-		return DeletePaymentPaymentProduct("")
+		return DeletePaymentPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *DeletePaymentRequest) GetPaymentService() DeletePaymentPaymentService {
+func (o *DeletePaymentRequest) GetPaymentService() DeletePaymentPathParamPaymentService {
 	if o == nil {
-		return DeletePaymentPaymentService("")
+		return DeletePaymentPathParamPaymentService("")
 	}
 	return o.PaymentService
 }

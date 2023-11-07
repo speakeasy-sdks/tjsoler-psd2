@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type consentimientoDeInformacionSobreCuentasDePagoAIS struct {
+type ConsentimientoDeInformacionSobreCuentasDePagoAIS struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newConsentimientoDeInformacionSobreCuentasDePagoAIS(sdkConfig sdkConfiguration) *consentimientoDeInformacionSobreCuentasDePagoAIS {
-	return &consentimientoDeInformacionSobreCuentasDePagoAIS{
+func newConsentimientoDeInformacionSobreCuentasDePagoAIS(sdkConfig sdkConfiguration) *ConsentimientoDeInformacionSobreCuentasDePagoAIS {
+	return &ConsentimientoDeInformacionSobreCuentasDePagoAIS{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // PostConsents - Solicitud de consentimiento AIS
 // Con este servicio, un TPP a través del HUB puede solicitar un consentimiento para acceder a las cuentas del PSU. Esta solicitud puede ser sobre unas cuentas indicadas o no.
-func (s *consentimientoDeInformacionSobreCuentasDePagoAIS) PostConsents(ctx context.Context, request operations.PostConsentsRequest) (*operations.PostConsentsResponse, error) {
+func (s *ConsentimientoDeInformacionSobreCuentasDePagoAIS) PostConsents(ctx context.Context, request operations.PostConsentsRequest) (*operations.PostConsentsResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents", request, nil)
 	if err != nil {

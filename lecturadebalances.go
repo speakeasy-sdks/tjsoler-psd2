@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type lecturaDeBalances struct {
+type LecturaDeBalances struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newLecturaDeBalances(sdkConfig sdkConfiguration) *lecturaDeBalances {
-	return &lecturaDeBalances{
+func newLecturaDeBalances(sdkConfig sdkConfiguration) *LecturaDeBalances {
+	return &LecturaDeBalances{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetAccountBalances - Lectura de balances de una cuenta
 // Este servicio permite obtener los balances de una cuenta determinada por su identificador. Como requisito, se asume que el PSU ha dado su consentimiento para este acceso y ha sido almacenado por el ASPSP.
-func (s *lecturaDeBalances) GetAccountBalances(ctx context.Context, request operations.GetAccountBalancesRequest) (*operations.GetAccountBalancesResponse, error) {
+func (s *LecturaDeBalances) GetAccountBalances(ctx context.Context, request operations.GetAccountBalancesRequest) (*operations.GetAccountBalancesResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/accounts/{account-id}/balances", request, nil)
 	if err != nil {

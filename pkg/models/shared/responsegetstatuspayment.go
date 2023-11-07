@@ -2,8 +2,8 @@
 
 package shared
 
-// ResponseGetStatusPaymentOwnerNames - Listado de nombres de propietarios de la cuenta.
-type ResponseGetStatusPaymentOwnerNames struct {
+// OwnerNames - Listado de nombres de propietarios de la cuenta.
+type OwnerNames struct {
 }
 
 // ResponseGetStatusPaymentTppMessages - Mensaje para el TPP enviado a través del HUB.
@@ -14,7 +14,7 @@ type ResponseGetStatusPayment struct {
 	// Este dato es contenido si es soportado por el ASPSP, si una confirmación de fondos ha sido realizada y si el “transactionStatus” es ATCT, ACWC, ACCP
 	FundsAvailable *bool
 	// Listado de nombres de propietarios de la cuenta.
-	OwnerNames *ResponseGetStatusPaymentOwnerNames
+	OwnerNames *OwnerNames
 	// Texto enviado al TPP a través del HUB para ser mostrado al PSU.
 	PsuMessage *string
 	// Nombre del PSU conectado.En caso de cuentas corporativas, esto podría ser la persona que actúe en nombre de la empresa.
@@ -32,7 +32,7 @@ func (o *ResponseGetStatusPayment) GetFundsAvailable() *bool {
 	return o.FundsAvailable
 }
 
-func (o *ResponseGetStatusPayment) GetOwnerNames() *ResponseGetStatusPaymentOwnerNames {
+func (o *ResponseGetStatusPayment) GetOwnerNames() *OwnerNames {
 	if o == nil {
 		return nil
 	}

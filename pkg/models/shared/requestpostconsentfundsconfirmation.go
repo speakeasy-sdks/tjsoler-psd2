@@ -2,13 +2,13 @@
 
 package shared
 
-// RequestPostConsentFundsConfirmationAccount - Cuenta sobre la que se realizará la consulta de fondos.
-type RequestPostConsentFundsConfirmationAccount struct {
+// Account - Cuenta sobre la que se realizará la consulta de fondos.
+type Account struct {
 }
 
 type RequestPostConsentFundsConfirmation struct {
 	// Cuenta sobre la que se realizará la consulta de fondos.
-	Account RequestPostConsentFundsConfirmationAccount
+	Account Account
 	// Fecha de caducidad de la tarjeta emitida por el PIISP. (Formato ISODate)
 	CardExpiryDate *string
 	// Explicación adicional del producto.
@@ -19,9 +19,9 @@ type RequestPostConsentFundsConfirmation struct {
 	RegistrationInformation *string
 }
 
-func (o *RequestPostConsentFundsConfirmation) GetAccount() RequestPostConsentFundsConfirmationAccount {
+func (o *RequestPostConsentFundsConfirmation) GetAccount() Account {
 	if o == nil {
-		return RequestPostConsentFundsConfirmationAccount{}
+		return Account{}
 	}
 	return o.Account
 }

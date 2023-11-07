@@ -1,5 +1,5 @@
 # LecturaDeTransacciones
-(*LecturaDeTransacciones*)
+(*.LecturaDeTransacciones*)
 
 ### Available Operations
 

@@ -2,26 +2,29 @@ configVersion: 1.0.0
 management:
   docChecksum: 9032b1104bb04d9de528b41ad19264a1
   docVersion: "1.1"
-  speakeasyVersion: 1.104.0
-  generationVersion: 2.169.0
+  speakeasyVersion: 1.114.1
+  generationVersion: 2.181.1
 generation:
-  comments:
-    disableComments: false
-    omitDescriptionIfSummaryPresent: false
-  baseServerURL: ""
-  repoURL: https://github.com/speakeasy-sdks/tjsoler-psd2.git
+  comments: {}
   sdkClassName: psd2-caja-rural
-  singleTagPerOp: false
-  tagNamespacingDisabled: false
+  repoURL: https://github.com/speakeasy-sdks/tjsoler-psd2.git
 features:
   go:
     constsAndDefaults: 0.1.1
-    core: 2.94.0
+    core: 3.1.0
     globalServerURLs: 2.82.0
 go:
-  version: 0.4.0
+  version: 0.5.0
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
+  imports:
+    option: openapi
+    paths:
+      callbacks: pkg/models/callbacks
+      errors: pkg/models/sdkerrors
+      operations: pkg/models/operations
+      shared: pkg/models/shared
+      webhooks: pkg/models/webhooks
   installationURL: https://github.com/speakeasy-sdks/tjsoler-psd2
   maxMethodParams: 0
   packageName: github.com/speakeasy-sdks/tjsoler-psd2

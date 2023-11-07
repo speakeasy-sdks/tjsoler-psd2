@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type recuperarInformacionDelInicioDePago struct {
+type RecuperarInformacionDelInicioDePago struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newRecuperarInformacionDelInicioDePago(sdkConfig sdkConfiguration) *recuperarInformacionDelInicioDePago {
-	return &recuperarInformacionDelInicioDePago{
+func newRecuperarInformacionDelInicioDePago(sdkConfig sdkConfiguration) *RecuperarInformacionDelInicioDePago {
+	return &RecuperarInformacionDelInicioDePago{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetInfoPayment - Recuperar información del Inicio de pago
 // Este mensaje es enviado por el TPP al HUB para solicitar información de un inicio de pago
-func (s *recuperarInformacionDelInicioDePago) GetInfoPayment(ctx context.Context, request operations.GetInfoPaymentRequest) (*operations.GetInfoPaymentResponse, error) {
+func (s *RecuperarInformacionDelInicioDePago) GetInfoPayment(ctx context.Context, request operations.GetInfoPaymentRequest) (*operations.GetInfoPaymentResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}", request, nil)
 	if err != nil {

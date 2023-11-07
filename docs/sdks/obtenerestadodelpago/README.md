@@ -1,5 +1,5 @@
 # ObtenerEstadoDelPago
-(*ObtenerEstadoDelPago*)
+(*.ObtenerEstadoDelPago*)
 
 ### Available Operations
 
@@ -33,8 +33,8 @@ func main() {
         XRequestID: "string",
         Aspsp: "string",
         PaymentID: "string",
-        PaymentProduct: operations.StatusPaymentPaymentProductTarget2Payments,
-        PaymentService: operations.StatusPaymentPaymentServicePeriodicPayments,
+        PaymentProduct: operations.StatusPaymentPathParamPaymentProductTarget2Payments,
+        PaymentService: operations.StatusPaymentPathParamPaymentServicePeriodicPayments,
     })
     if err != nil {
         log.Fatal(err)

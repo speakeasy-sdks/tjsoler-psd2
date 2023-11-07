@@ -14,19 +14,19 @@ import (
 	"net/http"
 )
 
-type inicioDePago struct {
+type InicioDePago struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newInicioDePago(sdkConfig sdkConfiguration) *inicioDePago {
-	return &inicioDePago{
+func newInicioDePago(sdkConfig sdkConfiguration) *InicioDePago {
+	return &InicioDePago{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // InitiateRecurringPayment - Inicio de pago Recurrente/Periódico
 // Mensaje enviado por el TPP al ASPSP a través del Hub para crear un inicio de pago recurrente/periódico. La funcionalidad de inicios de pagos recurrentes es cubierta por la especificación de Berlin Group como la iniciación de una orden específica permanente. Un TPP puede enviar un inicio de pago recurrente donde se proporciona la fecha de inicio, frecuencia y, condicionalmnete, fecha fin. Una vez autorizado por el PSU, el pago será ejecutado por el ASPSP, si es posible, siguiendo la “orden permanente” como fue enviada por el TPP. No se necesitan acciones adicionales por parte del TPP. En este contexto, este pago es considerado un pago periódico para diferenciar el pago de otros tipos de pagos recurrentes donde terceras partes están iniciando la misma cantidad de dinero. Nota: para las órdenes permanentes de inicios de pago, el ASPSP siempre pedirá SCA con Dynamic linking. No se permiten exenciones.
-func (s *inicioDePago) InitiateRecurringPayment(ctx context.Context, request operations.InitiateRecurringPaymentRequest) (*operations.InitiateRecurringPaymentResponse, error) {
+func (s *InicioDePago) InitiateRecurringPayment(ctx context.Context, request operations.InitiateRecurringPaymentRequest) (*operations.InitiateRecurringPaymentResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/periodic-payments/{payment-product}", request, nil)
 	if err != nil {
@@ -102,7 +102,7 @@ func (s *inicioDePago) InitiateRecurringPayment(ctx context.Context, request ope
 
 // InitiationBulkPayment - Inicio de pago Bulk
 // Este mensaje es enviado por el TPP hacia el HUB para la realización de inicio de pago bulk
-func (s *inicioDePago) InitiationBulkPayment(ctx context.Context, request operations.InitiationBulkPaymentRequest) (*operations.InitiationBulkPaymentResponse, error) {
+func (s *InicioDePago) InitiationBulkPayment(ctx context.Context, request operations.InitiationBulkPaymentRequest) (*operations.InitiationBulkPaymentResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/bulk-payments/{payment-product}", request, nil)
 	if err != nil {
@@ -178,7 +178,7 @@ func (s *inicioDePago) InitiationBulkPayment(ctx context.Context, request operat
 
 // InitiationPayment - Inicio de pago Simple o pago Futuro
 // Mensaje enviado por el TPP al ASPSP a través del HUB para crear un inicio de pago Simple.
-func (s *inicioDePago) InitiationPayment(ctx context.Context, request operations.InitiationPaymentRequest) (*operations.InitiationPaymentResponse, error) {
+func (s *InicioDePago) InitiationPayment(ctx context.Context, request operations.InitiationPaymentRequest) (*operations.InitiationPaymentResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/payments/{payment-product}", request, nil)
 	if err != nil {

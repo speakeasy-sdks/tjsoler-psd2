@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type consultaDeFondos struct {
+type ConsultaDeFondos struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newConsultaDeFondos(sdkConfig sdkConfiguration) *consultaDeFondos {
-	return &consultaDeFondos{
+func newConsultaDeFondos(sdkConfig sdkConfiguration) *ConsultaDeFondos {
+	return &ConsultaDeFondos{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // FundsConfirmation - Consulta de fondos
 // Este tipo de mensaje es utilizado en el servicio de consulta de fondos. El HUB consulta al ASPSP por la disponibilidad de fondos para una cantidad dada. El HUB se comunica con el ASPSP para preguntar si tiene fondos y, tras consultarlo, devuelve la respuesta al TPP.
-func (s *consultaDeFondos) FundsConfirmation(ctx context.Context, request operations.FundsConfirmationRequest) (*operations.FundsConfirmationResponse, error) {
+func (s *ConsultaDeFondos) FundsConfirmation(ctx context.Context, request operations.FundsConfirmationRequest) (*operations.FundsConfirmationResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/funds-confirmations", request, nil)
 	if err != nil {

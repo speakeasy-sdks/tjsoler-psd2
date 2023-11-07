@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type recuperarInformacionDeConsentimiento struct {
+type RecuperarInformacionDeConsentimiento struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newRecuperarInformacionDeConsentimiento(sdkConfig sdkConfiguration) *recuperarInformacionDeConsentimiento {
-	return &recuperarInformacionDeConsentimiento{
+func newRecuperarInformacionDeConsentimiento(sdkConfig sdkConfiguration) *RecuperarInformacionDeConsentimiento {
+	return &RecuperarInformacionDeConsentimiento{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetConsentIDDetails - Recuperar información de consentimiento AIS
 // Este servicio permite al TPP conocer el estado de una solicitud de consentimiento iniciada previamente.
-func (s *recuperarInformacionDeConsentimiento) GetConsentIDDetails(ctx context.Context, request operations.GetConsentIDDetailsRequest) (*operations.GetConsentIDDetailsResponse, error) {
+func (s *RecuperarInformacionDeConsentimiento) GetConsentIDDetails(ctx context.Context, request operations.GetConsentIDDetailsRequest) (*operations.GetConsentIDDetailsResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}", request, nil)
 	if err != nil {
@@ -86,7 +86,7 @@ func (s *recuperarInformacionDeConsentimiento) GetConsentIDDetails(ctx context.C
 
 // GetConsentsConfirmationOfFundsInfo - Recuperar información de consentimiento FCS
 // Este servicio permite al TPP, a través del Hub, conocer el estado en el que se encuentra un recurso de consentimiento de confirmación de fondos en el ASPSP.
-func (s *recuperarInformacionDeConsentimiento) GetConsentsConfirmationOfFundsInfo(ctx context.Context, request operations.GetConsentsConfirmationOfFundsInfoRequest) (*operations.GetConsentsConfirmationOfFundsInfoResponse, error) {
+func (s *RecuperarInformacionDeConsentimiento) GetConsentsConfirmationOfFundsInfo(ctx context.Context, request operations.GetConsentsConfirmationOfFundsInfoRequest) (*operations.GetConsentsConfirmationOfFundsInfoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}", request, nil)
 	if err != nil {

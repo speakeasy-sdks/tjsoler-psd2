@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type obtenerEstadoDeConsentimiento struct {
+type ObtenerEstadoDeConsentimiento struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newObtenerEstadoDeConsentimiento(sdkConfig sdkConfiguration) *obtenerEstadoDeConsentimiento {
-	return &obtenerEstadoDeConsentimiento{
+func newObtenerEstadoDeConsentimiento(sdkConfig sdkConfiguration) *ObtenerEstadoDeConsentimiento {
+	return &ObtenerEstadoDeConsentimiento{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetConsentStatus - Estado de consentimiento AIS
 // Este servicio permite al TPP conocer el estado de una solicitud de consentimiento iniciada previamente.
-func (s *obtenerEstadoDeConsentimiento) GetConsentStatus(ctx context.Context, request operations.GetConsentStatusRequest) (*operations.GetConsentStatusResponse, error) {
+func (s *ObtenerEstadoDeConsentimiento) GetConsentStatus(ctx context.Context, request operations.GetConsentStatusRequest) (*operations.GetConsentStatusResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}/status", request, nil)
 	if err != nil {
@@ -86,7 +86,7 @@ func (s *obtenerEstadoDeConsentimiento) GetConsentStatus(ctx context.Context, re
 
 // GetConsentsConfirmationOfFunds - Estado de consentimiento FCS
 // Este servicio permite al TPP, a través del Hub, conocer el estado en el que se encuentra un recurso de consentimiento de confirmación de fondos en el ASPSP.
-func (s *obtenerEstadoDeConsentimiento) GetConsentsConfirmationOfFunds(ctx context.Context, request operations.GetConsentsConfirmationOfFundsRequest) (*operations.GetConsentsConfirmationOfFundsResponse, error) {
+func (s *ObtenerEstadoDeConsentimiento) GetConsentsConfirmationOfFunds(ctx context.Context, request operations.GetConsentsConfirmationOfFundsRequest) (*operations.GetConsentsConfirmationOfFundsResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}/status", request, nil)
 	if err != nil {

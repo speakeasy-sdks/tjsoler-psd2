@@ -1,5 +1,5 @@
 # ObtenerListadoDeBeneficiariosDeConfianza
-(*ObtenerListadoDeBeneficiariosDeConfianza*)
+(*.ObtenerListadoDeBeneficiariosDeConfianza*)
 
 ### Available Operations
 

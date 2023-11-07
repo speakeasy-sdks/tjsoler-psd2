@@ -14,19 +14,19 @@ import (
 	"net/http"
 )
 
-type actualizarDatosDelPSUSeleccionarMetodoSCA struct {
+type ActualizarDatosDelPSUSeleccionarMetodoSCA struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newActualizarDatosDelPSUSeleccionarMetodoSCA(sdkConfig sdkConfiguration) *actualizarDatosDelPSUSeleccionarMetodoSCA {
-	return &actualizarDatosDelPSUSeleccionarMetodoSCA{
+func newActualizarDatosDelPSUSeleccionarMetodoSCA(sdkConfig sdkConfiguration) *ActualizarDatosDelPSUSeleccionarMetodoSCA {
+	return &ActualizarDatosDelPSUSeleccionarMetodoSCA{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // PutSeleccionarSCAAutorizacionCancelacionPago - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Cancelación de Pago
 // Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Cancelación de Pago
-func (s *actualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionCancelacionPago(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest) (*operations.PutSeleccionarSCAAutorizacionCancelacionPagoResponse, error) {
+func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionCancelacionPago(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest) (*operations.PutSeleccionarSCAAutorizacionCancelacionPagoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/cancellation-authorisations/{authorisation-id}", request, nil)
 	if err != nil {
@@ -92,7 +92,7 @@ func (s *actualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 // PutSeleccionarSCAAutorizacionConsentimientosAIS - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos AIS
 // Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos AIS
-func (s *actualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionConsentimientosAIS(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionConsentimientosAISRequest) (*operations.PutSeleccionarSCAAutorizacionConsentimientosAISResponse, error) {
+func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionConsentimientosAIS(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionConsentimientosAISRequest) (*operations.PutSeleccionarSCAAutorizacionConsentimientosAISResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}/authorisations/{authorisation-id}", request, nil)
 	if err != nil {
@@ -168,7 +168,7 @@ func (s *actualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 // PutSeleccionarSCAAutorizacionConsentimientosFCS - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos FCS
 // Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos FCS
-func (s *actualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionConsentimientosFCS(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionConsentimientosFCSRequest) (*operations.PutSeleccionarSCAAutorizacionConsentimientosFCSResponse, error) {
+func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionConsentimientosFCS(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionConsentimientosFCSRequest) (*operations.PutSeleccionarSCAAutorizacionConsentimientosFCSResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}/authorisations/{authorisation-id}", request, nil)
 	if err != nil {
@@ -244,7 +244,7 @@ func (s *actualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 // PutSeleccionarSCAAutorizacionInicioPago - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Inicio de Pago
 // Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Inicio de Pago
-func (s *actualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionInicioPago(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionInicioPagoRequest) (*operations.PutSeleccionarSCAAutorizacionInicioPagoResponse, error) {
+func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionInicioPago(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionInicioPagoRequest) (*operations.PutSeleccionarSCAAutorizacionInicioPagoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/authorisations/{authorisation-id}", request, nil)
 	if err != nil {

@@ -1,5 +1,5 @@
 # ActualizarDatosDelPSUSeleccionarMetodoSCA
-(*ActualizarDatosDelPSUSeleccionarMetodoSCA*)
+(*.ActualizarDatosDelPSUSeleccionarMetodoSCA*)
 
 ### Available Operations
 
@@ -34,11 +34,11 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionCancelacionPagoAspspBff,
+        Aspsp: operations.AspspBff,
         AuthorisationID: "string",
         PaymentID: "string",
-        PaymentProduct: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk,
-        PaymentService: operations.PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePayments,
+        PaymentProduct: operations.PaymentProductDomesticCrossCurrencyPaymentsUk,
+        PaymentService: operations.PaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -93,7 +93,7 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosAISAspspOpenbank,
+        Aspsp: operations.PathParamAspspOpenbank,
         AuthorisationID: "string",
         ConsentIDPathParameter: "string",
     })
@@ -150,7 +150,7 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSAspspEurocajarural,
+        Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSPathParamAspspEurocajarural,
         AuthorisationID: "string",
         ConsentIDPathParameter: "string",
     })
@@ -207,11 +207,11 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoAspspArquia,
+        Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspArquia,
         AuthorisationID: "string",
         PaymentID: "string",
-        PaymentProduct: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentProductDomesticChapsPaymentsUk,
-        PaymentService: operations.PutSeleccionarSCAAutorizacionInicioPagoPaymentServiceBulkPayments,
+        PaymentProduct: operations.PathParamPaymentProductDomesticChapsPaymentsUk,
+        PaymentService: operations.PathParamPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)

@@ -6,24 +6,24 @@ package shared
 type ResponseGetMultibankCatalogueLinks struct {
 }
 
-// ResponseGetMultibankCataloguePublicSectorPaymentEntities - Comprende todos los datos relevantes de los pagos del sector público
-type ResponseGetMultibankCataloguePublicSectorPaymentEntities struct {
+// PublicSectorPaymentEntities - Comprende todos los datos relevantes de los pagos del sector público
+type PublicSectorPaymentEntities struct {
 }
 
-// ResponseGetMultibankCataloguePublicSectorPaymentTypes - Comprende lo tipos de pago al sector público.
-type ResponseGetMultibankCataloguePublicSectorPaymentTypes struct {
+// PublicSectorPaymentTypes - Comprende lo tipos de pago al sector público.
+type PublicSectorPaymentTypes struct {
 }
 
-// ResponseGetMultibankCatalogueServicePaymentEntities - Conjunto de parámetros genéricos del servicio de pago a tener en cuenta en la definición de interfaz del TPP.
-type ResponseGetMultibankCatalogueServicePaymentEntities struct {
+// ServicePaymentEntities - Conjunto de parámetros genéricos del servicio de pago a tener en cuenta en la definición de interfaz del TPP.
+type ServicePaymentEntities struct {
 }
 
-// ResponseGetMultibankCatalogueSocialSecurityPaymentEntities - Comprende todos los datos de pago relevantes de los servicios de pago a la seguridad social
-type ResponseGetMultibankCatalogueSocialSecurityPaymentEntities struct {
+// SocialSecurityPaymentEntities - Comprende todos los datos de pago relevantes de los servicios de pago a la seguridad social
+type SocialSecurityPaymentEntities struct {
 }
 
-// ResponseGetMultibankCatalogueSpecialServicePaymentEntities - Comprende todos los datos de pago relevantes de los servicios especiales
-type ResponseGetMultibankCatalogueSpecialServicePaymentEntities struct {
+// SpecialServicePaymentEntities - Comprende todos los datos de pago relevantes de los servicios especiales
+type SpecialServicePaymentEntities struct {
 }
 
 // ResponseGetMultibankCatalogueTppMessages - Mensaje para el TPP enviado a través del HUB.
@@ -36,15 +36,15 @@ type ResponseGetMultibankCatalogue struct {
 	// Texto enviado al TPP a través del HUB para ser mostrado al PSU.
 	PsuMessage *string
 	// Comprende todos los datos relevantes de los pagos del sector público
-	PublicSectorPaymentEntities *ResponseGetMultibankCataloguePublicSectorPaymentEntities
+	PublicSectorPaymentEntities *PublicSectorPaymentEntities
 	// Comprende lo tipos de pago al sector público.
-	PublicSectorPaymentTypes *ResponseGetMultibankCataloguePublicSectorPaymentTypes
+	PublicSectorPaymentTypes *PublicSectorPaymentTypes
 	// Conjunto de parámetros genéricos del servicio de pago a tener en cuenta en la definición de interfaz del TPP.
-	ServicePaymentEntities *ResponseGetMultibankCatalogueServicePaymentEntities
+	ServicePaymentEntities *ServicePaymentEntities
 	// Comprende todos los datos de pago relevantes de los servicios de pago a la seguridad social
-	SocialSecurityPaymentEntities *ResponseGetMultibankCatalogueSocialSecurityPaymentEntities
+	SocialSecurityPaymentEntities *SocialSecurityPaymentEntities
 	// Comprende todos los datos de pago relevantes de los servicios especiales
-	SpecialServicePaymentEntities *ResponseGetMultibankCatalogueSpecialServicePaymentEntities
+	SpecialServicePaymentEntities *SpecialServicePaymentEntities
 	// Mensaje para el TPP enviado a través del HUB.
 	TppMessages *ResponseGetMultibankCatalogueTppMessages
 }
@@ -63,35 +63,35 @@ func (o *ResponseGetMultibankCatalogue) GetPsuMessage() *string {
 	return o.PsuMessage
 }
 
-func (o *ResponseGetMultibankCatalogue) GetPublicSectorPaymentEntities() *ResponseGetMultibankCataloguePublicSectorPaymentEntities {
+func (o *ResponseGetMultibankCatalogue) GetPublicSectorPaymentEntities() *PublicSectorPaymentEntities {
 	if o == nil {
 		return nil
 	}
 	return o.PublicSectorPaymentEntities
 }
 
-func (o *ResponseGetMultibankCatalogue) GetPublicSectorPaymentTypes() *ResponseGetMultibankCataloguePublicSectorPaymentTypes {
+func (o *ResponseGetMultibankCatalogue) GetPublicSectorPaymentTypes() *PublicSectorPaymentTypes {
 	if o == nil {
 		return nil
 	}
 	return o.PublicSectorPaymentTypes
 }
 
-func (o *ResponseGetMultibankCatalogue) GetServicePaymentEntities() *ResponseGetMultibankCatalogueServicePaymentEntities {
+func (o *ResponseGetMultibankCatalogue) GetServicePaymentEntities() *ServicePaymentEntities {
 	if o == nil {
 		return nil
 	}
 	return o.ServicePaymentEntities
 }
 
-func (o *ResponseGetMultibankCatalogue) GetSocialSecurityPaymentEntities() *ResponseGetMultibankCatalogueSocialSecurityPaymentEntities {
+func (o *ResponseGetMultibankCatalogue) GetSocialSecurityPaymentEntities() *SocialSecurityPaymentEntities {
 	if o == nil {
 		return nil
 	}
 	return o.SocialSecurityPaymentEntities
 }
 
-func (o *ResponseGetMultibankCatalogue) GetSpecialServicePaymentEntities() *ResponseGetMultibankCatalogueSpecialServicePaymentEntities {
+func (o *ResponseGetMultibankCatalogue) GetSpecialServicePaymentEntities() *SpecialServicePaymentEntities {
 	if o == nil {
 		return nil
 	}

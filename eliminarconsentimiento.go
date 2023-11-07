@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type eliminarConsentimiento struct {
+type EliminarConsentimiento struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newEliminarConsentimiento(sdkConfig sdkConfiguration) *eliminarConsentimiento {
-	return &eliminarConsentimiento{
+func newEliminarConsentimiento(sdkConfig sdkConfiguration) *EliminarConsentimiento {
+	return &EliminarConsentimiento{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // DeleteConsentID - Eliminar consentimiento AIS
 // Este servicio permite al TPP eliminar una solicitud de consentimiento
-func (s *eliminarConsentimiento) DeleteConsentID(ctx context.Context, request operations.DeleteConsentIDRequest) (*operations.DeleteConsentIDResponse, error) {
+func (s *EliminarConsentimiento) DeleteConsentID(ctx context.Context, request operations.DeleteConsentIDRequest) (*operations.DeleteConsentIDResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}", request, nil)
 	if err != nil {
@@ -79,7 +79,7 @@ func (s *eliminarConsentimiento) DeleteConsentID(ctx context.Context, request op
 
 // DeleteConsentsConfirmationOfFunds - Eliminar consentimiento FCS
 // Este servicio permite al TPP, a través del Hub, conocer el estado en el que se encuentra un recurso de consentimiento de confirmación de fondos en el ASPSP.
-func (s *eliminarConsentimiento) DeleteConsentsConfirmationOfFunds(ctx context.Context, request operations.DeleteConsentsConfirmationOfFundsRequest) (*operations.DeleteConsentsConfirmationOfFundsResponse, error) {
+func (s *EliminarConsentimiento) DeleteConsentsConfirmationOfFunds(ctx context.Context, request operations.DeleteConsentsConfirmationOfFundsRequest) (*operations.DeleteConsentsConfirmationOfFundsResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}", request, nil)
 	if err != nil {

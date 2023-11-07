@@ -1,5 +1,5 @@
 # ConsentimientoDeInformacionSobreCuentasDePagoAIS
-(*ConsentimientoDeInformacionSobreCuentasDePagoAIS*)
+(*.ConsentimientoDeInformacionSobreCuentasDePagoAIS*)
 
 ### Available Operations
 
@@ -29,7 +29,7 @@ func main() {
     res, err := s.ConsentimientoDeInformacionSobreCuentasDePagoAIS.PostConsents(ctx, operations.PostConsentsRequest{
         Digest: "string",
         PSUIPAddress: "string",
-        RequestBody: []byte("GGeo6O6-DT"),
+        RequestBody: []byte("0x99AC4b528c"),
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",

@@ -10,8 +10,8 @@ type ResponseUpdatePSUDataLinks struct {
 type ResponseUpdatePSUDataChoosenScaMethod struct {
 }
 
-// ResponseUpdatePSUDataCurrencyCoversionFees - Podría ser usado por el ASPSP para transportar comisiones por conversión específica de la moneda asociada a la transferencia de crédito iniciada.
-type ResponseUpdatePSUDataCurrencyCoversionFees struct {
+// CurrencyCoversionFees - Podría ser usado por el ASPSP para transportar comisiones por conversión específica de la moneda asociada a la transferencia de crédito iniciada.
+type CurrencyCoversionFees struct {
 }
 
 // ResponseUpdatePSUDataEstimatedInterbankSettlementAmount - Importe estimado a ser transferido al beneficiario.
@@ -36,7 +36,7 @@ type ResponseUpdatePSUData struct {
 	// NO SOPORTADO EN ESTA VERSIÓN. SOLO EMBEBIDO
 	ChoosenScaMethod *ResponseUpdatePSUDataChoosenScaMethod `json:"choosenScaMethod,omitempty"`
 	// Podría ser usado por el ASPSP para transportar comisiones por conversión específica de la moneda asociada a la transferencia de crédito iniciada.
-	CurrencyCoversionFees *ResponseUpdatePSUDataCurrencyCoversionFees `json:"currencyCoversionFees,omitempty"`
+	CurrencyCoversionFees *CurrencyCoversionFees `json:"currencyCoversionFees,omitempty"`
 	// Importe estimado a ser transferido al beneficiario.
 	EstimatedInterbankSettlementAmount *ResponseUpdatePSUDataEstimatedInterbankSettlementAmount `json:"estimatedInterbankSettlementAmount,omitempty"`
 	// Importe el cual se estima que será retirado de la cuenta del ordenante. Nota: este importe incluye comisiones.
@@ -67,7 +67,7 @@ func (o *ResponseUpdatePSUData) GetChoosenScaMethod() *ResponseUpdatePSUDataChoo
 	return o.ChoosenScaMethod
 }
 
-func (o *ResponseUpdatePSUData) GetCurrencyCoversionFees() *ResponseUpdatePSUDataCurrencyCoversionFees {
+func (o *ResponseUpdatePSUData) GetCurrencyCoversionFees() *CurrencyCoversionFees {
 	if o == nil {
 		return nil
 	}

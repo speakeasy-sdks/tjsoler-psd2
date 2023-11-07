@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// PutSeleccionarSCAAutorizacionConsentimientosAISAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type PutSeleccionarSCAAutorizacionConsentimientosAISAspsp string
+// PathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type PathParamAspsp string
 
 const (
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspRedsys          PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "redsys"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBbva            PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "BBVA"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBbvapt          PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "BBVAPT"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBbvabe          PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "BBVABE"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBbvafr          PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "BBVAFR"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBbvaeuk         PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "BBVAEUK"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspCaixabank       PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "caixabank"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBancSabadell    PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "BancSabadell"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBancosantander  PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "bancosantander"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBancamarch      PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "bancamarch"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBankoa          PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "bankoa"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspCajamar         PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "cajamar"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspArquia          PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "arquia"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBff             PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "BFF"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspColonya         PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "colonya"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspEurocajarural   PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "eurocajarural"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspEvobanco        PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "evobanco"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspFiarebancaetica PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "fiarebancaetica"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBancopichincha  PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "bancopichincha"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspUnicajabanco    PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "unicajabanco"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspCajasur         PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "cajasur"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspKutxabank       PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "kutxabank"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBankinter       PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "bankinter"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspRenta4          PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "renta4"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspBce             PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "BCE"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspLaboralkutxa    PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "laboralkutxa"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspMediolanum      PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "mediolanum"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspOpenbank        PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "openbank"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspIbercaja        PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "ibercaja"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspSelfbank        PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "selfbank"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspInversis        PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "inversis"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspAndbank         PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "andbank"
-	PutSeleccionarSCAAutorizacionConsentimientosAISAspspWizink          PutSeleccionarSCAAutorizacionConsentimientosAISAspsp = "wizink"
+	PathParamAspspRedsys          PathParamAspsp = "redsys"
+	PathParamAspspBbva            PathParamAspsp = "BBVA"
+	PathParamAspspBbvapt          PathParamAspsp = "BBVAPT"
+	PathParamAspspBbvabe          PathParamAspsp = "BBVABE"
+	PathParamAspspBbvafr          PathParamAspsp = "BBVAFR"
+	PathParamAspspBbvaeuk         PathParamAspsp = "BBVAEUK"
+	PathParamAspspCaixabank       PathParamAspsp = "caixabank"
+	PathParamAspspBancSabadell    PathParamAspsp = "BancSabadell"
+	PathParamAspspBancosantander  PathParamAspsp = "bancosantander"
+	PathParamAspspBancamarch      PathParamAspsp = "bancamarch"
+	PathParamAspspBankoa          PathParamAspsp = "bankoa"
+	PathParamAspspCajamar         PathParamAspsp = "cajamar"
+	PathParamAspspArquia          PathParamAspsp = "arquia"
+	PathParamAspspBff             PathParamAspsp = "BFF"
+	PathParamAspspColonya         PathParamAspsp = "colonya"
+	PathParamAspspEurocajarural   PathParamAspsp = "eurocajarural"
+	PathParamAspspEvobanco        PathParamAspsp = "evobanco"
+	PathParamAspspFiarebancaetica PathParamAspsp = "fiarebancaetica"
+	PathParamAspspBancopichincha  PathParamAspsp = "bancopichincha"
+	PathParamAspspUnicajabanco    PathParamAspsp = "unicajabanco"
+	PathParamAspspCajasur         PathParamAspsp = "cajasur"
+	PathParamAspspKutxabank       PathParamAspsp = "kutxabank"
+	PathParamAspspBankinter       PathParamAspsp = "bankinter"
+	PathParamAspspRenta4          PathParamAspsp = "renta4"
+	PathParamAspspBce             PathParamAspsp = "BCE"
+	PathParamAspspLaboralkutxa    PathParamAspsp = "laboralkutxa"
+	PathParamAspspMediolanum      PathParamAspsp = "mediolanum"
+	PathParamAspspOpenbank        PathParamAspsp = "openbank"
+	PathParamAspspIbercaja        PathParamAspsp = "ibercaja"
+	PathParamAspspSelfbank        PathParamAspsp = "selfbank"
+	PathParamAspspInversis        PathParamAspsp = "inversis"
+	PathParamAspspAndbank         PathParamAspsp = "andbank"
+	PathParamAspspWizink          PathParamAspsp = "wizink"
 )
 
-func (e PutSeleccionarSCAAutorizacionConsentimientosAISAspsp) ToPointer() *PutSeleccionarSCAAutorizacionConsentimientosAISAspsp {
+func (e PathParamAspsp) ToPointer() *PathParamAspsp {
 	return &e
 }
 
-func (e *PutSeleccionarSCAAutorizacionConsentimientosAISAspsp) UnmarshalJSON(data []byte) error {
+func (e *PathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,10 +124,10 @@ func (e *PutSeleccionarSCAAutorizacionConsentimientosAISAspsp) UnmarshalJSON(dat
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = PutSeleccionarSCAAutorizacionConsentimientosAISAspsp(v)
+		*e = PathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PutSeleccionarSCAAutorizacionConsentimientosAISAspsp: %v", v)
+		return fmt.Errorf("invalid value for PathParamAspsp: %v", v)
 	}
 }
 
@@ -170,7 +170,7 @@ type PutSeleccionarSCAAutorizacionConsentimientosAISRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp PutSeleccionarSCAAutorizacionConsentimientosAISAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
+	Aspsp PathParamAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
 	// Identificador del subrecurso asociado al ID de autorización
 	AuthorisationID string `pathParam:"style=simple,explode=false,name=authorisation-id"`
 	// Identificador asociado al ID de consentimiento, creado previamente
@@ -321,9 +321,9 @@ func (o *PutSeleccionarSCAAutorizacionConsentimientosAISRequest) GetXRequestID()
 	return o.XRequestID
 }
 
-func (o *PutSeleccionarSCAAutorizacionConsentimientosAISRequest) GetAspsp() PutSeleccionarSCAAutorizacionConsentimientosAISAspsp {
+func (o *PutSeleccionarSCAAutorizacionConsentimientosAISRequest) GetAspsp() PathParamAspsp {
 	if o == nil {
-		return PutSeleccionarSCAAutorizacionConsentimientosAISAspsp("")
+		return PathParamAspsp("")
 	}
 	return o.Aspsp
 }

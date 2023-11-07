@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type obtenerEstadoDelPago struct {
+type ObtenerEstadoDelPago struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newObtenerEstadoDelPago(sdkConfig sdkConfiguration) *obtenerEstadoDelPago {
-	return &obtenerEstadoDelPago{
+func newObtenerEstadoDelPago(sdkConfig sdkConfiguration) *ObtenerEstadoDelPago {
+	return &ObtenerEstadoDelPago{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // StatusPayment - Obtener información del Estado de pago
 // Este mensaje es enviado por el TPP al HUB para solicitar información del estado en el que se encuentra la iniciación de pago que solicitó el TPP
-func (s *obtenerEstadoDelPago) StatusPayment(ctx context.Context, request operations.StatusPaymentRequest) (*operations.StatusPaymentResponse, error) {
+func (s *ObtenerEstadoDelPago) StatusPayment(ctx context.Context, request operations.StatusPaymentRequest) (*operations.StatusPaymentResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/status", request, nil)
 	if err != nil {

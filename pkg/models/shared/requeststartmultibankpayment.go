@@ -6,12 +6,12 @@ package shared
 type RequestStartMultibankPaymentDebtorAccount struct {
 }
 
-// RequestStartMultibankPaymentInstructedAmount - Importe de la transferencia
-type RequestStartMultibankPaymentInstructedAmount struct {
+// InstructedAmount - Importe de la transferencia
+type InstructedAmount struct {
 }
 
-// RequestStartMultibankPaymentPaymentPeriod - Periodo por el que se realiza el pago
-type RequestStartMultibankPaymentPaymentPeriod struct {
+// PaymentPeriod - Periodo por el que se realiza el pago
+type PaymentPeriod struct {
 }
 
 type RequestStartMultibankPayment struct {
@@ -20,13 +20,13 @@ type RequestStartMultibankPayment struct {
 	// Entidad del pago Multibanco
 	EntityCode *int64 `json:"entityCode,omitempty"`
 	// Importe de la transferencia
-	InstructedAmount *RequestStartMultibankPaymentInstructedAmount `json:"instructedAmount,omitempty"`
+	InstructedAmount *InstructedAmount `json:"instructedAmount,omitempty"`
 	// Referencia obtenida en la consulta de valor a pagar a la Seguridad Social
 	OperationReference *string `json:"operationReference,omitempty"`
 	// Código de parámetro asociado al importe. Obtenido en la consulta de catálogo de special-service-payments
 	ParameterCode *int64 `json:"parameterCode,omitempty"`
 	// Periodo por el que se realiza el pago
-	PaymentPeriod *RequestStartMultibankPaymentPaymentPeriod `json:"paymentPeriod,omitempty"`
+	PaymentPeriod *PaymentPeriod `json:"paymentPeriod,omitempty"`
 	// Referencia del pago multibanco
 	PaymentReference *string `json:"paymentReference,omitempty"`
 	// Tipo de pago a la seguridad social
@@ -55,7 +55,7 @@ func (o *RequestStartMultibankPayment) GetEntityCode() *int64 {
 	return o.EntityCode
 }
 
-func (o *RequestStartMultibankPayment) GetInstructedAmount() *RequestStartMultibankPaymentInstructedAmount {
+func (o *RequestStartMultibankPayment) GetInstructedAmount() *InstructedAmount {
 	if o == nil {
 		return nil
 	}
@@ -76,7 +76,7 @@ func (o *RequestStartMultibankPayment) GetParameterCode() *int64 {
 	return o.ParameterCode
 }
 
-func (o *RequestStartMultibankPayment) GetPaymentPeriod() *RequestStartMultibankPaymentPaymentPeriod {
+func (o *RequestStartMultibankPayment) GetPaymentPeriod() *PaymentPeriod {
 	if o == nil {
 		return nil
 	}

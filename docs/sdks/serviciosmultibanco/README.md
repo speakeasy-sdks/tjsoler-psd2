@@ -1,5 +1,5 @@
 # ServiciosMultibanco
-(*ServiciosMultibanco*)
+(*.ServiciosMultibanco*)
 
 ### Available Operations
 
@@ -405,10 +405,10 @@ func main() {
         RequestStartMultibankPayment: shared.RequestStartMultibankPayment{
             DebtorAccount: &shared.RequestStartMultibankPaymentDebtorAccount{},
             EntityCode: tjsolerpsd2.Int64(10003),
-            InstructedAmount: &shared.RequestStartMultibankPaymentInstructedAmount{},
+            InstructedAmount: &shared.InstructedAmount{},
             OperationReference: tjsolerpsd2.String("1501ab4e-6904-11ea-bc55-0242ac130003"),
             ParameterCode: tjsolerpsd2.Int64(3),
-            PaymentPeriod: &shared.RequestStartMultibankPaymentPaymentPeriod{},
+            PaymentPeriod: &shared.PaymentPeriod{},
             PaymentReference: tjsolerpsd2.String("123456789"),
             PaymentType: tjsolerpsd2.Int64(1),
             PaymentTypeCode: tjsolerpsd2.String("05"),
@@ -470,13 +470,13 @@ func main() {
         Digest: "string",
         PSUIPAddress: "string",
         RequestSocialSecurityWithholding: shared.RequestSocialSecurityWithholding{
-            DebtorAccount: shared.RequestSocialSecurityWithholdingDebtorAccount{},
+            DebtorAccount: shared.DebtorAccount{},
             Niss: tjsolerpsd2.Int64(65136589331),
             Number: 10000000003,
             PaymentDate: "2020-03-04",
             PaymentNature: 4613978645,
             PaymentUnit: 1,
-            RemunerationAmount: shared.RequestSocialSecurityWithholdingRemunerationAmount{},
+            RemunerationAmount: shared.RemunerationAmount{},
             RemunerationCode: 1,
         },
         Signature: "string",

@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// GetSubRecursosAutorizacionCancelacionPagoAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type GetSubRecursosAutorizacionCancelacionPagoAspsp string
+// GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp string
 
 const (
-	GetSubRecursosAutorizacionCancelacionPagoAspspRedsys          GetSubRecursosAutorizacionCancelacionPagoAspsp = "redsys"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBbva            GetSubRecursosAutorizacionCancelacionPagoAspsp = "BBVA"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBbvapt          GetSubRecursosAutorizacionCancelacionPagoAspsp = "BBVAPT"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBbvabe          GetSubRecursosAutorizacionCancelacionPagoAspsp = "BBVABE"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBbvafr          GetSubRecursosAutorizacionCancelacionPagoAspsp = "BBVAFR"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBbvaeuk         GetSubRecursosAutorizacionCancelacionPagoAspsp = "BBVAEUK"
-	GetSubRecursosAutorizacionCancelacionPagoAspspCaixabank       GetSubRecursosAutorizacionCancelacionPagoAspsp = "caixabank"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBancSabadell    GetSubRecursosAutorizacionCancelacionPagoAspsp = "BancSabadell"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBancosantander  GetSubRecursosAutorizacionCancelacionPagoAspsp = "bancosantander"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBancamarch      GetSubRecursosAutorizacionCancelacionPagoAspsp = "bancamarch"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBankoa          GetSubRecursosAutorizacionCancelacionPagoAspsp = "bankoa"
-	GetSubRecursosAutorizacionCancelacionPagoAspspCajamar         GetSubRecursosAutorizacionCancelacionPagoAspsp = "cajamar"
-	GetSubRecursosAutorizacionCancelacionPagoAspspArquia          GetSubRecursosAutorizacionCancelacionPagoAspsp = "arquia"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBff             GetSubRecursosAutorizacionCancelacionPagoAspsp = "BFF"
-	GetSubRecursosAutorizacionCancelacionPagoAspspColonya         GetSubRecursosAutorizacionCancelacionPagoAspsp = "colonya"
-	GetSubRecursosAutorizacionCancelacionPagoAspspEurocajarural   GetSubRecursosAutorizacionCancelacionPagoAspsp = "eurocajarural"
-	GetSubRecursosAutorizacionCancelacionPagoAspspEvobanco        GetSubRecursosAutorizacionCancelacionPagoAspsp = "evobanco"
-	GetSubRecursosAutorizacionCancelacionPagoAspspFiarebancaetica GetSubRecursosAutorizacionCancelacionPagoAspsp = "fiarebancaetica"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBancopichincha  GetSubRecursosAutorizacionCancelacionPagoAspsp = "bancopichincha"
-	GetSubRecursosAutorizacionCancelacionPagoAspspUnicajabanco    GetSubRecursosAutorizacionCancelacionPagoAspsp = "unicajabanco"
-	GetSubRecursosAutorizacionCancelacionPagoAspspCajasur         GetSubRecursosAutorizacionCancelacionPagoAspsp = "cajasur"
-	GetSubRecursosAutorizacionCancelacionPagoAspspKutxabank       GetSubRecursosAutorizacionCancelacionPagoAspsp = "kutxabank"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBankinter       GetSubRecursosAutorizacionCancelacionPagoAspsp = "bankinter"
-	GetSubRecursosAutorizacionCancelacionPagoAspspRenta4          GetSubRecursosAutorizacionCancelacionPagoAspsp = "renta4"
-	GetSubRecursosAutorizacionCancelacionPagoAspspBce             GetSubRecursosAutorizacionCancelacionPagoAspsp = "BCE"
-	GetSubRecursosAutorizacionCancelacionPagoAspspLaboralkutxa    GetSubRecursosAutorizacionCancelacionPagoAspsp = "laboralkutxa"
-	GetSubRecursosAutorizacionCancelacionPagoAspspMediolanum      GetSubRecursosAutorizacionCancelacionPagoAspsp = "mediolanum"
-	GetSubRecursosAutorizacionCancelacionPagoAspspOpenbank        GetSubRecursosAutorizacionCancelacionPagoAspsp = "openbank"
-	GetSubRecursosAutorizacionCancelacionPagoAspspIbercaja        GetSubRecursosAutorizacionCancelacionPagoAspsp = "ibercaja"
-	GetSubRecursosAutorizacionCancelacionPagoAspspSelfbank        GetSubRecursosAutorizacionCancelacionPagoAspsp = "selfbank"
-	GetSubRecursosAutorizacionCancelacionPagoAspspInversis        GetSubRecursosAutorizacionCancelacionPagoAspsp = "inversis"
-	GetSubRecursosAutorizacionCancelacionPagoAspspAndbank         GetSubRecursosAutorizacionCancelacionPagoAspsp = "andbank"
-	GetSubRecursosAutorizacionCancelacionPagoAspspWizink          GetSubRecursosAutorizacionCancelacionPagoAspsp = "wizink"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspRedsys          GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "redsys"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBbva            GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "BBVA"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBbvapt          GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "BBVAPT"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBbvabe          GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "BBVABE"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBbvafr          GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "BBVAFR"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBbvaeuk         GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "BBVAEUK"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspCaixabank       GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "caixabank"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBancSabadell    GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "BancSabadell"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBancosantander  GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "bancosantander"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBancamarch      GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "bancamarch"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBankoa          GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "bankoa"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspCajamar         GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "cajamar"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspArquia          GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "arquia"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBff             GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "BFF"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspColonya         GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "colonya"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspEurocajarural   GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "eurocajarural"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspEvobanco        GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "evobanco"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspFiarebancaetica GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "fiarebancaetica"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBancopichincha  GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "bancopichincha"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspUnicajabanco    GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "unicajabanco"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspCajasur         GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "cajasur"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspKutxabank       GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "kutxabank"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBankinter       GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "bankinter"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspRenta4          GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "renta4"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspBce             GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "BCE"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspLaboralkutxa    GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "laboralkutxa"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspMediolanum      GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "mediolanum"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspOpenbank        GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "openbank"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspIbercaja        GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "ibercaja"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspSelfbank        GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "selfbank"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspInversis        GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "inversis"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspAndbank         GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "andbank"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamAspspWizink          GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp = "wizink"
 )
 
-func (e GetSubRecursosAutorizacionCancelacionPagoAspsp) ToPointer() *GetSubRecursosAutorizacionCancelacionPagoAspsp {
+func (e GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp) ToPointer() *GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp {
 	return &e
 }
 
-func (e *GetSubRecursosAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []byte) error {
+func (e *GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,31 +124,31 @@ func (e *GetSubRecursosAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []by
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = GetSubRecursosAutorizacionCancelacionPagoAspsp(v)
+		*e = GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionCancelacionPagoAspsp: %v", v)
+		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp: %v", v)
 	}
 }
 
-type GetSubRecursosAutorizacionCancelacionPagoPaymentProduct string
+type GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct string
 
 const (
-	GetSubRecursosAutorizacionCancelacionPagoPaymentProductSepaCreditTransfers             GetSubRecursosAutorizacionCancelacionPagoPaymentProduct = "sepa-credit-transfers"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentProductInstantSepaCreditTransfers      GetSubRecursosAutorizacionCancelacionPagoPaymentProduct = "instant-sepa-credit-transfers"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentProductTarget2Payments                 GetSubRecursosAutorizacionCancelacionPagoPaymentProduct = "target-2-payments"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentProductCrossBorderCreditTransfers      GetSubRecursosAutorizacionCancelacionPagoPaymentProduct = "cross-border-credit-transfers"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk GetSubRecursosAutorizacionCancelacionPagoPaymentProduct = "domestic-cross-currency-payments-uk"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticChapsPaymentsUk         GetSubRecursosAutorizacionCancelacionPagoPaymentProduct = "domestic-chaps-payments-uk"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk        GetSubRecursosAutorizacionCancelacionPagoPaymentProduct = "domestic-faster-payments-uk"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk          GetSubRecursosAutorizacionCancelacionPagoPaymentProduct = "domestic-bacs-payments-uk"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductSepaCreditTransfers             GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct = "sepa-credit-transfers"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductInstantSepaCreditTransfers      GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductTarget2Payments                 GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct = "target-2-payments"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductCrossBorderCreditTransfers      GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct = "cross-border-credit-transfers"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductDomesticCrossCurrencyPaymentsUk GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-cross-currency-payments-uk"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductDomesticChapsPaymentsUk         GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-chaps-payments-uk"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductDomesticFasterPaymentsUk        GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-faster-payments-uk"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductDomesticBacsPaymentsUk          GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-bacs-payments-uk"
 )
 
-func (e GetSubRecursosAutorizacionCancelacionPagoPaymentProduct) ToPointer() *GetSubRecursosAutorizacionCancelacionPagoPaymentProduct {
+func (e GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct) ToPointer() *GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct {
 	return &e
 }
 
-func (e *GetSubRecursosAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -169,26 +169,26 @@ func (e *GetSubRecursosAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(
 	case "domestic-faster-payments-uk":
 		fallthrough
 	case "domestic-bacs-payments-uk":
-		*e = GetSubRecursosAutorizacionCancelacionPagoPaymentProduct(v)
+		*e = GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionCancelacionPagoPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct: %v", v)
 	}
 }
 
-type GetSubRecursosAutorizacionCancelacionPagoPaymentService string
+type GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService string
 
 const (
-	GetSubRecursosAutorizacionCancelacionPagoPaymentServicePayments         GetSubRecursosAutorizacionCancelacionPagoPaymentService = "payments"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentServiceBulkPayments     GetSubRecursosAutorizacionCancelacionPagoPaymentService = "bulk-payments"
-	GetSubRecursosAutorizacionCancelacionPagoPaymentServicePeriodicPayments GetSubRecursosAutorizacionCancelacionPagoPaymentService = "periodic-payments"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentServicePayments         GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService = "payments"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentServiceBulkPayments     GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService = "bulk-payments"
+	GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentServicePeriodicPayments GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService = "periodic-payments"
 )
 
-func (e GetSubRecursosAutorizacionCancelacionPagoPaymentService) ToPointer() *GetSubRecursosAutorizacionCancelacionPagoPaymentService {
+func (e GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService) ToPointer() *GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService {
 	return &e
 }
 
-func (e *GetSubRecursosAutorizacionCancelacionPagoPaymentService) UnmarshalJSON(data []byte) error {
+func (e *GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -199,10 +199,10 @@ func (e *GetSubRecursosAutorizacionCancelacionPagoPaymentService) UnmarshalJSON(
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = GetSubRecursosAutorizacionCancelacionPagoPaymentService(v)
+		*e = GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionCancelacionPagoPaymentService: %v", v)
+		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService: %v", v)
 	}
 }
 
@@ -244,11 +244,11 @@ type GetSubRecursosAutorizacionCancelacionPagoRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp GetSubRecursosAutorizacionCancelacionPagoAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
+	Aspsp GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
 	// Identificador del recurso que referencia a la iniciación de pago o consentimiento.
-	PaymentID      string                                                  `pathParam:"style=simple,explode=false,name=payment-id"`
-	PaymentProduct GetSubRecursosAutorizacionCancelacionPagoPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
-	PaymentService GetSubRecursosAutorizacionCancelacionPagoPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	PaymentID      string                                                           `pathParam:"style=simple,explode=false,name=payment-id"`
+	PaymentProduct GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentService GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (g GetSubRecursosAutorizacionCancelacionPagoRequest) MarshalJSON() ([]byte, error) {
@@ -388,9 +388,9 @@ func (o *GetSubRecursosAutorizacionCancelacionPagoRequest) GetXRequestID() strin
 	return o.XRequestID
 }
 
-func (o *GetSubRecursosAutorizacionCancelacionPagoRequest) GetAspsp() GetSubRecursosAutorizacionCancelacionPagoAspsp {
+func (o *GetSubRecursosAutorizacionCancelacionPagoRequest) GetAspsp() GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp {
 	if o == nil {
-		return GetSubRecursosAutorizacionCancelacionPagoAspsp("")
+		return GetSubRecursosAutorizacionCancelacionPagoPathParamAspsp("")
 	}
 	return o.Aspsp
 }
@@ -402,16 +402,16 @@ func (o *GetSubRecursosAutorizacionCancelacionPagoRequest) GetPaymentID() string
 	return o.PaymentID
 }
 
-func (o *GetSubRecursosAutorizacionCancelacionPagoRequest) GetPaymentProduct() GetSubRecursosAutorizacionCancelacionPagoPaymentProduct {
+func (o *GetSubRecursosAutorizacionCancelacionPagoRequest) GetPaymentProduct() GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct {
 	if o == nil {
-		return GetSubRecursosAutorizacionCancelacionPagoPaymentProduct("")
+		return GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *GetSubRecursosAutorizacionCancelacionPagoRequest) GetPaymentService() GetSubRecursosAutorizacionCancelacionPagoPaymentService {
+func (o *GetSubRecursosAutorizacionCancelacionPagoRequest) GetPaymentService() GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService {
 	if o == nil {
-		return GetSubRecursosAutorizacionCancelacionPagoPaymentService("")
+		return GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentService("")
 	}
 	return o.PaymentService
 }

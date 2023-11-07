@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type obtenerListadoDeBeneficiariosDeConfianza struct {
+type ObtenerListadoDeBeneficiariosDeConfianza struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newObtenerListadoDeBeneficiariosDeConfianza(sdkConfig sdkConfiguration) *obtenerListadoDeBeneficiariosDeConfianza {
-	return &obtenerListadoDeBeneficiariosDeConfianza{
+func newObtenerListadoDeBeneficiariosDeConfianza(sdkConfig sdkConfiguration) *ObtenerListadoDeBeneficiariosDeConfianza {
+	return &ObtenerListadoDeBeneficiariosDeConfianza{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetTrustedBeneficiaries - Obtener listado de beneficiarios de confianza
 // Obtiene el listado de los beneficiarios de confianza del PSU, el cual ha dado un consentimiento explícito.
-func (s *obtenerListadoDeBeneficiariosDeConfianza) GetTrustedBeneficiaries(ctx context.Context, request operations.GetTrustedBeneficiariesRequest) (*operations.GetTrustedBeneficiariesResponse, error) {
+func (s *ObtenerListadoDeBeneficiariosDeConfianza) GetTrustedBeneficiaries(ctx context.Context, request operations.GetTrustedBeneficiariesRequest) (*operations.GetTrustedBeneficiariesResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/trusted-beneficiaries", request, nil)
 	if err != nil {

@@ -14,8 +14,8 @@ type ResponsePaymentInitiationChoosenScaMethod struct {
 type ResponsePaymentInitiationCurrencyConversionFee struct {
 }
 
-// ResponsePaymentInitiationEstimatedInterbankSettlemenAmount - Importe estimado a ser transferido al beneficiario.
-type ResponsePaymentInitiationEstimatedInterbankSettlemenAmount struct {
+// EstimatedInterbankSettlemenAmount - Importe estimado a ser transferido al beneficiario.
+type EstimatedInterbankSettlemenAmount struct {
 }
 
 // ResponsePaymentInitiationEstimatedTotalAmount - Importe el cual se estima que será retirado de la cuenta del ordenante. Nota: este importe incluye comisiones.
@@ -42,7 +42,7 @@ type ResponsePaymentInitiation struct {
 	// Podría ser usado por el ASPSP para transportar comisiones por conversión específica de la moneda asociada a la transferencia de crédito iniciada.
 	CurrencyConversionFee *ResponsePaymentInitiationCurrencyConversionFee `json:"currencyConversionFee,omitempty"`
 	// Importe estimado a ser transferido al beneficiario.
-	EstimatedInterbankSettlemenAmount *ResponsePaymentInitiationEstimatedInterbankSettlemenAmount `json:"estimatedInterbankSettlemenAmount,omitempty"`
+	EstimatedInterbankSettlemenAmount *EstimatedInterbankSettlemenAmount `json:"estimatedInterbankSettlemenAmount,omitempty"`
 	// Importe el cual se estima que será retirado de la cuenta del ordenante. Nota: este importe incluye comisiones.
 	EstimatedTotalAmount *ResponsePaymentInitiationEstimatedTotalAmount `json:"estimatedTotalAmount,omitempty"`
 	// Identificador del recurso que referencia a la iniciación de pago.
@@ -82,7 +82,7 @@ func (o *ResponsePaymentInitiation) GetCurrencyConversionFee() *ResponsePaymentI
 	return o.CurrencyConversionFee
 }
 
-func (o *ResponsePaymentInitiation) GetEstimatedInterbankSettlemenAmount() *ResponsePaymentInitiationEstimatedInterbankSettlemenAmount {
+func (o *ResponsePaymentInitiation) GetEstimatedInterbankSettlemenAmount() *EstimatedInterbankSettlemenAmount {
 	if o == nil {
 		return nil
 	}

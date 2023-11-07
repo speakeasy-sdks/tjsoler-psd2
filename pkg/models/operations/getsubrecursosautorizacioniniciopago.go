@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// GetSubRecursosAutorizacionInicioPagoAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type GetSubRecursosAutorizacionInicioPagoAspsp string
+// GetSubRecursosAutorizacionInicioPagoPathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type GetSubRecursosAutorizacionInicioPagoPathParamAspsp string
 
 const (
-	GetSubRecursosAutorizacionInicioPagoAspspRedsys          GetSubRecursosAutorizacionInicioPagoAspsp = "redsys"
-	GetSubRecursosAutorizacionInicioPagoAspspBbva            GetSubRecursosAutorizacionInicioPagoAspsp = "BBVA"
-	GetSubRecursosAutorizacionInicioPagoAspspBbvapt          GetSubRecursosAutorizacionInicioPagoAspsp = "BBVAPT"
-	GetSubRecursosAutorizacionInicioPagoAspspBbvabe          GetSubRecursosAutorizacionInicioPagoAspsp = "BBVABE"
-	GetSubRecursosAutorizacionInicioPagoAspspBbvafr          GetSubRecursosAutorizacionInicioPagoAspsp = "BBVAFR"
-	GetSubRecursosAutorizacionInicioPagoAspspBbvaeuk         GetSubRecursosAutorizacionInicioPagoAspsp = "BBVAEUK"
-	GetSubRecursosAutorizacionInicioPagoAspspCaixabank       GetSubRecursosAutorizacionInicioPagoAspsp = "caixabank"
-	GetSubRecursosAutorizacionInicioPagoAspspBancSabadell    GetSubRecursosAutorizacionInicioPagoAspsp = "BancSabadell"
-	GetSubRecursosAutorizacionInicioPagoAspspBancosantander  GetSubRecursosAutorizacionInicioPagoAspsp = "bancosantander"
-	GetSubRecursosAutorizacionInicioPagoAspspBancamarch      GetSubRecursosAutorizacionInicioPagoAspsp = "bancamarch"
-	GetSubRecursosAutorizacionInicioPagoAspspBankoa          GetSubRecursosAutorizacionInicioPagoAspsp = "bankoa"
-	GetSubRecursosAutorizacionInicioPagoAspspCajamar         GetSubRecursosAutorizacionInicioPagoAspsp = "cajamar"
-	GetSubRecursosAutorizacionInicioPagoAspspArquia          GetSubRecursosAutorizacionInicioPagoAspsp = "arquia"
-	GetSubRecursosAutorizacionInicioPagoAspspBff             GetSubRecursosAutorizacionInicioPagoAspsp = "BFF"
-	GetSubRecursosAutorizacionInicioPagoAspspColonya         GetSubRecursosAutorizacionInicioPagoAspsp = "colonya"
-	GetSubRecursosAutorizacionInicioPagoAspspEurocajarural   GetSubRecursosAutorizacionInicioPagoAspsp = "eurocajarural"
-	GetSubRecursosAutorizacionInicioPagoAspspEvobanco        GetSubRecursosAutorizacionInicioPagoAspsp = "evobanco"
-	GetSubRecursosAutorizacionInicioPagoAspspFiarebancaetica GetSubRecursosAutorizacionInicioPagoAspsp = "fiarebancaetica"
-	GetSubRecursosAutorizacionInicioPagoAspspBancopichincha  GetSubRecursosAutorizacionInicioPagoAspsp = "bancopichincha"
-	GetSubRecursosAutorizacionInicioPagoAspspUnicajabanco    GetSubRecursosAutorizacionInicioPagoAspsp = "unicajabanco"
-	GetSubRecursosAutorizacionInicioPagoAspspCajasur         GetSubRecursosAutorizacionInicioPagoAspsp = "cajasur"
-	GetSubRecursosAutorizacionInicioPagoAspspKutxabank       GetSubRecursosAutorizacionInicioPagoAspsp = "kutxabank"
-	GetSubRecursosAutorizacionInicioPagoAspspBankinter       GetSubRecursosAutorizacionInicioPagoAspsp = "bankinter"
-	GetSubRecursosAutorizacionInicioPagoAspspRenta4          GetSubRecursosAutorizacionInicioPagoAspsp = "renta4"
-	GetSubRecursosAutorizacionInicioPagoAspspBce             GetSubRecursosAutorizacionInicioPagoAspsp = "BCE"
-	GetSubRecursosAutorizacionInicioPagoAspspLaboralkutxa    GetSubRecursosAutorizacionInicioPagoAspsp = "laboralkutxa"
-	GetSubRecursosAutorizacionInicioPagoAspspMediolanum      GetSubRecursosAutorizacionInicioPagoAspsp = "mediolanum"
-	GetSubRecursosAutorizacionInicioPagoAspspOpenbank        GetSubRecursosAutorizacionInicioPagoAspsp = "openbank"
-	GetSubRecursosAutorizacionInicioPagoAspspIbercaja        GetSubRecursosAutorizacionInicioPagoAspsp = "ibercaja"
-	GetSubRecursosAutorizacionInicioPagoAspspSelfbank        GetSubRecursosAutorizacionInicioPagoAspsp = "selfbank"
-	GetSubRecursosAutorizacionInicioPagoAspspInversis        GetSubRecursosAutorizacionInicioPagoAspsp = "inversis"
-	GetSubRecursosAutorizacionInicioPagoAspspAndbank         GetSubRecursosAutorizacionInicioPagoAspsp = "andbank"
-	GetSubRecursosAutorizacionInicioPagoAspspWizink          GetSubRecursosAutorizacionInicioPagoAspsp = "wizink"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspRedsys          GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "redsys"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBbva            GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "BBVA"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBbvapt          GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "BBVAPT"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBbvabe          GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "BBVABE"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBbvafr          GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "BBVAFR"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBbvaeuk         GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "BBVAEUK"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspCaixabank       GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "caixabank"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBancSabadell    GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "BancSabadell"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBancosantander  GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "bancosantander"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBancamarch      GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "bancamarch"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBankoa          GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "bankoa"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspCajamar         GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "cajamar"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspArquia          GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "arquia"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBff             GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "BFF"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspColonya         GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "colonya"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspEurocajarural   GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "eurocajarural"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspEvobanco        GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "evobanco"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspFiarebancaetica GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "fiarebancaetica"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBancopichincha  GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "bancopichincha"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspUnicajabanco    GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "unicajabanco"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspCajasur         GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "cajasur"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspKutxabank       GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "kutxabank"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBankinter       GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "bankinter"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspRenta4          GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "renta4"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspBce             GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "BCE"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspLaboralkutxa    GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "laboralkutxa"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspMediolanum      GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "mediolanum"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspOpenbank        GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "openbank"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspIbercaja        GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "ibercaja"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspSelfbank        GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "selfbank"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspInversis        GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "inversis"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspAndbank         GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "andbank"
+	GetSubRecursosAutorizacionInicioPagoPathParamAspspWizink          GetSubRecursosAutorizacionInicioPagoPathParamAspsp = "wizink"
 )
 
-func (e GetSubRecursosAutorizacionInicioPagoAspsp) ToPointer() *GetSubRecursosAutorizacionInicioPagoAspsp {
+func (e GetSubRecursosAutorizacionInicioPagoPathParamAspsp) ToPointer() *GetSubRecursosAutorizacionInicioPagoPathParamAspsp {
 	return &e
 }
 
-func (e *GetSubRecursosAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) error {
+func (e *GetSubRecursosAutorizacionInicioPagoPathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,31 +124,31 @@ func (e *GetSubRecursosAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) e
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = GetSubRecursosAutorizacionInicioPagoAspsp(v)
+		*e = GetSubRecursosAutorizacionInicioPagoPathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionInicioPagoAspsp: %v", v)
+		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionInicioPagoPathParamAspsp: %v", v)
 	}
 }
 
-type GetSubRecursosAutorizacionInicioPagoPaymentProduct string
+type GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct string
 
 const (
-	GetSubRecursosAutorizacionInicioPagoPaymentProductSepaCreditTransfers             GetSubRecursosAutorizacionInicioPagoPaymentProduct = "sepa-credit-transfers"
-	GetSubRecursosAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers      GetSubRecursosAutorizacionInicioPagoPaymentProduct = "instant-sepa-credit-transfers"
-	GetSubRecursosAutorizacionInicioPagoPaymentProductTarget2Payments                 GetSubRecursosAutorizacionInicioPagoPaymentProduct = "target-2-payments"
-	GetSubRecursosAutorizacionInicioPagoPaymentProductCrossBorderCreditTransfers      GetSubRecursosAutorizacionInicioPagoPaymentProduct = "cross-border-credit-transfers"
-	GetSubRecursosAutorizacionInicioPagoPaymentProductDomesticCrossCurrencyPaymentsUk GetSubRecursosAutorizacionInicioPagoPaymentProduct = "domestic-cross-currency-payments-uk"
-	GetSubRecursosAutorizacionInicioPagoPaymentProductDomesticChapsPaymentsUk         GetSubRecursosAutorizacionInicioPagoPaymentProduct = "domestic-chaps-payments-uk"
-	GetSubRecursosAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk        GetSubRecursosAutorizacionInicioPagoPaymentProduct = "domestic-faster-payments-uk"
-	GetSubRecursosAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk          GetSubRecursosAutorizacionInicioPagoPaymentProduct = "domestic-bacs-payments-uk"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductSepaCreditTransfers             GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct = "sepa-credit-transfers"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductInstantSepaCreditTransfers      GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductTarget2Payments                 GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct = "target-2-payments"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductCrossBorderCreditTransfers      GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct = "cross-border-credit-transfers"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductDomesticCrossCurrencyPaymentsUk GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct = "domestic-cross-currency-payments-uk"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductDomesticChapsPaymentsUk         GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct = "domestic-chaps-payments-uk"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductDomesticFasterPaymentsUk        GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct = "domestic-faster-payments-uk"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductDomesticBacsPaymentsUk          GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct = "domestic-bacs-payments-uk"
 )
 
-func (e GetSubRecursosAutorizacionInicioPagoPaymentProduct) ToPointer() *GetSubRecursosAutorizacionInicioPagoPaymentProduct {
+func (e GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct) ToPointer() *GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct {
 	return &e
 }
 
-func (e *GetSubRecursosAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -169,26 +169,26 @@ func (e *GetSubRecursosAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data 
 	case "domestic-faster-payments-uk":
 		fallthrough
 	case "domestic-bacs-payments-uk":
-		*e = GetSubRecursosAutorizacionInicioPagoPaymentProduct(v)
+		*e = GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionInicioPagoPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct: %v", v)
 	}
 }
 
-type GetSubRecursosAutorizacionInicioPagoPaymentService string
+type GetSubRecursosAutorizacionInicioPagoPathParamPaymentService string
 
 const (
-	GetSubRecursosAutorizacionInicioPagoPaymentServicePayments         GetSubRecursosAutorizacionInicioPagoPaymentService = "payments"
-	GetSubRecursosAutorizacionInicioPagoPaymentServiceBulkPayments     GetSubRecursosAutorizacionInicioPagoPaymentService = "bulk-payments"
-	GetSubRecursosAutorizacionInicioPagoPaymentServicePeriodicPayments GetSubRecursosAutorizacionInicioPagoPaymentService = "periodic-payments"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentServicePayments         GetSubRecursosAutorizacionInicioPagoPathParamPaymentService = "payments"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentServiceBulkPayments     GetSubRecursosAutorizacionInicioPagoPathParamPaymentService = "bulk-payments"
+	GetSubRecursosAutorizacionInicioPagoPathParamPaymentServicePeriodicPayments GetSubRecursosAutorizacionInicioPagoPathParamPaymentService = "periodic-payments"
 )
 
-func (e GetSubRecursosAutorizacionInicioPagoPaymentService) ToPointer() *GetSubRecursosAutorizacionInicioPagoPaymentService {
+func (e GetSubRecursosAutorizacionInicioPagoPathParamPaymentService) ToPointer() *GetSubRecursosAutorizacionInicioPagoPathParamPaymentService {
 	return &e
 }
 
-func (e *GetSubRecursosAutorizacionInicioPagoPaymentService) UnmarshalJSON(data []byte) error {
+func (e *GetSubRecursosAutorizacionInicioPagoPathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -199,10 +199,10 @@ func (e *GetSubRecursosAutorizacionInicioPagoPaymentService) UnmarshalJSON(data 
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = GetSubRecursosAutorizacionInicioPagoPaymentService(v)
+		*e = GetSubRecursosAutorizacionInicioPagoPathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionInicioPagoPaymentService: %v", v)
+		return fmt.Errorf("invalid value for GetSubRecursosAutorizacionInicioPagoPathParamPaymentService: %v", v)
 	}
 }
 
@@ -244,11 +244,11 @@ type GetSubRecursosAutorizacionInicioPagoRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp GetSubRecursosAutorizacionInicioPagoAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
+	Aspsp GetSubRecursosAutorizacionInicioPagoPathParamAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
 	// Identificador del recurso que referencia a la iniciación de pago o consentimiento.
-	PaymentID      string                                             `pathParam:"style=simple,explode=false,name=payment-id"`
-	PaymentProduct GetSubRecursosAutorizacionInicioPagoPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
-	PaymentService GetSubRecursosAutorizacionInicioPagoPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	PaymentID      string                                                      `pathParam:"style=simple,explode=false,name=payment-id"`
+	PaymentProduct GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentService GetSubRecursosAutorizacionInicioPagoPathParamPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (g GetSubRecursosAutorizacionInicioPagoRequest) MarshalJSON() ([]byte, error) {
@@ -388,9 +388,9 @@ func (o *GetSubRecursosAutorizacionInicioPagoRequest) GetXRequestID() string {
 	return o.XRequestID
 }
 
-func (o *GetSubRecursosAutorizacionInicioPagoRequest) GetAspsp() GetSubRecursosAutorizacionInicioPagoAspsp {
+func (o *GetSubRecursosAutorizacionInicioPagoRequest) GetAspsp() GetSubRecursosAutorizacionInicioPagoPathParamAspsp {
 	if o == nil {
-		return GetSubRecursosAutorizacionInicioPagoAspsp("")
+		return GetSubRecursosAutorizacionInicioPagoPathParamAspsp("")
 	}
 	return o.Aspsp
 }
@@ -402,16 +402,16 @@ func (o *GetSubRecursosAutorizacionInicioPagoRequest) GetPaymentID() string {
 	return o.PaymentID
 }
 
-func (o *GetSubRecursosAutorizacionInicioPagoRequest) GetPaymentProduct() GetSubRecursosAutorizacionInicioPagoPaymentProduct {
+func (o *GetSubRecursosAutorizacionInicioPagoRequest) GetPaymentProduct() GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct {
 	if o == nil {
-		return GetSubRecursosAutorizacionInicioPagoPaymentProduct("")
+		return GetSubRecursosAutorizacionInicioPagoPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *GetSubRecursosAutorizacionInicioPagoRequest) GetPaymentService() GetSubRecursosAutorizacionInicioPagoPaymentService {
+func (o *GetSubRecursosAutorizacionInicioPagoRequest) GetPaymentService() GetSubRecursosAutorizacionInicioPagoPathParamPaymentService {
 	if o == nil {
-		return GetSubRecursosAutorizacionInicioPagoPaymentService("")
+		return GetSubRecursosAutorizacionInicioPagoPathParamPaymentService("")
 	}
 	return o.PaymentService
 }

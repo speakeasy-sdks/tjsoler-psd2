@@ -6,8 +6,8 @@ package shared
 type ResponseAccountTransactionsLinks struct {
 }
 
-// ResponseAccountTransactionsAccounts - Identificador de la cuenta que se está consultando. Nota: recomendado usarlo ya que podría pasar a parámetro obligatorio en futuras versiones.
-type ResponseAccountTransactionsAccounts struct {
+// Accounts - Identificador de la cuenta que se está consultando. Nota: recomendado usarlo ya que podría pasar a parámetro obligatorio en futuras versiones.
+type Accounts struct {
 }
 
 // ResponseAccountTransactionsBalances - Una lista de balances con respecto a una cuenta.
@@ -18,15 +18,15 @@ type ResponseAccountTransactionsBalances struct {
 type ResponseAccountTransactionsTppMessage struct {
 }
 
-// ResponseAccountTransactionsTransactions - Devolución de los datos en formato JSON, cuando los datos devueltos tienen un tamaño pequeño. Este reporte contiene las transacciones resultantes de los parámetros de consulta.
-type ResponseAccountTransactionsTransactions struct {
+// Transactions - Devolución de los datos en formato JSON, cuando los datos devueltos tienen un tamaño pequeño. Este reporte contiene las transacciones resultantes de los parámetros de consulta.
+type Transactions struct {
 }
 
 type ResponseAccountTransactions struct {
 	// Lista de hipervínculos para ser reconocidos por el TPP. Tipos soportados en esta respuesta: download: Enlace de descarga de los datos de la consulta realizada, cuando los datos devueltos tienen un tamaño grande. Solo para camt-data.
 	Links *ResponseAccountTransactionsLinks
 	// Identificador de la cuenta que se está consultando. Nota: recomendado usarlo ya que podría pasar a parámetro obligatorio en futuras versiones.
-	Accounts *ResponseAccountTransactionsAccounts
+	Accounts *Accounts
 	// Una lista de balances con respecto a una cuenta.
 	Balances *ResponseAccountTransactionsBalances
 	// Texto enviado al TPP a través del HUB para ser mostrado al PSU.
@@ -34,7 +34,7 @@ type ResponseAccountTransactions struct {
 	// Mensaje para el TPP enviado a través del HUB.
 	TppMessage *ResponseAccountTransactionsTppMessage
 	// Devolución de los datos en formato JSON, cuando los datos devueltos tienen un tamaño pequeño. Este reporte contiene las transacciones resultantes de los parámetros de consulta.
-	Transactions *ResponseAccountTransactionsTransactions
+	Transactions *Transactions
 }
 
 func (o *ResponseAccountTransactions) GetLinks() *ResponseAccountTransactionsLinks {
@@ -44,7 +44,7 @@ func (o *ResponseAccountTransactions) GetLinks() *ResponseAccountTransactionsLin
 	return o.Links
 }
 
-func (o *ResponseAccountTransactions) GetAccounts() *ResponseAccountTransactionsAccounts {
+func (o *ResponseAccountTransactions) GetAccounts() *Accounts {
 	if o == nil {
 		return nil
 	}
@@ -72,7 +72,7 @@ func (o *ResponseAccountTransactions) GetTppMessage() *ResponseAccountTransactio
 	return o.TppMessage
 }
 
-func (o *ResponseAccountTransactions) GetTransactions() *ResponseAccountTransactionsTransactions {
+func (o *ResponseAccountTransactions) GetTransactions() *Transactions {
 	if o == nil {
 		return nil
 	}

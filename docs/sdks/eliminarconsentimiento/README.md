@@ -1,5 +1,5 @@
 # EliminarConsentimiento
-(*EliminarConsentimiento*)
+(*.EliminarConsentimiento*)
 
 ### Available Operations
 

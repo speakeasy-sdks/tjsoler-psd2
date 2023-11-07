@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type lecturaDeListadoDeCuentas struct {
+type LecturaDeListadoDeCuentas struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newLecturaDeListadoDeCuentas(sdkConfig sdkConfiguration) *lecturaDeListadoDeCuentas {
-	return &lecturaDeListadoDeCuentas{
+func newLecturaDeListadoDeCuentas(sdkConfig sdkConfiguration) *LecturaDeListadoDeCuentas {
+	return &LecturaDeListadoDeCuentas{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetAccountListv11 - Lectura de listado de cuentas
 // Este servicio permite obtener un listado de cuentas del PSU, incluyendo los balances de las cuentas si ha sido requerido. Como requisito, se asume que el PSU ha dado su consentimiento para este acceso y ha sido almacenado por el ASPSP. El funcionamiento del servicio según el tipo de acceso indicado en el consentimiento.
-func (s *lecturaDeListadoDeCuentas) GetAccountListv11(ctx context.Context, request operations.GetAccountListv11Request) (*operations.GetAccountListv11Response, error) {
+func (s *LecturaDeListadoDeCuentas) GetAccountListv11(ctx context.Context, request operations.GetAccountListv11Request) (*operations.GetAccountListv11Response, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/accounts", request, nil)
 	if err != nil {

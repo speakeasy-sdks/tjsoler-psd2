@@ -2,58 +2,58 @@
 
 package shared
 
-// ResponseDeleteMultibankPaymentLinks - Lista de hipervinculos
-type ResponseDeleteMultibankPaymentLinks struct {
+// Links - Lista de hipervinculos
+type Links struct {
 }
 
-// ResponseDeleteMultibankPaymentChallengeData - NO SOPORTADO PARA ESTA VERSIÓN
-type ResponseDeleteMultibankPaymentChallengeData struct {
+// ChallengeData - NO SOPORTADO PARA ESTA VERSIÓN
+type ChallengeData struct {
 }
 
-// ResponseDeleteMultibankPaymentChosenScaMethod - NO SOPORTADO PARA ESTA VERSIÓN
-type ResponseDeleteMultibankPaymentChosenScaMethod struct {
+// ChosenScaMethod - NO SOPORTADO PARA ESTA VERSIÓN
+type ChosenScaMethod struct {
 }
 
-// ResponseDeleteMultibankPaymentScaMethods - Este elemento es contenido si SCA es requerido y si el PSU puede elegir entre diferentes métodos de autenticación.
-type ResponseDeleteMultibankPaymentScaMethods struct {
+// ScaMethods - Este elemento es contenido si SCA es requerido y si el PSU puede elegir entre diferentes métodos de autenticación.
+type ScaMethods struct {
 }
 
-// ResponseDeleteMultibankPaymentTppMessages - Mensaje para el TPP enviado a través del HUB.
-type ResponseDeleteMultibankPaymentTppMessages struct {
+// TppMessages - Mensaje para el TPP enviado a través del HUB.
+type TppMessages struct {
 }
 
 type ResponseDeleteMultibankPayment struct {
 	// Lista de hipervinculos
-	Links *ResponseDeleteMultibankPaymentLinks `json:"_links,omitempty"`
+	Links *Links `json:"_links,omitempty"`
 	// NO SOPORTADO PARA ESTA VERSIÓN
-	ChallengeData *ResponseDeleteMultibankPaymentChallengeData `json:"challengeData,omitempty"`
+	ChallengeData *ChallengeData `json:"challengeData,omitempty"`
 	// NO SOPORTADO PARA ESTA VERSIÓN
-	ChosenScaMethod *ResponseDeleteMultibankPaymentChosenScaMethod `json:"chosenScaMethod,omitempty"`
+	ChosenScaMethod *ChosenScaMethod `json:"chosenScaMethod,omitempty"`
 	// Texto enviado al TPP a través del HUB para ser mostrado al PSU.
 	PsuMessage *string `json:"psuMessage,omitempty"`
 	// Este elemento es contenido si SCA es requerido y si el PSU puede elegir entre diferentes métodos de autenticación.
-	ScaMethods *ResponseDeleteMultibankPaymentScaMethods `json:"scaMethods,omitempty"`
+	ScaMethods *ScaMethods `json:"scaMethods,omitempty"`
 	// Mensaje para el TPP enviado a través del HUB.
-	TppMessages *ResponseDeleteMultibankPaymentTppMessages `json:"tppMessages,omitempty"`
+	TppMessages *TppMessages `json:"tppMessages,omitempty"`
 	// Estado de la transacción
 	TransactionStatus string `json:"transactionStatus"`
 }
 
-func (o *ResponseDeleteMultibankPayment) GetLinks() *ResponseDeleteMultibankPaymentLinks {
+func (o *ResponseDeleteMultibankPayment) GetLinks() *Links {
 	if o == nil {
 		return nil
 	}
 	return o.Links
 }
 
-func (o *ResponseDeleteMultibankPayment) GetChallengeData() *ResponseDeleteMultibankPaymentChallengeData {
+func (o *ResponseDeleteMultibankPayment) GetChallengeData() *ChallengeData {
 	if o == nil {
 		return nil
 	}
 	return o.ChallengeData
 }
 
-func (o *ResponseDeleteMultibankPayment) GetChosenScaMethod() *ResponseDeleteMultibankPaymentChosenScaMethod {
+func (o *ResponseDeleteMultibankPayment) GetChosenScaMethod() *ChosenScaMethod {
 	if o == nil {
 		return nil
 	}
@@ -67,14 +67,14 @@ func (o *ResponseDeleteMultibankPayment) GetPsuMessage() *string {
 	return o.PsuMessage
 }
 
-func (o *ResponseDeleteMultibankPayment) GetScaMethods() *ResponseDeleteMultibankPaymentScaMethods {
+func (o *ResponseDeleteMultibankPayment) GetScaMethods() *ScaMethods {
 	if o == nil {
 		return nil
 	}
 	return o.ScaMethods
 }
 
-func (o *ResponseDeleteMultibankPayment) GetTppMessages() *ResponseDeleteMultibankPaymentTppMessages {
+func (o *ResponseDeleteMultibankPayment) GetTppMessages() *TppMessages {
 	if o == nil {
 		return nil
 	}

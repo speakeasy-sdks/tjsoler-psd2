@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// PutSeleccionarSCAAutorizacionCancelacionPagoAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type PutSeleccionarSCAAutorizacionCancelacionPagoAspsp string
+// Aspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type Aspsp string
 
 const (
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspRedsys          PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "redsys"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBbva            PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "BBVA"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBbvapt          PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "BBVAPT"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBbvabe          PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "BBVABE"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBbvafr          PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "BBVAFR"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBbvaeuk         PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "BBVAEUK"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspCaixabank       PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "caixabank"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBancSabadell    PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "BancSabadell"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBancosantander  PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "bancosantander"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBancamarch      PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "bancamarch"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBankoa          PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "bankoa"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspCajamar         PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "cajamar"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspArquia          PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "arquia"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBff             PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "BFF"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspColonya         PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "colonya"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspEurocajarural   PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "eurocajarural"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspEvobanco        PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "evobanco"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspFiarebancaetica PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "fiarebancaetica"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBancopichincha  PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "bancopichincha"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspUnicajabanco    PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "unicajabanco"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspCajasur         PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "cajasur"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspKutxabank       PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "kutxabank"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBankinter       PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "bankinter"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspRenta4          PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "renta4"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspBce             PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "BCE"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspLaboralkutxa    PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "laboralkutxa"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspMediolanum      PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "mediolanum"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspOpenbank        PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "openbank"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspIbercaja        PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "ibercaja"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspSelfbank        PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "selfbank"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspInversis        PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "inversis"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspAndbank         PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "andbank"
-	PutSeleccionarSCAAutorizacionCancelacionPagoAspspWizink          PutSeleccionarSCAAutorizacionCancelacionPagoAspsp = "wizink"
+	AspspRedsys          Aspsp = "redsys"
+	AspspBbva            Aspsp = "BBVA"
+	AspspBbvapt          Aspsp = "BBVAPT"
+	AspspBbvabe          Aspsp = "BBVABE"
+	AspspBbvafr          Aspsp = "BBVAFR"
+	AspspBbvaeuk         Aspsp = "BBVAEUK"
+	AspspCaixabank       Aspsp = "caixabank"
+	AspspBancSabadell    Aspsp = "BancSabadell"
+	AspspBancosantander  Aspsp = "bancosantander"
+	AspspBancamarch      Aspsp = "bancamarch"
+	AspspBankoa          Aspsp = "bankoa"
+	AspspCajamar         Aspsp = "cajamar"
+	AspspArquia          Aspsp = "arquia"
+	AspspBff             Aspsp = "BFF"
+	AspspColonya         Aspsp = "colonya"
+	AspspEurocajarural   Aspsp = "eurocajarural"
+	AspspEvobanco        Aspsp = "evobanco"
+	AspspFiarebancaetica Aspsp = "fiarebancaetica"
+	AspspBancopichincha  Aspsp = "bancopichincha"
+	AspspUnicajabanco    Aspsp = "unicajabanco"
+	AspspCajasur         Aspsp = "cajasur"
+	AspspKutxabank       Aspsp = "kutxabank"
+	AspspBankinter       Aspsp = "bankinter"
+	AspspRenta4          Aspsp = "renta4"
+	AspspBce             Aspsp = "BCE"
+	AspspLaboralkutxa    Aspsp = "laboralkutxa"
+	AspspMediolanum      Aspsp = "mediolanum"
+	AspspOpenbank        Aspsp = "openbank"
+	AspspIbercaja        Aspsp = "ibercaja"
+	AspspSelfbank        Aspsp = "selfbank"
+	AspspInversis        Aspsp = "inversis"
+	AspspAndbank         Aspsp = "andbank"
+	AspspWizink          Aspsp = "wizink"
 )
 
-func (e PutSeleccionarSCAAutorizacionCancelacionPagoAspsp) ToPointer() *PutSeleccionarSCAAutorizacionCancelacionPagoAspsp {
+func (e Aspsp) ToPointer() *Aspsp {
 	return &e
 }
 
-func (e *PutSeleccionarSCAAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []byte) error {
+func (e *Aspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,31 +124,31 @@ func (e *PutSeleccionarSCAAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data [
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = PutSeleccionarSCAAutorizacionCancelacionPagoAspsp(v)
+		*e = Aspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PutSeleccionarSCAAutorizacionCancelacionPagoAspsp: %v", v)
+		return fmt.Errorf("invalid value for Aspsp: %v", v)
 	}
 }
 
-type PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct string
+type PaymentProduct string
 
 const (
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductSepaCreditTransfers             PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct = "sepa-credit-transfers"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductInstantSepaCreditTransfers      PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct = "instant-sepa-credit-transfers"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductTarget2Payments                 PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct = "target-2-payments"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductCrossBorderCreditTransfers      PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct = "cross-border-credit-transfers"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct = "domestic-cross-currency-payments-uk"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticChapsPaymentsUk         PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct = "domestic-chaps-payments-uk"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk        PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct = "domestic-faster-payments-uk"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk          PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct = "domestic-bacs-payments-uk"
+	PaymentProductSepaCreditTransfers             PaymentProduct = "sepa-credit-transfers"
+	PaymentProductInstantSepaCreditTransfers      PaymentProduct = "instant-sepa-credit-transfers"
+	PaymentProductTarget2Payments                 PaymentProduct = "target-2-payments"
+	PaymentProductCrossBorderCreditTransfers      PaymentProduct = "cross-border-credit-transfers"
+	PaymentProductDomesticCrossCurrencyPaymentsUk PaymentProduct = "domestic-cross-currency-payments-uk"
+	PaymentProductDomesticChapsPaymentsUk         PaymentProduct = "domestic-chaps-payments-uk"
+	PaymentProductDomesticFasterPaymentsUk        PaymentProduct = "domestic-faster-payments-uk"
+	PaymentProductDomesticBacsPaymentsUk          PaymentProduct = "domestic-bacs-payments-uk"
 )
 
-func (e PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct) ToPointer() *PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct {
+func (e PaymentProduct) ToPointer() *PaymentProduct {
 	return &e
 }
 
-func (e *PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *PaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -169,26 +169,26 @@ func (e *PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct) UnmarshalJS
 	case "domestic-faster-payments-uk":
 		fallthrough
 	case "domestic-bacs-payments-uk":
-		*e = PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct(v)
+		*e = PaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for PaymentProduct: %v", v)
 	}
 }
 
-type PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService string
+type PaymentService string
 
 const (
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePayments         PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService = "payments"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServiceBulkPayments     PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService = "bulk-payments"
-	PutSeleccionarSCAAutorizacionCancelacionPagoPaymentServicePeriodicPayments PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService = "periodic-payments"
+	PaymentServicePayments         PaymentService = "payments"
+	PaymentServiceBulkPayments     PaymentService = "bulk-payments"
+	PaymentServicePeriodicPayments PaymentService = "periodic-payments"
 )
 
-func (e PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService) ToPointer() *PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService {
+func (e PaymentService) ToPointer() *PaymentService {
 	return &e
 }
 
-func (e *PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService) UnmarshalJSON(data []byte) error {
+func (e *PaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -199,10 +199,10 @@ func (e *PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService) UnmarshalJS
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService(v)
+		*e = PaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService: %v", v)
+		return fmt.Errorf("invalid value for PaymentService: %v", v)
 	}
 }
 
@@ -244,11 +244,11 @@ type PutSeleccionarSCAAutorizacionCancelacionPagoRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp           PutSeleccionarSCAAutorizacionCancelacionPagoAspsp          `pathParam:"style=simple,explode=false,name=aspsp"`
-	AuthorisationID string                                                     `pathParam:"style=simple,explode=false,name=authorisation-id"`
-	PaymentID       string                                                     `pathParam:"style=simple,explode=false,name=payment-id"`
-	PaymentProduct  PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
-	PaymentService  PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	Aspsp           Aspsp          `pathParam:"style=simple,explode=false,name=aspsp"`
+	AuthorisationID string         `pathParam:"style=simple,explode=false,name=authorisation-id"`
+	PaymentID       string         `pathParam:"style=simple,explode=false,name=payment-id"`
+	PaymentProduct  PaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentService  PaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (p PutSeleccionarSCAAutorizacionCancelacionPagoRequest) MarshalJSON() ([]byte, error) {
@@ -388,9 +388,9 @@ func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetXRequestID() st
 	return o.XRequestID
 }
 
-func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetAspsp() PutSeleccionarSCAAutorizacionCancelacionPagoAspsp {
+func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetAspsp() Aspsp {
 	if o == nil {
-		return PutSeleccionarSCAAutorizacionCancelacionPagoAspsp("")
+		return Aspsp("")
 	}
 	return o.Aspsp
 }
@@ -409,16 +409,16 @@ func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetPaymentID() str
 	return o.PaymentID
 }
 
-func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetPaymentProduct() PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct {
+func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetPaymentProduct() PaymentProduct {
 	if o == nil {
-		return PutSeleccionarSCAAutorizacionCancelacionPagoPaymentProduct("")
+		return PaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetPaymentService() PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService {
+func (o *PutSeleccionarSCAAutorizacionCancelacionPagoRequest) GetPaymentService() PaymentService {
 	if o == nil {
-		return PutSeleccionarSCAAutorizacionCancelacionPagoPaymentService("")
+		return PaymentService("")
 	}
 	return o.PaymentService
 }

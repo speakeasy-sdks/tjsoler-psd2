@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// GetEstadoSCAAutorizacionInicioPagoAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type GetEstadoSCAAutorizacionInicioPagoAspsp string
+// GetEstadoSCAAutorizacionInicioPagoPathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type GetEstadoSCAAutorizacionInicioPagoPathParamAspsp string
 
 const (
-	GetEstadoSCAAutorizacionInicioPagoAspspRedsys          GetEstadoSCAAutorizacionInicioPagoAspsp = "redsys"
-	GetEstadoSCAAutorizacionInicioPagoAspspBbva            GetEstadoSCAAutorizacionInicioPagoAspsp = "BBVA"
-	GetEstadoSCAAutorizacionInicioPagoAspspBbvapt          GetEstadoSCAAutorizacionInicioPagoAspsp = "BBVAPT"
-	GetEstadoSCAAutorizacionInicioPagoAspspBbvabe          GetEstadoSCAAutorizacionInicioPagoAspsp = "BBVABE"
-	GetEstadoSCAAutorizacionInicioPagoAspspBbvafr          GetEstadoSCAAutorizacionInicioPagoAspsp = "BBVAFR"
-	GetEstadoSCAAutorizacionInicioPagoAspspBbvaeuk         GetEstadoSCAAutorizacionInicioPagoAspsp = "BBVAEUK"
-	GetEstadoSCAAutorizacionInicioPagoAspspCaixabank       GetEstadoSCAAutorizacionInicioPagoAspsp = "caixabank"
-	GetEstadoSCAAutorizacionInicioPagoAspspBancSabadell    GetEstadoSCAAutorizacionInicioPagoAspsp = "BancSabadell"
-	GetEstadoSCAAutorizacionInicioPagoAspspBancosantander  GetEstadoSCAAutorizacionInicioPagoAspsp = "bancosantander"
-	GetEstadoSCAAutorizacionInicioPagoAspspBancamarch      GetEstadoSCAAutorizacionInicioPagoAspsp = "bancamarch"
-	GetEstadoSCAAutorizacionInicioPagoAspspBankoa          GetEstadoSCAAutorizacionInicioPagoAspsp = "bankoa"
-	GetEstadoSCAAutorizacionInicioPagoAspspCajamar         GetEstadoSCAAutorizacionInicioPagoAspsp = "cajamar"
-	GetEstadoSCAAutorizacionInicioPagoAspspArquia          GetEstadoSCAAutorizacionInicioPagoAspsp = "arquia"
-	GetEstadoSCAAutorizacionInicioPagoAspspBff             GetEstadoSCAAutorizacionInicioPagoAspsp = "BFF"
-	GetEstadoSCAAutorizacionInicioPagoAspspColonya         GetEstadoSCAAutorizacionInicioPagoAspsp = "colonya"
-	GetEstadoSCAAutorizacionInicioPagoAspspEurocajarural   GetEstadoSCAAutorizacionInicioPagoAspsp = "eurocajarural"
-	GetEstadoSCAAutorizacionInicioPagoAspspEvobanco        GetEstadoSCAAutorizacionInicioPagoAspsp = "evobanco"
-	GetEstadoSCAAutorizacionInicioPagoAspspFiarebancaetica GetEstadoSCAAutorizacionInicioPagoAspsp = "fiarebancaetica"
-	GetEstadoSCAAutorizacionInicioPagoAspspBancopichincha  GetEstadoSCAAutorizacionInicioPagoAspsp = "bancopichincha"
-	GetEstadoSCAAutorizacionInicioPagoAspspUnicajabanco    GetEstadoSCAAutorizacionInicioPagoAspsp = "unicajabanco"
-	GetEstadoSCAAutorizacionInicioPagoAspspCajasur         GetEstadoSCAAutorizacionInicioPagoAspsp = "cajasur"
-	GetEstadoSCAAutorizacionInicioPagoAspspKutxabank       GetEstadoSCAAutorizacionInicioPagoAspsp = "kutxabank"
-	GetEstadoSCAAutorizacionInicioPagoAspspBankinter       GetEstadoSCAAutorizacionInicioPagoAspsp = "bankinter"
-	GetEstadoSCAAutorizacionInicioPagoAspspRenta4          GetEstadoSCAAutorizacionInicioPagoAspsp = "renta4"
-	GetEstadoSCAAutorizacionInicioPagoAspspBce             GetEstadoSCAAutorizacionInicioPagoAspsp = "BCE"
-	GetEstadoSCAAutorizacionInicioPagoAspspLaboralkutxa    GetEstadoSCAAutorizacionInicioPagoAspsp = "laboralkutxa"
-	GetEstadoSCAAutorizacionInicioPagoAspspMediolanum      GetEstadoSCAAutorizacionInicioPagoAspsp = "mediolanum"
-	GetEstadoSCAAutorizacionInicioPagoAspspOpenbank        GetEstadoSCAAutorizacionInicioPagoAspsp = "openbank"
-	GetEstadoSCAAutorizacionInicioPagoAspspIbercaja        GetEstadoSCAAutorizacionInicioPagoAspsp = "ibercaja"
-	GetEstadoSCAAutorizacionInicioPagoAspspSelfbank        GetEstadoSCAAutorizacionInicioPagoAspsp = "selfbank"
-	GetEstadoSCAAutorizacionInicioPagoAspspInversis        GetEstadoSCAAutorizacionInicioPagoAspsp = "inversis"
-	GetEstadoSCAAutorizacionInicioPagoAspspAndbank         GetEstadoSCAAutorizacionInicioPagoAspsp = "andbank"
-	GetEstadoSCAAutorizacionInicioPagoAspspWizink          GetEstadoSCAAutorizacionInicioPagoAspsp = "wizink"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspRedsys          GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "redsys"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBbva            GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "BBVA"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBbvapt          GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "BBVAPT"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBbvabe          GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "BBVABE"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBbvafr          GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "BBVAFR"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBbvaeuk         GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "BBVAEUK"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspCaixabank       GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "caixabank"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBancSabadell    GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "BancSabadell"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBancosantander  GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "bancosantander"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBancamarch      GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "bancamarch"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBankoa          GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "bankoa"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspCajamar         GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "cajamar"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspArquia          GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "arquia"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBff             GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "BFF"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspColonya         GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "colonya"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspEurocajarural   GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "eurocajarural"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspEvobanco        GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "evobanco"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspFiarebancaetica GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "fiarebancaetica"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBancopichincha  GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "bancopichincha"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspUnicajabanco    GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "unicajabanco"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspCajasur         GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "cajasur"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspKutxabank       GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "kutxabank"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBankinter       GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "bankinter"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspRenta4          GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "renta4"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspBce             GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "BCE"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspLaboralkutxa    GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "laboralkutxa"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspMediolanum      GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "mediolanum"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspOpenbank        GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "openbank"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspIbercaja        GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "ibercaja"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspSelfbank        GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "selfbank"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspInversis        GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "inversis"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspAndbank         GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "andbank"
+	GetEstadoSCAAutorizacionInicioPagoPathParamAspspWizink          GetEstadoSCAAutorizacionInicioPagoPathParamAspsp = "wizink"
 )
 
-func (e GetEstadoSCAAutorizacionInicioPagoAspsp) ToPointer() *GetEstadoSCAAutorizacionInicioPagoAspsp {
+func (e GetEstadoSCAAutorizacionInicioPagoPathParamAspsp) ToPointer() *GetEstadoSCAAutorizacionInicioPagoPathParamAspsp {
 	return &e
 }
 
-func (e *GetEstadoSCAAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) error {
+func (e *GetEstadoSCAAutorizacionInicioPagoPathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,31 +124,31 @@ func (e *GetEstadoSCAAutorizacionInicioPagoAspsp) UnmarshalJSON(data []byte) err
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = GetEstadoSCAAutorizacionInicioPagoAspsp(v)
+		*e = GetEstadoSCAAutorizacionInicioPagoPathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionInicioPagoAspsp: %v", v)
+		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionInicioPagoPathParamAspsp: %v", v)
 	}
 }
 
-type GetEstadoSCAAutorizacionInicioPagoPaymentProduct string
+type GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct string
 
 const (
-	GetEstadoSCAAutorizacionInicioPagoPaymentProductSepaCreditTransfers             GetEstadoSCAAutorizacionInicioPagoPaymentProduct = "sepa-credit-transfers"
-	GetEstadoSCAAutorizacionInicioPagoPaymentProductInstantSepaCreditTransfers      GetEstadoSCAAutorizacionInicioPagoPaymentProduct = "instant-sepa-credit-transfers"
-	GetEstadoSCAAutorizacionInicioPagoPaymentProductTarget2Payments                 GetEstadoSCAAutorizacionInicioPagoPaymentProduct = "target-2-payments"
-	GetEstadoSCAAutorizacionInicioPagoPaymentProductCrossBorderCreditTransfers      GetEstadoSCAAutorizacionInicioPagoPaymentProduct = "cross-border-credit-transfers"
-	GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticCrossCurrencyPaymentsUk GetEstadoSCAAutorizacionInicioPagoPaymentProduct = "domestic-cross-currency-payments-uk"
-	GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticChapsPaymentsUk         GetEstadoSCAAutorizacionInicioPagoPaymentProduct = "domestic-chaps-payments-uk"
-	GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticFasterPaymentsUk        GetEstadoSCAAutorizacionInicioPagoPaymentProduct = "domestic-faster-payments-uk"
-	GetEstadoSCAAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk          GetEstadoSCAAutorizacionInicioPagoPaymentProduct = "domestic-bacs-payments-uk"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductSepaCreditTransfers             GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct = "sepa-credit-transfers"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductInstantSepaCreditTransfers      GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductTarget2Payments                 GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct = "target-2-payments"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductCrossBorderCreditTransfers      GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct = "cross-border-credit-transfers"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductDomesticCrossCurrencyPaymentsUk GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct = "domestic-cross-currency-payments-uk"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductDomesticChapsPaymentsUk         GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct = "domestic-chaps-payments-uk"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductDomesticFasterPaymentsUk        GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct = "domestic-faster-payments-uk"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductDomesticBacsPaymentsUk          GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct = "domestic-bacs-payments-uk"
 )
 
-func (e GetEstadoSCAAutorizacionInicioPagoPaymentProduct) ToPointer() *GetEstadoSCAAutorizacionInicioPagoPaymentProduct {
+func (e GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct) ToPointer() *GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct {
 	return &e
 }
 
-func (e *GetEstadoSCAAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -169,26 +169,26 @@ func (e *GetEstadoSCAAutorizacionInicioPagoPaymentProduct) UnmarshalJSON(data []
 	case "domestic-faster-payments-uk":
 		fallthrough
 	case "domestic-bacs-payments-uk":
-		*e = GetEstadoSCAAutorizacionInicioPagoPaymentProduct(v)
+		*e = GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionInicioPagoPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct: %v", v)
 	}
 }
 
-type GetEstadoSCAAutorizacionInicioPagoPaymentService string
+type GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService string
 
 const (
-	GetEstadoSCAAutorizacionInicioPagoPaymentServicePayments         GetEstadoSCAAutorizacionInicioPagoPaymentService = "payments"
-	GetEstadoSCAAutorizacionInicioPagoPaymentServiceBulkPayments     GetEstadoSCAAutorizacionInicioPagoPaymentService = "bulk-payments"
-	GetEstadoSCAAutorizacionInicioPagoPaymentServicePeriodicPayments GetEstadoSCAAutorizacionInicioPagoPaymentService = "periodic-payments"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentServicePayments         GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService = "payments"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentServiceBulkPayments     GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService = "bulk-payments"
+	GetEstadoSCAAutorizacionInicioPagoPathParamPaymentServicePeriodicPayments GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService = "periodic-payments"
 )
 
-func (e GetEstadoSCAAutorizacionInicioPagoPaymentService) ToPointer() *GetEstadoSCAAutorizacionInicioPagoPaymentService {
+func (e GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService) ToPointer() *GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService {
 	return &e
 }
 
-func (e *GetEstadoSCAAutorizacionInicioPagoPaymentService) UnmarshalJSON(data []byte) error {
+func (e *GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -199,10 +199,10 @@ func (e *GetEstadoSCAAutorizacionInicioPagoPaymentService) UnmarshalJSON(data []
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = GetEstadoSCAAutorizacionInicioPagoPaymentService(v)
+		*e = GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionInicioPagoPaymentService: %v", v)
+		return fmt.Errorf("invalid value for GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService: %v", v)
 	}
 }
 
@@ -244,12 +244,12 @@ type GetEstadoSCAAutorizacionInicioPagoRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp GetEstadoSCAAutorizacionInicioPagoAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
+	Aspsp GetEstadoSCAAutorizacionInicioPagoPathParamAspsp `pathParam:"style=simple,explode=false,name=aspsp"`
 	// Identificador del subrecurso asociado al inicio de pago o consentimiento.
-	AuthorisationID string                                           `pathParam:"style=simple,explode=false,name=authorisation-id"`
-	PaymentID       string                                           `pathParam:"style=simple,explode=false,name=payment-id"`
-	PaymentProduct  GetEstadoSCAAutorizacionInicioPagoPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
-	PaymentService  GetEstadoSCAAutorizacionInicioPagoPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	AuthorisationID string                                                    `pathParam:"style=simple,explode=false,name=authorisation-id"`
+	PaymentID       string                                                    `pathParam:"style=simple,explode=false,name=payment-id"`
+	PaymentProduct  GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentService  GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (g GetEstadoSCAAutorizacionInicioPagoRequest) MarshalJSON() ([]byte, error) {
@@ -389,9 +389,9 @@ func (o *GetEstadoSCAAutorizacionInicioPagoRequest) GetXRequestID() string {
 	return o.XRequestID
 }
 
-func (o *GetEstadoSCAAutorizacionInicioPagoRequest) GetAspsp() GetEstadoSCAAutorizacionInicioPagoAspsp {
+func (o *GetEstadoSCAAutorizacionInicioPagoRequest) GetAspsp() GetEstadoSCAAutorizacionInicioPagoPathParamAspsp {
 	if o == nil {
-		return GetEstadoSCAAutorizacionInicioPagoAspsp("")
+		return GetEstadoSCAAutorizacionInicioPagoPathParamAspsp("")
 	}
 	return o.Aspsp
 }
@@ -410,16 +410,16 @@ func (o *GetEstadoSCAAutorizacionInicioPagoRequest) GetPaymentID() string {
 	return o.PaymentID
 }
 
-func (o *GetEstadoSCAAutorizacionInicioPagoRequest) GetPaymentProduct() GetEstadoSCAAutorizacionInicioPagoPaymentProduct {
+func (o *GetEstadoSCAAutorizacionInicioPagoRequest) GetPaymentProduct() GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct {
 	if o == nil {
-		return GetEstadoSCAAutorizacionInicioPagoPaymentProduct("")
+		return GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *GetEstadoSCAAutorizacionInicioPagoRequest) GetPaymentService() GetEstadoSCAAutorizacionInicioPagoPaymentService {
+func (o *GetEstadoSCAAutorizacionInicioPagoRequest) GetPaymentService() GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService {
 	if o == nil {
-		return GetEstadoSCAAutorizacionInicioPagoPaymentService("")
+		return GetEstadoSCAAutorizacionInicioPagoPathParamPaymentService("")
 	}
 	return o.PaymentService
 }

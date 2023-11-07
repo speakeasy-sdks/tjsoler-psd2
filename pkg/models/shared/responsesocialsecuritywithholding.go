@@ -6,8 +6,8 @@ package shared
 type ResponseSocialSecurityWithholdingTppMessages struct {
 }
 
-// ResponseSocialSecurityWithholdingWithholding - Importe a pagar
-type ResponseSocialSecurityWithholdingWithholding struct {
+// Withholding - Importe a pagar
+type Withholding struct {
 }
 
 type ResponseSocialSecurityWithholding struct {
@@ -24,7 +24,7 @@ type ResponseSocialSecurityWithholding struct {
 	// Mensaje para el TPP enviado a través del HUB.
 	TppMessages *ResponseSocialSecurityWithholdingTppMessages `json:"tppMessages,omitempty"`
 	// Importe a pagar
-	Withholding ResponseSocialSecurityWithholdingWithholding `json:"withholding"`
+	Withholding Withholding `json:"withholding"`
 }
 
 func (o *ResponseSocialSecurityWithholding) GetEntityName() string {
@@ -69,9 +69,9 @@ func (o *ResponseSocialSecurityWithholding) GetTppMessages() *ResponseSocialSecu
 	return o.TppMessages
 }
 
-func (o *ResponseSocialSecurityWithholding) GetWithholding() ResponseSocialSecurityWithholdingWithholding {
+func (o *ResponseSocialSecurityWithholding) GetWithholding() Withholding {
 	if o == nil {
-		return ResponseSocialSecurityWithholdingWithholding{}
+		return Withholding{}
 	}
 	return o.Withholding
 }

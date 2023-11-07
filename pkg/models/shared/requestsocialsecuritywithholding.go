@@ -2,17 +2,17 @@
 
 package shared
 
-// RequestSocialSecurityWithholdingDebtorAccount - Cuenta del ordenante
-type RequestSocialSecurityWithholdingDebtorAccount struct {
+// DebtorAccount - Cuenta del ordenante
+type DebtorAccount struct {
 }
 
-// RequestSocialSecurityWithholdingRemunerationAmount - Salario generado en esa unidad de pago
-type RequestSocialSecurityWithholdingRemunerationAmount struct {
+// RemunerationAmount - Salario generado en esa unidad de pago
+type RemunerationAmount struct {
 }
 
 type RequestSocialSecurityWithholding struct {
 	// Cuenta del ordenante
-	DebtorAccount RequestSocialSecurityWithholdingDebtorAccount `json:"debtorAccount"`
+	DebtorAccount DebtorAccount `json:"debtorAccount"`
 	// Identificador de la empresa empleadora. Solo vendrá relleno opcionalmente cuando paymentNature es 3. Para el resto de casos no existe.
 	Niss *int64 `json:"niss,omitempty"`
 	// Numero de la seguridad social
@@ -24,14 +24,14 @@ type RequestSocialSecurityWithholding struct {
 	// Unidad de pago en función del tipo de remuneración
 	PaymentUnit int64 `json:"paymentUnit"`
 	// Salario generado en esa unidad de pago
-	RemunerationAmount RequestSocialSecurityWithholdingRemunerationAmount `json:"remunerationAmount"`
+	RemunerationAmount RemunerationAmount `json:"remunerationAmount"`
 	// Unidad de pago en función del tipo de remuneración
 	RemunerationCode int64 `json:"remunerationCode"`
 }
 
-func (o *RequestSocialSecurityWithholding) GetDebtorAccount() RequestSocialSecurityWithholdingDebtorAccount {
+func (o *RequestSocialSecurityWithholding) GetDebtorAccount() DebtorAccount {
 	if o == nil {
-		return RequestSocialSecurityWithholdingDebtorAccount{}
+		return DebtorAccount{}
 	}
 	return o.DebtorAccount
 }
@@ -71,9 +71,9 @@ func (o *RequestSocialSecurityWithholding) GetPaymentUnit() int64 {
 	return o.PaymentUnit
 }
 
-func (o *RequestSocialSecurityWithholding) GetRemunerationAmount() RequestSocialSecurityWithholdingRemunerationAmount {
+func (o *RequestSocialSecurityWithholding) GetRemunerationAmount() RemunerationAmount {
 	if o == nil {
-		return RequestSocialSecurityWithholdingRemunerationAmount{}
+		return RemunerationAmount{}
 	}
 	return o.RemunerationAmount
 }

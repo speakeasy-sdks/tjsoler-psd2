@@ -1,5 +1,5 @@
 # ConsentimientoDeConfirmacionDeFondosFCS
-(*ConsentimientoDeConfirmacionDeFondosFCS*)
+(*.ConsentimientoDeConfirmacionDeFondosFCS*)
 
 ### Available Operations
 
@@ -29,7 +29,7 @@ func main() {
     res, err := s.ConsentimientoDeConfirmacionDeFondosFCS.PostConsentsConfirmationOfFunds(ctx, operations.PostConsentsConfirmationOfFundsRequest{
         Digest: "string",
         PSUIPAddress: "string",
-        RequestBody: []byte("+V3bE!^Fc|"),
+        RequestBody: []byte("0x2c4f80e8fF"),
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",

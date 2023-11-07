@@ -10,50 +10,50 @@ import (
 	"net/http"
 )
 
-// PostAutorizacionCancelacionPagoAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-type PostAutorizacionCancelacionPagoAspsp string
+// PostAutorizacionCancelacionPagoPathParamAspsp - Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
+type PostAutorizacionCancelacionPagoPathParamAspsp string
 
 const (
-	PostAutorizacionCancelacionPagoAspspRedsys          PostAutorizacionCancelacionPagoAspsp = "redsys"
-	PostAutorizacionCancelacionPagoAspspBbva            PostAutorizacionCancelacionPagoAspsp = "BBVA"
-	PostAutorizacionCancelacionPagoAspspBbvapt          PostAutorizacionCancelacionPagoAspsp = "BBVAPT"
-	PostAutorizacionCancelacionPagoAspspBbvabe          PostAutorizacionCancelacionPagoAspsp = "BBVABE"
-	PostAutorizacionCancelacionPagoAspspBbvafr          PostAutorizacionCancelacionPagoAspsp = "BBVAFR"
-	PostAutorizacionCancelacionPagoAspspBbvaeuk         PostAutorizacionCancelacionPagoAspsp = "BBVAEUK"
-	PostAutorizacionCancelacionPagoAspspCaixabank       PostAutorizacionCancelacionPagoAspsp = "caixabank"
-	PostAutorizacionCancelacionPagoAspspBancSabadell    PostAutorizacionCancelacionPagoAspsp = "BancSabadell"
-	PostAutorizacionCancelacionPagoAspspBancosantander  PostAutorizacionCancelacionPagoAspsp = "bancosantander"
-	PostAutorizacionCancelacionPagoAspspBancamarch      PostAutorizacionCancelacionPagoAspsp = "bancamarch"
-	PostAutorizacionCancelacionPagoAspspBankoa          PostAutorizacionCancelacionPagoAspsp = "bankoa"
-	PostAutorizacionCancelacionPagoAspspCajamar         PostAutorizacionCancelacionPagoAspsp = "cajamar"
-	PostAutorizacionCancelacionPagoAspspArquia          PostAutorizacionCancelacionPagoAspsp = "arquia"
-	PostAutorizacionCancelacionPagoAspspBff             PostAutorizacionCancelacionPagoAspsp = "BFF"
-	PostAutorizacionCancelacionPagoAspspColonya         PostAutorizacionCancelacionPagoAspsp = "colonya"
-	PostAutorizacionCancelacionPagoAspspEurocajarural   PostAutorizacionCancelacionPagoAspsp = "eurocajarural"
-	PostAutorizacionCancelacionPagoAspspEvobanco        PostAutorizacionCancelacionPagoAspsp = "evobanco"
-	PostAutorizacionCancelacionPagoAspspFiarebancaetica PostAutorizacionCancelacionPagoAspsp = "fiarebancaetica"
-	PostAutorizacionCancelacionPagoAspspBancopichincha  PostAutorizacionCancelacionPagoAspsp = "bancopichincha"
-	PostAutorizacionCancelacionPagoAspspUnicajabanco    PostAutorizacionCancelacionPagoAspsp = "unicajabanco"
-	PostAutorizacionCancelacionPagoAspspCajasur         PostAutorizacionCancelacionPagoAspsp = "cajasur"
-	PostAutorizacionCancelacionPagoAspspKutxabank       PostAutorizacionCancelacionPagoAspsp = "kutxabank"
-	PostAutorizacionCancelacionPagoAspspBankinter       PostAutorizacionCancelacionPagoAspsp = "bankinter"
-	PostAutorizacionCancelacionPagoAspspRenta4          PostAutorizacionCancelacionPagoAspsp = "renta4"
-	PostAutorizacionCancelacionPagoAspspBce             PostAutorizacionCancelacionPagoAspsp = "BCE"
-	PostAutorizacionCancelacionPagoAspspLaboralkutxa    PostAutorizacionCancelacionPagoAspsp = "laboralkutxa"
-	PostAutorizacionCancelacionPagoAspspMediolanum      PostAutorizacionCancelacionPagoAspsp = "mediolanum"
-	PostAutorizacionCancelacionPagoAspspOpenbank        PostAutorizacionCancelacionPagoAspsp = "openbank"
-	PostAutorizacionCancelacionPagoAspspIbercaja        PostAutorizacionCancelacionPagoAspsp = "ibercaja"
-	PostAutorizacionCancelacionPagoAspspSelfbank        PostAutorizacionCancelacionPagoAspsp = "selfbank"
-	PostAutorizacionCancelacionPagoAspspInversis        PostAutorizacionCancelacionPagoAspsp = "inversis"
-	PostAutorizacionCancelacionPagoAspspAndbank         PostAutorizacionCancelacionPagoAspsp = "andbank"
-	PostAutorizacionCancelacionPagoAspspWizink          PostAutorizacionCancelacionPagoAspsp = "wizink"
+	PostAutorizacionCancelacionPagoPathParamAspspRedsys          PostAutorizacionCancelacionPagoPathParamAspsp = "redsys"
+	PostAutorizacionCancelacionPagoPathParamAspspBbva            PostAutorizacionCancelacionPagoPathParamAspsp = "BBVA"
+	PostAutorizacionCancelacionPagoPathParamAspspBbvapt          PostAutorizacionCancelacionPagoPathParamAspsp = "BBVAPT"
+	PostAutorizacionCancelacionPagoPathParamAspspBbvabe          PostAutorizacionCancelacionPagoPathParamAspsp = "BBVABE"
+	PostAutorizacionCancelacionPagoPathParamAspspBbvafr          PostAutorizacionCancelacionPagoPathParamAspsp = "BBVAFR"
+	PostAutorizacionCancelacionPagoPathParamAspspBbvaeuk         PostAutorizacionCancelacionPagoPathParamAspsp = "BBVAEUK"
+	PostAutorizacionCancelacionPagoPathParamAspspCaixabank       PostAutorizacionCancelacionPagoPathParamAspsp = "caixabank"
+	PostAutorizacionCancelacionPagoPathParamAspspBancSabadell    PostAutorizacionCancelacionPagoPathParamAspsp = "BancSabadell"
+	PostAutorizacionCancelacionPagoPathParamAspspBancosantander  PostAutorizacionCancelacionPagoPathParamAspsp = "bancosantander"
+	PostAutorizacionCancelacionPagoPathParamAspspBancamarch      PostAutorizacionCancelacionPagoPathParamAspsp = "bancamarch"
+	PostAutorizacionCancelacionPagoPathParamAspspBankoa          PostAutorizacionCancelacionPagoPathParamAspsp = "bankoa"
+	PostAutorizacionCancelacionPagoPathParamAspspCajamar         PostAutorizacionCancelacionPagoPathParamAspsp = "cajamar"
+	PostAutorizacionCancelacionPagoPathParamAspspArquia          PostAutorizacionCancelacionPagoPathParamAspsp = "arquia"
+	PostAutorizacionCancelacionPagoPathParamAspspBff             PostAutorizacionCancelacionPagoPathParamAspsp = "BFF"
+	PostAutorizacionCancelacionPagoPathParamAspspColonya         PostAutorizacionCancelacionPagoPathParamAspsp = "colonya"
+	PostAutorizacionCancelacionPagoPathParamAspspEurocajarural   PostAutorizacionCancelacionPagoPathParamAspsp = "eurocajarural"
+	PostAutorizacionCancelacionPagoPathParamAspspEvobanco        PostAutorizacionCancelacionPagoPathParamAspsp = "evobanco"
+	PostAutorizacionCancelacionPagoPathParamAspspFiarebancaetica PostAutorizacionCancelacionPagoPathParamAspsp = "fiarebancaetica"
+	PostAutorizacionCancelacionPagoPathParamAspspBancopichincha  PostAutorizacionCancelacionPagoPathParamAspsp = "bancopichincha"
+	PostAutorizacionCancelacionPagoPathParamAspspUnicajabanco    PostAutorizacionCancelacionPagoPathParamAspsp = "unicajabanco"
+	PostAutorizacionCancelacionPagoPathParamAspspCajasur         PostAutorizacionCancelacionPagoPathParamAspsp = "cajasur"
+	PostAutorizacionCancelacionPagoPathParamAspspKutxabank       PostAutorizacionCancelacionPagoPathParamAspsp = "kutxabank"
+	PostAutorizacionCancelacionPagoPathParamAspspBankinter       PostAutorizacionCancelacionPagoPathParamAspsp = "bankinter"
+	PostAutorizacionCancelacionPagoPathParamAspspRenta4          PostAutorizacionCancelacionPagoPathParamAspsp = "renta4"
+	PostAutorizacionCancelacionPagoPathParamAspspBce             PostAutorizacionCancelacionPagoPathParamAspsp = "BCE"
+	PostAutorizacionCancelacionPagoPathParamAspspLaboralkutxa    PostAutorizacionCancelacionPagoPathParamAspsp = "laboralkutxa"
+	PostAutorizacionCancelacionPagoPathParamAspspMediolanum      PostAutorizacionCancelacionPagoPathParamAspsp = "mediolanum"
+	PostAutorizacionCancelacionPagoPathParamAspspOpenbank        PostAutorizacionCancelacionPagoPathParamAspsp = "openbank"
+	PostAutorizacionCancelacionPagoPathParamAspspIbercaja        PostAutorizacionCancelacionPagoPathParamAspsp = "ibercaja"
+	PostAutorizacionCancelacionPagoPathParamAspspSelfbank        PostAutorizacionCancelacionPagoPathParamAspsp = "selfbank"
+	PostAutorizacionCancelacionPagoPathParamAspspInversis        PostAutorizacionCancelacionPagoPathParamAspsp = "inversis"
+	PostAutorizacionCancelacionPagoPathParamAspspAndbank         PostAutorizacionCancelacionPagoPathParamAspsp = "andbank"
+	PostAutorizacionCancelacionPagoPathParamAspspWizink          PostAutorizacionCancelacionPagoPathParamAspsp = "wizink"
 )
 
-func (e PostAutorizacionCancelacionPagoAspsp) ToPointer() *PostAutorizacionCancelacionPagoAspsp {
+func (e PostAutorizacionCancelacionPagoPathParamAspsp) ToPointer() *PostAutorizacionCancelacionPagoPathParamAspsp {
 	return &e
 }
 
-func (e *PostAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []byte) error {
+func (e *PostAutorizacionCancelacionPagoPathParamAspsp) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -124,31 +124,31 @@ func (e *PostAutorizacionCancelacionPagoAspsp) UnmarshalJSON(data []byte) error 
 	case "andbank":
 		fallthrough
 	case "wizink":
-		*e = PostAutorizacionCancelacionPagoAspsp(v)
+		*e = PostAutorizacionCancelacionPagoPathParamAspsp(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PostAutorizacionCancelacionPagoAspsp: %v", v)
+		return fmt.Errorf("invalid value for PostAutorizacionCancelacionPagoPathParamAspsp: %v", v)
 	}
 }
 
-type PostAutorizacionCancelacionPagoPaymentProduct string
+type PostAutorizacionCancelacionPagoPathParamPaymentProduct string
 
 const (
-	PostAutorizacionCancelacionPagoPaymentProductSepaCreditTransfers             PostAutorizacionCancelacionPagoPaymentProduct = "sepa-credit-transfers"
-	PostAutorizacionCancelacionPagoPaymentProductInstantSepaCreditTransfers      PostAutorizacionCancelacionPagoPaymentProduct = "instant-sepa-credit-transfers"
-	PostAutorizacionCancelacionPagoPaymentProductTarget2Payments                 PostAutorizacionCancelacionPagoPaymentProduct = "target-2-payments"
-	PostAutorizacionCancelacionPagoPaymentProductCrossBorderCreditTransfers      PostAutorizacionCancelacionPagoPaymentProduct = "cross-border-credit-transfers"
-	PostAutorizacionCancelacionPagoPaymentProductDomesticCrossCurrencyPaymentsUk PostAutorizacionCancelacionPagoPaymentProduct = "domestic-cross-currency-payments-uk"
-	PostAutorizacionCancelacionPagoPaymentProductDomesticChapsPaymentsUk         PostAutorizacionCancelacionPagoPaymentProduct = "domestic-chaps-payments-uk"
-	PostAutorizacionCancelacionPagoPaymentProductDomesticFasterPaymentsUk        PostAutorizacionCancelacionPagoPaymentProduct = "domestic-faster-payments-uk"
-	PostAutorizacionCancelacionPagoPaymentProductDomesticBacsPaymentsUk          PostAutorizacionCancelacionPagoPaymentProduct = "domestic-bacs-payments-uk"
+	PostAutorizacionCancelacionPagoPathParamPaymentProductSepaCreditTransfers             PostAutorizacionCancelacionPagoPathParamPaymentProduct = "sepa-credit-transfers"
+	PostAutorizacionCancelacionPagoPathParamPaymentProductInstantSepaCreditTransfers      PostAutorizacionCancelacionPagoPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	PostAutorizacionCancelacionPagoPathParamPaymentProductTarget2Payments                 PostAutorizacionCancelacionPagoPathParamPaymentProduct = "target-2-payments"
+	PostAutorizacionCancelacionPagoPathParamPaymentProductCrossBorderCreditTransfers      PostAutorizacionCancelacionPagoPathParamPaymentProduct = "cross-border-credit-transfers"
+	PostAutorizacionCancelacionPagoPathParamPaymentProductDomesticCrossCurrencyPaymentsUk PostAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-cross-currency-payments-uk"
+	PostAutorizacionCancelacionPagoPathParamPaymentProductDomesticChapsPaymentsUk         PostAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-chaps-payments-uk"
+	PostAutorizacionCancelacionPagoPathParamPaymentProductDomesticFasterPaymentsUk        PostAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-faster-payments-uk"
+	PostAutorizacionCancelacionPagoPathParamPaymentProductDomesticBacsPaymentsUk          PostAutorizacionCancelacionPagoPathParamPaymentProduct = "domestic-bacs-payments-uk"
 )
 
-func (e PostAutorizacionCancelacionPagoPaymentProduct) ToPointer() *PostAutorizacionCancelacionPagoPaymentProduct {
+func (e PostAutorizacionCancelacionPagoPathParamPaymentProduct) ToPointer() *PostAutorizacionCancelacionPagoPathParamPaymentProduct {
 	return &e
 }
 
-func (e *PostAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *PostAutorizacionCancelacionPagoPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -169,26 +169,26 @@ func (e *PostAutorizacionCancelacionPagoPaymentProduct) UnmarshalJSON(data []byt
 	case "domestic-faster-payments-uk":
 		fallthrough
 	case "domestic-bacs-payments-uk":
-		*e = PostAutorizacionCancelacionPagoPaymentProduct(v)
+		*e = PostAutorizacionCancelacionPagoPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PostAutorizacionCancelacionPagoPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for PostAutorizacionCancelacionPagoPathParamPaymentProduct: %v", v)
 	}
 }
 
-type PostAutorizacionCancelacionPagoPaymentService string
+type PostAutorizacionCancelacionPagoPathParamPaymentService string
 
 const (
-	PostAutorizacionCancelacionPagoPaymentServicePayments         PostAutorizacionCancelacionPagoPaymentService = "payments"
-	PostAutorizacionCancelacionPagoPaymentServiceBulkPayments     PostAutorizacionCancelacionPagoPaymentService = "bulk-payments"
-	PostAutorizacionCancelacionPagoPaymentServicePeriodicPayments PostAutorizacionCancelacionPagoPaymentService = "periodic-payments"
+	PostAutorizacionCancelacionPagoPathParamPaymentServicePayments         PostAutorizacionCancelacionPagoPathParamPaymentService = "payments"
+	PostAutorizacionCancelacionPagoPathParamPaymentServiceBulkPayments     PostAutorizacionCancelacionPagoPathParamPaymentService = "bulk-payments"
+	PostAutorizacionCancelacionPagoPathParamPaymentServicePeriodicPayments PostAutorizacionCancelacionPagoPathParamPaymentService = "periodic-payments"
 )
 
-func (e PostAutorizacionCancelacionPagoPaymentService) ToPointer() *PostAutorizacionCancelacionPagoPaymentService {
+func (e PostAutorizacionCancelacionPagoPathParamPaymentService) ToPointer() *PostAutorizacionCancelacionPagoPathParamPaymentService {
 	return &e
 }
 
-func (e *PostAutorizacionCancelacionPagoPaymentService) UnmarshalJSON(data []byte) error {
+func (e *PostAutorizacionCancelacionPagoPathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -199,10 +199,10 @@ func (e *PostAutorizacionCancelacionPagoPaymentService) UnmarshalJSON(data []byt
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = PostAutorizacionCancelacionPagoPaymentService(v)
+		*e = PostAutorizacionCancelacionPagoPathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for PostAutorizacionCancelacionPagoPaymentService: %v", v)
+		return fmt.Errorf("invalid value for PostAutorizacionCancelacionPagoPathParamPaymentService: %v", v)
 	}
 }
 
@@ -244,10 +244,10 @@ type PostAutorizacionCancelacionPagoRequest struct {
 	// Identificador único de la transacción asignado por el TPP. Ej: X-Request-ID: 1b3ab8e8-0fd5-43d2-946e-d75958b172e7
 	XRequestID string `header:"style=simple,explode=false,name=X-Request-ID"`
 	// Nombre del ASPSP al que desea realizar la petición.(BBVA, Banco Santander ...)
-	Aspsp          PostAutorizacionCancelacionPagoAspsp          `pathParam:"style=simple,explode=false,name=aspsp"`
-	PaymentID      string                                        `pathParam:"style=simple,explode=false,name=payment-id"`
-	PaymentProduct PostAutorizacionCancelacionPagoPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
-	PaymentService PostAutorizacionCancelacionPagoPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	Aspsp          PostAutorizacionCancelacionPagoPathParamAspsp          `pathParam:"style=simple,explode=false,name=aspsp"`
+	PaymentID      string                                                 `pathParam:"style=simple,explode=false,name=payment-id"`
+	PaymentProduct PostAutorizacionCancelacionPagoPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentService PostAutorizacionCancelacionPagoPathParamPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (p PostAutorizacionCancelacionPagoRequest) MarshalJSON() ([]byte, error) {
@@ -387,9 +387,9 @@ func (o *PostAutorizacionCancelacionPagoRequest) GetXRequestID() string {
 	return o.XRequestID
 }
 
-func (o *PostAutorizacionCancelacionPagoRequest) GetAspsp() PostAutorizacionCancelacionPagoAspsp {
+func (o *PostAutorizacionCancelacionPagoRequest) GetAspsp() PostAutorizacionCancelacionPagoPathParamAspsp {
 	if o == nil {
-		return PostAutorizacionCancelacionPagoAspsp("")
+		return PostAutorizacionCancelacionPagoPathParamAspsp("")
 	}
 	return o.Aspsp
 }
@@ -401,16 +401,16 @@ func (o *PostAutorizacionCancelacionPagoRequest) GetPaymentID() string {
 	return o.PaymentID
 }
 
-func (o *PostAutorizacionCancelacionPagoRequest) GetPaymentProduct() PostAutorizacionCancelacionPagoPaymentProduct {
+func (o *PostAutorizacionCancelacionPagoRequest) GetPaymentProduct() PostAutorizacionCancelacionPagoPathParamPaymentProduct {
 	if o == nil {
-		return PostAutorizacionCancelacionPagoPaymentProduct("")
+		return PostAutorizacionCancelacionPagoPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *PostAutorizacionCancelacionPagoRequest) GetPaymentService() PostAutorizacionCancelacionPagoPaymentService {
+func (o *PostAutorizacionCancelacionPagoRequest) GetPaymentService() PostAutorizacionCancelacionPagoPathParamPaymentService {
 	if o == nil {
-		return PostAutorizacionCancelacionPagoPaymentService("")
+		return PostAutorizacionCancelacionPagoPathParamPaymentService("")
 	}
 	return o.PaymentService
 }

@@ -6,23 +6,23 @@ package shared
 type ResponseAccountBalancesAccount struct {
 }
 
-// ResponseAccountBalancesBalances - Balances de la cuenta
-type ResponseAccountBalancesBalances struct {
+// Balances de la cuenta
+type Balances struct {
 }
 
-// ResponseAccountBalancesTppMessage - Mensaje para el TPP enviado a través del HUB.
-type ResponseAccountBalancesTppMessage struct {
+// TppMessage - Mensaje para el TPP enviado a través del HUB.
+type TppMessage struct {
 }
 
 type ResponseAccountBalances struct {
 	// Identificador de la cuenta que se está consultando.
 	Account *ResponseAccountBalancesAccount
 	// Balances de la cuenta
-	Balances ResponseAccountBalancesBalances
+	Balances Balances
 	// Texto enviado al TPP a través del HUB para ser mostrado al PSU.
 	PsuMessage *string
 	// Mensaje para el TPP enviado a través del HUB.
-	TppMessage *ResponseAccountBalancesTppMessage
+	TppMessage *TppMessage
 }
 
 func (o *ResponseAccountBalances) GetAccount() *ResponseAccountBalancesAccount {
@@ -32,9 +32,9 @@ func (o *ResponseAccountBalances) GetAccount() *ResponseAccountBalancesAccount {
 	return o.Account
 }
 
-func (o *ResponseAccountBalances) GetBalances() ResponseAccountBalancesBalances {
+func (o *ResponseAccountBalances) GetBalances() Balances {
 	if o == nil {
-		return ResponseAccountBalancesBalances{}
+		return Balances{}
 	}
 	return o.Balances
 }
@@ -46,7 +46,7 @@ func (o *ResponseAccountBalances) GetPsuMessage() *string {
 	return o.PsuMessage
 }
 
-func (o *ResponseAccountBalances) GetTppMessage() *ResponseAccountBalancesTppMessage {
+func (o *ResponseAccountBalances) GetTppMessage() *TppMessage {
 	if o == nil {
 		return nil
 	}

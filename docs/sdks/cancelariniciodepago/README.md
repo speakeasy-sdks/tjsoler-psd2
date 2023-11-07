@@ -1,5 +1,5 @@
 # CancelarInicioDePago
-(*CancelarInicioDePago*)
+(*.CancelarInicioDePago*)
 
 ### Available Operations
 
@@ -32,8 +32,8 @@ func main() {
         XRequestID: "string",
         Aspsp: "string",
         PaymentID: "string",
-        PaymentProduct: operations.DeletePaymentPaymentProductSepaCreditTransfers,
-        PaymentService: operations.DeletePaymentPaymentServiceBulkPayments,
+        PaymentProduct: operations.DeletePaymentPathParamPaymentProductSepaCreditTransfers,
+        PaymentService: operations.DeletePaymentPathParamPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)

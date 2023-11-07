@@ -1,5 +1,5 @@
 # RecuperarInformacionDelInicioDePago
-(*RecuperarInformacionDelInicioDePago*)
+(*.RecuperarInformacionDelInicioDePago*)
 
 ### Available Operations
 
@@ -33,8 +33,8 @@ func main() {
         XRequestID: "string",
         Aspsp: "string",
         PaymentID: "string",
-        PaymentProduct: operations.GetInfoPaymentPaymentProductCrossBorderCreditTransfers,
-        PaymentService: operations.GetInfoPaymentPaymentServiceBulkPayments,
+        PaymentProduct: operations.GetInfoPaymentPathParamPaymentProductCrossBorderCreditTransfers,
+        PaymentService: operations.GetInfoPaymentPathParamPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)

@@ -11,7 +11,7 @@ import (
 
 // ServerList contains the list of servers available to the SDK
 var ServerList = []string{
-	"/api-entrada-xs2a",
+	"https:///api-entrada-xs2a",
 }
 
 // HTTPClient provides an interface for suplying the SDK with a custom HTTP client
@@ -61,26 +61,26 @@ func (c *sdkConfiguration) GetServerDetails() (string, map[string]string) {
 
 // Psd2CajaRural - API para PSD2: API de Redsys para PSD2
 type Psd2CajaRural struct {
-	ActualizarDatosDelPSUSeleccionarMetodoSCA        *actualizarDatosDelPSUSeleccionarMetodoSCA
-	CancelarInicioDePago                             *cancelarInicioDePago
-	ConsentimientoDeConfirmacionDeFondosFCS          *consentimientoDeConfirmacionDeFondosFCS
-	ConsentimientoDeInformacionSobreCuentasDePagoAIS *consentimientoDeInformacionSobreCuentasDePagoAIS
-	ConsultaDeFondos                                 *consultaDeFondos
-	EliminarConsentimiento                           *eliminarConsentimiento
-	InicioDePago                                     *inicioDePago
-	InicioDelProcesoDeAutorizacionExplicita          *inicioDelProcesoDeAutorizacionExplicita
-	LecturaDeBalances                                *lecturaDeBalances
-	LecturaDeDetallesDeCuenta                        *lecturaDeDetallesDeCuenta
-	LecturaDeListadoDeCuentas                        *lecturaDeListadoDeCuentas
-	LecturaDeTransacciones                           *lecturaDeTransacciones
-	ObtenerEstadoSCA                                 *obtenerEstadoSCA
-	ObtenerEstadoDeConsentimiento                    *obtenerEstadoDeConsentimiento
-	ObtenerEstadoDelPago                             *obtenerEstadoDelPago
-	ObtenerListadoDeBeneficiariosDeConfianza         *obtenerListadoDeBeneficiariosDeConfianza
-	ObtenerSubRecursosDeLaAutorizacion               *obtenerSubRecursosDeLaAutorizacion
-	RecuperarInformacionDeConsentimiento             *recuperarInformacionDeConsentimiento
-	RecuperarInformacionDelInicioDePago              *recuperarInformacionDelInicioDePago
-	ServiciosMultibanco                              *serviciosMultibanco
+	ServiciosMultibanco                              *ServiciosMultibanco
+	LecturaDeListadoDeCuentas                        *LecturaDeListadoDeCuentas
+	LecturaDeDetallesDeCuenta                        *LecturaDeDetallesDeCuenta
+	LecturaDeBalances                                *LecturaDeBalances
+	LecturaDeTransacciones                           *LecturaDeTransacciones
+	InicioDePago                                     *InicioDePago
+	ConsentimientoDeInformacionSobreCuentasDePagoAIS *ConsentimientoDeInformacionSobreCuentasDePagoAIS
+	RecuperarInformacionDeConsentimiento             *RecuperarInformacionDeConsentimiento
+	EliminarConsentimiento                           *EliminarConsentimiento
+	ObtenerSubRecursosDeLaAutorizacion               *ObtenerSubRecursosDeLaAutorizacion
+	InicioDelProcesoDeAutorizacionExplicita          *InicioDelProcesoDeAutorizacionExplicita
+	ObtenerEstadoSCA                                 *ObtenerEstadoSCA
+	ActualizarDatosDelPSUSeleccionarMetodoSCA        *ActualizarDatosDelPSUSeleccionarMetodoSCA
+	ObtenerEstadoDeConsentimiento                    *ObtenerEstadoDeConsentimiento
+	ConsultaDeFondos                                 *ConsultaDeFondos
+	ObtenerListadoDeBeneficiariosDeConfianza         *ObtenerListadoDeBeneficiariosDeConfianza
+	RecuperarInformacionDelInicioDePago              *RecuperarInformacionDelInicioDePago
+	CancelarInicioDePago                             *CancelarInicioDePago
+	ObtenerEstadoDelPago                             *ObtenerEstadoDelPago
+	ConsentimientoDeConfirmacionDeFondosFCS          *ConsentimientoDeConfirmacionDeFondosFCS
 
 	sdkConfiguration sdkConfiguration
 }
@@ -135,9 +135,9 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.1",
-			SDKVersion:        "0.4.0",
-			GenVersion:        "2.169.0",
-			UserAgent:         "speakeasy-sdk/go 0.4.0 2.169.0 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
+			SDKVersion:        "0.5.0",
+			GenVersion:        "2.181.1",
+			UserAgent:         "speakeasy-sdk/go 0.5.0 2.181.1 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
 		},
 	}
 	for _, opt := range opts {
@@ -152,45 +152,45 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 		sdk.sdkConfiguration.SecurityClient = sdk.sdkConfiguration.DefaultClient
 	}
 
-	sdk.ActualizarDatosDelPSUSeleccionarMetodoSCA = newActualizarDatosDelPSUSeleccionarMetodoSCA(sdk.sdkConfiguration)
-
-	sdk.CancelarInicioDePago = newCancelarInicioDePago(sdk.sdkConfiguration)
-
-	sdk.ConsentimientoDeConfirmacionDeFondosFCS = newConsentimientoDeConfirmacionDeFondosFCS(sdk.sdkConfiguration)
-
-	sdk.ConsentimientoDeInformacionSobreCuentasDePagoAIS = newConsentimientoDeInformacionSobreCuentasDePagoAIS(sdk.sdkConfiguration)
-
-	sdk.ConsultaDeFondos = newConsultaDeFondos(sdk.sdkConfiguration)
-
-	sdk.EliminarConsentimiento = newEliminarConsentimiento(sdk.sdkConfiguration)
-
-	sdk.InicioDePago = newInicioDePago(sdk.sdkConfiguration)
-
-	sdk.InicioDelProcesoDeAutorizacionExplicita = newInicioDelProcesoDeAutorizacionExplicita(sdk.sdkConfiguration)
-
-	sdk.LecturaDeBalances = newLecturaDeBalances(sdk.sdkConfiguration)
-
-	sdk.LecturaDeDetallesDeCuenta = newLecturaDeDetallesDeCuenta(sdk.sdkConfiguration)
+	sdk.ServiciosMultibanco = newServiciosMultibanco(sdk.sdkConfiguration)
 
 	sdk.LecturaDeListadoDeCuentas = newLecturaDeListadoDeCuentas(sdk.sdkConfiguration)
 
+	sdk.LecturaDeDetallesDeCuenta = newLecturaDeDetallesDeCuenta(sdk.sdkConfiguration)
+
+	sdk.LecturaDeBalances = newLecturaDeBalances(sdk.sdkConfiguration)
+
 	sdk.LecturaDeTransacciones = newLecturaDeTransacciones(sdk.sdkConfiguration)
 
-	sdk.ObtenerEstadoSCA = newObtenerEstadoSCA(sdk.sdkConfiguration)
+	sdk.InicioDePago = newInicioDePago(sdk.sdkConfiguration)
 
-	sdk.ObtenerEstadoDeConsentimiento = newObtenerEstadoDeConsentimiento(sdk.sdkConfiguration)
-
-	sdk.ObtenerEstadoDelPago = newObtenerEstadoDelPago(sdk.sdkConfiguration)
-
-	sdk.ObtenerListadoDeBeneficiariosDeConfianza = newObtenerListadoDeBeneficiariosDeConfianza(sdk.sdkConfiguration)
-
-	sdk.ObtenerSubRecursosDeLaAutorizacion = newObtenerSubRecursosDeLaAutorizacion(sdk.sdkConfiguration)
+	sdk.ConsentimientoDeInformacionSobreCuentasDePagoAIS = newConsentimientoDeInformacionSobreCuentasDePagoAIS(sdk.sdkConfiguration)
 
 	sdk.RecuperarInformacionDeConsentimiento = newRecuperarInformacionDeConsentimiento(sdk.sdkConfiguration)
 
+	sdk.EliminarConsentimiento = newEliminarConsentimiento(sdk.sdkConfiguration)
+
+	sdk.ObtenerSubRecursosDeLaAutorizacion = newObtenerSubRecursosDeLaAutorizacion(sdk.sdkConfiguration)
+
+	sdk.InicioDelProcesoDeAutorizacionExplicita = newInicioDelProcesoDeAutorizacionExplicita(sdk.sdkConfiguration)
+
+	sdk.ObtenerEstadoSCA = newObtenerEstadoSCA(sdk.sdkConfiguration)
+
+	sdk.ActualizarDatosDelPSUSeleccionarMetodoSCA = newActualizarDatosDelPSUSeleccionarMetodoSCA(sdk.sdkConfiguration)
+
+	sdk.ObtenerEstadoDeConsentimiento = newObtenerEstadoDeConsentimiento(sdk.sdkConfiguration)
+
+	sdk.ConsultaDeFondos = newConsultaDeFondos(sdk.sdkConfiguration)
+
+	sdk.ObtenerListadoDeBeneficiariosDeConfianza = newObtenerListadoDeBeneficiariosDeConfianza(sdk.sdkConfiguration)
+
 	sdk.RecuperarInformacionDelInicioDePago = newRecuperarInformacionDelInicioDePago(sdk.sdkConfiguration)
 
-	sdk.ServiciosMultibanco = newServiciosMultibanco(sdk.sdkConfiguration)
+	sdk.CancelarInicioDePago = newCancelarInicioDePago(sdk.sdkConfiguration)
+
+	sdk.ObtenerEstadoDelPago = newObtenerEstadoDelPago(sdk.sdkConfiguration)
+
+	sdk.ConsentimientoDeConfirmacionDeFondosFCS = newConsentimientoDeConfirmacionDeFondosFCS(sdk.sdkConfiguration)
 
 	return sdk
 }

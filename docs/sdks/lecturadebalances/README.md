@@ -1,5 +1,5 @@
 # LecturaDeBalances
-(*LecturaDeBalances*)
+(*.LecturaDeBalances*)
 
 ### Available Operations
 

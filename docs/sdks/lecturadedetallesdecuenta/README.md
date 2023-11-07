@@ -1,5 +1,5 @@
 # LecturaDeDetallesDeCuenta
-(*LecturaDeDetallesDeCuenta*)
+(*.LecturaDeDetallesDeCuenta*)
 
 ### Available Operations
 

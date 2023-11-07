@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type cancelarInicioDePago struct {
+type CancelarInicioDePago struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newCancelarInicioDePago(sdkConfig sdkConfiguration) *cancelarInicioDePago {
-	return &cancelarInicioDePago{
+func newCancelarInicioDePago(sdkConfig sdkConfiguration) *CancelarInicioDePago {
+	return &CancelarInicioDePago{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // DeletePayment - Cancelar Inicio de pago
 // Esta petición es enviada por el TPP al ASPSP a través del Hub y permite iniciar la cancelación de un pago. Dependiendo del servicio de pago, el producto de pago y la implementación del ASPSP, esta petición podríar ser suficiente para cancelar el pago o podría ser necesario una autorización.
-func (s *cancelarInicioDePago) DeletePayment(ctx context.Context, request operations.DeletePaymentRequest) (*operations.DeletePaymentResponse, error) {
+func (s *CancelarInicioDePago) DeletePayment(ctx context.Context, request operations.DeletePaymentRequest) (*operations.DeletePaymentResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}", request, nil)
 	if err != nil {

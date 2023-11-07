@@ -9,21 +9,21 @@ import (
 	"net/http"
 )
 
-// GetInfoPaymentPaymentProduct - Producto de pago a usar.
-type GetInfoPaymentPaymentProduct string
+// GetInfoPaymentPathParamPaymentProduct - Producto de pago a usar.
+type GetInfoPaymentPathParamPaymentProduct string
 
 const (
-	GetInfoPaymentPaymentProductSepaCreditTransfers        GetInfoPaymentPaymentProduct = "sepa-credit-transfers"
-	GetInfoPaymentPaymentProductInstantSepaCreditTransfers GetInfoPaymentPaymentProduct = "instant-sepa-credit-transfers"
-	GetInfoPaymentPaymentProductTarget2Payments            GetInfoPaymentPaymentProduct = "target-2-payments"
-	GetInfoPaymentPaymentProductCrossBorderCreditTransfers GetInfoPaymentPaymentProduct = "cross-border-credit-transfers"
+	GetInfoPaymentPathParamPaymentProductSepaCreditTransfers        GetInfoPaymentPathParamPaymentProduct = "sepa-credit-transfers"
+	GetInfoPaymentPathParamPaymentProductInstantSepaCreditTransfers GetInfoPaymentPathParamPaymentProduct = "instant-sepa-credit-transfers"
+	GetInfoPaymentPathParamPaymentProductTarget2Payments            GetInfoPaymentPathParamPaymentProduct = "target-2-payments"
+	GetInfoPaymentPathParamPaymentProductCrossBorderCreditTransfers GetInfoPaymentPathParamPaymentProduct = "cross-border-credit-transfers"
 )
 
-func (e GetInfoPaymentPaymentProduct) ToPointer() *GetInfoPaymentPaymentProduct {
+func (e GetInfoPaymentPathParamPaymentProduct) ToPointer() *GetInfoPaymentPathParamPaymentProduct {
 	return &e
 }
 
-func (e *GetInfoPaymentPaymentProduct) UnmarshalJSON(data []byte) error {
+func (e *GetInfoPaymentPathParamPaymentProduct) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -36,27 +36,27 @@ func (e *GetInfoPaymentPaymentProduct) UnmarshalJSON(data []byte) error {
 	case "target-2-payments":
 		fallthrough
 	case "cross-border-credit-transfers":
-		*e = GetInfoPaymentPaymentProduct(v)
+		*e = GetInfoPaymentPathParamPaymentProduct(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetInfoPaymentPaymentProduct: %v", v)
+		return fmt.Errorf("invalid value for GetInfoPaymentPathParamPaymentProduct: %v", v)
 	}
 }
 
-// GetInfoPaymentPaymentService - Producto de pago a usar.
-type GetInfoPaymentPaymentService string
+// GetInfoPaymentPathParamPaymentService - Producto de pago a usar.
+type GetInfoPaymentPathParamPaymentService string
 
 const (
-	GetInfoPaymentPaymentServicePayments         GetInfoPaymentPaymentService = "payments"
-	GetInfoPaymentPaymentServiceBulkPayments     GetInfoPaymentPaymentService = "bulk-payments"
-	GetInfoPaymentPaymentServicePeriodicPayments GetInfoPaymentPaymentService = "periodic-payments"
+	GetInfoPaymentPathParamPaymentServicePayments         GetInfoPaymentPathParamPaymentService = "payments"
+	GetInfoPaymentPathParamPaymentServiceBulkPayments     GetInfoPaymentPathParamPaymentService = "bulk-payments"
+	GetInfoPaymentPathParamPaymentServicePeriodicPayments GetInfoPaymentPathParamPaymentService = "periodic-payments"
 )
 
-func (e GetInfoPaymentPaymentService) ToPointer() *GetInfoPaymentPaymentService {
+func (e GetInfoPaymentPathParamPaymentService) ToPointer() *GetInfoPaymentPathParamPaymentService {
 	return &e
 }
 
-func (e *GetInfoPaymentPaymentService) UnmarshalJSON(data []byte) error {
+func (e *GetInfoPaymentPathParamPaymentService) UnmarshalJSON(data []byte) error {
 	var v string
 	if err := json.Unmarshal(data, &v); err != nil {
 		return err
@@ -67,10 +67,10 @@ func (e *GetInfoPaymentPaymentService) UnmarshalJSON(data []byte) error {
 	case "bulk-payments":
 		fallthrough
 	case "periodic-payments":
-		*e = GetInfoPaymentPaymentService(v)
+		*e = GetInfoPaymentPathParamPaymentService(v)
 		return nil
 	default:
-		return fmt.Errorf("invalid value for GetInfoPaymentPaymentService: %v", v)
+		return fmt.Errorf("invalid value for GetInfoPaymentPathParamPaymentService: %v", v)
 	}
 }
 
@@ -108,9 +108,9 @@ type GetInfoPaymentRequest struct {
 	// Identificador del recurso que referencia a la iniciación de pago. Enviado previamente como respuesta a un mensaje de iniciación de pago del TPP al HUB.
 	PaymentID string `pathParam:"style=simple,explode=false,name=payment-id"`
 	// Producto de pago a usar.
-	PaymentProduct GetInfoPaymentPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
+	PaymentProduct GetInfoPaymentPathParamPaymentProduct `pathParam:"style=simple,explode=false,name=payment-product"`
 	// Producto de pago a usar.
-	PaymentService GetInfoPaymentPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
+	PaymentService GetInfoPaymentPathParamPaymentService `pathParam:"style=simple,explode=false,name=payment-service"`
 }
 
 func (g GetInfoPaymentRequest) MarshalJSON() ([]byte, error) {
@@ -236,16 +236,16 @@ func (o *GetInfoPaymentRequest) GetPaymentID() string {
 	return o.PaymentID
 }
 
-func (o *GetInfoPaymentRequest) GetPaymentProduct() GetInfoPaymentPaymentProduct {
+func (o *GetInfoPaymentRequest) GetPaymentProduct() GetInfoPaymentPathParamPaymentProduct {
 	if o == nil {
-		return GetInfoPaymentPaymentProduct("")
+		return GetInfoPaymentPathParamPaymentProduct("")
 	}
 	return o.PaymentProduct
 }
 
-func (o *GetInfoPaymentRequest) GetPaymentService() GetInfoPaymentPaymentService {
+func (o *GetInfoPaymentRequest) GetPaymentService() GetInfoPaymentPathParamPaymentService {
 	if o == nil {
-		return GetInfoPaymentPaymentService("")
+		return GetInfoPaymentPathParamPaymentService("")
 	}
 	return o.PaymentService
 }

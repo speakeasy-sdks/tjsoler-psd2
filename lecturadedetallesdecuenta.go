@@ -13,19 +13,19 @@ import (
 	"net/http"
 )
 
-type lecturaDeDetallesDeCuenta struct {
+type LecturaDeDetallesDeCuenta struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newLecturaDeDetallesDeCuenta(sdkConfig sdkConfiguration) *lecturaDeDetallesDeCuenta {
-	return &lecturaDeDetallesDeCuenta{
+func newLecturaDeDetallesDeCuenta(sdkConfig sdkConfiguration) *LecturaDeDetallesDeCuenta {
+	return &LecturaDeDetallesDeCuenta{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // GetAccountIdv11 - Lectura de detalles de una cuenta
 // Este servicio permite leer los detalles de una cuenta con los balances si son requeridos.Como requisito, se asume que el PSU ha dado su consentimiento para este acceso y ha sido almacenado por el ASPSP. El funcionamiento del servicio según el tipo de acceso indicado en el consentimiento.
-func (s *lecturaDeDetallesDeCuenta) GetAccountIdv11(ctx context.Context, request operations.GetAccountIdv11Request) (*operations.GetAccountIdv11Response, error) {
+func (s *LecturaDeDetallesDeCuenta) GetAccountIdv11(ctx context.Context, request operations.GetAccountIdv11Request) (*operations.GetAccountIdv11Response, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/accounts/{account-id}", request, nil)
 	if err != nil {

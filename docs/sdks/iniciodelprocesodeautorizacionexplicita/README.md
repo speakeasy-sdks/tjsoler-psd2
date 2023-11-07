@@ -1,5 +1,5 @@
 # InicioDelProcesoDeAutorizacionExplicita
-(*InicioDelProcesoDeAutorizacionExplicita*)
+(*.InicioDelProcesoDeAutorizacionExplicita*)
 
 ### Available Operations
 
@@ -34,10 +34,10 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.PostAutorizacionCancelacionPagoAspspBbva,
+        Aspsp: operations.PostAutorizacionCancelacionPagoPathParamAspspBbva,
         PaymentID: "string",
-        PaymentProduct: operations.PostAutorizacionCancelacionPagoPaymentProductDomesticChapsPaymentsUk,
-        PaymentService: operations.PostAutorizacionCancelacionPagoPaymentServiceBulkPayments,
+        PaymentProduct: operations.PostAutorizacionCancelacionPagoPathParamPaymentProductDomesticChapsPaymentsUk,
+        PaymentService: operations.PostAutorizacionCancelacionPagoPathParamPaymentServiceBulkPayments,
     })
     if err != nil {
         log.Fatal(err)
@@ -192,10 +192,10 @@ func main() {
         Signature: "string",
         TPPSignatureCertificate: "string",
         XRequestID: "string",
-        Aspsp: operations.PostAutorizacionInicioPagoAspspCajasur,
+        Aspsp: operations.PostAutorizacionInicioPagoPathParamAspspCajasur,
         PaymentID: "string",
-        PaymentProduct: operations.PostAutorizacionInicioPagoPaymentProductDomesticBacsPaymentsUk,
-        PaymentService: operations.PostAutorizacionInicioPagoPaymentServicePayments,
+        PaymentProduct: operations.PostAutorizacionInicioPagoPathParamPaymentProductDomesticBacsPaymentsUk,
+        PaymentService: operations.PostAutorizacionInicioPagoPathParamPaymentServicePayments,
     })
     if err != nil {
         log.Fatal(err)

@@ -14,19 +14,19 @@ import (
 	"net/http"
 )
 
-type inicioDelProcesoDeAutorizacionExplicita struct {
+type InicioDelProcesoDeAutorizacionExplicita struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newInicioDelProcesoDeAutorizacionExplicita(sdkConfig sdkConfiguration) *inicioDelProcesoDeAutorizacionExplicita {
-	return &inicioDelProcesoDeAutorizacionExplicita{
+func newInicioDelProcesoDeAutorizacionExplicita(sdkConfig sdkConfiguration) *InicioDelProcesoDeAutorizacionExplicita {
+	return &InicioDelProcesoDeAutorizacionExplicita{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // PostAutorizacionCancelacionPago - Endpoint en caso de Inicio del proceso de Autorización explícita para Cancelación de Pago
 // Endpoint en caso de Inicio del proceso de Autorización explícita para Cancelación de Pago
-func (s *inicioDelProcesoDeAutorizacionExplicita) PostAutorizacionCancelacionPago(ctx context.Context, request operations.PostAutorizacionCancelacionPagoRequest) (*operations.PostAutorizacionCancelacionPagoResponse, error) {
+func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionCancelacionPago(ctx context.Context, request operations.PostAutorizacionCancelacionPagoRequest) (*operations.PostAutorizacionCancelacionPagoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/cancellation-authorisations", request, nil)
 	if err != nil {
@@ -92,7 +92,7 @@ func (s *inicioDelProcesoDeAutorizacionExplicita) PostAutorizacionCancelacionPag
 
 // PostAutorizacionConsentimientosAIS - Endpoint en caso de Inicio del proceso de Autorización explícita para Consentimientos AIS
 // Endpoint en caso de Inicio del proceso de Autorización explícita para Consentimientos AIS
-func (s *inicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimientosAIS(ctx context.Context, request operations.PostAutorizacionConsentimientosAISRequest) (*operations.PostAutorizacionConsentimientosAISResponse, error) {
+func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimientosAIS(ctx context.Context, request operations.PostAutorizacionConsentimientosAISRequest) (*operations.PostAutorizacionConsentimientosAISResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}/authorisations", request, nil)
 	if err != nil {
@@ -158,7 +158,7 @@ func (s *inicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimiento
 
 // PostAutorizacionConsentimientosFCS - Endpoint en caso de Inicio del proceso de Autorización explícita para Consentimientos FCS
 // Endpoint en caso de Inicio del proceso de Autorización explícita para Consentimientos FCS
-func (s *inicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimientosFCS(ctx context.Context, request operations.PostAutorizacionConsentimientosFCSRequest) (*operations.PostAutorizacionConsentimientosFCSResponse, error) {
+func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimientosFCS(ctx context.Context, request operations.PostAutorizacionConsentimientosFCSRequest) (*operations.PostAutorizacionConsentimientosFCSResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}/authorisations", request, nil)
 	if err != nil {
@@ -224,7 +224,7 @@ func (s *inicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimiento
 
 // PostAutorizacionInicioPago - Endpoint en caso de Inicio del proceso de Autorización explícita para Inicio de Pago
 // Endpoint en caso de Inicio del proceso de Autorización explícita para Inicio de Pago
-func (s *inicioDelProcesoDeAutorizacionExplicita) PostAutorizacionInicioPago(ctx context.Context, request operations.PostAutorizacionInicioPagoRequest) (*operations.PostAutorizacionInicioPagoResponse, error) {
+func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionInicioPago(ctx context.Context, request operations.PostAutorizacionInicioPagoRequest) (*operations.PostAutorizacionInicioPagoResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/authorisations", request, nil)
 	if err != nil {
