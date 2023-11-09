@@ -1,5 +1,5 @@
 # LecturaDeDetallesDeCuenta
-(*.LecturaDeDetallesDeCuenta*)
+(*LecturaDeDetallesDeCuenta*)
 
 ### Available Operations
 
@@ -46,13 +46,15 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `ctx`                                                                                  | [context.Context](https://pkg.go.dev/context#Context)                                  | :heavy_check_mark:                                                                     | The context to use for the request.                                                    |
-| `request`                                                                              | [operations.GetAccountIdv11Request](../../models/operations/getaccountidv11request.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
+| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `ctx`                                                                                      | [context.Context](https://pkg.go.dev/context#Context)                                      | :heavy_check_mark:                                                                         | The context to use for the request.                                                        |
+| `request`                                                                                  | [operations.GetAccountIdv11Request](../../pkg/models/operations/getaccountidv11request.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
 
 
 ### Response
 
-**[*operations.GetAccountIdv11Response](../../models/operations/getaccountidv11response.md), error**
-
+**[*operations.GetAccountIdv11Response](../../pkg/models/operations/getaccountidv11response.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |

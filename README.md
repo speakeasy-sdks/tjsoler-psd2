@@ -57,7 +57,7 @@ func main() {
 ## Available Resources and Operations
 
 
-### [.ServiciosMultibanco](docs/sdks/serviciosmultibanco/README.md)
+### [ServiciosMultibanco](docs/sdks/serviciosmultibanco/README.md)
 
 * [DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID](docs/sdks/serviciosmultibanco/README.md#deleteapientradaxs2aservicesaspnamev11multibancopaymentsmultibancopaymenttypepaymentid) - Esta petición permite iniciar la cancelación de un pago. Dependiendo del servicio de pago, el producto de pago y la implementación del ASPSP, esta petición podría ser suficiente para cancelar el pago o podría ser necesario una autorización. Si una autorización de la cancelación de pago es necesaria por el ASPSP, el link correspondiente será contenido en el mensaje de respuesta
 * [GetMultibancoCatalogue](docs/sdks/serviciosmultibanco/README.md#getmultibancocatalogue) - Petición iniciada por el TPP para obtener el catálogo de pagos MULTIBANCO
@@ -70,96 +70,96 @@ func main() {
 * [PostAPIEntradaXs2aServicesAspNameV11MultibancoSocialSecurityWithholding](docs/sdks/serviciosmultibanco/README.md#postapientradaxs2aservicesaspnamev11multibancosocialsecuritywithholding) - Mensaje enviado por el TPP al ASPSP a través del Hub para conocer el valor del importe a pagar en la seguridad social
 * [PutAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDAuthorisationsAuthorisationID](docs/sdks/serviciosmultibanco/README.md#putapientradaxs2aservicesaspnamev11multibancopaymentsmultibancopaymenttypepaymentidauthorisationsauthorisationid)
 
-### [.LecturaDeListadoDeCuentas](docs/sdks/lecturadelistadodecuentas/README.md)
+### [LecturaDeListadoDeCuentas](docs/sdks/lecturadelistadodecuentas/README.md)
 
 * [GetAccountListv11](docs/sdks/lecturadelistadodecuentas/README.md#getaccountlistv11) - Lectura de listado de cuentas
 
-### [.LecturaDeDetallesDeCuenta](docs/sdks/lecturadedetallesdecuenta/README.md)
+### [LecturaDeDetallesDeCuenta](docs/sdks/lecturadedetallesdecuenta/README.md)
 
 * [GetAccountIdv11](docs/sdks/lecturadedetallesdecuenta/README.md#getaccountidv11) - Lectura de detalles de una cuenta
 
-### [.LecturaDeBalances](docs/sdks/lecturadebalances/README.md)
+### [LecturaDeBalances](docs/sdks/lecturadebalances/README.md)
 
 * [GetAccountBalances](docs/sdks/lecturadebalances/README.md#getaccountbalances) - Lectura de balances de una cuenta
 
-### [.LecturaDeTransacciones](docs/sdks/lecturadetransacciones/README.md)
+### [LecturaDeTransacciones](docs/sdks/lecturadetransacciones/README.md)
 
 * [AccountsTrasactions](docs/sdks/lecturadetransacciones/README.md#accountstrasactions) - Lectura de transacciones de una cuenta
 
-### [.InicioDePago](docs/sdks/iniciodepago/README.md)
+### [InicioDePago](docs/sdks/iniciodepago/README.md)
 
 * [InitiateRecurringPayment](docs/sdks/iniciodepago/README.md#initiaterecurringpayment) - Inicio de pago Recurrente/Periódico
 * [InitiationBulkPayment](docs/sdks/iniciodepago/README.md#initiationbulkpayment) - Inicio de pago Bulk
 * [InitiationPayment](docs/sdks/iniciodepago/README.md#initiationpayment) - Inicio de pago Simple o pago Futuro
 
-### [.ConsentimientoDeInformacionSobreCuentasDePagoAIS](docs/sdks/consentimientodeinformacionsobrecuentasdepagoais/README.md)
+### [ConsentimientoDeInformacionSobreCuentasDePagoAIS](docs/sdks/consentimientodeinformacionsobrecuentasdepagoais/README.md)
 
 * [PostConsents](docs/sdks/consentimientodeinformacionsobrecuentasdepagoais/README.md#postconsents) - Solicitud de consentimiento AIS
 
-### [.RecuperarInformacionDeConsentimiento](docs/sdks/recuperarinformaciondeconsentimiento/README.md)
+### [RecuperarInformacionDeConsentimiento](docs/sdks/recuperarinformaciondeconsentimiento/README.md)
 
 * [GetConsentIDDetails](docs/sdks/recuperarinformaciondeconsentimiento/README.md#getconsentiddetails) - Recuperar información de consentimiento AIS
 * [GetConsentsConfirmationOfFundsInfo](docs/sdks/recuperarinformaciondeconsentimiento/README.md#getconsentsconfirmationoffundsinfo) - Recuperar información de consentimiento FCS
 
-### [.EliminarConsentimiento](docs/sdks/eliminarconsentimiento/README.md)
+### [EliminarConsentimiento](docs/sdks/eliminarconsentimiento/README.md)
 
 * [DeleteConsentID](docs/sdks/eliminarconsentimiento/README.md#deleteconsentid) - Eliminar consentimiento AIS
 * [DeleteConsentsConfirmationOfFunds](docs/sdks/eliminarconsentimiento/README.md#deleteconsentsconfirmationoffunds) - Eliminar consentimiento FCS
 
-### [.ObtenerSubRecursosDeLaAutorizacion](docs/sdks/obtenersubrecursosdelaautorizacion/README.md)
+### [ObtenerSubRecursosDeLaAutorizacion](docs/sdks/obtenersubrecursosdelaautorizacion/README.md)
 
 * [GetSubRecursosAutorizacionCancelacionPago](docs/sdks/obtenersubrecursosdelaautorizacion/README.md#getsubrecursosautorizacioncancelacionpago) - Endpoint en caso de obtener sub-recursos de la Autorización para Cancelación de Pago
 * [GetSubRecursosAutorizacionConsentimientosAIS](docs/sdks/obtenersubrecursosdelaautorizacion/README.md#getsubrecursosautorizacionconsentimientosais) - Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos AIS
 * [GetSubRecursosAutorizacionConsentimientosFCS](docs/sdks/obtenersubrecursosdelaautorizacion/README.md#getsubrecursosautorizacionconsentimientosfcs) - Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos FCS
 * [GetSubRecursosAutorizacionInicioPago](docs/sdks/obtenersubrecursosdelaautorizacion/README.md#getsubrecursosautorizacioniniciopago) - Endpoint en caso de obtener sub-recursos de la Autorización para Inicio de Pago
 
-### [.InicioDelProcesoDeAutorizacionExplicita](docs/sdks/iniciodelprocesodeautorizacionexplicita/README.md)
+### [InicioDelProcesoDeAutorizacionExplicita](docs/sdks/iniciodelprocesodeautorizacionexplicita/README.md)
 
 * [PostAutorizacionCancelacionPago](docs/sdks/iniciodelprocesodeautorizacionexplicita/README.md#postautorizacioncancelacionpago) - Endpoint en caso de Inicio del proceso de Autorización explícita para Cancelación de Pago
 * [PostAutorizacionConsentimientosAIS](docs/sdks/iniciodelprocesodeautorizacionexplicita/README.md#postautorizacionconsentimientosais) - Endpoint en caso de Inicio del proceso de Autorización explícita para Consentimientos AIS
 * [PostAutorizacionConsentimientosFCS](docs/sdks/iniciodelprocesodeautorizacionexplicita/README.md#postautorizacionconsentimientosfcs) - Endpoint en caso de Inicio del proceso de Autorización explícita para Consentimientos FCS
 * [PostAutorizacionInicioPago](docs/sdks/iniciodelprocesodeautorizacionexplicita/README.md#postautorizacioniniciopago) - Endpoint en caso de Inicio del proceso de Autorización explícita para Inicio de Pago
 
-### [.ObtenerEstadoSCA](docs/sdks/obtenerestadosca/README.md)
+### [ObtenerEstadoSCA](docs/sdks/obtenerestadosca/README.md)
 
 * [GetEstadoSCAAutorizacionCancelacionPago](docs/sdks/obtenerestadosca/README.md#getestadoscaautorizacioncancelacionpago) - Endpoint en caso de obtener el Estado SCA para Autorización de Cancelación de Pago
 * [GetEstadoSCAAutorizacionConsentimientosAIS](docs/sdks/obtenerestadosca/README.md#getestadoscaautorizacionconsentimientosais) - Endpoint en caso de obtener el Estado SCA para Autorización de Consentimientos AIS
 * [GetEstadoSCAAutorizacionConsentimientosFCS](docs/sdks/obtenerestadosca/README.md#getestadoscaautorizacionconsentimientosfcs) - Endpoint en caso de obtener el Estado SCA para Autorización de Consentimientos FCS
 * [GetEstadoSCAAutorizacionInicioPago](docs/sdks/obtenerestadosca/README.md#getestadoscaautorizacioniniciopago) - Endpoint en caso de obtener el Estado SCA para Autorización de Inicio de Pago
 
-### [.ActualizarDatosDelPSUSeleccionarMetodoSCA](docs/sdks/actualizardatosdelpsuseleccionarmetodosca/README.md)
+### [ActualizarDatosDelPSUSeleccionarMetodoSCA](docs/sdks/actualizardatosdelpsuseleccionarmetodosca/README.md)
 
 * [PutSeleccionarSCAAutorizacionCancelacionPago](docs/sdks/actualizardatosdelpsuseleccionarmetodosca/README.md#putseleccionarscaautorizacioncancelacionpago) - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Cancelación de Pago
 * [PutSeleccionarSCAAutorizacionConsentimientosAIS](docs/sdks/actualizardatosdelpsuseleccionarmetodosca/README.md#putseleccionarscaautorizacionconsentimientosais) - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos AIS
 * [PutSeleccionarSCAAutorizacionConsentimientosFCS](docs/sdks/actualizardatosdelpsuseleccionarmetodosca/README.md#putseleccionarscaautorizacionconsentimientosfcs) - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos FCS
 * [PutSeleccionarSCAAutorizacionInicioPago](docs/sdks/actualizardatosdelpsuseleccionarmetodosca/README.md#putseleccionarscaautorizacioniniciopago) - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Inicio de Pago
 
-### [.ObtenerEstadoDeConsentimiento](docs/sdks/obtenerestadodeconsentimiento/README.md)
+### [ObtenerEstadoDeConsentimiento](docs/sdks/obtenerestadodeconsentimiento/README.md)
 
 * [GetConsentStatus](docs/sdks/obtenerestadodeconsentimiento/README.md#getconsentstatus) - Estado de consentimiento AIS
 * [GetConsentsConfirmationOfFunds](docs/sdks/obtenerestadodeconsentimiento/README.md#getconsentsconfirmationoffunds) - Estado de consentimiento FCS
 
-### [.ConsultaDeFondos](docs/sdks/consultadefondos/README.md)
+### [ConsultaDeFondos](docs/sdks/consultadefondos/README.md)
 
 * [FundsConfirmation](docs/sdks/consultadefondos/README.md#fundsconfirmation) - Consulta de fondos
 
-### [.ObtenerListadoDeBeneficiariosDeConfianza](docs/sdks/obtenerlistadodebeneficiariosdeconfianza/README.md)
+### [ObtenerListadoDeBeneficiariosDeConfianza](docs/sdks/obtenerlistadodebeneficiariosdeconfianza/README.md)
 
 * [GetTrustedBeneficiaries](docs/sdks/obtenerlistadodebeneficiariosdeconfianza/README.md#gettrustedbeneficiaries) - Obtener listado de beneficiarios de confianza
 
-### [.RecuperarInformacionDelInicioDePago](docs/sdks/recuperarinformaciondeliniciodepago/README.md)
+### [RecuperarInformacionDelInicioDePago](docs/sdks/recuperarinformaciondeliniciodepago/README.md)
 
 * [GetInfoPayment](docs/sdks/recuperarinformaciondeliniciodepago/README.md#getinfopayment) - Recuperar información del Inicio de pago
 
-### [.CancelarInicioDePago](docs/sdks/cancelariniciodepago/README.md)
+### [CancelarInicioDePago](docs/sdks/cancelariniciodepago/README.md)
 
 * [DeletePayment](docs/sdks/cancelariniciodepago/README.md#deletepayment) - Cancelar Inicio de pago
 
-### [.ObtenerEstadoDelPago](docs/sdks/obtenerestadodelpago/README.md)
+### [ObtenerEstadoDelPago](docs/sdks/obtenerestadodelpago/README.md)
 
 * [StatusPayment](docs/sdks/obtenerestadodelpago/README.md#statuspayment) - Obtener información del Estado de pago
 
-### [.ConsentimientoDeConfirmacionDeFondosFCS](docs/sdks/consentimientodeconfirmaciondefondosfcs/README.md)
+### [ConsentimientoDeConfirmacionDeFondosFCS](docs/sdks/consentimientodeconfirmaciondefondosfcs/README.md)
 
 * [PostConsentsConfirmationOfFunds](docs/sdks/consentimientodeconfirmaciondefondosfcs/README.md#postconsentsconfirmationoffunds) - Solicitud de consentimiento FCS
 <!-- End SDK Available Operations -->
@@ -193,9 +193,50 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
+
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |
 
 
+## Example
+
+```go
+package main
+
+import (
+	"context"
+	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+)
+
+func main() {
+	s := tjsolerpsd2.New()
+
+	ctx := context.Background()
+	res, err := s.ServiciosMultibanco.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
+		Digest:                  "string",
+		PSUIPAddress:            "string",
+		Signature:               "string",
+		TPPSignatureCertificate: "string",
+		XRequestID:              "string",
+		AspName:                 "string",
+		MultibancoPaymentType:   "string",
+		PaymentID:               "string",
+	})
+	if err != nil {
+
+		var e *sdkerrors.SDKError
+		if errors.As(err, &e) {
+			// handle error
+			log.Fatal(e.Error())
+		}
+	}
+}
+
+```
 <!-- End Error Handling -->
 
 

@@ -1,5 +1,5 @@
 # ConsultaDeFondos
-(*.ConsultaDeFondos*)
+(*ConsultaDeFondos*)
 
 ### Available Operations
 
@@ -47,13 +47,15 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `ctx`                                                                                      | [context.Context](https://pkg.go.dev/context#Context)                                      | :heavy_check_mark:                                                                         | The context to use for the request.                                                        |
-| `request`                                                                                  | [operations.FundsConfirmationRequest](../../models/operations/fundsconfirmationrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `ctx`                                                                                          | [context.Context](https://pkg.go.dev/context#Context)                                          | :heavy_check_mark:                                                                             | The context to use for the request.                                                            |
+| `request`                                                                                      | [operations.FundsConfirmationRequest](../../pkg/models/operations/fundsconfirmationrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
 
 
 ### Response
 
-**[*operations.FundsConfirmationResponse](../../models/operations/fundsconfirmationresponse.md), error**
-
+**[*operations.FundsConfirmationResponse](../../pkg/models/operations/fundsconfirmationresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |

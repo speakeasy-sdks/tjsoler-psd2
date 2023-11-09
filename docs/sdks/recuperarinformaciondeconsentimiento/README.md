@@ -1,5 +1,5 @@
 # RecuperarInformacionDeConsentimiento
-(*.RecuperarInformacionDeConsentimiento*)
+(*RecuperarInformacionDeConsentimiento*)
 
 ### Available Operations
 
@@ -46,16 +46,18 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
-| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `ctx`                                                                                          | [context.Context](https://pkg.go.dev/context#Context)                                          | :heavy_check_mark:                                                                             | The context to use for the request.                                                            |
-| `request`                                                                                      | [operations.GetConsentIDDetailsRequest](../../models/operations/getconsentiddetailsrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
+| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `ctx`                                                                                              | [context.Context](https://pkg.go.dev/context#Context)                                              | :heavy_check_mark:                                                                                 | The context to use for the request.                                                                |
+| `request`                                                                                          | [operations.GetConsentIDDetailsRequest](../../pkg/models/operations/getconsentiddetailsrequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
 
 
 ### Response
 
-**[*operations.GetConsentIDDetailsResponse](../../models/operations/getconsentiddetailsresponse.md), error**
-
+**[*operations.GetConsentIDDetailsResponse](../../pkg/models/operations/getconsentiddetailsresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |
 
 ## GetConsentsConfirmationOfFundsInfo
 
@@ -97,13 +99,15 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `ctx`                                                                                                                        | [context.Context](https://pkg.go.dev/context#Context)                                                                        | :heavy_check_mark:                                                                                                           | The context to use for the request.                                                                                          |
-| `request`                                                                                                                    | [operations.GetConsentsConfirmationOfFundsInfoRequest](../../models/operations/getconsentsconfirmationoffundsinforequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
+| Parameter                                                                                                                        | Type                                                                                                                             | Required                                                                                                                         | Description                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `ctx`                                                                                                                            | [context.Context](https://pkg.go.dev/context#Context)                                                                            | :heavy_check_mark:                                                                                                               | The context to use for the request.                                                                                              |
+| `request`                                                                                                                        | [operations.GetConsentsConfirmationOfFundsInfoRequest](../../pkg/models/operations/getconsentsconfirmationoffundsinforequest.md) | :heavy_check_mark:                                                                                                               | The request object to use for the request.                                                                                       |
 
 
 ### Response
 
-**[*operations.GetConsentsConfirmationOfFundsInfoResponse](../../models/operations/getconsentsconfirmationoffundsinforesponse.md), error**
-
+**[*operations.GetConsentsConfirmationOfFundsInfoResponse](../../pkg/models/operations/getconsentsconfirmationoffundsinforesponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |

@@ -1,5 +1,5 @@
 # ObtenerEstadoDelPago
-(*.ObtenerEstadoDelPago*)
+(*ObtenerEstadoDelPago*)
 
 ### Available Operations
 
@@ -48,13 +48,15 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                                          | Type                                                                               | Required                                                                           | Description                                                                        |
-| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| `ctx`                                                                              | [context.Context](https://pkg.go.dev/context#Context)                              | :heavy_check_mark:                                                                 | The context to use for the request.                                                |
-| `request`                                                                          | [operations.StatusPaymentRequest](../../models/operations/statuspaymentrequest.md) | :heavy_check_mark:                                                                 | The request object to use for the request.                                         |
+| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `ctx`                                                                                  | [context.Context](https://pkg.go.dev/context#Context)                                  | :heavy_check_mark:                                                                     | The context to use for the request.                                                    |
+| `request`                                                                              | [operations.StatusPaymentRequest](../../pkg/models/operations/statuspaymentrequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
 
 
 ### Response
 
-**[*operations.StatusPaymentResponse](../../models/operations/statuspaymentresponse.md), error**
-
+**[*operations.StatusPaymentResponse](../../pkg/models/operations/statuspaymentresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |

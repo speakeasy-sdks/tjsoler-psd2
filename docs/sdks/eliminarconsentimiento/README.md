@@ -1,5 +1,5 @@
 # EliminarConsentimiento
-(*.EliminarConsentimiento*)
+(*EliminarConsentimiento*)
 
 ### Available Operations
 
@@ -46,16 +46,18 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `ctx`                                                                                  | [context.Context](https://pkg.go.dev/context#Context)                                  | :heavy_check_mark:                                                                     | The context to use for the request.                                                    |
-| `request`                                                                              | [operations.DeleteConsentIDRequest](../../models/operations/deleteconsentidrequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
+| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `ctx`                                                                                      | [context.Context](https://pkg.go.dev/context#Context)                                      | :heavy_check_mark:                                                                         | The context to use for the request.                                                        |
+| `request`                                                                                  | [operations.DeleteConsentIDRequest](../../pkg/models/operations/deleteconsentidrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
 
 
 ### Response
 
-**[*operations.DeleteConsentIDResponse](../../models/operations/deleteconsentidresponse.md), error**
-
+**[*operations.DeleteConsentIDResponse](../../pkg/models/operations/deleteconsentidresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |
 
 ## DeleteConsentsConfirmationOfFunds
 
@@ -97,13 +99,15 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                                                                                  | Type                                                                                                                       | Required                                                                                                                   | Description                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `ctx`                                                                                                                      | [context.Context](https://pkg.go.dev/context#Context)                                                                      | :heavy_check_mark:                                                                                                         | The context to use for the request.                                                                                        |
-| `request`                                                                                                                  | [operations.DeleteConsentsConfirmationOfFundsRequest](../../models/operations/deleteconsentsconfirmationoffundsrequest.md) | :heavy_check_mark:                                                                                                         | The request object to use for the request.                                                                                 |
+| Parameter                                                                                                                      | Type                                                                                                                           | Required                                                                                                                       | Description                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `ctx`                                                                                                                          | [context.Context](https://pkg.go.dev/context#Context)                                                                          | :heavy_check_mark:                                                                                                             | The context to use for the request.                                                                                            |
+| `request`                                                                                                                      | [operations.DeleteConsentsConfirmationOfFundsRequest](../../pkg/models/operations/deleteconsentsconfirmationoffundsrequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
 
 
 ### Response
 
-**[*operations.DeleteConsentsConfirmationOfFundsResponse](../../models/operations/deleteconsentsconfirmationoffundsresponse.md), error**
-
+**[*operations.DeleteConsentsConfirmationOfFundsResponse](../../pkg/models/operations/deleteconsentsconfirmationoffundsresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |
