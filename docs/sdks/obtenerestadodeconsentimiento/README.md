@@ -16,10 +16,11 @@ Este servicio permite al TPP conocer el estado de una solicitud de consentimient
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -69,10 +70,10 @@ Este servicio permite al TPP, a través del Hub, conocer el estado en el que se 
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {

@@ -264,7 +264,7 @@ func (o *PostConsentsConfirmationOfFundsResponse) GetContentType() string {
 
 func (o *PostConsentsConfirmationOfFundsResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

@@ -15,11 +15,11 @@ Este tipo de mensaje es utilizado en el servicio de consulta de fondos. El HUB c
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"log"
+	"net/http"
 )
 
 func main() {

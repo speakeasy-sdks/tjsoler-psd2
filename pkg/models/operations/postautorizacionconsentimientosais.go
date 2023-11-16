@@ -257,7 +257,7 @@ func (o *PostAutorizacionConsentimientosAISResponse) GetContentType() string {
 
 func (o *PostAutorizacionConsentimientosAISResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

@@ -15,10 +15,11 @@ Obtiene el listado de los beneficiarios de confianza del PSU, el cual ha dado un
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {

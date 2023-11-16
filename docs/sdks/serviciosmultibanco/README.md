@@ -24,10 +24,10 @@ Esta petición permite iniciar la cancelación de un pago. Dependiendo del servi
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -79,10 +79,10 @@ Petición iniciada por el TPP para obtener el catálogo de pagos MULTIBANCO.
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -132,10 +132,10 @@ Este mensaje es enviado por el TPP hacia el ASPSP a través del HUB para la recu
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -185,10 +185,10 @@ func main() {
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -238,10 +238,10 @@ func main() {
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -294,10 +294,10 @@ Mensaje enviado por el TPP al ASPSP a través del Hub para solicitar el estado e
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -347,10 +347,10 @@ func main() {
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -402,11 +402,11 @@ Mensaje enviado por el TPP al ASPSP a través del Hub para crear un inicio de pa
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -471,11 +471,11 @@ Mensaje enviado por el TPP al ASPSP a través del Hub para conocer el valor del 
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {
@@ -533,11 +533,11 @@ func main() {
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
 )
 
 func main() {

@@ -15,11 +15,10 @@ Con este servicio, un TPP a través del HUB puede solicitar un consentimiento pa
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"log"
 )
 
 func main() {

@@ -444,7 +444,7 @@ func (o *PutSeleccionarSCAAutorizacionCancelacionPagoResponse) GetContentType() 
 
 func (o *PutSeleccionarSCAAutorizacionCancelacionPagoResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

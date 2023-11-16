@@ -209,7 +209,7 @@ func (o *GetAccountIdv11Response) GetContentType() string {
 
 func (o *GetAccountIdv11Response) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

@@ -445,7 +445,7 @@ func (o *GetEstadoSCAAutorizacionInicioPagoResponse) GetContentType() string {
 
 func (o *GetEstadoSCAAutorizacionInicioPagoResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

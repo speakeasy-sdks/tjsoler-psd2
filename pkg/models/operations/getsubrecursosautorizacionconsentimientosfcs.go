@@ -223,7 +223,7 @@ func (o *GetSubRecursosAutorizacionConsentimientosFCSResponse) GetContentType() 
 
 func (o *GetSubRecursosAutorizacionConsentimientosFCSResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

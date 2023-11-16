@@ -18,10 +18,11 @@ Endpoint en caso de Inicio del proceso de Autorización explícita para Cancelac
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -74,10 +75,11 @@ Endpoint en caso de Inicio del proceso de Autorización explícita para Consenti
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -128,10 +130,11 @@ Endpoint en caso de Inicio del proceso de Autorización explícita para Consenti
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -182,10 +185,11 @@ Endpoint en caso de Inicio del proceso de Autorización explícita para Inicio d
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {

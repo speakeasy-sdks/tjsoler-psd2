@@ -219,7 +219,7 @@ func (o *GetConsentsConfirmationOfFundsInfoResponse) GetContentType() string {
 
 func (o *GetConsentsConfirmationOfFundsInfoResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

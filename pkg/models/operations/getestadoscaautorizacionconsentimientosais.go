@@ -355,7 +355,7 @@ func (o *GetEstadoSCAAutorizacionConsentimientosAISResponse) GetContentType() st
 
 func (o *GetEstadoSCAAutorizacionConsentimientosAISResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

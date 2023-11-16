@@ -201,7 +201,7 @@ func (o *GetTrustedBeneficiariesResponse) GetContentType() string {
 
 func (o *GetTrustedBeneficiariesResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

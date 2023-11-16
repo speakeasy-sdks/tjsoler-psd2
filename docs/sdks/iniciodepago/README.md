@@ -17,11 +17,12 @@ Mensaje enviado por el TPP al ASPSP a través del Hub para crear un inicio de pa
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -75,11 +76,12 @@ Este mensaje es enviado por el TPP hacia el HUB para la realización de inicio d
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -137,11 +139,12 @@ Mensaje enviado por el TPP al ASPSP a través del HUB para crear un inicio de pa
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {

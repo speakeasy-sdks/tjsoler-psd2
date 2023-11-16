@@ -218,7 +218,7 @@ func (o *GetConsentStatusResponse) GetContentType() string {
 
 func (o *GetConsentStatusResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

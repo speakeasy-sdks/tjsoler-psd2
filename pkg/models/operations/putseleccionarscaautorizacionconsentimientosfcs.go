@@ -363,7 +363,7 @@ func (o *PutSeleccionarSCAAutorizacionConsentimientosFCSResponse) GetContentType
 
 func (o *PutSeleccionarSCAAutorizacionConsentimientosFCSResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

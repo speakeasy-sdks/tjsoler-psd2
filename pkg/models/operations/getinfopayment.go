@@ -277,7 +277,7 @@ func (o *GetInfoPaymentResponse) GetContentType() string {
 
 func (o *GetInfoPaymentResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

@@ -346,7 +346,7 @@ func (o *InitiateRecurringPaymentResponse) GetContentType() string {
 
 func (o *InitiateRecurringPaymentResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

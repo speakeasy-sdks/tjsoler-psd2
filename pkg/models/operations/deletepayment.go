@@ -313,7 +313,7 @@ func (o *DeletePaymentResponse) GetContentType() string {
 
 func (o *DeletePaymentResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

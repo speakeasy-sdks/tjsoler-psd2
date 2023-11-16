@@ -210,7 +210,7 @@ func (o *DeleteConsentIDResponse) GetContentType() string {
 
 func (o *DeleteConsentIDResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

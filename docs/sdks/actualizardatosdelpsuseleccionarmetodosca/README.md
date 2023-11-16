@@ -18,10 +18,11 @@ Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autor
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -75,11 +76,12 @@ Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autor
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -134,11 +136,12 @@ Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autor
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -193,11 +196,12 @@ Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autor
 package main
 
 import(
-	"context"
-	"log"
 	tjsolerpsd2 "github.com/speakeasy-sdks/tjsoler-psd2"
-	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/shared"
+	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {

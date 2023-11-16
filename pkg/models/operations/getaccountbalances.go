@@ -201,7 +201,7 @@ func (o *GetAccountBalancesResponse) GetContentType() string {
 
 func (o *GetAccountBalancesResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

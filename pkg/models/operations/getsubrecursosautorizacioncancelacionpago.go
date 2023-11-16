@@ -437,7 +437,7 @@ func (o *GetSubRecursosAutorizacionCancelacionPagoResponse) GetContentType() str
 
 func (o *GetSubRecursosAutorizacionCancelacionPagoResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

@@ -201,7 +201,7 @@ func (o *GetAccountListv11Response) GetContentType() string {
 
 func (o *GetAccountListv11Response) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }

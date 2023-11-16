@@ -436,7 +436,7 @@ func (o *PostAutorizacionCancelacionPagoResponse) GetContentType() string {
 
 func (o *PostAutorizacionCancelacionPagoResponse) GetHeaders() map[string][]string {
 	if o == nil {
-		return nil
+		return map[string][]string{}
 	}
 	return o.Headers
 }
