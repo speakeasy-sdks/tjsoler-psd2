@@ -123,7 +123,6 @@ pkg/utils/utils.go
 /pkg/models/shared/responsecancelpaymentinitiation.go
 /pkg/models/shared/responsegetstatuspayment.go
 /pkg/models/shared/requestpostconsentfundsconfirmation.go
-USAGE.md
 docs/pkg/models/operations/deleteapientradaxs2aservicesaspnamev11multibancopaymentsmultibancopaymenttypepaymentidrequest.md
 docs/pkg/models/operations/deleteapientradaxs2aservicesaspnamev11multibancopaymentsmultibancopaymenttypepaymentidresponse.md
 docs/pkg/models/operations/getmultibancocataloguerequest.md
@@ -424,4 +423,5 @@ docs/sdks/recuperarinformaciondeliniciodepago/README.md
 docs/sdks/cancelariniciodepago/README.md
 docs/sdks/obtenerestadodelpago/README.md
 docs/sdks/consentimientodeconfirmaciondefondosfcs/README.md
+USAGE.md
 .gitattributes
