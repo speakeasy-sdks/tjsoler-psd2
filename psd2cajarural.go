@@ -68,8 +68,8 @@ type Psd2CajaRural struct {
 	LecturaDeTransacciones                           *LecturaDeTransacciones
 	InicioDePago                                     *InicioDePago
 	ConsentimientoDeInformacionSobreCuentasDePagoAIS *ConsentimientoDeInformacionSobreCuentasDePagoAIS
-	RecuperarInformacionDeConsentimiento             *RecuperarInformacionDeConsentimiento
 	EliminarConsentimiento                           *EliminarConsentimiento
+	RecuperarInformacionDeConsentimiento             *RecuperarInformacionDeConsentimiento
 	ObtenerSubRecursosDeLaAutorizacion               *ObtenerSubRecursosDeLaAutorizacion
 	InicioDelProcesoDeAutorizacionExplicita          *InicioDelProcesoDeAutorizacionExplicita
 	ObtenerEstadoSCA                                 *ObtenerEstadoSCA
@@ -77,8 +77,8 @@ type Psd2CajaRural struct {
 	ObtenerEstadoDeConsentimiento                    *ObtenerEstadoDeConsentimiento
 	ConsultaDeFondos                                 *ConsultaDeFondos
 	ObtenerListadoDeBeneficiariosDeConfianza         *ObtenerListadoDeBeneficiariosDeConfianza
-	RecuperarInformacionDelInicioDePago              *RecuperarInformacionDelInicioDePago
 	CancelarInicioDePago                             *CancelarInicioDePago
+	RecuperarInformacionDelInicioDePago              *RecuperarInformacionDelInicioDePago
 	ObtenerEstadoDelPago                             *ObtenerEstadoDelPago
 	ConsentimientoDeConfirmacionDeFondosFCS          *ConsentimientoDeConfirmacionDeFondosFCS
 
@@ -135,9 +135,9 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.1",
-			SDKVersion:        "0.5.4",
-			GenVersion:        "2.210.3",
-			UserAgent:         "speakeasy-sdk/go 0.5.4 2.210.3 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
+			SDKVersion:        "0.6.0",
+			GenVersion:        "2.213.3",
+			UserAgent:         "speakeasy-sdk/go 0.6.0 2.213.3 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
 		},
 	}
 	for _, opt := range opts {
@@ -166,9 +166,9 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 
 	sdk.ConsentimientoDeInformacionSobreCuentasDePagoAIS = newConsentimientoDeInformacionSobreCuentasDePagoAIS(sdk.sdkConfiguration)
 
-	sdk.RecuperarInformacionDeConsentimiento = newRecuperarInformacionDeConsentimiento(sdk.sdkConfiguration)
-
 	sdk.EliminarConsentimiento = newEliminarConsentimiento(sdk.sdkConfiguration)
+
+	sdk.RecuperarInformacionDeConsentimiento = newRecuperarInformacionDeConsentimiento(sdk.sdkConfiguration)
 
 	sdk.ObtenerSubRecursosDeLaAutorizacion = newObtenerSubRecursosDeLaAutorizacion(sdk.sdkConfiguration)
 
@@ -184,9 +184,9 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 
 	sdk.ObtenerListadoDeBeneficiariosDeConfianza = newObtenerListadoDeBeneficiariosDeConfianza(sdk.sdkConfiguration)
 
-	sdk.RecuperarInformacionDelInicioDePago = newRecuperarInformacionDelInicioDePago(sdk.sdkConfiguration)
-
 	sdk.CancelarInicioDePago = newCancelarInicioDePago(sdk.sdkConfiguration)
+
+	sdk.RecuperarInformacionDelInicioDePago = newRecuperarInformacionDelInicioDePago(sdk.sdkConfiguration)
 
 	sdk.ObtenerEstadoDelPago = newObtenerEstadoDelPago(sdk.sdkConfiguration)
 

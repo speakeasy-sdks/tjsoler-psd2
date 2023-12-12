@@ -98,15 +98,15 @@ func main() {
 
 * [PostConsents](docs/sdks/consentimientodeinformacionsobrecuentasdepagoais/README.md#postconsents) - Solicitud de consentimiento AIS
 
-### [RecuperarInformacionDeConsentimiento](docs/sdks/recuperarinformaciondeconsentimiento/README.md)
-
-* [GetConsentIDDetails](docs/sdks/recuperarinformaciondeconsentimiento/README.md#getconsentiddetails) - Recuperar información de consentimiento AIS
-* [GetConsentsConfirmationOfFundsInfo](docs/sdks/recuperarinformaciondeconsentimiento/README.md#getconsentsconfirmationoffundsinfo) - Recuperar información de consentimiento FCS
-
 ### [EliminarConsentimiento](docs/sdks/eliminarconsentimiento/README.md)
 
 * [DeleteConsentID](docs/sdks/eliminarconsentimiento/README.md#deleteconsentid) - Eliminar consentimiento AIS
 * [DeleteConsentsConfirmationOfFunds](docs/sdks/eliminarconsentimiento/README.md#deleteconsentsconfirmationoffunds) - Eliminar consentimiento FCS
+
+### [RecuperarInformacionDeConsentimiento](docs/sdks/recuperarinformaciondeconsentimiento/README.md)
+
+* [GetConsentIDDetails](docs/sdks/recuperarinformaciondeconsentimiento/README.md#getconsentiddetails) - Recuperar información de consentimiento AIS
+* [GetConsentsConfirmationOfFundsInfo](docs/sdks/recuperarinformaciondeconsentimiento/README.md#getconsentsconfirmationoffundsinfo) - Recuperar información de consentimiento FCS
 
 ### [ObtenerSubRecursosDeLaAutorizacion](docs/sdks/obtenersubrecursosdelaautorizacion/README.md)
 
@@ -149,13 +149,13 @@ func main() {
 
 * [GetTrustedBeneficiaries](docs/sdks/obtenerlistadodebeneficiariosdeconfianza/README.md#gettrustedbeneficiaries) - Obtener listado de beneficiarios de confianza
 
-### [RecuperarInformacionDelInicioDePago](docs/sdks/recuperarinformaciondeliniciodepago/README.md)
-
-* [GetInfoPayment](docs/sdks/recuperarinformaciondeliniciodepago/README.md#getinfopayment) - Recuperar información del Inicio de pago
-
 ### [CancelarInicioDePago](docs/sdks/cancelariniciodepago/README.md)
 
 * [DeletePayment](docs/sdks/cancelariniciodepago/README.md#deletepayment) - Cancelar Inicio de pago
+
+### [RecuperarInformacionDelInicioDePago](docs/sdks/recuperarinformaciondeliniciodepago/README.md)
+
+* [GetInfoPayment](docs/sdks/recuperarinformaciondeliniciodepago/README.md#getinfopayment) - Recuperar información del Inicio de pago
 
 ### [ObtenerEstadoDelPago](docs/sdks/obtenerestadodelpago/README.md)
 
