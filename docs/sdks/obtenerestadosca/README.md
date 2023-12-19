@@ -64,7 +64,7 @@ func main() {
 **[*operations.GetEstadoSCAAutorizacionCancelacionPagoResponse](../../pkg/models/operations/getestadoscaautorizacioncancelacionpagoresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## GetEstadoSCAAutorizacionConsentimientosAIS
 
@@ -120,7 +120,7 @@ func main() {
 **[*operations.GetEstadoSCAAutorizacionConsentimientosAISResponse](../../pkg/models/operations/getestadoscaautorizacionconsentimientosaisresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## GetEstadoSCAAutorizacionConsentimientosFCS
 
@@ -176,7 +176,7 @@ func main() {
 **[*operations.GetEstadoSCAAutorizacionConsentimientosFCSResponse](../../pkg/models/operations/getestadoscaautorizacionconsentimientosfcsresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## GetEstadoSCAAutorizacionInicioPago
 
@@ -234,4 +234,4 @@ func main() {
 **[*operations.GetEstadoSCAAutorizacionInicioPagoResponse](../../pkg/models/operations/getestadoscaautorizacioniniciopagoresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |

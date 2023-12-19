@@ -63,7 +63,7 @@ func main() {
 **[*operations.GetSubRecursosAutorizacionCancelacionPagoResponse](../../pkg/models/operations/getsubrecursosautorizacioncancelacionpagoresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## GetSubRecursosAutorizacionConsentimientosAIS
 
@@ -118,7 +118,7 @@ func main() {
 **[*operations.GetSubRecursosAutorizacionConsentimientosAISResponse](../../pkg/models/operations/getsubrecursosautorizacionconsentimientosaisresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## GetSubRecursosAutorizacionConsentimientosFCS
 
@@ -173,7 +173,7 @@ func main() {
 **[*operations.GetSubRecursosAutorizacionConsentimientosFCSResponse](../../pkg/models/operations/getsubrecursosautorizacionconsentimientosfcsresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## GetSubRecursosAutorizacionInicioPago
 
@@ -230,4 +230,4 @@ func main() {
 **[*operations.GetSubRecursosAutorizacionInicioPagoResponse](../../pkg/models/operations/getsubrecursosautorizacioniniciopagoresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |

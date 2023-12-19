@@ -64,7 +64,7 @@ func main() {
 **[*operations.PutSeleccionarSCAAutorizacionCancelacionPagoResponse](../../pkg/models/operations/putseleccionarscaautorizacioncancelacionpagoresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## PutSeleccionarSCAAutorizacionConsentimientosAIS
 
@@ -124,7 +124,7 @@ func main() {
 **[*operations.PutSeleccionarSCAAutorizacionConsentimientosAISResponse](../../pkg/models/operations/putseleccionarscaautorizacionconsentimientosaisresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## PutSeleccionarSCAAutorizacionConsentimientosFCS
 
@@ -184,7 +184,7 @@ func main() {
 **[*operations.PutSeleccionarSCAAutorizacionConsentimientosFCSResponse](../../pkg/models/operations/putseleccionarscaautorizacionconsentimientosfcsresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## PutSeleccionarSCAAutorizacionInicioPago
 
@@ -246,4 +246,4 @@ func main() {
 **[*operations.PutSeleccionarSCAAutorizacionInicioPagoResponse](../../pkg/models/operations/putseleccionarscaautorizacioniniciopagoresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |

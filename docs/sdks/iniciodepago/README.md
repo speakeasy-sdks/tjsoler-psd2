@@ -64,7 +64,7 @@ func main() {
 **[*operations.InitiateRecurringPaymentResponse](../../pkg/models/operations/initiaterecurringpaymentresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## InitiationBulkPayment
 
@@ -127,7 +127,7 @@ func main() {
 **[*operations.InitiationBulkPaymentResponse](../../pkg/models/operations/initiationbulkpaymentresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## InitiationPayment
 
@@ -199,4 +199,4 @@ func main() {
 **[*operations.InitiationPaymentResponse](../../pkg/models/operations/initiationpaymentresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |

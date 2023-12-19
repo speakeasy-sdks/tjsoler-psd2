@@ -63,7 +63,7 @@ func main() {
 **[*operations.PostAutorizacionCancelacionPagoResponse](../../pkg/models/operations/postautorizacioncancelacionpagoresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## PostAutorizacionConsentimientosAIS
 
@@ -118,7 +118,7 @@ func main() {
 **[*operations.PostAutorizacionConsentimientosAISResponse](../../pkg/models/operations/postautorizacionconsentimientosaisresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## PostAutorizacionConsentimientosFCS
 
@@ -173,7 +173,7 @@ func main() {
 **[*operations.PostAutorizacionConsentimientosFCSResponse](../../pkg/models/operations/postautorizacionconsentimientosfcsresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## PostAutorizacionInicioPago
 
@@ -230,4 +230,4 @@ func main() {
 **[*operations.PostAutorizacionInicioPagoResponse](../../pkg/models/operations/postautorizacioniniciopagoresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |

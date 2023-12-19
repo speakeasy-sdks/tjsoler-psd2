@@ -58,7 +58,7 @@ func main() {
 **[*operations.GetConsentStatusResponse](../../pkg/models/operations/getconsentstatusresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## GetConsentsConfirmationOfFunds
 
@@ -111,4 +111,4 @@ func main() {
 **[*operations.GetConsentsConfirmationOfFundsResponse](../../pkg/models/operations/getconsentsconfirmationoffundsresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |

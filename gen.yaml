@@ -2,21 +2,23 @@ configVersion: 1.0.0
 management:
   docChecksum: 9032b1104bb04d9de528b41ad19264a1
   docVersion: "1.1"
-  speakeasyVersion: 1.126.0
-  generationVersion: 2.213.3
+  speakeasyVersion: 1.127.0
+  generationVersion: 2.220.0
 generation:
   comments: {}
   sdkClassName: psd2-caja-rural
   repoURL: https://github.com/speakeasy-sdks/tjsoler-psd2.git
   usageSnippets:
     optionalPropertyRendering: withExample
+  fixes:
+    nameResolutionDec2023: false
 features:
   go:
     constsAndDefaults: 0.1.2
-    core: 3.2.0
+    core: 3.2.2
     globalServerURLs: 2.82.1
 go:
-  version: 0.6.0
+  version: 0.6.1
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
   imports:

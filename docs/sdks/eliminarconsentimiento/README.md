@@ -58,7 +58,7 @@ func main() {
 **[*operations.DeleteConsentIDResponse](../../pkg/models/operations/deleteconsentidresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
 
 ## DeleteConsentsConfirmationOfFunds
 
@@ -112,4 +112,4 @@ func main() {
 **[*operations.DeleteConsentsConfirmationOfFundsResponse](../../pkg/models/operations/deleteconsentsconfirmationoffundsresponse.md), error**
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 400-600            | */*                |
+| sdkerrors.SDKError | 4xx-5xx            | */*                |
