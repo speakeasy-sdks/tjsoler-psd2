@@ -136,8 +136,8 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 			Language:          "go",
 			OpenAPIDocVersion: "1.1",
 			SDKVersion:        "0.6.1",
-			GenVersion:        "2.220.0",
-			UserAgent:         "speakeasy-sdk/go 0.6.1 2.220.0 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
+			GenVersion:        "2.225.2",
+			UserAgent:         "speakeasy-sdk/go 0.6.1 2.225.2 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
 		},
 	}
 	for _, opt := range opts {
