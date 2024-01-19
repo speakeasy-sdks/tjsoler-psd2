@@ -4,7 +4,7 @@ management:
   docChecksum: 9032b1104bb04d9de528b41ad19264a1
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.234.3
+  generationVersion: 2.237.2
   releaseVersion: 0.6.2
   configChecksum: b895826326074e30ae2ae4082a612f84
   repoURL: https://github.com/speakeasy-sdks/tjsoler-psd2.git
@@ -40,7 +40,6 @@ generatedFiles:
   - psd2cajarural.go
   - go.mod
   - go.sum
-  - tests/helpers.go
   - pkg/models/sdkerrors/sdkerror.go
   - pkg/types/bigint.go
   - pkg/types/date.go
