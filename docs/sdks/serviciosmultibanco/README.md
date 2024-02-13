@@ -417,12 +417,9 @@ func main() {
         Digest: "string",
         PSUIPAddress: "string",
         RequestStartMultibankPayment: shared.RequestStartMultibankPayment{
-            DebtorAccount: &shared.RequestStartMultibankPaymentDebtorAccount{},
             EntityCode: tjsolerpsd2.Int64(10003),
-            InstructedAmount: &shared.InstructedAmount{},
             OperationReference: tjsolerpsd2.String("1501ab4e-6904-11ea-bc55-0242ac130003"),
             ParameterCode: tjsolerpsd2.Int64(3),
-            PaymentPeriod: &shared.PaymentPeriod{},
             PaymentReference: tjsolerpsd2.String("123456789"),
             PaymentType: tjsolerpsd2.Int64(1),
             PaymentTypeCode: tjsolerpsd2.String("05"),

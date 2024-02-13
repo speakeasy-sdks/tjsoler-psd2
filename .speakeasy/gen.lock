@@ -4,9 +4,9 @@ management:
   docChecksum: 9032b1104bb04d9de528b41ad19264a1
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.250.2
-  releaseVersion: 0.7.0
-  configChecksum: 8fc451a0cfc73d27b98b0ed53eeef343
+  generationVersion: 2.253.0
+  releaseVersion: 0.7.1
+  configChecksum: e889dcca55618a046666c36c5daac73e
   repoURL: https://github.com/speakeasy-sdks/tjsoler-psd2.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/tjsoler-psd2
