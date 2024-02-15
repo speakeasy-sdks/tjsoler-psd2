@@ -27,12 +27,12 @@ func main() {
 
     ctx := context.Background()
     res, err := s.CancelarInicioDePago.DeletePayment(ctx, operations.DeletePaymentRequest{
-        Digest: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
-        PaymentID: "string",
+        Digest: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
+        PaymentID: "<value>",
         PaymentProduct: operations.DeletePaymentPathParamPaymentProductSepaCreditTransfers,
         PaymentService: operations.DeletePaymentPathParamPaymentServiceBulkPayments,
     })

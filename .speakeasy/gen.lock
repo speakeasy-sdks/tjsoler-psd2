@@ -4,9 +4,9 @@ management:
   docChecksum: 9032b1104bb04d9de528b41ad19264a1
   docVersion: "1.1"
   speakeasyVersion: internal
-  generationVersion: 2.253.0
-  releaseVersion: 0.7.1
-  configChecksum: e889dcca55618a046666c36c5daac73e
+  generationVersion: 2.258.2
+  releaseVersion: 0.8.0
+  configChecksum: 9b0adbcb5cd0f9d6e476b629c43b72bd
   repoURL: https://github.com/speakeasy-sdks/tjsoler-psd2.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/tjsoler-psd2
@@ -14,7 +14,7 @@ management:
 features:
   go:
     constsAndDefaults: 0.1.3
-    core: 3.3.2
+    core: 3.4.0
     globalServerURLs: 2.82.1
 generatedFiles:
   - serviciosmultibanco.go
@@ -443,3 +443,4 @@ generatedFiles:
   - docs/sdks/consentimientodeconfirmaciondefondosfcs/README.md
   - USAGE.md
   - .gitattributes
+  - internal/hooks/hooks.go

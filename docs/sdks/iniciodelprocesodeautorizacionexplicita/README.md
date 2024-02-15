@@ -30,13 +30,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionCancelacionPago(ctx, operations.PostAutorizacionCancelacionPagoRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.PostAutorizacionCancelacionPagoPathParamAspspBbva,
-        PaymentID: "string",
+        PaymentID: "<value>",
         PaymentProduct: operations.PostAutorizacionCancelacionPagoPathParamPaymentProductDomesticChapsPaymentsUk,
         PaymentService: operations.PostAutorizacionCancelacionPagoPathParamPaymentServiceBulkPayments,
     })
@@ -87,13 +87,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionConsentimientosAIS(ctx, operations.PostAutorizacionConsentimientosAISRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
-        ConsentIDPathParameter: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
+        ConsentIDPathParameter: "<value>",
     })
     if err != nil {
         log.Fatal(err)
@@ -142,13 +142,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionConsentimientosFCS(ctx, operations.PostAutorizacionConsentimientosFCSRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
-        ConsentIDPathParameter: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
+        ConsentIDPathParameter: "<value>",
     })
     if err != nil {
         log.Fatal(err)
@@ -197,13 +197,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDelProcesoDeAutorizacionExplicita.PostAutorizacionInicioPago(ctx, operations.PostAutorizacionInicioPagoRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.PostAutorizacionInicioPagoPathParamAspspCajasur,
-        PaymentID: "string",
+        PaymentID: "<value>",
         PaymentProduct: operations.PostAutorizacionInicioPagoPathParamPaymentProductDomesticBacsPaymentsUk,
         PaymentService: operations.PostAutorizacionInicioPagoPathParamPaymentServicePayments,
     })

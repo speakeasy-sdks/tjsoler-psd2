@@ -30,14 +30,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionCancelacionPago(ctx, operations.GetEstadoSCAAutorizacionCancelacionPagoRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.GetEstadoSCAAutorizacionCancelacionPagoPathParamAspspBbvafr,
-        AuthorisationID: "string",
-        PaymentID: "string",
+        AuthorisationID: "<value>",
+        PaymentID: "<value>",
         PaymentProduct: operations.GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentProductCrossBorderCreditTransfers,
         PaymentService: operations.GetEstadoSCAAutorizacionCancelacionPagoPathParamPaymentServicePayments,
     })
@@ -88,14 +88,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionConsentimientosAIS(ctx, operations.GetEstadoSCAAutorizacionConsentimientosAISRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosAISPathParamAspspBbvaeuk,
-        AuthorisationID: "string",
-        ConsentIDPathParameter: "string",
+        AuthorisationID: "<value>",
+        ConsentIDPathParameter: "<value>",
     })
     if err != nil {
         log.Fatal(err)
@@ -144,14 +144,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionConsentimientosFCS(ctx, operations.GetEstadoSCAAutorizacionConsentimientosFCSRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.GetEstadoSCAAutorizacionConsentimientosFCSPathParamAspspWizink,
-        AuthorisationID: "string",
-        ConsentIDPathParameter: "string",
+        AuthorisationID: "<value>",
+        ConsentIDPathParameter: "<value>",
     })
     if err != nil {
         log.Fatal(err)
@@ -200,14 +200,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoSCA.GetEstadoSCAAutorizacionInicioPago(ctx, operations.GetEstadoSCAAutorizacionInicioPagoRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.GetEstadoSCAAutorizacionInicioPagoPathParamAspspBff,
-        AuthorisationID: "string",
-        PaymentID: "string",
+        AuthorisationID: "<value>",
+        PaymentID: "<value>",
         PaymentProduct: operations.GetEstadoSCAAutorizacionInicioPagoPathParamPaymentProductCrossBorderCreditTransfers,
         PaymentService: operations.GetEstadoSCAAutorizacionInicioPagoPathParamPaymentServicePayments,
     })

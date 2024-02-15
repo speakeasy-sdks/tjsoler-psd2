@@ -27,14 +27,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeTransacciones.AccountsTrasactions(ctx, operations.AccountsTrasactionsRequest{
-        ConsentID: "string",
-        Digest: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        AccountID: "string",
-        Aspsp: "string",
-        BookingStatus: "string",
+        ConsentID: "<value>",
+        Digest: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        AccountID: "<value>",
+        Aspsp: "<value>",
+        BookingStatus: "<value>",
     })
     if err != nil {
         log.Fatal(err)

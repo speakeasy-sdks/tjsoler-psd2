@@ -30,13 +30,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionCancelacionPago(ctx, operations.GetSubRecursosAutorizacionCancelacionPagoRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.GetSubRecursosAutorizacionCancelacionPagoPathParamAspspMediolanum,
-        PaymentID: "string",
+        PaymentID: "<value>",
         PaymentProduct: operations.GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentProductDomesticFasterPaymentsUk,
         PaymentService: operations.GetSubRecursosAutorizacionCancelacionPagoPathParamPaymentServicePeriodicPayments,
     })
@@ -87,13 +87,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionConsentimientosAIS(ctx, operations.GetSubRecursosAutorizacionConsentimientosAISRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
-        ConsentIDPathParameter: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
+        ConsentIDPathParameter: "<value>",
     })
     if err != nil {
         log.Fatal(err)
@@ -142,13 +142,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionConsentimientosFCS(ctx, operations.GetSubRecursosAutorizacionConsentimientosFCSRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
-        ConsentIDPathParameter: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
+        ConsentIDPathParameter: "<value>",
     })
     if err != nil {
         log.Fatal(err)
@@ -197,13 +197,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerSubRecursosDeLaAutorizacion.GetSubRecursosAutorizacionInicioPago(ctx, operations.GetSubRecursosAutorizacionInicioPagoRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.GetSubRecursosAutorizacionInicioPagoPathParamAspspArquia,
-        PaymentID: "string",
+        PaymentID: "<value>",
         PaymentProduct: operations.GetSubRecursosAutorizacionInicioPagoPathParamPaymentProductDomesticFasterPaymentsUk,
         PaymentService: operations.GetSubRecursosAutorizacionInicioPagoPathParamPaymentServicePeriodicPayments,
     })

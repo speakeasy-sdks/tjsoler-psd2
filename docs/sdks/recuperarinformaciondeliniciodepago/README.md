@@ -27,13 +27,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.RecuperarInformacionDelInicioDePago.GetInfoPayment(ctx, operations.GetInfoPaymentRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
-        PaymentID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
+        PaymentID: "<value>",
         PaymentProduct: operations.GetInfoPaymentPathParamPaymentProductCrossBorderCreditTransfers,
         PaymentService: operations.GetInfoPaymentPathParamPaymentServiceBulkPayments,
     })

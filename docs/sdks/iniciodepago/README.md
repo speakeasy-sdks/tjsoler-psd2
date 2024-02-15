@@ -30,15 +30,15 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiateRecurringPayment(ctx, operations.InitiateRecurringPaymentRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
         RequestPeriodicPayment: shared.RequestPeriodicPayment{
-            StartDate: "string",
+            StartDate: "<value>",
         },
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
         PaymentProduct: operations.InitiateRecurringPaymentPathParamPaymentProductInstantSepaCreditTransfers,
     })
     if err != nil {
@@ -89,8 +89,8 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiationBulkPayment(ctx, operations.InitiationBulkPaymentRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
         RequestBulkPayment: shared.RequestBulkPayment{
             BatchBookingPreferred: tjsolerpsd2.Bool(true),
             DebtorAccount: shared.RequestBulkPaymentDebtorAccount{},
@@ -98,10 +98,10 @@ func main() {
                 shared.Payments{},
             },
         },
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
         PaymentProduct: operations.InitiationBulkPaymentPathParamPaymentProductCrossBorderCreditTransfers,
     })
     if err != nil {
@@ -152,18 +152,18 @@ func main() {
 
     ctx := context.Background()
     res, err := s.InicioDePago.InitiationPayment(ctx, operations.InitiationPaymentRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
         SinglePayment: shared.SinglePayment{
             ChargeBearer: tjsolerpsd2.String("SLEV"),
             CreditorAgent: tjsolerpsd2.String("XXXLESMMXXX"),
             CreditorName: tjsolerpsd2.String("Nombre"),
             RemittanceInformationUnstructured: tjsolerpsd2.String("Informacion adicional"),
         },
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
         PaymentProduct: operations.InitiationPaymentPathParamPaymentProductTarget2Payments,
     })
     if err != nil {

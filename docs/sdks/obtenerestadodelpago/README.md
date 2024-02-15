@@ -27,13 +27,13 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ObtenerEstadoDelPago.StatusPayment(ctx, operations.StatusPaymentRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
-        Aspsp: "string",
-        PaymentID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
+        Aspsp: "<value>",
+        PaymentID: "<value>",
         PaymentProduct: operations.StatusPaymentPathParamPaymentProductTarget2Payments,
         PaymentService: operations.StatusPaymentPathParamPaymentServicePeriodicPayments,
     })

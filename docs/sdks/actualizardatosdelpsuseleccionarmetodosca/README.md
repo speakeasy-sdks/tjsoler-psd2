@@ -30,14 +30,14 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionCancelacionPago(ctx, operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.AspspBff,
-        AuthorisationID: "string",
-        PaymentID: "string",
+        AuthorisationID: "<value>",
+        PaymentID: "<value>",
         PaymentProduct: operations.PaymentProductDomesticCrossCurrencyPaymentsUk,
         PaymentService: operations.PaymentServicePayments,
     })
@@ -89,17 +89,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionConsentimientosAIS(ctx, operations.PutSeleccionarSCAAutorizacionConsentimientosAISRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "string",
+            AuthenticationMethodID: "<value>",
         },
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.PathParamAspspOpenbank,
-        AuthorisationID: "string",
-        ConsentIDPathParameter: "string",
+        AuthorisationID: "<value>",
+        ConsentIDPathParameter: "<value>",
     })
     if err != nil {
         log.Fatal(err)
@@ -149,17 +149,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionConsentimientosFCS(ctx, operations.PutSeleccionarSCAAutorizacionConsentimientosFCSRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "string",
+            AuthenticationMethodID: "<value>",
         },
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.PutSeleccionarSCAAutorizacionConsentimientosFCSPathParamAspspEurocajarural,
-        AuthorisationID: "string",
-        ConsentIDPathParameter: "string",
+        AuthorisationID: "<value>",
+        ConsentIDPathParameter: "<value>",
     })
     if err != nil {
         log.Fatal(err)
@@ -209,17 +209,17 @@ func main() {
 
     ctx := context.Background()
     res, err := s.ActualizarDatosDelPSUSeleccionarMetodoSCA.PutSeleccionarSCAAutorizacionInicioPago(ctx, operations.PutSeleccionarSCAAutorizacionInicioPagoRequest{
-        Digest: "string",
-        PSUIPAddress: "string",
+        Digest: "<value>",
+        PSUIPAddress: "<value>",
         RequestUpdatePSUData: shared.RequestUpdatePSUData{
-            AuthenticationMethodID: "string",
+            AuthenticationMethodID: "<value>",
         },
-        Signature: "string",
-        TPPSignatureCertificate: "string",
-        XRequestID: "string",
+        Signature: "<value>",
+        TPPSignatureCertificate: "<value>",
+        XRequestID: "<value>",
         Aspsp: operations.PutSeleccionarSCAAutorizacionInicioPagoPathParamAspspArquia,
-        AuthorisationID: "string",
-        PaymentID: "string",
+        AuthorisationID: "<value>",
+        PaymentID: "<value>",
         PaymentProduct: operations.PathParamPaymentProductDomesticChapsPaymentsUk,
         PaymentService: operations.PathParamPaymentServiceBulkPayments,
     })

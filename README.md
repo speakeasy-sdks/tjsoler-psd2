@@ -35,14 +35,14 @@ func main() {
 
 	ctx := context.Background()
 	res, err := s.ServiciosMultibanco.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-		Digest:                  "string",
-		PSUIPAddress:            "string",
-		Signature:               "string",
-		TPPSignatureCertificate: "string",
-		XRequestID:              "string",
-		AspName:                 "string",
-		MultibancoPaymentType:   "string",
-		PaymentID:               "string",
+		Digest:                  "<value>",
+		PSUIPAddress:            "<value>",
+		Signature:               "<value>",
+		TPPSignatureCertificate: "<value>",
+		XRequestID:              "<value>",
+		AspName:                 "<value>",
+		MultibancoPaymentType:   "<value>",
+		PaymentID:               "<value>",
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -208,14 +208,14 @@ func main() {
 
 	ctx := context.Background()
 	res, err := s.ServiciosMultibanco.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-		Digest:                  "string",
-		PSUIPAddress:            "string",
-		Signature:               "string",
-		TPPSignatureCertificate: "string",
-		XRequestID:              "string",
-		AspName:                 "string",
-		MultibancoPaymentType:   "string",
-		PaymentID:               "string",
+		Digest:                  "<value>",
+		PSUIPAddress:            "<value>",
+		Signature:               "<value>",
+		TPPSignatureCertificate: "<value>",
+		XRequestID:              "<value>",
+		AspName:                 "<value>",
+		MultibancoPaymentType:   "<value>",
+		PaymentID:               "<value>",
 	})
 	if err != nil {
 
@@ -262,14 +262,14 @@ func main() {
 
 	ctx := context.Background()
 	res, err := s.ServiciosMultibanco.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-		Digest:                  "string",
-		PSUIPAddress:            "string",
-		Signature:               "string",
-		TPPSignatureCertificate: "string",
-		XRequestID:              "string",
-		AspName:                 "string",
-		MultibancoPaymentType:   "string",
-		PaymentID:               "string",
+		Digest:                  "<value>",
+		PSUIPAddress:            "<value>",
+		Signature:               "<value>",
+		TPPSignatureCertificate: "<value>",
+		XRequestID:              "<value>",
+		AspName:                 "<value>",
+		MultibancoPaymentType:   "<value>",
+		PaymentID:               "<value>",
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -303,14 +303,14 @@ func main() {
 
 	ctx := context.Background()
 	res, err := s.ServiciosMultibanco.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentID(ctx, operations.DeleteAPIEntradaXs2aServicesAspNameV11MultibancoPaymentsMultibancoPaymentTypePaymentIDRequest{
-		Digest:                  "string",
-		PSUIPAddress:            "string",
-		Signature:               "string",
-		TPPSignatureCertificate: "string",
-		XRequestID:              "string",
-		AspName:                 "string",
-		MultibancoPaymentType:   "string",
-		PaymentID:               "string",
+		Digest:                  "<value>",
+		PSUIPAddress:            "<value>",
+		Signature:               "<value>",
+		TPPSignatureCertificate: "<value>",
+		XRequestID:              "<value>",
+		AspName:                 "<value>",
+		MultibancoPaymentType:   "<value>",
+		PaymentID:               "<value>",
 	})
 	if err != nil {
 		log.Fatal(err)
