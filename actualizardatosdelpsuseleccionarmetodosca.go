@@ -45,12 +45,12 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -73,7 +73,6 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PutSeleccionarSCAAutorizacionCancelacionPagoResponse{
@@ -139,12 +138,12 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -167,7 +166,6 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PutSeleccionarSCAAutorizacionConsentimientosAISResponse{
@@ -233,12 +231,12 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -261,7 +259,6 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PutSeleccionarSCAAutorizacionConsentimientosFCSResponse{
@@ -327,12 +324,12 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -355,7 +352,6 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PutSeleccionarSCAAutorizacionInicioPagoResponse{

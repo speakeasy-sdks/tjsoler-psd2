@@ -137,9 +137,9 @@ func New(opts ...SDKOption) *Psd2CajaRural {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.1",
-			SDKVersion:        "0.8.0",
-			GenVersion:        "2.258.2",
-			UserAgent:         "speakeasy-sdk/go 0.8.0 2.258.2 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
+			SDKVersion:        "0.8.1",
+			GenVersion:        "2.263.3",
+			UserAgent:         "speakeasy-sdk/go 0.8.1 2.263.3 1.1 github.com/speakeasy-sdks/tjsoler-psd2",
 			Hooks:             hooks.New(),
 		},
 	}
