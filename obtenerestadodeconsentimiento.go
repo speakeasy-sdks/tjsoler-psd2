@@ -44,12 +44,12 @@ func (s *ObtenerEstadoDeConsentimiento) GetConsentStatus(ctx context.Context, re
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -72,7 +72,6 @@ func (s *ObtenerEstadoDeConsentimiento) GetConsentStatus(ctx context.Context, re
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetConsentStatusResponse{
@@ -127,12 +126,12 @@ func (s *ObtenerEstadoDeConsentimiento) GetConsentsConfirmationOfFunds(ctx conte
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -155,7 +154,6 @@ func (s *ObtenerEstadoDeConsentimiento) GetConsentsConfirmationOfFunds(ctx conte
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetConsentsConfirmationOfFundsResponse{

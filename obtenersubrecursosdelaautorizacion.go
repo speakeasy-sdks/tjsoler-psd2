@@ -45,12 +45,12 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelaci
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -73,7 +73,6 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelaci
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetSubRecursosAutorizacionCancelacionPagoResponse{
@@ -133,12 +132,12 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -161,7 +160,6 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetSubRecursosAutorizacionConsentimientosAISResponse{
@@ -221,12 +219,12 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -249,7 +247,6 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetSubRecursosAutorizacionConsentimientosFCSResponse{
@@ -309,12 +306,12 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionInicioPag
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -337,7 +334,6 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionInicioPag
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetSubRecursosAutorizacionInicioPagoResponse{

@@ -45,12 +45,12 @@ func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionCancelacionPag
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -73,7 +73,6 @@ func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionCancelacionPag
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PostAutorizacionCancelacionPagoResponse{
@@ -133,12 +132,12 @@ func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimiento
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -161,7 +160,6 @@ func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimiento
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PostAutorizacionConsentimientosAISResponse{
@@ -221,12 +219,12 @@ func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimiento
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -249,7 +247,6 @@ func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionConsentimiento
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PostAutorizacionConsentimientosFCSResponse{
@@ -309,12 +306,12 @@ func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionInicioPago(ctx
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -337,7 +334,6 @@ func (s *InicioDelProcesoDeAutorizacionExplicita) PostAutorizacionInicioPago(ctx
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.PostAutorizacionInicioPagoResponse{

@@ -45,12 +45,12 @@ func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionCancelacionPago(ctx context.C
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -73,7 +73,6 @@ func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionCancelacionPago(ctx context.C
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetEstadoSCAAutorizacionCancelacionPagoResponse{
@@ -133,12 +132,12 @@ func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosAIS(ctx contex
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -161,7 +160,6 @@ func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosAIS(ctx contex
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetEstadoSCAAutorizacionConsentimientosAISResponse{
@@ -221,12 +219,12 @@ func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosFCS(ctx contex
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -249,7 +247,6 @@ func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionConsentimientosFCS(ctx contex
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetEstadoSCAAutorizacionConsentimientosFCSResponse{
@@ -309,12 +306,12 @@ func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionInicioPago(ctx context.Contex
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -337,7 +334,6 @@ func (s *ObtenerEstadoSCA) GetEstadoSCAAutorizacionInicioPago(ctx context.Contex
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetEstadoSCAAutorizacionInicioPagoResponse{
