@@ -28,7 +28,11 @@ func newObtenerSubRecursosDeLaAutorizacion(sdkConfig sdkConfiguration) *ObtenerS
 // GetSubRecursosAutorizacionCancelacionPago - Endpoint en caso de obtener sub-recursos de la Autorización para Cancelación de Pago
 // Endpoint en caso de obtener sub-recursos de la Autorización para Cancelación de Pago
 func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelacionPago(ctx context.Context, request operations.GetSubRecursosAutorizacionCancelacionPagoRequest) (*operations.GetSubRecursosAutorizacionCancelacionPagoResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "getSubRecursosAutorizacionCancelacionPago"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "getSubRecursosAutorizacionCancelacionPago",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/cancellation-authorisations", request, nil)
@@ -45,12 +49,12 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelaci
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -60,15 +64,15 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelaci
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
@@ -115,7 +119,11 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionCancelaci
 // GetSubRecursosAutorizacionConsentimientosAIS - Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos AIS
 // Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos AIS
 func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentimientosAIS(ctx context.Context, request operations.GetSubRecursosAutorizacionConsentimientosAISRequest) (*operations.GetSubRecursosAutorizacionConsentimientosAISResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "getSubRecursosAutorizacionConsentimientosAIS"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "getSubRecursosAutorizacionConsentimientosAIS",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}/authorisations", request, nil)
@@ -132,12 +140,12 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -147,15 +155,15 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
@@ -202,7 +210,11 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 // GetSubRecursosAutorizacionConsentimientosFCS - Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos FCS
 // Endpoint en caso de obtener sub-recursos de la Autorización para Consentimientos FCS
 func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentimientosFCS(ctx context.Context, request operations.GetSubRecursosAutorizacionConsentimientosFCSRequest) (*operations.GetSubRecursosAutorizacionConsentimientosFCSResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "getSubRecursosAutorizacionConsentimientosFCS"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "getSubRecursosAutorizacionConsentimientosFCS",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}/authorisations", request, nil)
@@ -219,12 +231,12 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -234,15 +246,15 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
@@ -289,7 +301,11 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionConsentim
 // GetSubRecursosAutorizacionInicioPago - Endpoint en caso de obtener sub-recursos de la Autorización para Inicio de Pago
 // Endpoint en caso de obtener sub-recursos de la Autorización para Inicio de Pago
 func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionInicioPago(ctx context.Context, request operations.GetSubRecursosAutorizacionInicioPagoRequest) (*operations.GetSubRecursosAutorizacionInicioPagoResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "getSubRecursosAutorizacionInicioPago"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "getSubRecursosAutorizacionInicioPago",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/authorisations", request, nil)
@@ -306,12 +322,12 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionInicioPag
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -321,15 +337,15 @@ func (s *ObtenerSubRecursosDeLaAutorizacion) GetSubRecursosAutorizacionInicioPag
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}

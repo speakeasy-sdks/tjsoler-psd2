@@ -28,7 +28,11 @@ func newActualizarDatosDelPSUSeleccionarMetodoSCA(sdkConfig sdkConfiguration) *A
 // PutSeleccionarSCAAutorizacionCancelacionPago - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Cancelación de Pago
 // Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Cancelación de Pago
 func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionCancelacionPago(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionCancelacionPagoRequest) (*operations.PutSeleccionarSCAAutorizacionCancelacionPagoResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "putSeleccionarSCAAutorizacionCancelaciónPago"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "putSeleccionarSCAAutorizacionCancelaciónPago",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/cancellation-authorisations/{authorisation-id}", request, nil)
@@ -45,12 +49,12 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -60,15 +64,15 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
@@ -115,7 +119,11 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 // PutSeleccionarSCAAutorizacionConsentimientosAIS - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos AIS
 // Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos AIS
 func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionConsentimientosAIS(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionConsentimientosAISRequest) (*operations.PutSeleccionarSCAAutorizacionConsentimientosAISResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "putSeleccionarSCAAutorizacionConsentimientosAIS"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "putSeleccionarSCAAutorizacionConsentimientosAIS",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}/authorisations/{authorisation-id}", request, nil)
@@ -138,12 +146,12 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -153,15 +161,15 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
@@ -208,7 +216,11 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 // PutSeleccionarSCAAutorizacionConsentimientosFCS - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos FCS
 // Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Consentimientos FCS
 func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionConsentimientosFCS(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionConsentimientosFCSRequest) (*operations.PutSeleccionarSCAAutorizacionConsentimientosFCSResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "putSeleccionarSCAAutorizacionConsentimientosFCS"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "putSeleccionarSCAAutorizacionConsentimientosFCS",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}/authorisations/{authorisation-id}", request, nil)
@@ -231,12 +243,12 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -246,15 +258,15 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
@@ -301,7 +313,11 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 // PutSeleccionarSCAAutorizacionInicioPago - Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Inicio de Pago
 // Endpoint en caso de actualizacion de datos PSU (seleccionar método SCA) - Autorización de Inicio de Pago
 func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacionInicioPago(ctx context.Context, request operations.PutSeleccionarSCAAutorizacionInicioPagoRequest) (*operations.PutSeleccionarSCAAutorizacionInicioPagoResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "putSeleccionarSCAAutorizacionInicioPago"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "putSeleccionarSCAAutorizacionInicioPago",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/{payment-service}/{payment-product}/{payment-id}/authorisations/{authorisation-id}", request, nil)
@@ -324,12 +340,12 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -339,15 +355,15 @@ func (s *ActualizarDatosDelPSUSeleccionarMetodoSCA) PutSeleccionarSCAAutorizacio
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}

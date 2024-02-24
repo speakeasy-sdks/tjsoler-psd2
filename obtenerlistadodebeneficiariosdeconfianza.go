@@ -27,7 +27,11 @@ func newObtenerListadoDeBeneficiariosDeConfianza(sdkConfig sdkConfiguration) *Ob
 // GetTrustedBeneficiaries - Obtener listado de beneficiarios de confianza
 // Obtiene el listado de los beneficiarios de confianza del PSU, el cual ha dado un consentimiento explícito.
 func (s *ObtenerListadoDeBeneficiariosDeConfianza) GetTrustedBeneficiaries(ctx context.Context, request operations.GetTrustedBeneficiariesRequest) (*operations.GetTrustedBeneficiariesResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "getTrustedBeneficiaries"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "getTrustedBeneficiaries",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/trusted-beneficiaries", request, nil)
@@ -48,12 +52,12 @@ func (s *ObtenerListadoDeBeneficiariosDeConfianza) GetTrustedBeneficiaries(ctx c
 		return nil, fmt.Errorf("error populating query params: %w", err)
 	}
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -63,15 +67,15 @@ func (s *ObtenerListadoDeBeneficiariosDeConfianza) GetTrustedBeneficiaries(ctx c
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}

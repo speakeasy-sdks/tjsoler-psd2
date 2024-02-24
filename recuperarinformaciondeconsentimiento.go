@@ -27,7 +27,11 @@ func newRecuperarInformacionDeConsentimiento(sdkConfig sdkConfiguration) *Recupe
 // GetConsentIDDetails - Recuperar información de consentimiento AIS
 // Este servicio permite al TPP conocer el estado de una solicitud de consentimiento iniciada previamente.
 func (s *RecuperarInformacionDeConsentimiento) GetConsentIDDetails(ctx context.Context, request operations.GetConsentIDDetailsRequest) (*operations.GetConsentIDDetailsResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "getConsentIdDetails"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "getConsentIdDetails",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v1.1/consents/{consent-id}", request, nil)
@@ -44,12 +48,12 @@ func (s *RecuperarInformacionDeConsentimiento) GetConsentIDDetails(ctx context.C
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -59,15 +63,15 @@ func (s *RecuperarInformacionDeConsentimiento) GetConsentIDDetails(ctx context.C
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
@@ -109,7 +113,11 @@ func (s *RecuperarInformacionDeConsentimiento) GetConsentIDDetails(ctx context.C
 // GetConsentsConfirmationOfFundsInfo - Recuperar información de consentimiento FCS
 // Este servicio permite al TPP, a través del Hub, conocer el estado en el que se encuentra un recurso de consentimiento de confirmación de fondos en el ASPSP.
 func (s *RecuperarInformacionDeConsentimiento) GetConsentsConfirmationOfFundsInfo(ctx context.Context, request operations.GetConsentsConfirmationOfFundsInfoRequest) (*operations.GetConsentsConfirmationOfFundsInfoResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "getConsentsConfirmationOfFundsInfo"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "getConsentsConfirmationOfFundsInfo",
+		SecuritySource: nil,
+	}
 
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	opURL, err := utils.GenerateURL(ctx, baseURL, "/api-entrada-xs2a/services/{aspsp}/v2.1/consents/confirmation-of-funds/{consent-id}", request, nil)
@@ -126,12 +134,12 @@ func (s *RecuperarInformacionDeConsentimiento) GetConsentsConfirmationOfFundsInf
 
 	utils.PopulateHeaders(ctx, req, request)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.DefaultClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -141,15 +149,15 @@ func (s *RecuperarInformacionDeConsentimiento) GetConsentsConfirmationOfFundsInf
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
