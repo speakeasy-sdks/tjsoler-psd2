@@ -30,7 +30,7 @@ func main() {
     res, err := s.ObtenerEstadoDeConsentimiento.GetConsentStatus(ctx, operations.GetConsentStatusRequest{
         Digest: "<value>",
         Signature: "<value>",
-        TPPSignatureCertificate: "<value>",
+        TPPSignatureCertificate: "TestTPPCertificate",
         XRequestID: "<value>",
         Aspsp: "<value>",
         ConsentID: "<value>",

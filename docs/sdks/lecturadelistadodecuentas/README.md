@@ -27,10 +27,10 @@ func main() {
 
     ctx := context.Background()
     res, err := s.LecturaDeListadoDeCuentas.GetAccountListv11(ctx, operations.GetAccountListv11Request{
-        ConsentID: "<value>",
+        ConsentID: "7890-asdf-4321",
         Digest: "<value>",
         Signature: "<value>",
-        TPPSignatureCertificate: "<value>",
+        TPPSignatureCertificate: "TestTPPCertificate",
         XRequestID: "<value>",
         Aspsp: "<value>",
     })
