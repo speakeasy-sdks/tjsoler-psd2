@@ -47,7 +47,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseDeleteMultibankPayment != nil {
         // handle response
     }
@@ -100,7 +99,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.Body != nil {
         // handle response
     }
@@ -155,7 +153,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseGetMultibankPayment != nil {
         // handle response
     }
@@ -208,7 +205,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseMultibankAuthorizationSubresources != nil {
         // handle response
     }
@@ -262,7 +258,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseMultibankGetSCAStatus != nil {
         // handle response
     }
@@ -317,7 +312,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseGetStatusMultibankPayment != nil {
         // handle response
     }
@@ -370,7 +364,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseMultibankAuthorizeConsentEstablishment != nil {
         // handle response
     }
@@ -436,7 +429,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseStartMultibankPayment != nil {
         // handle response
     }
@@ -500,7 +492,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseSocialSecurityWithholding != nil {
         // handle response
     }
@@ -558,7 +549,6 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
     if res.ResponseMultibankSelectSCAMethod != nil {
         // handle response
     }

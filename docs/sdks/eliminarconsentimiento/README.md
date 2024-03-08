@@ -20,7 +20,6 @@ import(
 	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -38,8 +37,7 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
-    if res.StatusCode == http.StatusOK {
+    if res != nil {
         // handle response
     }
 }
@@ -74,7 +72,6 @@ import(
 	"context"
 	"github.com/speakeasy-sdks/tjsoler-psd2/pkg/models/operations"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -92,8 +89,7 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-
-    if res.StatusCode == http.StatusOK {
+    if res != nil {
         // handle response
     }
 }
